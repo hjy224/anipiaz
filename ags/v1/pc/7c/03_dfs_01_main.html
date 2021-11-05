@@ -1,0 +1,1017 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MAIN</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<!--<script type="text/javascript" src="js/stickyfill.js"></script>-->
+	<script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />   
+    <link rel="stylesheet" type="text/css" href="css/common.css" />   
+</head>
+<body>
+	<div class="headerContainer">
+		<div class="headerWrap">
+			<div class="header">
+				<h1>
+                    <span><img src="images/header-logo_jeju@2x.jpg" alt="제주항공"></span><span><img src="images/header-logo_onlinetour@2x.jpg" alt="온라인투어"></span>
+                    <!--<span><img src="images/header-logo_jeju@2x.jpg" alt="제주항공"></span><span><img src="images/header-logo_modetour@2x.jpg" alt="모두투어"></span>-->
+                    <!--<span><img src="images/header-logo_jeju@2x.jpg" alt="제주항공"></span><span><img src="images/header-logo_ybtour@2x.jpg" alt="노랑풍선"></span>-->
+                    <!--<span><img src="images/header-logo_jeju@2x.jpg" alt="제주항공"></span><span><img src="images/header-logo_webtour@2x.jpg" alt="웹투어"></span>-->
+				</h1>
+				<ul>
+					<li><a href="#">항공 부가서비스 신청하기</a></li>
+                    <li><a href="#" class="active">기내면세 예약</a></li>
+                    <li><a href="#">신청 내역</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="bodyWrap">
+        <div id="dfsVisual" class="dfs-visual">
+            <div class="inner">
+                <h2 class="sr-only">서비스 소개</h2>
+                <p class="paragraph">
+                    원하시는 기내 면세를<br>
+                    지금 결제할 필요 없이 사전예약만 하세요!
+                </p>
+                <p class="paragraph">
+                    시중 면세보다 저렴하게, 품절될 걱정 없이<br>
+                    기내에서 간편하게 수령할 수 있습니다.
+                </p><!-- 140417 텍스트 수정 -->
+                <div class="steps-wrap">
+                    <dl class="steps">
+                        <dt>Step1</dt>
+                        <dd>
+                            결제 필요없이 승객별로<br>
+                            사전주문만 하세요
+                        </dd>
+                    </dl>
+                    <dl class="steps">
+                        <dt>Step2</dt>
+                        <dd>
+                            출/귀국편 기내에서 주문서 확인,<br>
+                            직접 결제하고 수령하세요
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="dfs-notification">
+            <div class="inner">
+                <h2 class="notification-title">제주항공 기내면세 예약하기</h2>
+                <p class="notification-text">원하는 면세상품을 선택 후에 탑승객별 구매 수량을 확인해 주세요. <span class="exchange">오늘의 환율 $1 = 1,230.3원</span></p>
+            </div>
+        </div>
+		<div class="dfs-product-list">
+            <h2 class="sr-only">제주항공 기내면세품 리스트</h2>
+            <div class="inner">
+                <h3 class="item-title">주류 BEST</h3>
+                <ul>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>발렌타인</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>발렌타인 23년</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2590000750909_OR.jpg" alt="">
+                                <p class="tag-wrap">
+                                    <span class="sale">20% Sale</span>
+                                    <span class="new">New</span>
+                                </p>
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">146</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">170800</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>잭다니엘</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>American Whiskey Miniature Set</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2590000740863_OR.jpg" alt="">
+                                <p class="tag-wrap">
+                                    <span class="sale">20% Sale</span>
+                                </p>
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">26</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">30800</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>발렌타인</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>30년 캐스크 에디션 배치 2,500ml</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2590000684211_OR.jpg" alt="">
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">355</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">415500</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select" disabled="disabled">선택해제</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>까뮤</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>VSOP ELEGANCE</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2590000662257_OR.jpg" alt="">
+                                <p class="tag-wrap">
+                                    <span class="sale">20% Sale</span>
+                                </p>
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">43</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">50300</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>조니워커</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>블루 라벨</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2590000750909_OR.jpg" alt="">
+                                <p class="tag-wrap">
+                                    <span class="new">New</span>
+                                </p>
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">149</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">174300</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="inner">
+                <h3 class="item-title">화장품 BEST</h3>
+                <ul>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>에스티로더</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>퓨어 컬러 엔비 립스틱 트리오</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2290000773235_OR.jpg" alt="">
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">68</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">79600</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>에스티로더</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>갈색병 인텐스 리셋 컨센트레이트 20ml</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2290000773228_OR_1575010494265.jpg" alt="">
+                                <p class="tag-wrap">
+                                    <span class="sale">20% Sale</span>
+                                </p>
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">76</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">88900</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>루나</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>에센스 수분광 팩트 CX 듀오</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2290000757051_OR.jpg" alt="">
+                                <p class="tag-wrap">
+                                    <span class="sale">20% Sale</span>
+                                    <span class="new">New</span>
+                                </p>
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">38</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">44500</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>록시땅</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>시어 인텐시브 핸드밤 150ml</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2291000755221_OR.jpg" alt="">
+                                <p class="tag-wrap">
+                                    <span class="sale">20% Sale</span>
+                                </p>
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">29</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">33900</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                    <li>
+                        <dl class="product-info">
+                            <dt class="brand">브랜드</dt>
+                            <dd>크리니크</dd>
+                            <dt class="product-name">상품명</dt>
+                            <dd>드라마티컬리 디퍼런트 하이드레이팅 젤리 듀오 125ml*2</dd>
+                            <dt class="thumbnail">상품 이미지</dt>
+                            <dd>
+                                <img src="images/dfs-product/2290000753251_OR.jpg" alt="">
+                                <p class="tag-wrap">
+                                    <span class="new">New</span>
+                                </p>
+                            </dd>
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">40</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">46800</span></dd>
+                        </dl>
+                        <button type="button" class="btn_select">선택하기</button>
+                        <a href="#none" class="btn_more">상품 자세히보기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dfs-banner-list">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <img srcset="
+                                images/img_dfs-banner1.jpg 1x,
+                                images/img_dfs-banner1@2x.jpg 2x,
+                                images/img_dfs-banner1@3x.jpg 3x"
+                             src="images/img_dfs-banner1.jpg">
+                        <a href="#none" target="_blank">새 창으로 이동하기</a>
+                    </li>
+                    <li>
+                        <img srcset="
+                                images/img_dfs-banner2.jpg 1x,
+                                images/img_dfs-banner2@2x.jpg 2x,
+                                images/img_dfs-banner2@3x.jpg 3x"
+                             src="images/img_dfs-banner2.jpg">
+                        <a href="#none" target="_blank">새 창으로 이동하기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="dfsSelectList" class="dfs-select-list">
+            <div class="inner">
+                <h2 class="select-list-title">선택한 상품<span class="bubble">5</span></h2>
+                <ul>
+                    <li>
+                        <span class="img-wrap"><img src="images/dfs-product/2590000750909_OR.jpg" alt=""></span>
+                        <a href="#none" target="_self" class="btn_delete">삭제</a>
+                    </li>
+                    <li>
+                        <span class="img-wrap"><img src="images/dfs-product/2590000750909_OR.jpg"></span>
+                        <a href="#none" target="_self" class="btn_delete">삭제</a>
+                    </li>
+                    <li>
+                        <span class="img-wrap"><img src="images/dfs-product/2590000750909_OR.jpg"></span>
+                        <a href="#none" target="_self" class="btn_delete">삭제</a>
+                    </li>
+                    <li>
+                        <span class="img-wrap"><img src="images/dfs-product/2590000750909_OR.jpg"></span>
+                        <a href="#none" target="_self" class="btn_delete">삭제</a>
+                    </li>
+                    <li>
+                        <span class="img-wrap"><img src="images/dfs-product/2590000750909_OR.jpg"></span>
+                        <a href="#none" target="_self" class="btn_delete">삭제</a>
+                    </li>
+                </ul>
+                <p class="btn-wrap">
+                    <button type="button" id="btn_dfs-resv" class="btn_next">다음</button>
+                </p>
+            </div>
+        </div>
+	</div>
+	<div class="footerContainer">
+		<div class="footerWrap">
+			<div class="logoWrap">
+				<img src="images/logo_footer.png" width="135" height="20" alt="" />
+			</div>
+			<ul class="rightWrap">
+				<li><a href="#">개인정보취급방침</a></li>
+				<li>고객센터 : 1522-2284 (평일 09:00~18:00)</li>
+			</ul>
+			<div class="infoWrap">
+				<p>모두투어 항공사 부가서비스는 (주)올윈에어와의 제휴로 제공됩니다.</p>
+				<ul>
+					<li>서울시 중구 서소문로 106 동화빌딩 9층</li>
+					<li>㈜올윈웨어</li>
+					<li>대표이사:이정갑
+					<li>사업자등록번호:220-88-72464</li>
+				</ul>
+				<p class="copyright">COPYRIGHT ALLWINWARE INC. ALL RIGHTS RESERVED</p>
+			</div>
+		</div>
+	</div>
+
+    <!-- POPUP : 상품 상세 -->
+    <div class="pop_dfs-detail-wrap">
+        <div class="dfs-detail">
+            <div class="header">
+                <p class="sr-only">상품 상세 페이지</p>
+                <a class="btn_close"><i class="ico"></i>닫기</a>
+            </div>
+            <div class="container">
+                <!-- 상품 기본정보 -->
+                <div class="product-info-wrap">
+                    <h2 class="sr-only">상품 기본정보</h2>
+                    <dl class="product-info">
+                        <dt class="product-name">상품명</dt>
+                        <dd>
+                            <span class="brand-name">발렌타인</span> 30년 캐스크 에디션 배치 2,500ml
+                        </dd>
+                        <dt class="product-brand">브랜드</dt>
+                        <dd>발렌타인</dd>
+                        <dt class="thumbnail">상품 이미지</dt>
+                        <dd><img src="images/dfs-product/2590000684211_OR.jpg"></dd>
+                        <dt class="product-code1">코드</dt>
+                        <dd>REF.NO BALL 30YO CASK BATCH</dd>
+                        <dt class="product-code2">상품코드</dt>
+                        <dd>2590000687205</dd>
+                        <dt class="product-price">정상가</dt>
+                        <dd>
+                            <dl>
+                                <dt class="price-usd">가격(USD, $)</dt>
+                                <dd><span class="digits">374</span></dd>
+                                <dt class="price-krw">가격(Won, ₩)</dt>
+                                <dd><span class="digits">415400</span></dd>
+                                <dt class="dc-per">할인율</dt>
+                                <dd>5% 할인</dd>
+                            </dl>
+                        </dd>
+                        <dt class="product-state">상품상태</dt>
+                        <dd>
+                            <span class="sale">20% Sale</span>
+                            <span class="new">New</span>
+                        </dd>
+                        <dt class="product-tag">상품키워드</dt>
+                        <dd>
+                            <span>Top5 주류</span>
+                        </dd>
+                    </dl>
+                    <h2 class="sr-only">상품 가격정보</h2>
+                    <dl class="price-info">
+                        <dt class="discount-price">할인가</dt>
+                        <dd>
+                            <dl>
+                                <dt class="price-usd">가격(USD, $)</dt>
+                                <dd><span class="digits">355</span></dd>
+                                <dt class="price-krw">가격(KRW, ₩)</dt>
+                                <dd><span class="digits">415400</span></dd>
+                            </dl>
+                        </dd>
+                        <dt class="to-list"></dt>
+                        <dd><button type="button" class="btn_to-list" title="이 상품을 선택 리스트에 담습니다.">상품 선택하기</button></dd>
+                    </dl>
+                    <h2 class="sr-only">주요 공지사항</h2>
+                    <ul class="product-note">
+                        <li>해당 상품은 예약 후 기내에서 결제 가능 합니다.</li>
+                        <li>구매자 본인 명의의 신용카드(체크카드, 직불카드 불가)와 현금(USD/KRW)으로 결제할 수 있습니다.</li>
+                        <li>본 상품은 무안공항을 통해 출입국하시는 고객님께서는 구매(예약) 불가한 상품입니다. 양해 부탁드립니다.</li>
+                        <li class="text-emphasis">미성년자가 구매할 수 없는 상품입니다.</li>
+                    </ul>
+                </div>
+                <!-- //상품 기본정보 -->
+
+                <!-- 상품 상세정보 -->
+                <div class="product-detail-wrap">
+                    <h2 class="title">기내 면세품 상세 정보</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 240px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">생산자 및 소재지</th>
+                                <td>스코틀랜드, Chivas Brothers LTD</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">용량 또는 중량</th>
+                                <td>500ml</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">원재료명 및 함량</th>
+                                <td>49.8%(캐스크 스트렝스 특성 상 추후 도수 변경이 있을 수도 있습니다.)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">소비자 상담 전화번호</th>
+                                <td>고객센터 1522-2284 (평일 09:30~17:00)</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //상품 상세정보 -->
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+    <!-- //POPUP : 상품 상세 -->
+
+    <!-- POPUP : 제주항공 기내면세 예약하기 -->
+    <div id="dfs-resv" class="dfs-resv-wrap">
+        <div class="dfs-resv">
+            <div class="header">
+                <p class="title">제주항공 기내면세 예약하기</p>
+                <a id="btn_dfs-resv-close" class="btn_close"><i class="ico"></i>닫기</a>
+            </div>
+            <div class="container">
+                <div class="table-wrap">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col style="width: 185px">
+                            <col style="width: 107px">
+                            <col style="width: 88px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">상품</th>
+                            <th scope="col">탑승객</th>
+                            <th scope="col">가는 편 수량</th>
+                            <th scope="col">오는 편 수량</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <td colspan="4">
+                                <dl class="ind-total">
+                                    <dt class="ea">수량<span class="sr-only">(개)</span></dt>
+                                    <dd>3</dd>
+                                    <dt class="price-usd">가격(USD, $)</dt>
+                                    <dd><span class="digits">203</span></dd>
+                                    <dt class="price-krw">가격(원, ₩)</dt>
+                                    <dd><span class="digits">233800</span></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">
+                                <dl class="product-info">
+                                    <dt class="brand">브랜드</dt>
+                                    <dd>에스티로더</dd>
+                                    <dt class="product-name">상품명</dt>
+                                    <dd>갈색병 인텐스 리셋 컨센트레이트 20ml</dd>
+                                    <dt class="thumbnail">상품 이미지</dt>
+                                    <dd>
+                                        <img src="images/dfs-product/2290000773228_OR_1575010494265.jpg" alt="">
+                                    </dd>
+                                    <dt class="fnc-wrap">기능버튼</dt>
+                                    <dd><a href="#none" class="btn_delete">상품 삭제</a></dd>
+                                    <dt class="price-usd">가격(USD, $)</dt>
+                                    <dd><span class="digits">76</span></dd>
+                                    <dt class="price-krw">가격(원, ₩)</dt>
+                                    <dd><span class="digits">88900</span></dd>
+                                </dl>
+                            </th>
+                            <td><span class="customer-name">Bae, Sungjune</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des1">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des1" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr1">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr1" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="customer-name">Son, Seungwan</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des2">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des2" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr2">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr2" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="customer-name">Kim, Taehyeong</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des3">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des3" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr3">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr3" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col style="width: 185px">
+                            <col style="width: 107px">
+                            <col style="width: 88px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">상품</th>
+                            <th scope="col">탑승객</th>
+                            <th scope="col">가는 편 수량</th>
+                            <th scope="col">오는 편 수량</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <td colspan="4">
+                                <dl class="ind-total">
+                                    <dt class="ea">수량<span class="sr-only">(개)</span></dt>
+                                    <dd>3</dd>
+                                    <dt class="price-usd">가격(USD, $)</dt>
+                                    <dd><span class="digits">203</span></dd>
+                                    <dt class="price-krw">가격(원, ₩)</dt>
+                                    <dd><span class="digits">233800</span></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">
+                                <dl class="product-info">
+                                    <dt class="brand">브랜드</dt>
+                                    <dd>에스티로더</dd>
+                                    <dt class="product-name">상품명</dt>
+                                    <dd>퓨어 컬러 엔비 립스틱 트리오</dd>
+                                    <dt class="thumbnail">상품 이미지</dt>
+                                    <dd>
+                                        <img src="images/dfs-product/2290000773235_OR.jpg" alt="">
+                                    </dd>
+                                    <dt class="fnc-wrap">기능버튼</dt>
+                                    <dd><a href="#none" class="btn_delete">상품 삭제</a></dd>
+                                    <dt class="price-usd">가격(USD, $)</dt>
+                                    <dd><span class="digits">76</span></dd>
+                                    <dt class="price-krw">가격(원, ₩)</dt>
+                                    <dd><span class="digits">88900</span></dd>
+                                </dl>
+                            </th>
+                            <td><span class="customer-name">Bae, Sungjune</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des11">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des11" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr11">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr11" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="customer-name">Son, Seungwan</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des12">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des12" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr12">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr12" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="customer-name">Kim, Taehyeong</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des13">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des13" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr13">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr13" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col style="width: 185px">
+                            <col style="width: 107px">
+                            <col style="width: 88px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">상품</th>
+                            <th scope="col">탑승객</th>
+                            <th scope="col">가는 편 수량</th>
+                            <th scope="col">오는 편 수량</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <td colspan="4">
+                                <dl class="ind-total">
+                                    <dt class="ea">수량<span class="sr-only">(개)</span></dt>
+                                    <dd>3</dd>
+                                    <dt class="price-usd">가격(USD, $)</dt>
+                                    <dd><span class="digits">203</span></dd>
+                                    <dt class="price-krw">가격(원, ₩)</dt>
+                                    <dd><span class="digits">233800</span></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">
+                                <dl class="product-info">
+                                    <dt class="brand">브랜드</dt>
+                                    <dd>에스티로더</dd>
+                                    <dt class="product-name">상품명</dt>
+                                    <dd>갈색병 인텐스 리셋 컨센트레이트 20ml</dd>
+                                    <dt class="thumbnail">상품 이미지</dt>
+                                    <dd>
+                                        <img src="images/dfs-product/2290000773228_OR_1575010494265.jpg" alt="">
+                                    </dd>
+                                    <dt class="fnc-wrap">기능버튼</dt>
+                                    <dd><a href="#none" class="btn_delete">상품 삭제</a></dd>
+                                    <dt class="price-usd">가격(USD, $)</dt>
+                                    <dd><span class="digits">76</span></dd>
+                                    <dt class="price-krw">가격(원, ₩)</dt>
+                                    <dd><span class="digits">88900</span></dd>
+                                </dl>
+                            </th>
+                            <td><span class="customer-name">Bae, Sungjune</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des21">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des21" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr21">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr21" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="customer-name">Son, Seungwan</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des22">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des22" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr22">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr22" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="customer-name">Kim, Taehyeong</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des23">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des23" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr23">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr23" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col style="width: 185px">
+                            <col style="width: 107px">
+                            <col style="width: 88px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">상품</th>
+                            <th scope="col">탑승객</th>
+                            <th scope="col">가는 편 수량</th>
+                            <th scope="col">오는 편 수량</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <td colspan="4">
+                                <dl class="ind-total">
+                                    <dt class="ea">수량<span class="sr-only">(개)</span></dt>
+                                    <dd>3</dd>
+                                    <dt class="price-usd">가격(USD, $)</dt>
+                                    <dd><span class="digits">203</span></dd>
+                                    <dt class="price-krw">가격(원, ₩)</dt>
+                                    <dd><span class="digits">233800</span></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">
+                                <dl class="product-info">
+                                    <dt class="brand">브랜드</dt>
+                                    <dd>에스티로더</dd>
+                                    <dt class="product-name">상품명</dt>
+                                    <dd>퓨어 컬러 엔비 립스틱 트리오</dd>
+                                    <dt class="thumbnail">상품 이미지</dt>
+                                    <dd>
+                                        <img src="images/dfs-product/2290000773235_OR.jpg" alt="">
+                                    </dd>
+                                    <dt class="fnc-wrap">기능버튼</dt>
+                                    <dd><a href="#none" class="btn_delete">상품 삭제</a></dd>
+                                    <dt class="price-usd">가격(USD, $)</dt>
+                                    <dd><span class="digits">76</span></dd>
+                                    <dt class="price-krw">가격(원, ₩)</dt>
+                                    <dd><span class="digits">88900</span></dd>
+                                </dl>
+                            </th>
+                            <td><span class="customer-name">Bae, Sungjune</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des31">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des31" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr31">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr31" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="customer-name">Son, Seungwan</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des32">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des32" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr32">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr32" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="customer-name">Kim, Taehyeong</span></td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-des33">가는 편 수량</label>
+                                    <input type="text" id="input-ea-des33" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="ea-controller">
+                                    <label for="input-ea-arr33">오는 편 수량</label>
+                                    <input type="text" id="input-ea-arr33" class="input-ea">
+                                    <a href="#none" target="_self" class="btn_increase">올림</a>
+                                    <a href="#none" target="_self" class="btn_decrease">내림</a>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="footer">
+                <dl>
+                    <dt>총 결제 예정 금액</dt>
+                    <dd>
+                        <dl class="price-info">
+                            <dt class="price-usd">가격(USD, $)</dt>
+                            <dd><span class="digits">76</span></dd>
+                            <dt class="price-krw">가격(원, ₩)</dt>
+                            <dd><span class="digits">88900</span></dd>
+                        </dl>
+                    </dd>
+                </dl>
+                <a class="btn_resv">사전 예약하기</a>
+            </div>
+        </div>
+        <div class="dim"></div>
+    </div>
+    <!-- //POPUP : 제주항공 기내면세 예약하기 -->
+    <script>
+
+        /*선택한 상품 BottomBar 고정*/
+        (function(fixedSidebar){
+            var $target = $("#dfsSelectList"),
+                targetHeight = $target.height(),
+                targetPosY1 = $(".footerContainer").offset().top,
+                winHeight = $(window).height();
+            function sidebarHandler(){
+                var currentScrollTop = $(document).scrollTop(),
+                    targetRail = targetPosY1 - winHeight + targetHeight;
+                if (currentScrollTop > 0 && currentScrollTop > targetRail) {
+                    $target.removeClass("fixed")
+                } else if (targetRail > currentScrollTop) {
+                    $target.addClass("fixed")
+                }
+            }
+            $(window).on("scroll", function(){
+                sidebarHandler();
+            }).scroll()
+        })();
+
+        /*상품 클릭 시 상품 상세 레이어 팝업 디스플레이 정의*/
+        (function(){
+            $(document).on("click", ".dfs-product-list .btn_more", function(){
+                $(".pop_dfs-detail-wrap").addClass("active");
+                $("body").css("overflow", "hidden")
+            });
+            $(document).on("click", ".pop_dfs-detail-wrap .btn_close", function(){
+                $(".pop_dfs-detail-wrap").removeClass("active");
+                $("body").css("overflow", "")
+            });
+        })();
+
+        /*선택한 상품 BottomBar의 [다음] 버튼 클릭 시 레이어 팝업 디스플레이 정의*/
+        (function(){
+            $(document).on("click", "#btn_dfs-resv", function(){
+                $("#dfs-resv").addClass("active");
+                $("body").css("overflow", "hidden")
+            });
+            $(document).on("click", "#btn_dfs-resv-close", function(){
+                $("#dfs-resv").removeClass("active");
+                $("body").css("overflow", "")
+            });
+        })();
+
+        /*input-ea control*/
+        (function(){
+            var $target = $(".input-ea");
+            $target.each(function(){
+                $(this).attr("value", "0")
+            }).on("propertychange change keyup paste input", function(){
+                if($(this).val !== 0){
+                    $(this).addClass("text-emphasis")
+                }
+            });
+            var $increase = $(".btn_increase");
+            $increase.on("click", function(e){
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.siblings(".input-ea");
+                var value = parseInt($input.val());
+                value = value + 1;
+                if(value > 0) {
+                    $input.val(value).addClass("text-emphasis")
+                } else if(value === 0){
+                    $input.val(value).removeClass("text-emphasis")
+                }
+            });
+            var $decrease = $(".btn_decrease");
+            $decrease.on("click", function(e){
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.siblings(".input-ea");
+                var value = parseInt($input.val());
+                value = value - 1;
+                if(value > 0) {
+                    $input.val(value).addClass("text-emphasis")
+                } else if(value === 0) {
+                    $input.val(value).removeClass("text-emphasis")
+                }
+            });
+        })();
+
+    </script>
+</body>
+</html>

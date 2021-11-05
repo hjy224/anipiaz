@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>신청내역/취소 > 구매내역 상세</title>
+	<meta name="keywords" content="">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css" media="screen">
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="pageWrap wrapper">
+	<div class="contentContainer mypage">
+		<div class="headerWrap">
+			<div class="systemWrap">
+                <a href="#none" target="_self" class="btn nav">
+                    <img src="images/btn_nav.png" width="18" height="12" alt="Navigation">
+                </a>
+                <a href="" class="btn back">
+                    <img src="images/btn_back.png" width="16" height="16" alt="Back" />
+                </a>
+				<p class="title">신청내역/취소</p>
+				<a href="" class="btn close">
+					<img src="images/btn_close.png" width="14" height="14" alt="Close">
+				</a>
+			</div>
+		</div>
+        <div class="mypage__detail">
+            <div class="page-title sr-only">
+                <h4>구매내역 자세히보기</h4>
+            </div>
+            <div class="area-wrap ui-fixed"><!-- 191209 [.ui-fixed] 클래스 추가 -->
+                <h5 class="area-wrap__title sr-only">항공권 및 부가서비스 정보</h5>
+                <div class="ticket-item active">
+                    <dl class="ticket-info">
+                        <dt class="ticket-num">항공권 예약번호</dt>
+                        <dd>123456</dd>
+                        <dt class="status">부가서비스 결제상태 변경</dt>
+                        <dd><a href="#none" target="_self" class="btn_service-cancel">취소/환불하기</a></dd><!-- 상태는 결제완료, 결제완료(부분 취소/환불완료), 전체 취소/환불완료 세 가지이며, 결제완료인 경우 상위 li의 클래스에 active 클래스가 붙습니다. (최아율, 191209) -->
+                        <dt class="destination">출발지/도착지 정보</dt>
+                        <dd>
+                            <dl class="destination__from-to">
+                                <dt class="from">출발지</dt>
+                                <dd><span class="text-ellipsis">인천</span> ICN</dd>
+                                <dt class="to">도착지</dt>
+                                <dd><span class="text-ellipsis">하노이</span> HAN</dd>
+                            </dl>
+                        </dd>
+                        <dt class="duration">여정일</dt>
+                        <dd>2019.09.30(월) - 2019.10.05(토)</dd>
+                    </dl>
+                </div>
+                <div class="customer-services">고객센터 : 1522-4148 (평일 09:30 ~ 17:00)</div>
+            </div>
+            <div class="area-wrap">
+                <h5 class="area-wrap__title">가는편 부가서비스 신청 내역</h5>
+                <ul class="detail-info">
+                    <li>
+                        <p class="title">Kim, Allwin</p>
+                        <table class="info-table">
+                            <caption class="blind">결제 금액</caption>
+                            <colgroup>
+                                <col>
+                                <col style="width:80px;">
+                                <col style="width:74px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>신청내역</th>
+                                <th>금액</th>
+                                <th>상태</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 좌석 : A15</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 수하물 : 20kg</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 기내식 : 오색비빔밥</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr><!-- 취소된 구매내역은 [.active] 클래스를 빼주고, 금액 란에 '결제취소' 텍스트를 뿌려줍니다. -->
+                                <td>라운지 : 쿠폰번호 A12345678</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 취소</td>
+                            </tr>
+                            <tr><!-- 취소된 구매내역은 [.active] 클래스를 빼주고, 금액 란에 '결제취소' 텍스트를 뿌려줍니다. -->
+                                <td>사전 수하물 : +20kg</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 취소</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="title">Bae, Sungjune</p>
+                        <table class="info-table">
+                            <caption class="blind">결제 금액</caption>
+                            <colgroup>
+                                <col>
+                                <col style="width:80px;">
+                                <col style="width:74px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>신청내역</th>
+                                <th>금액</th>
+                                <th>상태</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr><!-- 취소된 구매내역은 [.active] 클래스를 빼주고, 금액 란에 '결제취소' 텍스트를 뿌려줍니다. -->
+                                <td>사전 좌석 : A15</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 취소</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 수하물 : 20kg</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr><!-- 취소된 구매내역은 [.active] 클래스를 빼주고, 금액 란에 '결제취소' 텍스트를 뿌려줍니다. -->
+                                <td>사전 기내식 : 오색비빔밥</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 취소</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>라운지 : 쿠폰번호 A12345678</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 수하물 : +20kg</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+            <div class="area-wrap">
+                <h5 class="area-wrap__title">오는편 부가서비스 신청 내역</h5>
+                <ul class="detail-info">
+                    <li>
+                        <p class="title">Kim, Allwin</p>
+                        <table class="info-table">
+                            <caption class="blind">결제 금액</caption>
+                            <colgroup>
+                                <col>
+                                <col style="width:80px;">
+                                <col style="width:74px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>신청내역</th>
+                                <th>금액</th>
+                                <th>상태</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 좌석 : A15</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 수하물 : 20kg</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 기내식 : 오색비빔밥</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr><!-- 취소된 구매내역은 [.active] 클래스를 빼주고, 금액 란에 '결제취소' 텍스트를 뿌려줍니다. -->
+                                <td>라운지 : 쿠폰번호 A12345678</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 취소</td>
+                            </tr>
+                            <tr><!-- 취소된 구매내역은 [.active] 클래스를 빼주고, 금액 란에 '결제취소' 텍스트를 뿌려줍니다. -->
+                                <td>사전 수하물 : +20kg</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 취소</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <p class="title">Bae, Sungjune</p>
+                        <table class="info-table">
+                            <caption class="blind">결제 금액</caption>
+                            <colgroup>
+                                <col>
+                                <col style="width:80px;">
+                                <col style="width:74px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>신청내역</th>
+                                <th>금액</th>
+                                <th>상태</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr><!-- 취소된 구매내역은 [.active] 클래스를 빼주고, 금액 란에 '결제취소' 텍스트를 뿌려줍니다. -->
+                                <td>사전 좌석 : A15</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 취소</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 수하물 : 20kg</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr><!-- 취소된 구매내역은 [.active] 클래스를 빼주고, 금액 란에 '결제취소' 텍스트를 뿌려줍니다. -->
+                                <td>사전 기내식 : 오색비빔밥</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 취소</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>라운지 : 쿠폰번호 A12345678</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            <tr class="active"><!-- 취소되지 않은 구매내역은 [.active] 클래스를 붙여줍니다. -->
+                                <td>사전 수하물 : +20kg</td>
+                                <td class="price">999,000원</td>
+                                <td>결제 완료</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+	</div>
+</div>
+
+<!-- navigation layer -->
+<div class="navigation-layer">
+    <div class="nav-header">
+        <a href="#none" class="btn layer-close">
+            <img src="images/btn_close.png" width="14" height="14" alt="Close" />
+        </a>
+    </div>
+    <div class="nav-container">
+        <ul class="nav__1depth">
+            <li><a href="#none" target="_self">신청하기</a></li>
+            <li><a href="#none" target="_self">신청내역/취소</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    /* 191209 [.ui-fixed] 클래스 추가 (기획 수정으로 이 페이지만 .headerWrap이 고정되어야 해서 스크립트로 처리합니다.) */
+    $(window).on("load", function(){
+        $(".headerWrap").addClass("ui-fixed");
+    });
+</script>
+</body>
+</html>

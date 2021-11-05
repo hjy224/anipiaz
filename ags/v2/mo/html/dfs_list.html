@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>리스트 - 기내면세 예약</title>
+    <link rel="stylesheet" href="../resource/css/swiper.min.css">
+    <link rel="stylesheet" href="../resource/css/ags_mo_7c.css"><!-- 기내면세는 제주항공만 운영하므로 제주항공의 스타일시트만 사용합니다. -->
+    <script src="../resource/js/jquery-3.4.1.min.js"></script>
+    <script src="../resource/js/swiper.min.js"></script>
+    <script src="../resource/js/ags_mo.ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $win = $(window),
+                $doc = $(document);
+
+            var swiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+            /*팝업 불러오기*/
+            $("#popup").load("include/common_popup.html");
+            $("#dfs_popup").load("include/dfs_popup.html");
+
+            /* 좌석 선택 방식을 컨트롤 합니다. */
+            (function(seatHandler){
+                var $tabPanel = $(".ags-snb + .tab-panels .tab-panel");
+                $tabPanel.each(function(){
+                    var $thisPanel = $(this),
+                        $psgLists = $thisPanel.find("[data-select='passenger']")/*승객 선택 체크박스 전체*/,
+                        $selectSeats = $thisPanel.find("[data-select='seat']")/*좌석 선택 버튼 전체*/,
+                        $target = $selectSeats.find("a[class*='seat-']:not([class*='disabled']")/*비활성화 되지 않은 좌석 선택 버튼 전체*/;
+
+                    /*페이지 로드 시 첫번째 승객이 선택된 상태로 보이게 합니다*/
+                    $psgLists.find("li:first-child input[type='radio']").prop("checked", true);
+
+                    /*비활성화 되지 않은 좌석 선택 버튼을 클릭하면 다음 기능을 수행합니다*/
+                    $target.on("click", function(){
+                        var $this = $(this)/*클릭한 좌석 버튼*/,
+                            $checkedPsg = $psgLists.find($("input[type='radio']:checked"))/*현재 선택된 승객*/,
+                            $currentPsgLabel = $psgLists.find("input[type='radio']:checked ~ dl .selected-seat + dd")/*현재 선택된 승객의 좌석 텍스트*/,
+                            $checkedPsgName = $checkedPsg.parent("li").find(".passenger-name").next("dd").text()/*현재 선택된 승객의 성명*/;
+                        /*1. 승객의 좌석부여 상태별 IF 조건문*/
+                        if($this.attr("data-psg") === undefined || $this.attr("data-psg") === "")
+                            /*1-1. 해당 승객이 아무런 좌석을 부여받지 않은 상태일 때, 선택한 좌석을 부여합니다*/{
+                            /*좌석버튼 가운데 해당 승객의 이름으로 마크된 좌석이 있을 경우, 좌석 부여를 취소합니다*/
+                            $selectSeats.find("a[data-psg='" + $checkedPsgName + "']").attr("data-psg", "").removeClass("active");
+                            /*선택한 좌석버튼을 활성화하고 data-psg 값에 현재 체크된 승객명을 구분자로 부여합니다*/
+                            $this.addClass("active").attr("data-psg", $checkedPsgName);
+                            /*현재 선택된 승객의 좌석 텍스트를 선택된 좌석 텍스트로 입력한 후 '삭제'버튼을 추가합니다*/
+                            if($checkedPsg.siblings("dl").find("[class*='bundle-type']:not(.bundle-type0)").length !== 0){
+                                /*번들 고객이라면*/
+                                /*현재 선택된 승객의 좌석 텍스트를 선택된 좌석정보를 입력한 후 '삭제'버튼을 추가합니다*/
+                                $currentPsgLabel.html("<span>" + $this.text().split("/")[0] + "</span><a href='#none' target='_self' class='btn_delete'>삭제</a>");
+                            } else {
+                                /*번들 고객이 아니라면*/
+                                /*현재 선택된 승객의 좌석 텍스트를 선택된 좌석정보 + 가격정보를 입력한 후 '삭제'버튼을 추가합니다*/
+                                $currentPsgLabel.html("<span>" + $this.text() + "</span><a href='#none' target='_self' class='btn_delete'>삭제</a>");
+                            }
+                        } else if($this.attr("data-psg") === $checkedPsgName)
+                            /*1-2. 선택한 좌석이 해당 승객에게 이미 부여된 상태일 때, 좌석 부여를 취소합니다*/{
+                            /*선택한 좌석과 동일한 좌석 텍스트를 삭제합니다*/
+                            $(".tab-panel.active .selected-seat + dd").each(function(){
+                                if($(this).find("span").text() ===  $this.text()){
+                                    $(this).html("");
+                                }
+                            });
+                            /*선택한 좌석을 비활성화하고, data-psg 값을 비워줍니다*/
+                            $this.removeClass("active").attr("data-psg", "");
+                        } else
+                            /*1-3. 선택한 좌석이 다른 승객에게 부여된 좌석일 때, 현재 승객에게 좌석을 새로이 부여합니다*/{
+                            /*선택한 좌석과 동일한 좌석 텍스트를 삭제합니다*/
+                            $(".tab-panel.active .selected-seat + dd").each(function(){
+                                if($(this).find("span").text() === $this.text()){
+                                    $(this).html("");
+                                }
+                            });
+                            /*좌석버튼 가운데 해당 승객의 이름으로 마크된 좌석이 있을 경우, 좌석 부여를 취소합니다*/
+                            $selectSeats.find("a[data-psg='" + $checkedPsgName + "']").attr("data-psg", "").removeClass("active");
+                            /*클릭한 좌석 버튼을 활성화하고 data-psg 값에 현재 체크된 승객명을 구분자로 부여합니다*/
+                            $this.addClass("active").attr("data-psg", $checkedPsgName);
+                            /*현재 선택된 승객의 좌석 텍스트를 선택된 좌석 텍스트로 입력한 후 '삭제'버튼을 추가합니다*/
+                            $currentPsgLabel.html("<span>" + $this.text() + "</span><a href='#none' target='' class='btn_delete'>삭제</a>");
+                        }
+
+                        /*2. IF문을 처리한 이후 다음 승객으로 포커스 이동*/
+                        if($checkedPsg.parent("li").next("li").length > 0) {
+                            setTimeout(function(){
+                                /*다음 승객이 존재하면 다음 승객으로 포커스를 넘깁니다*/
+                                $checkedPsg.parent("li").next("li").find("input[type='radio']").prop("checked", true);
+                                /*포커스를 가진 승객이 화면 좌측에 위치할 수 있도록 스크롤을 이동합니다*/
+                                activeLinkScrollLeft($checkedPsg.parent("li").next("li"), $psgLists.parent(".passenger-wrap"), 800);
+                            }, 1000);
+                        } else if ($checkedPsg.parent("li").next("li").length === 0) {
+                            /*다음 승객이 없고 다음 탭이 있을 경우, 하단 프로세스 버튼 영역으로 포커스를 내려줍니다*/
+                            fixedElHeight = 0 + 32;
+                            $("[data-ui='fixed']").each(function(){
+                                fixedElHeight += $(this).outerHeight();
+                            });
+                            setTimeout(function() {
+                                $("html").animate({
+                                    scrollTop: $(".tab-panel.active [data-role='process-btn-wrap']").offset().top - fixedElHeight
+                                }, 750);
+                            }, 1000)
+                        }
+                    });
+
+                    /*승객에게 좌석을 부여한 뒤, 좌석 텍스트 뒤에 붙는 삭제(X)버튼의 기능을 정의합니다*/
+                    $thisPanel.on("click", ".btn_delete", function(){
+                        var $this = $(this)/*클릭한 삭제버튼*/;
+                        owner = $this.parents("dl").find(".passenger-name + dd").text()/*클릭한 삭제버튼이 작동할 승객의 성명*/;
+
+                        /*승객의 성명으로 마킹된 좌석을 찾아 마킹을 지워줍니다*/
+                        $(".tab-panel.active .seat-num a.active[data-psg='" + owner + "']").attr("data-psg", "").removeClass("active");
+
+                        /*해당 승객에게 포커스를 맞춰줍니다*/
+                        $this.closest("dl").siblings("input[type='radio']").prop("checked", true);
+                        activeLinkScrollLeft($this.closest("li"), $psgLists.parent(".passenger-wrap"), 800);
+
+                        /*승객의 좌석 텍스트를 삭제합니다*/
+                        $this.parent("dd").html("")
+                    });
+                });
+            })();
+
+            /* 선택한 상품 수량체크 애니메이션 핸들링 */
+            (function(){
+                $(".tabs_categories + .tab-panels input[type='checkbox']").on("change", function(){
+                    var count = $(".tabs_categories + .tab-panels input[type='checkbox']:checked").length,
+                        $target = $("#ags-summary .count-bubble");
+                    if(count === 0){
+                        /*선택된 상품이 0개일 때*/
+                        $target.addClass("hide")
+                        setTimeout(function(){
+                            $target.removeClass("hide active").children(".ico").text(count)
+                        }, 550)
+                    } else if(count === 1 && $target.hasClass("active") === true) {
+                        /*선택된 상품이 1개이며, 이미 활성화(show)된 이력이 있을 때*/
+                        $target.addClass("active add").children(".ico").text(count)
+                        setTimeout(function(){
+                            $target.removeClass("add")
+                        }, 350)
+                    } else if(count === 1 && $target.hasClass("active") === false) {
+                        /*선택된 상품이 1개이며, 활성화(show)된 이력이 없을 때*/
+                        $target.addClass("active show").children(".ico").text(count)
+                        setTimeout(function(){
+                            $target.removeClass("show")
+                        }, 550)
+                    } else if(count > 1) {
+                        /*선택된 상품이 2개 이상일 때*/
+                        $target.addClass("add").children(".ico").text(count)
+                        setTimeout(function(){
+                            $target.removeClass("add")
+                        }, 350)
+                    }
+                });
+            })();
+        });
+    </script>
+</head>
+<body>
+<div id="ags-wrap" class="ags-wrap">
+    <h1 class="site-name">올윈에어</h1>
+
+    <!-- ags-header -->
+    <header id="ags-header" class="ags-header">
+        <h2 class="page-name"><a href="#nav-shortcut" target="_self" id="btn_nav-shortcut" class="btn_nav-shortcut">기내면세 예약 <i class="ico_nav-dropdown"></i></a></h2>
+        <div id="nav-shortcut" class="nav-shortcut"><!-- 부가서비스 신청 텍스트 클릭 시 .active 추가 -->
+            <ul>
+                <li><a href="buy_seat.html" target="_self">부가서비스 사전구매</a></li>
+                <li class="active"><a href="#none" target="_self">기내면세 예약</a></li><!-- 현재 활성화된 메뉴에 .active -->
+            </ul>
+        </div>
+        <nav class="ags-gnb">
+            <h3 class="sr-only">전역메뉴</h3>
+            <ul class="gnb-wrap">
+                <!--<li><a href="#none" target="_self" class="btn_back">뒤로가기</a></li>--><!--본 페이지는 뒤로가기 버튼이 제공되지 않습니다.-->
+                <li>
+                    <a href="#none" target="_self" id="btn_gnb" class="btn_gnb">메뉴</a>
+                    <div id="gnb-2dp" class="gnb-2dp-wrap">
+                        <a href="#none" target="_self" id="btn_gnb-close" class="btn_close">메뉴 닫기</a>
+                        <p class="welcome-msg">
+                            안녕하세요!<br>
+                            <span class="customer-name">Bae, Sungjune</span>님
+                        </p>
+                        <ul class="depth1">
+                            <li><a href="#none" target="_self">항공 부가서비스 사전 신청</a></li>
+                            <li class="new active"><a href="#none" target="_self">기내 면세품 예약</a></li><!-- 활성화된 메뉴는 .active -->
+                            <li>
+                                <a href="#none" target="_self">마이페이지</a>
+                                <ul class="depth2">
+                                    <li><a href="#none" target="_self">부가서비스 신청내역</a></li>
+                                    <li><a href="#none" target="_self">기내 면세품 예약내역</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="fnb">
+                            <li><a href="#none" target="_self">개인정보취급방침</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#none" target="_self" class="btn_close">화면 닫기</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //ags-header -->
+
+    <hr>
+
+    <!-- ags-container -->
+    <div class="ags-container">
+        <section class="ags-contents" data-page-id="dfs__list">
+            <h3 class="sr-only">컨텐츠</h3>
+
+
+            <!-- 상품 선택 탭 -->
+            <div class="tab-wrap">
+                <h4 class="sr-only">상품 리스트</h4>
+
+                <!-- 탭버튼 -->
+                <div class="tabs tabs_categories">
+                    <ul role="tablist">
+                        <li role="tab" aria-controls="tab-panel1" class="active">ALL</li>
+                        <li role="tab" aria-controls="tab-panel2">주류</li>
+                        <li role="tab" aria-controls="tab-panel3">화장품</li>
+                        <li role="tab" aria-controls="tab-panel4">가방/지갑</li>
+                        <li role="tab" aria-controls="tab-panel5">시계/주얼리</li>
+                    </ul>
+                </div>
+                <!-- //탭버튼 -->
+
+                <!-- 탭 컨텐츠 묶음 -->
+                <div class="tab-panels">
+                    <div class="align-horizontal">
+                        <!-- ALL 탭 컨텐츠 -->
+                        <div id="tab-panel1" class="tab-panel active" role="tabpanel">
+                            <h5 class="sr-only">ALL</h5>
+
+                            <!-- ALL 상품 리스트 -->
+                            <div class="dfs-products-wrap">
+                                <p class="list-description">원하는 면세상품을 선택하세요.</p>
+                                <ul class="dfs-products-list">
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>발렌타인</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>발렌타인 23년</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000750909_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">146</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">170800</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check01" class="input_select" name="input-group1"><label for="input-check01"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>잭다니엘</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>American Whiskey Miniature Set</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000740863_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">26</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">30800</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check02" class="input_select" name="input-group1"><label for="input-check02"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>발렌타인</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>30년 캐스크 에디션 배치 2,500ml</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000684211_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">355</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">415500</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check03" class="input_select" name="input-group1"><label for="input-check03"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd></dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>까뮤</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>VSOP ELEGANCE</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000662257_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">43</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">50300</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check04" class="input_select" name="input-group1"><label for="input-check04"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd></dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>조니워커</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>블루 라벨</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000750909_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">149</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">174300</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check05" class="input_select" name="input-group1"><label for="input-check05"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //ALL 상품 리스트 -->
+
+                        </div>
+                        <!-- //ALL 탭 컨텐츠 -->
+
+                        <!-- 주류 탭 컨텐츠 -->
+                        <div id="tab-panel2" class="tab-panel" role="tabpanel">
+                            <h5 class="sr-only">주류</h5>
+
+                            <!-- 주류 리스트 -->
+                            <div class="dfs-products-wrap">
+                                <p class="list-description">원하는 면세상품을 선택하세요.</p>
+                                <ul class="dfs-products-list">
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>발렌타인</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>발렌타인 23년</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000750909_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">146</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">170800</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check11" class="input_select" name="input-group11"><label for="input-check11"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>잭다니엘</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>American Whiskey Miniature Set</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000740863_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">26</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">30800</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check12" class="input_select" name="input-group11"><label for="input-check12"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>발렌타인</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>30년 캐스크 에디션 배치 2,500ml</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000684211_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">355</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">415500</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check13" class="input_select" name="input-group11"><label for="input-check13"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>까뮤</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>VSOP ELEGANCE</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000662257_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">43</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">50300</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check14" class="input_select" name="input-group11"><label for="input-check14"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>조니워커</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>블루 라벨</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000750909_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">149</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">174300</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check15" class="input_select" name="input-group11"><label for="input-check15"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //주류 리스트 -->
+
+                        </div>
+                        <!-- //주류 탭 컨텐츠 -->
+
+                        <!-- 화장품 탭 컨텐츠 -->
+                        <div id="tab-panel3" class="tab-panel" role="tabpanel">
+                            <h5 class="sr-only">화장품</h5>
+
+                            <!-- 화장품 리스트 -->
+                            <div class="dfs-products-wrap">
+                                <p class="list-description">원하는 면세상품을 선택하세요.</p>
+                                <ul class="dfs-products-list">
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>발렌타인</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>발렌타인 23년</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000750909_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">146</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">170800</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check21" class="input_select" name="input-group11"><label for="input-check21"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //화장품 리스트 -->
+
+                        </div>
+                        <!-- //화장품 탭 컨텐츠 -->
+
+                        <!-- 가방/지갑 탭 컨텐츠 -->
+                        <div id="tab-panel4" class="tab-panel" role="tabpanel">
+                            <h5 class="sr-only">가방/지갑</h5>
+
+                            <!-- 가방/지갑 리스트 -->
+                            <div class="dfs-products-wrap">
+                                <p class="list-description">원하는 면세상품을 선택하세요.</p>
+                                <ul class="dfs-products-list">
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>발렌타인</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>발렌타인 23년</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000750909_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">146</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">170800</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check31" class="input_select" name="input-group11"><label for="input-check31"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //가방/지갑 리스트 -->
+
+                        </div>
+                        <!-- //가방/지갑 탭 컨텐츠 -->
+
+                        <!-- 시계/주얼리 탭 컨텐츠 -->
+                        <div id="tab-panel5" class="tab-panel" role="tabpanel">
+                            <h5 class="sr-only">시계/주얼리</h5>
+
+                            <!-- 시계/주얼리 리스트 -->
+                            <div class="dfs-products-wrap">
+                                <p class="list-description">원하는 면세상품을 선택하세요.</p>
+                                <ul class="dfs-products-list">
+                                    <li>
+                                        <dl class="product-info">
+                                            <dt class="product-tag">상품 태그</dt>
+                                            <dd>
+                                                <span class="sale">20% Sale</span>
+                                                <span class="new">New</span>
+                                            </dd>
+                                            <dt class="brand">브랜드</dt>
+                                            <dd>발렌타인</dd>
+                                            <dt class="product-name">상품명</dt>
+                                            <dd>발렌타인 23년</dd>
+                                            <dt class="thumbnail">상품 이미지</dt>
+                                            <dd><img src="../resource/img/dfs/2590000750909_OR.jpg" alt=""></dd>
+                                            <dt class="price-usd">가격(USD, $)</dt>
+                                            <dd><span class="digits">146</span></dd>
+                                            <dt class="price-krw">가격(원, ₩)</dt>
+                                            <dd><span class="digits">170800</span></dd>
+                                        </dl>
+                                        <input type="checkbox" id="input-check41" class="input_select" name="input-group11"><label for="input-check41"><i class="ico"></i>선택하기</label>
+                                        <a href="#none" class="btn_more" data-popup="#pop_dfs-product-detail">상품 자세히보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //시계/주얼리 리스트 -->
+
+                        </div>
+                        <!-- //시계/주얼리 탭 컨텐츠 -->
+                    </div>
+                </div>
+                <!-- //탭 컨텐츠 묶음 -->
+
+            </div>
+            <!-- //상품 선택 탭 -->
+
+            <div class="exchange">
+                <dl>
+                    <dt>오늘의 환율</dt>
+                    <dd>$ 1 = <span class="digits">1230.3</span>원</dd>
+                </dl>
+            </div>
+        </section>
+    </div>
+    <!-- //ags-container -->
+
+    <hr>
+
+    <!-- ags-summary -->
+    <footer id="ags-summary" class="ags-summary">
+        <h4 class="sr-only">기내면세 상품 선택 현황</h4>
+        <a href="#none" target="_self" class="btn_drawer" data-popup="#pop_dfs-summary"><i class="ico"></i>기내면세 상품 선택 현황 슬라이드 열기/닫기</a>
+        <div class="inner-wrap">
+            <div class="total">
+                <h5 class="sr-only">선택 상품 기능</h5>
+                <dl>
+                    <dt><a href="#none" target="_self" data-popup="#pop_dfs-summary">선택한 상품</a></dt>
+                    <!--
+                        선택함에 상품이 담기거나 빠질 때 갯수를 표시하는 카운트 버블에 애니메이션을 줍니다.
+                        사용자 액션에 따라 클래스를 붙이거나 삭제합니다.
+                        1. 선택된 상품이 없을 때 dd class="count-bubble"
+                        2. 1의 상태에서 상품이 선택 되었을 때 dd class="count-bubble active show"
+                        3. 2의 상태에서 상품이 추가 선택 되었을 때 dd class="count-bubble active add"
+                        4. 1 또는 2의 상태에서 상품이 모두 선택해제 되어 선택함에 담긴 상품 갯수가 0이 되었을 때 dd class="count-bubble active hide"
+                        * show, add, hide는 애니메이션이 종료된 후 삭제됩니다.
+                        * hide가 삭제될 때에는 active도 함께 삭제됩니다.
+                        * 문서 최상단 <script> 참조
+                    -->
+                    <dd class="count-bubble"><span class="ico">5</span></dd>
+                    <dd><button type="button" class="btn_resv-imm" data-popup="#pop_dfs-summary">다음</button></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <!-- //ags-summary -->
+</div>
+
+
+
+<!-- POPUP include -->
+<div id="common_popup"></div>
+<div id="dfs_popup"></div>
+</body>
+</html>

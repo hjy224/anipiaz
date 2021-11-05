@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>Buy_Lounge</title>
+	<meta name="keywords" content="">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css" media="screen" />
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="pageWrap wrapper">
+	<div class="contentContainer lounge">
+		<div class="headerWrap">
+			<div class="systemWrap">
+				<p class="title">부가서비스</p>
+				<a href="" class="btn back">
+					<img src="images/btn_back.png" width="16" height="16" alt="Back" />				
+				</a>
+				<a href="" class="btn close">
+					<img src="images/btn_close.png" width="14" height="14" alt="Close" />
+				</a>
+			</div>
+            <!-- 부가서비스별 아이콘 버튼화 작업에 따른 코드 숨김처리, 200206 최아율 -->
+            <!--<div class="titleWrap">
+                <p class="title">1. 사전 좌석 구매</p>
+                <ul class="step">
+                    <li class="on">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>-->
+            <!-- 부가서비스별 아이콘 버튼화 작업에 따른 코드 추가, 200206 최아율 -->
+            <div class="services-nav">
+                <ul>
+                    <li><a href="#none" target="_self" class="btn_services-seat">좌석지정</a></li>
+                    <li><a href="#none" target="_self" class="btn_services-baggage">수하물</a></li>
+                    <li><a href="#none" target="_self" class="btn_services-meals">기내식</a></li>
+                    <li class="active"><a href="#none" target="_self" class="btn_services-lounge">라운지</a></li>
+                </ul>
+            </div>
+		</div>
+		<div class="selectWrap">
+			<div class="scheduleWrap">
+				<div class="swiper-container schedule">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="from">
+								<span>icn</span>인천
+							</div>
+							<div class="info">
+								<p>가는 편</p>
+								<ul>
+									<li>제주항공 TW715</li>
+									<li class="shape">
+										<img src="images/img_shape.png" width="15" height="15" alt="" />
+									</li>
+									<li>2019. 11. 16</li>
+								</ul>
+							</div>
+							<div class="to">
+								<span>han</span>하노이
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="from">
+								<span>han</span>하노이
+							</div>
+							<div class="info">
+								<p>오는 편</p>
+								<ul>
+									<li>제주항공 TW715</li>
+									<li class="shape">
+										<img src="images/img_shape.png" width="15" height="15" alt="" />
+									</li>
+									<li>2019. 11. 16</li>
+								</ul>
+							</div>
+							<div class="to">
+								<span>icn</span>인천
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+		<div class="choiceWrap">
+			<div class="titleWrap">
+				<p class="title">라운지 이용권 선택하기</p>
+				<!--<div class="btnWrap">
+					<a href="" class="btn">라운지 이용권 상세 보기</a>
+				</div>-->
+			</div>
+			<div class="infoWrap">
+                <p>
+                    여행고수들이 찾는 인천공항 JJ라운지!<br>
+                    <strong><u>주방장특식 + 빵/샐러드 + 디저트 + 커피/음료 + 무제한 맥주</u></strong>를<br>
+                    JJ라운지 오픈 기념가 16,900원으로 즐겨보세요.
+                </p>
+				<ul>
+                    <li>구매채널 : 온라인 사전구매만(현장구매 불가)</li>
+                    <li>이용가능일 : 2020년 3월 20일(탑승일)</li>
+                </ul>
+			</div>
+            <!-- 200207 라운지 이용권 홍보 갤러리 코드 수정 -->
+            <div class="loungeSlideWrap">
+                <dl class="common-info">
+                    <dt class="lounge-price">가격</dt>
+                    <dd>₩16,900</dd>
+                    <dt class="lounge-price-info">가격 부가 정보</dt>
+                    <dd>오픈기념 32% 할인가</dd>
+                </dl>
+                <div class="swiper-container loungeSlide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                이 다양한 음식이<br>
+                                무제한
+                            </h4>
+                            <img src="images/img_jj-lounge01.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                주방장 특식과 시원한 맥주<br>
+                                한 모금부터...
+                            </h4>
+                            <img src="images/img_jj-lounge02.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                상큼한 샐러드와<br>
+                                갓 구운 샌드위치를 곁들여...
+                            </h4>
+                            <img src="images/img_jj-lounge03.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                한식, 양식, 디저트<br>
+                                남녀노소 함께 즐겨요
+                            </h4>
+                            <img src="images/img_jj-lounge04.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                구수한<br>
+                                커피 향까지...
+                            </h4>
+                            <img src="images/img_jj-lounge05.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                이제 나만을 위한<br>
+                                릴렉스 타임!
+                            </h4>
+                            <img src="images/img_jj-lounge06.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                세심한 배려,<br>
+                                배터리 걱정 끝!!
+                            </h4>
+                            <img src="images/img_jj-lounge07.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                탑승하러 가는 길목<br>
+                                대한항공 라운지 10m 옆
+                            </h4>
+                            <img src="images/img_jj-lounge08.jpg" alt="">
+                        </li>
+                        <li class="swiper-slide">
+                            <h4 class="slide-title">
+                                여기가 바로<br>
+                                가성비 성지 JJ라운지!
+                            </h4>
+                            <img src="images/img_jj-lounge09.jpg" alt="">
+                        </li>
+                    </ul>
+                    <div class="slide-controller">
+                        <a href="#none" class="loungeSlide-prev">이전</a>
+                        <a href="#none" class="loungeSlide-next">다음</a>
+                    </div>
+                </div>
+                <div class="lounge-food">
+                    <ul>
+                        <li>뷔페식</li>
+                        <li>빵/샐러드</li>
+                        <li>디저트</li>
+                        <li>커피/음료</li>
+                        <li>맥주</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //200207 라운지 이용권 홍보 갤러리 코드 수정 -->
+            <div class="priceWrap">
+                <div class="titleWrap">
+                    <p class="title">가격정보 확인</p>
+                </div>
+                <ul class="priceList">
+                    <li>
+                        성인 (만 12세 이상)
+                        <dl>
+                            <dt>정가</dt>
+                            <dd>25,000원</dd>
+                            <dt>할인가</dt>
+                            <dd>16,900원</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        소아 (만 12세 이하)
+                        <dl>
+                            <dt>정가</dt>
+                            <dd>15,000원</dd>
+                            <dt>할인가</dt>
+                            <dd>9,900원</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        유아 (2세 미만)
+                        <dl>
+                            <dt>정가</dt>
+                            <dd>무료</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+			<div class="passengerList">
+                <div class="titleWrap">
+                    <p class="title">라운지 이용 탑승객 선택</p>
+                </div>
+				<ul>
+					<li>
+                        <span class="passengerAge">성인</span><!-- 191223 라운지 가격정보 추가에 따른 고객 연령정보 추가 -->
+						<p class="passenger">Kim, Allwin</p>
+						<span class="inputWrap">
+							<input type="checkbox" name="" id="lounge01" />
+							<label for="lounge01">선택하기</label>
+						</span>	
+					</li>
+					<li>
+                        <span class="passengerAge">성인</span><!-- 191223 라운지 가격정보 추가에 따른 고객 연령정보 추가 -->
+						<p class="passenger">BAE, SUNGJUNE</p>
+						<span class="inputWrap">
+							<input type="checkbox" name="" id="lounge02" checked="checked" />
+							<label for="lounge02">선택하기</label>
+						</span>	
+					</li>
+					<li>
+                        <span class="passengerAge">성인</span><!-- 191223 라운지 가격정보 추가에 따른 고객 연령정보 추가 -->
+						<p class="passenger">Lee, Nayoen</p>
+						<span class="inputWrap">
+							<input type="checkbox" name="" id="lounge03" />
+							<label for="lounge03">선택하기</label>
+						</span>	
+					</li>
+					<li>
+                        <span class="passengerAge">성인</span><!-- 191223 라운지 가격정보 추가에 따른 고객 연령정보 추가 -->
+						<p class="passenger">Kang, Seulgi</p>
+						<span class="inputWrap">
+							<input type="checkbox" name="" id="lounge04" />
+							<label for="lounge04">선택하기</label>
+						</span>	
+					</li>
+					<li>
+                        <span class="passengerAge">성인</span><!-- 191223 라운지 가격정보 추가에 따른 고객 연령정보 추가 -->
+						<p class="passenger">Kim, Taehyeong</p>
+						<span class="inputWrap">
+							<input type="checkbox" name="" id="lounge05" />
+							<label for="lounge05">선택하기</label>
+						</span>	
+					</li>
+					<li>
+                        <span class="passengerAge">성인</span><!-- 191223 라운지 가격정보 추가에 따른 고객 연령정보 추가 -->
+						<p class="passenger">Bae, Juhyeon</p>
+						<span class="inputWrap">
+							<input type="checkbox" name="" id="lounge06" />
+							<label for="lounge06">선택하기</label>
+						</span>	
+					</li>
+					<li>
+                        <span class="passengerAge">소아</span><!-- 191223 라운지 가격정보 추가에 따른 고객 연령정보 추가 -->
+						<p class="passenger">Park, Jimin</p>
+						<span class="inputWrap">
+							<input type="checkbox" name="" id="lounge07" />
+							<label for="lounge07">선택하기</label>
+						</span>	
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="finalWrap">
+            <div class="infoWrap">
+                <!-- 문구 수정, 200211 최아율-->
+                <dl>
+                    <dt>꼭 읽어보세요!</dt>
+                    <dd>JJ 라운지 이용은 제주항공 운항 편 탑승시에 한하여 사용 가능합니다.</dd>
+                    <dd>JJ 라운지 이용권 구매는 이용(탑승)일 전일 23시 50분까지 구매 가능합니다.</dd>
+                    <dd>모든 JJ 라운지는 출발 운항편을 기준하여 반드시 제주항공 출발 예정일의 탑승권을 소지하셔야 합니다.</dd>
+                    <dd>온라인 사전 구매 시 반드시 지정 사용일자에만 이용 가능합니다. (운영시간 : 06시~22시)</dd>
+                    <dt>취소/환불 규정</dt>
+                    <dd>해당 JJ 라운지 이용권은 미사용시 자동소멸 되며, 환불처리 되지 않습니다.</dd>
+                    <dd>구매 시 지정한 이용일 전일 23시 50분까지 취소/환불이 가능 합니다.</dd>
+                </dl>
+                <!-- //문구 수정, 200211 최아율-->
+            </div>
+			<div class="btnWrap double">
+				<a href="#" class="btn">이전</a>
+				<input type="button" name="" id="" class="btn" value="부가서비스 결제하기" />
+			</div>
+		</div>
+	</div>
+	<div class="paySummaryContainer close">
+		<div class="moreWrap">
+			<p class="moreBtn">
+				<img src="images/btn_summary.png" width="10" height="5" alt="" />
+			</p>
+			<div class="paySummaryWrap">
+				<dl>
+					<dt>부가서비스 총 결제금액</dt>
+					<dd>999,900원</dd>
+				</dl>
+				<div class="detailWrap">
+					<ul class="payDetail">
+						<li>
+							<p class="title">Kim, Allwin</p>
+							<table summary="결제 금액">
+								<caption class="blind">결제 금액</caption>
+								<colgroup>
+									<col style="width:22%;"/>
+									<col />
+									<col style="width:28%;"/>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구간</th>
+										<th>부가서비스 신청</th>
+										<th>금액</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<th colspan="2">결제금액</th>
+										<td>99,000원</td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td>가는편</td>
+										<td>
+											비상구 좌석 : A15<br />
+											수하물 : 20kg<br />
+											기내식 : 오색비빔밥<br />
+											라운지 이용권
+										</td>
+										<td>69,000원</td>
+									</tr>
+									<tr>
+										<td>오는편</td>
+										<td>수하물 : 20kg</td>
+										<td>30,000원</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<p class="title">Bae, Sungjune</p>
+							<table summary="결제 금액">
+								<caption class="blind">결제 금액</caption>
+								<colgroup>
+									<col style="width:22%;"/>
+									<col />
+									<col style="width:28%;"/>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구간</th>
+										<th>부가서비스 신청</th>
+										<th>금액</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<th colspan="2">결제금액</th>
+										<td>99,000원</td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td>가는편</td>
+										<td>
+											A구역 좌석 : E3<br />
+											라운지 이용권
+										</td>
+										<td>24,900원</td>
+									</tr>
+									<tr>
+										<td>오는편</td>
+										<td>
+											수하물 : 20kg<br />
+											기내식 : 패밀리세트
+										</td>
+										<td>54,900원</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<p class="title">Lee, Nayoen</p>
+							<table summary="결제 금액">
+								<caption class="blind">결제 금액</caption>
+								<colgroup>
+									<col style="width:22%;"/>
+									<col />
+									<col style="width:28%;"/>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구간</th>
+										<th>부가서비스 신청</th>
+										<th>금액</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<th colspan="2">결제금액</th>
+										<td>99,000원</td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td>가는편</td>
+										<td>
+											수하물 : 20kg<br />
+											라운지 이용권											
+										</td>
+										<td>99,900원</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="moreDimmed"></div>
+	</div>
+</div>
+<script>
+	var swiper = new Swiper('.schedule', {
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: '.swiper-pagination',
+		},
+	});
+
+    var swiper2 = new Swiper('.loungeSlide', {
+        navigation: {
+            nextEl: '.loungeSlide-next',
+            prevEl: '.loungeSlide-prev',
+        },
+        pagination: false,
+        loop: true
+    });
+</script>
+</body>
+</html>

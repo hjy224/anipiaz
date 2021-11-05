@@ -1,0 +1,1398 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>티웨이항공 부가서비스 구매하기 - AGS PC</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<div class="headerContainer main">
+		<div class="headerWrap">
+			<div class="header">
+				<h1>
+                    <span><img src="images/header-logo_tway@2x.jpg" alt="티웨이항공"></span><span><img src="images/header-logo_onlinetour@2x.jpg" alt="온라인투어"></span>
+                    <!--<span><img src="images/header-logo_tway@2x.jpg" alt="티웨이항공"></span><span><img src="images/header-logo_modetour@2x.jpg" alt="모두투어"></span>-->
+                    <!--<span><img src="images/header-logo_tway@2x.jpg" alt="티웨이항공"></span><span><img src="images/header-logo_ybtour@2x.jpg" alt="노랑풍선"></span>-->
+                    <!--<span><img src="images/header-logo_tway@2x.jpg" alt="티웨이항공"></span><span><img src="images/header-logo_wpm@2x.jpg" alt="와이페이모어"></span>-->
+				</h1>
+				<ul>
+					<li><a href="#none" target="_self">항공 부가서비스 구매하기</a></li>
+					<li><a href="#none" target="_self">구매내역/취소</a></li>
+					<li><a href="#none" target="_self">고객센터</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="anchorWrap">
+			<ul>
+				<li><a href="#anchor_seat">사전 좌석 구매</a></li>
+				<li><a href="#anchor_baggage">사전 수하물 구매</a></li>
+				<li><a href="#anchor_meal">사전 기내식 구매</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="bodyWrap">
+		<div class="summaryContainer">
+            <!-- 왕복 항공권일 때 -->
+			<div class="summaryWrap">
+				<p class="welcome">배성준 고객님, 하네다로 여행을 준비하고 계시군요.</p>
+				<div class="fromtoWrap">
+					<span>인천</span>(ICN)
+					<img src="images/summary02@2x.png" width="26" height="23" alt="">
+					<span>하네다</span>(HND)
+					<img src="images/summary01@2x.png" width="20" height="15" alt="">
+					<span>여정3</span>(HND)
+				</div>
+				<p class="date">왕복 / 2019.11.16 출국 ~ 2019.11.23 귀국 / 탑승객 : BAE, SUNGJUNE님 외 7명</p>
+			</div>
+            <!-- 다구간 항공권일 때 -->
+            <!--<div class="summaryWrap">
+                <p class="welcome">배성준 고객님, 하네다로 여행을 준비하고 계시군요.</p>
+                <div class="fromtoWrap">
+                    <span>인천</span>(ICN)
+                    <img src="images/summary01@2x.png" width="20" height="15" alt="">
+                    <span>하네다</span>(HND)
+                </div>
+                <div class="fromtoWrap">
+                    <span>후쿠오카</span>(FUK)
+                    <img src="images/summary01@2x.png" width="20" height="15" alt="">
+                    <span>인천</span>(ICN)
+                </div>
+                <p class="date">왕복 / 2019.11.16(화) 출국 ~ 2019.11.23(화) 귀국 / 탑승객 : BAE, SUNGJUNE님 외 7명</p>
+            </div>-->
+		</div>
+		<div class="allwinContents">
+			<div class="contentsContainer">
+				<h2>티웨이 부가서비스</h2>
+				<div class="tabContainer">
+                    <!-- 왕복 항공권일 때 -->
+					<ul id="fixedTabs" class="tabSelect item02 fixed-tabs">
+						<li class="on">인천<span></span>하네다 <i class="flight-num">TW667</i></li>
+						<li>하네다<span></span>인천 <i class="flight-num">TW667</i></li>
+					</ul>
+                    <!-- //왕복 항공권일 때 -->
+                    <!-- 다구간 항공권일 때 -->
+                    <!--<ul id="fixedTabs" class="tabSelect item02 fixed-tabs">
+                        <li class="on">구간1 <i class="flight-num">TW667</i></li>
+                        <li>구간2 <i class="flight-num">TW667</i></li>
+                    </ul>-->
+                    <!-- //다구간 항공권일 때 -->
+					<div class="contentsWrap">
+						<div class="contents seat" id="anchor_seat">
+							<h3>1. 사전 좌석 구매</h3>
+							<p class="info">
+                                <strong>맨 앞자리 / 비상구 / 함께 앉기를 원하십니까?</strong><br>
+                                인기좌석은 조기매진 될 수 있어요.<br>
+                                좌석을 미리 선택하면, 공항에 일찍 갈 필요없이 시간이 절약됩니다.
+                            </p>
+                            <!-- 사전 좌석 지정 서비스를 구매할 수 없을 경우 -->
+                            <div class="notSale noneLounge">
+								<p class="title">항공기 출발 시간이 임박하여<br>해당 서비스를 예약할 수 없습니다.</p>
+								<ul>
+                                    <li>- 사전 좌석 예약 : 출발 24시간 전까지만 구매 가능합니다.</li>
+                                    <li>- 사전 수하물 구매 : 첫 구간 출발 24시간 전까지만 구매 가능합니다.</li>
+                                    <li>- 사전 기내식 주문 : 출발 3일 전까지 1인당 1메뉴에 한해 사전 주문이 가능합니다.</li>
+								</ul>
+							</div>
+                            <!-- 사전 좌석 지정 서비스를 구매할 수 없을 경우 -->
+							<div class="priceInfo">
+								<p class="title">사전 좌석 구매 요금 정보</p>
+								<ul>
+									<li>
+										<p>프리미엄 존</p>
+										<span>15,000원</span>
+									</li>
+									<li>
+										<p>세미 프리미엄 존</p>
+										<span>10,000원</span>
+									</li>
+									<li>
+										<p>프론트 존</p>
+										<span>5,000원</span>
+									</li>
+                                    <li>
+                                        <p>스탠다드 존</p>
+                                        <span>3,000원</span>
+                                    </li>
+								</ul>
+							</div>
+							<div class="seatSelectWrap">
+								<div class="passengerWrap">
+									<p class="title">먼저 탑승객을 선택하세요</p>
+									<ul>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectSeat">
+												<span>A1 / 15,000원
+												<a href="#" class="delete"></a>
+											</p>
+										</li>
+										<li class="selected">
+											<p class="name">Bae, Sungjune</p>
+											<p>
+												선택하기
+											</p>
+										</li>
+										<li class="disabled"><!-- 200402 선택불가인 좌석일 경우 disabled 클래스를 추가해 선택되지 않도록 처리합니다. (이 부분의 기능 변경으로 common.js파일도 수정되었습니다) -->
+											<p class="name">Park, Jimin</p>
+											<p class="selectSeat">
+												<span class="none">A3 (선택불가)</span>
+												<a href="#" class="qa"><span class="tip">유아는 선택이 불가합니다.</span></a>												
+											</p>
+										</li>
+										<li>
+											<p class="name">Hwangbo, ABCEDFDADFEFADFABCEDFDADFEFADF</p>
+											<p>
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p>
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p>
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p>
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p>
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p>
+												선택하기
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div class="seatWrap">
+									<p class="title">그리고 좌석을 선택하세요</p>
+									<div class="seatContainer">
+										<div class="minimapWrap">
+											<div class="minimap"></div>
+										</div>
+										<div class="scrollWrap">
+                                            <div class="seat-sheet B73780001">
+                                                <div class="approach-comment">
+                                                    <p>선호 좌석 지정은 조기 마감될 수 있습니다.</p>
+                                                </div>
+                                                <div class="seat-code">
+                                                    <span>A</span>
+                                                    <span>B</span>
+                                                    <span>C</span>
+                                                    <span class="hallway">&nbsp;</span>
+                                                    <span>D</span>
+                                                    <span>E</span>
+                                                    <span>F</span>
+                                                </div>
+
+                                                <ol class="seat-num" data-select="seat">
+                                                    <li class="exit-row">
+                                                        <span class="exit_left"><i class="ico">&lt;&lt;</i>EXIT</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type1">A1<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">B1<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">C1<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type2 active">A2<span class="sr-only">(세미 프리미엄 존)</span></a><!-- 선택된 좌석은 .active -->
+                                                        <a href="#none" target="_self" class="seat-type2">B2<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">C2<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type1">D2<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">E2<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">F2<span class="sr-only">(프리미엄 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type2">A3<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">B3<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">C3<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type2">D3<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">E3<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">F3<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type2">A4<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">B4<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">C4<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type2">D4<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">E4<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">F4<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type2">A5<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">B5<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">C5<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type2">D5<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">E5<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type2">F5<span class="sr-only">(세미 프리미엄 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type3">A6<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">B6<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">C6<span class="sr-only">(프론트 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type3">D6<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">E6<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">F6<span class="sr-only">(프론트 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type3">A7<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">B7<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">C7<span class="sr-only">(프론트 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type3">D7<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">E7<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">F7<span class="sr-only">(프론트 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type3">A8<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">B8<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">C8<span class="sr-only">(프론트 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type3">D8<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">E8<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">F8<span class="sr-only">(프론트 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type3">A9<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">B9<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">C9<span class="sr-only">(프론트 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type3">D9<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">E9<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">F9<span class="sr-only">(프론트 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type3">A10<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">B10<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">C10<span class="sr-only">(프론트 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type3">D10<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">E10<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">F10<span class="sr-only">(프론트 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type3">A11<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">B11<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">C11<span class="sr-only">(프론트 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type3">D11<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">E11<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">F11<span class="sr-only">(프론트 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type3">A12<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">B12<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">C12<span class="sr-only">(프론트 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type3">D12<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">E12<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">F12<span class="sr-only">(프론트 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type3">A13<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">B13<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">C13<span class="sr-only">(프론트 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type3">D13<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">E13<span class="sr-only">(프론트 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type3">F13<span class="sr-only">(프론트 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="seat-disabled" disabled="disabled">A14<span class="sr-only">(선택 불가)</span></a>
+                                                        <a class="seat-disabled" disabled="disabled">B14<span class="sr-only">(선택 불가)</span></a>
+                                                        <a class="seat-disabled" disabled="disabled">C14<span class="sr-only">(선택 불가)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a class="seat-disabled" disabled="disabled">D14<span class="sr-only">(선택 불가)</span></a>
+                                                        <a class="seat-disabled" disabled="disabled">E14<span class="sr-only">(선택 불가)</span></a>
+                                                        <a class="seat-disabled" disabled="disabled">F14<span class="sr-only">(선택 불가)</span></a>
+                                                    </li>
+                                                    <li class="exit-row">
+                                                        <span class="exit_left"><i class="ico">&lt;&lt;</i>EXIT</span>
+                                                        <span class="exit_right">EXIT<i class="ico">&gt;&gt;</i></span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type1">A15<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">B15<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">C15<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type1">D15<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">E15<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">F15<span class="sr-only">(프리미엄 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type1">A16<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">B16<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">C16<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type1">D16<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">E16<span class="sr-only">(프리미엄 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type1">F16<span class="sr-only">(프리미엄 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A17<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B17<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C17<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D17<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E17<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F17<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A18<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B18<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C18<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D18<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E18<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F18<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A19<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B19<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C19<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D19<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E19<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F19<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A20<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B20<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C20<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D20<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E20<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F20<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A21<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B21<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C21<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D21<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E21<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F21<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A22<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B22<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C22<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D22<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E22<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F22<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A23<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B23<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C23<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D23<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E23<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F23<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A24<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B24<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C24<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D24<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E24<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F24<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A25<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B25<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C25<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D25<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E25<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F25<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A26<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B26<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C26<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D26<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E26<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F26<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A27<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B27<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C27<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D27<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E27<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F27<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A28<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B28<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C28<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D28<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E28<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F28<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A29<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B29<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C29<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D29<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E29<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F29<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A30<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B30<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C30<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D30<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E30<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F30<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#none" target="_self" class="seat-type4">A31<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">B31<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">C31<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a href="#none" target="_self" class="seat-type4">D31<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">E31<span class="sr-only">(스탠다드 존)</span></a>
+                                                        <a href="#none" target="_self" class="seat-type4">F31<span class="sr-only">(스탠다드 존)</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="seat-disabled" disabled="disabled">A32<span class="sr-only">(선택 불가)</span></a>
+                                                        <a class="seat-disabled" disabled="disabled">B32<span class="sr-only">(선택 불가)</span></a>
+                                                        <a class="seat-disabled" disabled="disabled">C32<span class="sr-only">(선택 불가)</span></a>
+                                                        <span class="hallway"><span class="sr-only">통로</span></span>
+                                                        <a class="seat-disabled" disabled="disabled">D32<span class="sr-only">(선택 불가)</span></a>
+                                                        <a class="seat-disabled" disabled="disabled">E32<span class="sr-only">(선택 불가)</span></a>
+                                                        <a class="seat-disabled" disabled="disabled">F32<span class="sr-only">(선택 불가)</span></a>
+                                                    </li>
+                                                </ol>
+                                            </div>
+										</div>
+									</div>
+								</div>		
+								<div class="totalWrap">
+									<ul class="selectedItem">
+										<li>
+											프리미엄 존<span>2</span>
+										</li>
+										<li>
+											스탠다드 존<span>1</span>
+										</li>
+									</ul>
+									<p class="totalPrice">
+										구매 금액 : <span>35,000</span>원
+									</p>									
+								</div>
+							</div>
+                            <div class="noticeWrap">
+                                <dl class="notification-list">
+                                    <dt>꼭 읽어보세요</dt>
+                                    <dd>출발 2일 전까지 사전좌석 환불 가능합니다. 단, 출발 1일 전부터는 비행편의 취소 시에는 환불되지 않습니다.</dd>
+                                    <dd>항공권 취소 시, 구매하신 사전좌석은 자동 취소 및 환불됩니다. (단, 출발일 1일 전부터 환불 불가)</dd>
+                                    <dd>비상구열 좌석 선택시 탑승수속 과정에서 위 조건에 맞지 않는 경우, 좌석선택이 취소되며 환불 되지 않습니다.</dd>
+                                </dl>
+                            </div>
+						</div>
+						<div class="contents baggage" id="anchor_baggage">
+							<h3>2. 사전 수하물 구매</h3>
+                            <p class="info">
+                                <strong>짐이 많으십니까?</strong><br>
+                                공항보다 훨씬 저렴하게 미리 구매하세요.
+                            </p>
+                            <!-- 사전 수하물 추가 서비스를 구매할 수 없을 경우1 - 출발 시간 임박 -->
+							<div class="notSale">
+								<p class="title">항공기 출발 시간이 임박하여<br>해당 서비스를 예약할 수 없습니다.</p>
+								<ul>
+									<li>- 사전 좌석 예약 : 출발 24시간 전까지만 구매 가능합니다.</li>
+									<li>- 사전 수하물 구매 : 첫 구간 출발 24시간 전까지만 구매 가능합니다.</li>
+									<li>- 사전 기내식 주문 : 출발 3일 전까지 1인당 1메뉴에 한해 사전 주문이 가능합니다.</li>
+									<li>- JJ라운지 :  JJ라운지 이용권 구매는 이용 예약일 전일 23시 50분까지 구매 가능합니다.</li>
+								</ul>
+							</div>
+                            <!-- 사전 수하물 추가 서비스를 구매할 수 없을 경우2 - 수하물 정보 확인 불가(200529) -->
+                            <div class="notSale">
+                                <p class="title">
+                                    [인천 > 간사이] 여정의 사전 수하물 정보를 확인할 수 없어 구매가 어렵습니다.
+                                </p>
+                            </div>
+
+
+                            <!-- 사전 수하물 추가 서비스를 구매할 수 있을 경우(200527 수정) -->
+
+                            <!-- 기본 위탁수하물이 포함된 스마트/일반 운임의 경우 -->
+                            <div class="priceInfo">
+                                <p class="title">사전 수하물 구매 요금 정보</p>
+                                <ul>
+                                    <li>
+                                        <span>기본 위탁 수하물이 15KG 포함된 운임</span>입니다.<br>
+                                        최대 20KG까지 구매 가능합니다.
+                                    </li>
+                                    <li class="hidden"><!-- 표시되지 않아야 할 때는 .hidden -->
+                                        <p>최초 ~ 15kg 까지</p>
+                                        <span>30,000원</span>
+                                    </li>
+                                    <li>
+                                        <p>추가 5kg 당</p>
+                                        <span>30,000원</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 기본 위탁수하물이 불포함된 이벤트 운임의 경우 -->
+                            <div class="priceInfo">
+                                <p class="title">사전 수하물 구매 요금 정보</p>
+                                <ul>
+                                    <li>
+                                        <span>기본 위탁 수하물이 포함되지 않은 운임</span>입니다.<br>
+                                        최대 30KG까지 구매 가능합니다.
+                                    </li>
+                                    <li class="hidden"><!-- 표시되지 않아야 할 때는 .hidden -->
+                                        <p>최초 ~ 15kg 까지</p>
+                                        <span>30,000원</span>
+                                    </li>
+                                    <li>
+                                        <p>최고 15KG, 추가 5KG 당</p>
+                                        <span>30,000원</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- //사전 수하물 추가 서비스를 구매할 수 있을 경우(200527 수정) -->
+
+
+
+							<div class="baggageSelectWrap">
+								<div class="passengerWrap">
+									<p class="title">수하물 선택</p>
+									<ul>
+										<li class="done">
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectBaggage">
+												<span>15kg</span>											
+											</p>
+											<ul>
+                                                <!-- 유형1(kg단위) -->
+												<li>최초 ~ 15kg (30,000원)</li>
+												<li>20kg (60,000원)</li>
+												<li>25kg (90,000원)</li>
+												<li>30kg (120,000원)</li>
+												<li>35kg (150,000원)</li>
+												<li>40kg (180,000원)</li>
+                                                <!-- 유형2(pc단위) -->
+                                                <li>기본 23kg (30,000원)</li>
+                                                <li>1PC 추가 (60,000원)</li>
+                                                <li>2PC 추가 (60,000원)</li>
+												<li>선택안함</li>
+											</ul>
+										</li>
+										<li class="selected">
+											<p class="name">PARK, Bogeom</p>
+											<p class="selectBaggage">
+												<span>선택하기</span>														
+											</p>
+											<ul>
+												<li>최초 ~ 15kg (30,000원)</li>
+												<li>20kg (60,000원)</li>
+												<li>25kg (90,000원)</li>
+												<li>30kg (120,000원)</li>
+												<li>35kg (150,000원)</li>
+												<li>40kg (180,000원)</li>
+												<li>선택안함</li>
+											</ul>
+										</li>
+										<li>
+											<p class="name">Son, Seungwan</p>
+											<p class="selectBaggage">
+												<span class="none">20kg (선택불가)</span>
+												<a class="qa popupBtn" id="baggageDenied1"></a><!-- 200527 추가, 당사 구매로 인한 추가 구매 불가인 경우 #baggageDenide1, 타사 구매로 인한 추가 구매 불가인 경우 #baggageDenide2 -->
+											</p>
+										</li>
+                                        <li>
+                                            <p class="name">Son, Seungwan</p>
+                                            <p class="selectBaggage">
+                                                <span class="none">20kg (선택불가)</span>
+                                            </p>
+                                        </li>
+										<li>
+											<p class="name">Kang, Seulgi</p>
+											<p class="selectBaggage">
+												<span>선택하기</span>												
+											</p>
+											<ul>
+												<li>최초 ~ 15kg (30,000원)</li>
+												<li>20kg (60,000원)</li>
+												<li>25kg (90,000원)</li>
+												<li>30kg (120,000원)</li>
+												<li>35kg (150,000원)</li>
+												<li>40kg (180,000원)</li>
+												<li>선택안함</li>
+											</ul>
+										</li>
+										<li class="done">
+											<p class="name">Kim, Taehyeong</p>
+											<p class="selectBaggage">
+												<span>20kg</span>											
+											</p>
+											<ul>
+												<li>최초 ~ 15kg (30,000원)</li>
+												<li>20kg (60,000원)</li>
+												<li>25kg (90,000원)</li>
+												<li>30kg (120,000원)</li>
+												<li>35kg (150,000원)</li>
+												<li>40kg (180,000원)</li>
+												<li>선택안함</li>
+											</ul>
+										</li>
+										<li>
+											<p class="name">Bae, Juhyeon</p>
+											<p class="selectBaggage">
+												<span>선택하기</span>												
+											</p>
+											<ul>
+												<li>최초 ~ 15kg (30,000원)</li>
+												<li>20kg (60,000원)</li>
+												<li>25kg (90,000원)</li>
+												<li>30kg (120,000원)</li>
+												<li>35kg (150,000원)</li>
+												<li>40kg (180,000원)</li>
+												<li>선택안함</li>
+											</ul>
+										</li>
+										<li>
+											<p class="name">Park, Jimin</p>
+											<p class="selectBaggage">
+												<span>선택하기</span>														
+											</p>
+											<ul>
+												<li>최초 ~ 15kg (30,000원)</li>
+												<li>20kg (60,000원)</li>
+												<li>25kg (90,000원)</li>
+												<li>30kg (120,000원)</li>
+												<li>35kg (150,000원)</li>
+												<li>40kg (180,000원)</li>
+												<li>선택안함</li>
+											</ul>
+										</li>
+									</ul>
+								</div>	
+								<div class="totalWrap">
+									<ul class="selectedItem">
+										<li>
+											총<span>35kg</span>
+										</li>
+									</ul>
+									<p class="totalPrice">
+										구매 금액 : <span>90,000</span>원
+									</p>									
+								</div>
+							</div>
+                            <div class="noticeWrap">
+                                <dl class="notification-list">
+                                    <dt>꼭 읽어보세요</dt>
+                                    <dd>출발 2일 전까지 사전수하물 환불 가능합니다. 단, 출발 1일 전부터 취소 시에는 환불되지 않습니다.</dd>
+                                    <dd>위탁수하물 구매는 1인당 1회 가능합니다. (무게 변경을 원하실 경우 출발 2일 전까지 취소 후 재구매 하셔야 합니다.)</dd>
+                                    <dd><span class="text-emphasis">항공권 취소 시, 구매하신 수하물은 자동 취소 및 환불되며, 여정 변경시에는 구매하신 수하물을 취소하신 후 다시 구매하셔야 합니다. (단, 출발일 1일 전부터 수하물 취소 및 환불이 불가합니다.)</span></dd><!-- 200402 텍스트 강조되도록 수정 -->
+                                    <dd>위탁 수하물 1개 무게는 32Kg을 초과할 수 없으며, 초과시 분리 포장해주셔야 합니다.</dd>
+                                </dl>
+                            </div>
+						</div>
+						<div class="contents meal" id="anchor_meal">
+							<h3>3. 사전 기내식 구매</h3>
+                            <p class="info">
+                                <strong>영양만점 기내식을 원하십니까?</strong><br>
+                                기내식은 기내에서 주문이 불가하므로, 출발 3일 전까지만 사전주문 가능합니다.
+                            </p>
+                            <!-- 사전 기내식 서비스를 구매할 수 없을 경우1 - 예약 및 변경가능 시간 초과 -->
+							<div class="notSale">
+								<p class="title">항공기 출발 시간이 임박하여<br>해당 서비스를 예약할 수 없습니다.</p>
+								<ul>
+									<li>- 사전 좌석 예약 : 출발 24시간 전까지만 구매 가능합니다.</li>
+									<li>- 사전 수하물 구매 : 첫 구간 출발 24시간 전까지만 구매 가능합니다.</li>
+									<li>- 사전 기내식 주문 : 출발 3일 전까지 1인당 1메뉴에 한해 사전 주문이 가능합니다.</li>
+									<li>- JJ라운지 :  JJ라운지 이용권 구매는 이용 예약일 전일 23시 50분까지 구매 가능합니다.</li>
+								</ul>
+							</div>
+                            <!-- 사전 기내식 서비스를 구매할 수 없을 경우2 - 기내식 구매 불가 노선 -->
+                            <div class="notSale">
+                                <p class="title">
+                                    해당 노선은 아쉽게도 기내식 구매가 불가한 노선입니다.<br>
+                                    다음에 맛있는 기내식으로 찾아 뵙겠습니다.
+                                </p>
+                            </div>
+                            <!-- 사전 기내식 서비스를 구매할 수 있을 경우 -->
+							<div class="priceInfo">
+								<p class="title">사전 기내식 구매 정보</p>
+								<ul>
+                                    <li>사전 기내식의 경우 출발 2일전부터 환불이 불가합니다.</li>
+                                    <li>모든 메뉴에는 견과류, 글루텐, 달걀 또는 유제품이 포함될 수 있습니다.</li>
+								</ul>
+							</div>
+							<div class="mealSelectWrap">
+								<div class="passengerWrap">
+									<p class="title">탑승객</p>
+									<ul>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectMeal">
+												<span>리코타 치즈 샐러드</span>
+                                                <span>9,000원</span><!-- 200529 가격정보 추가 -->
+												<a href="#" class="delete"></a>
+											</p>
+										</li>
+										<li>
+											<p class="name">Park, Jimin</p>
+											<p class="selectMeal">
+												<span>생선요리와 화이트 생선요리와 화이트 생선요리와 화이트 생선요리와 화이트 생선요리와 화이트 생선요리와 화이트</span>
+                                                <span>9,000원</span><!-- 200529 가격정보 추가 -->
+												<a href="#" class="delete"></a>
+											</p>
+										</li>
+										<li class="selected">
+											<p class="name">Son, Seungwan</p>
+											<p class="selectMeal">
+												선택하기
+											</p>
+										</li>
+										<li class="disabled"><!-- 200402 이미 기내식을 결제한 고객에게는 disabled 클래스를 추가해 선택되지 않도록 처리합니다. (이 부분의 기능 변경으로 common.js파일도 수정되었습니다) -->
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectMeal">
+                                                <span class="none">생선요리와 화이트 와인</span>
+                                                <span>9,000원</span><!-- 200529 가격정보 추가 -->
+                                                <a href="#" class="qa"><span class="tip">이미 구매완료 했습니다.</span></a>
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectMeal">
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectMeal">
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectMeal">
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectMeal">
+												선택하기
+											</p>
+										</li>
+										<li>
+											<p class="name">Bae, Sungjune</p>
+											<p class="selectMeal">
+												선택하기
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div class="mealWrap">
+									<p class="title">메뉴 선택</p>
+									<div class="mealContainer">
+										<ul>
+											<li>
+												<img src="images/meal_item01.png" width="110" height="110" alt="">
+												<dl>
+													<dt>커플메뉴</dt>
+													<dd>불고기 덮밥 + 구름 위의 샌드위치 +<br>콜라1EA + 레드와인1EA</dd>
+													<dd><span>24,000원</span>24,000원</dd>
+												</dl>
+												<ul>
+													<li><a class="popupBtn" id="mealPopup01">자세히 보기</a></li>
+													<li><a href="#">선택하기</a></li>
+												</ul>
+											</li>
+											<li>
+												<img src="images/meal_item01.png" width="110" height="110" alt="">
+												<dl>
+													<dt>패밀리 세트(신메뉴)</dt>
+													<dd>햄 김치 볶음밥 + 단호박샌드위치 +<br>꾸러기 도시락 세트</dd>
+													<dd><span>29,000원</span>25,000원</dd>
+												</dl>
+												<ul>
+													<li><a href="#">자세히 보기</a></li>
+													<li><a class="soldout">매진</a></li>
+												</ul>
+											</li>
+											<li>
+												<img src="images/meal_item01.png" width="110" height="110" alt="">
+												<dl>
+													<dt>오색비빔밤</dt>
+													<dd>비빔밥, 동치미, 두텁떡</dd>
+													<dd>15,000원</dd>
+												</dl>
+												<ul>
+													<li><a href="#">자세히 보기</a></li>
+													<li><a href="#">선택하기</a></li>
+												</ul>
+											</li>
+											<li>
+												<img src="images/meal_item01.png" width="110" height="110" alt="">
+												<dl>
+													<dt>흑돼지 덮밥</dt>
+													<dd>흑돼지 덮밥, 김치, 오이무피클</dd>
+													<dd><span>15,000원</span>11,000원</dd>
+												</dl>
+												<ul>
+													<li><a href="#">자세히 보기</a></li>
+													<li><a href="#">선택하기</a></li>
+												</ul>
+											</li>
+											<li>
+												<img src="images/meal_item01.png" width="110" height="110" alt="">
+												<dl>
+													<dt>꾸러기 도시락(Kids Meal)</dt>
+													<dd>미니사각 토핑 유부초밥, 가라아게,<br>오렌지 주스, 계절과일, 쁘티첼</dd>
+													<dd>15,000원</dd>
+												</dl>
+												<ul>
+													<li><a href="#">자세히 보기</a></li>
+													<li><a href="#">선택하기</a></li>
+												</ul>
+											</li>
+											<li>
+												<img src="images/meal_item01.png" width="110" height="110" alt="">
+												<dl>
+													<dt>꾸러기 도시락(Kids Meal)</dt>
+													<dd>미니사각 토핑 유부초밥, 가라아게,<br>오렌지 주스, 계절과일, 쁘티첼</dd>
+													<dd>15,000원</dd>
+												</dl>
+												<ul>
+													<li><a href="#">자세히 보기</a></li>
+													<li><a href="#">선택하기</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>		
+								<div class="totalWrap">
+									<ul class="selectedItem">
+										<li>
+											총<span>3개</span>
+										</li>
+									</ul>
+									<p class="totalPrice">
+										구매 금액 : <span>32,000</span>원
+									</p>									
+								</div>
+							</div>
+                            <div class="noticeWrap">
+                                <!-- 꼭 읽어보세요 텍스트 추가 (최아율, 200316) -->
+                                <dl class="notification-list">
+                                    <dt>꼭 읽어보세요</dt>
+                                    <dd>기내식 사전 주문/취소는 출발일 기준 3일 전까지 가능하며, 출발일 2일 전부터는 환불이 불가능합니다.</dd><!-- 200402 텍스트 수정 -->
+                                    <dd>항공권 취소 시, 구매하신 기내식은 자동 취소 및 환불되며 마이페이지에서 재 구매 가능합니다. (단, 출발일 2일 전부터 환불 불가)</dd>
+                                </dl>
+                            </div>
+						</div>
+						<div class="contents agreeWrap">
+                            <h3>요금규정 및 약관동의</h3>
+                            <ul class="agreement-list">
+                                <li>
+                                    <span class="inputWrap">
+                                        <input type="checkbox" id="agreement01" name="check-group1">
+                                        <label for="agreement01">좌석 선택 규정</label>
+                                    </span>
+                                    <a href="#none" target="_self" class="btn_more">자세히 보기</a>
+                                    <div class="agreement-wrap">
+                                        <table>
+                                            <caption>좌석 변경/환불 안내</caption>
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="colgroup" colspan="2">변경</th>
+                                                <th scope="colgroup" colspan="2">환불</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>출발 2일 전</td>
+                                                <td>가능</td>
+                                                <td>출발 2일 전</td>
+                                                <td>가능</td>
+                                            </tr>
+                                            <tr>
+                                                <td>출발 1일 전 ~ 출발 당일</td>
+                                                <td>불가</td>
+                                                <td>출발 1일 전 ~ 출발 당일</td>
+                                                <td>불가</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <dl>
+                                            <dt>환불규정</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>출발 2일전까지 사전좌석 환불 가능합니다. 단, 출발 2일이내 비행편의 취소 시에는 환불되지 않습니다.</li>
+                                                    <li>여정 변경 시 좌석지정은 자동 환불되며, 재 구매가 가능합니다. (단 출발 2일 이내 출발편은 환불 불가합니다)</li>
+                                                    <li>비상구열 좌석 선택시 탑승수속 과정에서 위 조건이 맞지 않는 경우, 좌석선택이 취소되며 환불 되지 않습니다.</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>유의사항</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>기종별 좌석 유형 차이로 인하여 항공기 배정에 따라 선택하신 좌석번호가 변경될 수 있습니다.</li>
+                                                    <li>항공기 기종에 따라 좌석의 앞뒤, 좌우 간격이 상이할 수 있으며 일부 좌석의 경우 등받이, 팔걸이 고정 좌석입니다.</li>
+                                                    <li>공동운항편은 좌석 구매가 불가합니다.</li>
+                                                    <li>탑승수속 마감 20분 전 까지 수속을 마치지 않았을 경우 사전 지정된 좌석이 변경될 수 있으며, 금액은 환불되지 않습니다.</li>
+                                                    <li>만 15세 미만 또는 한국어나 영어로 의사소통이 불가한 손님, 임산부, 유아 동반 손님, 노약자 등의 경우 비상구 열 좌석지정이 불가하며, 탑승수속 시 좌석이 재배정 될 수 있습니다. 재배정시 구매하신 좌석은 환불되지 않습니다.</li>
+                                                    <li>사전 좌석 구매 후 공항에서 해당 좌석 이용이 불가능한 승객이라고 판단할 경우 현장에서 임의로 좌석 배정을 취소 후 재배정 할 수 있으며, 재배정 시 구매하신 사전좌석은 환불되지 않습니다.</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>비상구 좌석 배정 제한 규정</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>
+                                                        활동성, 체력 또는 양팔이나 두손 및 양다리의 민첩성이 승무원의 지시를 수행하기에 충분치 않은 승객
+                                                        <ul class="list-bar">
+                                                            <li>비상구나 탈출용 슬라이드 조작 장치에 대한 접근</li>
+                                                            <li>탈출용 슬라이드 조작 장치를 잡고 밀거나 당기고 돌리거나 조작 밀거나 당기거나 하는 등의 동작을 통한 비상구 개방 날개 위의 창문 형 비상구를 들어 올리거나 분리된 부분을 옆자리로 옮기거나 다음 열로 옮기는 등의 동작</li>
+                                                            <li>날개 위의 창문 형 비상구와 비슷한 크기와 무게의 장애물 제거 신속한 비상구로의 접근</li>
+                                                            <li>장애물 제거 시 균형의 유지</li>
+                                                            <li>신속한 탈출</li>
+                                                            <li>슬라이드 전개 또는 팽창 후 안정유지</li>
+                                                            <li>탈출용 슬라이드로 탈출한 승객이 슬라이드로부터 벗어날 수 있도록 하는 동작</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>만 15세 미만이거나 동반자 도움 없이 비상 상황에서의 역할을 수행하기에 불충분한 승객</li>
+                                                    <li>글 또는 그림의 형태로 제공된 비상탈출에 관한 지시를 읽고 이해하지 못하거나 승무원의 구두지시를 이해하지 못하는 승객</li>
+                                                    <li>콘택트렌즈나 안경을 제외한 다른 시력 보조 장비 없이는 위에 열거한 기능을 하나이상 수행 할 수 없는 승객</li>
+                                                    <li>일반적 보청기를 제외한 다른 청력 보조 장비 없이는 승무원의 탈출지시를 듣고 이해할 수 없는 승객</li>
+                                                    <li>다른 승객들에게 정보를 적절하게 전달할 수 있는 능력이 부족한 승객</li>
+                                                    <li>승객의 상태나 책임, 예를 들어 어린이를 돌보기 때문에 상기 열거된 하나 이상의 역할을 수행하는데 방해가 되는 승객 또는 이러한 역할을 수행할 경우 해를 입게 되는 승객</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li class="active"><!-- 자세히보기를 누른 약관은 .active -->
+                                    <span class="inputWrap">
+                                        <input type="checkbox" id="agreement02" name="check-group1">
+                                        <label for="agreement02">위탁 수하물 규정</label>
+                                    </span>
+                                    <a href="#none" target="_self" class="btn_more">자세히 보기</a>
+                                    <div class="agreement-wrap">
+                                        <div class="tableWrap">
+                                            <table>
+                                            <caption>위탁 수하물 변경/환불 안내</caption>
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="colgroup" colspan="2">변경</th>
+                                                <th scope="colgroup" colspan="2">환불</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>출발 2일 전</td>
+                                                <td>가능</td>
+                                                <td>출발 2일 전</td>
+                                                <td>가능</td>
+                                            </tr>
+                                            <tr>
+                                                <td>출발 1일 전 ~ 출발 당일</td>
+                                                <td>불가</td>
+                                                <td>출발 1일 전 ~ 출발 당일</td>
+                                                <td>불가</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                        <dl>
+                                            <dt>위탁 수하물 추가 구매 제외 대상</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>좌석 미점유 유아 고객</li>
+                                                    <li>공동운항편</li>
+                                                    <li>출발이 임박한 항공편(출발 1일 이내)</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>유의사항</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>위탁수하물 1개의 무게는 32kg을 초과할 수 없으며, 초과 시에는 분리하여 포장해 주셔야 합니다.</li>
+                                                    <li>1차형 접이식 소형 유모차 또는 유아용 Carrying Basket Bassinet, 휠체어는 부과 대상에서 제외됩니다.</li>
+                                                    <li>공항 상황 및 여건에 따라 적용 범위가 상이할 수 있습니다.</li>
+                                                    <li>공동운항편은 위탁수하물 사전 구매가 불가합니다.</li>
+                                                    <li>위탁수하물 사전 구매는 출발 2일전까지만 가능합니다.</li>
+                                                    <li>출발 2일 전까지 환불이 가능합니다.</li>
+                                                    <li>출발 2일 전까지 구매하신 수하물 무게 변경이 가능합니다. 단, 변경을 원하실 경우 취소 후 재구매 하셔야 합니다.</li>
+                                                    <li>항공권 취소 시 구매하신 수하물은 자동으로 취소 및 환불되며, 출발 2일 전까지 재구매 하실 수 있습니다.</li>
+                                                    <li>항공권 변경 시에는 구매하신 수하물을 취소하신 후, 예약 변경이 가능합니다.</li>
+                                                    <li>단, 출발 1일 전부터 항공편의 변경/취소 시 환불되지 않습니다.</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="inputWrap">
+                                        <input type="checkbox" id="agreement03" name="check-group1">
+                                        <label for="agreement03">기내식 규정</label>
+                                    </span>
+                                    <a href="#none" target="_self" class="btn_more">자세히 보기</a>
+                                    <div class="agreement-wrap">
+                                        <table>
+                                            <caption>위탁 수하물 변경/환불 안내</caption>
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="colgroup" colspan="2">변경</th>
+                                                <th scope="colgroup" colspan="2">환불</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>출발 3일 전</td>
+                                                <td>가능</td>
+                                                <td>출발 3일 전</td>
+                                                <td>가능</td>
+                                            </tr>
+                                            <tr>
+                                                <td>출발 2일 전 ~ 출발 당일</td>
+                                                <td>불가</td>
+                                                <td>출발 2일 전 ~ 출발 당일</td>
+                                                <td>불가</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <dl>
+                                            <dt>환불 규정</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>기내식 사전 주문은 출발일 기준 3일 전까지 환불이 가능하며, 출발일 3일 이내의 경우는 환불, 변경이 불가능합니다.</li>
+                                                    <li>항공권 취소 및 여정 변경 시 구매한 기내식은 자동 취소(환불)되며, 재 구매가 가능합니다.(단 출발일 3일 이내 환불 불가)</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>유의사항</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>사진은 실제와 차이가 있을 수 있으며 재료의 수급 상황에 따라 부득이 구성이 변경될 수 있습니다.</li>
+                                                    <li>당사 사정에 의한 결항으로 항공권 취소, 여정 변경시 기내식은 자동 취소되어 환불처리 됩니다.</li>
+                                                    <li>메뉴의 주문/취소는 출발일 기준 3일전까지 가능하며, 출발일 2일 전부터는 변경/환불이 불가능합니다.</li>
+                                                    <li>메뉴 변경을 원하실 경우, 주문하신 메뉴를 취소하신 후 재구매 하셔야 합니다.</li>
+                                                    <li>안전하고 쾌적한 식사를 위해 한 좌석 당 1개의 메뉴 주문이 가능하며, 좌석 미점유 유아고객은 주문이 불가합니다.</li>
+                                                    <li>특정 식품에 대한 알레르기 또는 유사 증상이 있는 승객께서는 메뉴를 확인 하신 후 주문해주시기 바랍니다.</li>
+                                                    <li>땅콩알레르기의 경우 실제 조리과정에서 땅콩이 사용되지 않았더라도 땅콩성분이 함유된 식용유, 식재료 등이 포함되어있을 수 있습니다. 해당 증세가 있는 고객께서는 주문 전 참고해주시기 바랍니다.</li>
+                                                    <li>기내식 메뉴는 이용 노선, 기간등에 따라 상이할 수 있습니다.</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="inputWrap">
+                                        <input type="checkbox" id="agree-all" name="check-group1">
+                                        <label for="agree-all">모두 동의하기</label>
+                                    </span>
+                                </li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="priceContainer">
+				<h2>결제 정보<a href="#">자세히 보기</a></h2>
+			<!--	선택된 부가서비스가 없을때	-->
+				<div class="payList none" style="display:none">
+					<p>선택된 부가서비스가 없습니다.<br>왼쪽 화면에서 부가서비스를<br>추가하세요</p>
+					<a href="#" class="next">다음 구간</a>
+				</div>
+			<!--	//선택된 부가서비스가 없을때	-->
+				<div class="payList">
+					<ul>
+						<li>
+							<p class="title">사전 좌석</p>
+							<ul>
+								<li>
+									<p class="item">프리미엄 존</p>
+									<p class="ea">
+										<span>2</span>
+									</p>
+								</li>
+								<li>
+									<p class="item">스탠다드 존</p>
+									<p class="ea">
+										<span>1</span>
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p class="title">사전 수하물</p>
+							<ul>
+								<li>
+									<p class="item">최초 ~ 15kg</p>
+									<p class="ea">
+										<span>3</span>
+									</p>
+								</li>
+								<li>
+									<p class="item">20kg</p>
+									<p class="ea">
+										<span>2</span>
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p class="title">사전 기내식</p>
+							<ul>
+								<li>
+									<p class="item">커플메뉴</p>
+									<p class="ea">
+										<span>1</span>
+									</p>
+								</li>
+								<li>
+									<p class="item">핑크퐁 도시락</p>
+									<p class="ea">
+										<span>2</span>
+									</p>
+								</li>
+								<li>
+									<p class="item">제주항공 X 피그인 제주항공 X 피그인</p>
+									<p class="ea">
+										<span>1</span>
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p class="title">라운지 이용권</p>
+							<ul>
+								<li>
+									<p class="item">성인</p>
+									<p class="ea">
+										<span>4</span>
+									</p>
+								</li>
+								<li>
+									<p class="item">소아</p>
+									<p class="ea">
+										<span>1</span>
+									</p>
+								</li>
+								<li>
+									<p class="item">유아</p>
+									<p class="ea">
+										<span>1</span>
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="total"><span>총 결제금액</span><p>129,700원</p></div>
+					<a href="#" class="next">다음 구간</a>
+				</div>
+				<div class="checkWrap">
+					<span class="inputWrap">
+						<input type="checkbox" name="" id="agree02" checked="checked">
+						<label for="agree02">요금규정 및 약관동의를 모두 숙지했으며 이에 동의합니다.</label>
+					</span>				
+				</div>
+			</div>				
+		</div>
+	</div>
+	<div class="footerContainer">
+		<div class="footerWrap">
+			<div class="logoWrap">
+				<img src="images/logo_footer@2x.png" width="135" height="20" alt="">
+			</div>
+			<ul class="rightWrap">
+				<li><a href="#">개인정보취급방침</a></li>
+				<li>고객센터 : 1522-4148 (평일 09:30~17:00)</li>
+			</ul>
+			<div class="infoWrap">
+				<p>모두투어 항공사 부가서비스는 (주)올윈에어와의 제휴로 제공됩니다.</p>
+				<ul>
+					<li>서울시 중구 서소문로 106 동화빌딩 9층</li>
+					<li>㈜올윈웨어</li>
+					<li>대표이사:이정갑
+					<li>사업자등록번호:220-88-72464</li>
+				</ul>
+				<p class="copyright">COPYRIGHT ALLWINWARE INC. ALL RIGHTS RESERVED</p>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- popup: 사전 수하물 구매 불가 안내 - 당사 구매로 인한 추가 구매 불가 안내 -->
+    <div class="popupContainer baggageDenied1">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">구매 불가 안내</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        <h4 class="inner-title">수하물을 이미 구매하셨습니다.</h4>
+                        <p class="inner-text">
+                            추가 구매를 원하시면 기존 구매한 부가서비스<br>
+                            취소 후 재구매 바랍니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="popupBtnWrap">
+                    <a class="close">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+
+    <!-- popup: 사전 수하물 구매 불가 안내 - 타사 구매로 인한 추가 구매 불가 안내 -->
+    <div class="popupContainer baggageDenied2">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">구매 불가 안내</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        <h4 class="inner-title">수하물을 이미 구매하셨습니다.</h4>
+                        <p class="inner-text">
+                            추가 구매를 원하시면 기존 구매처를 통해<br>
+                            부가서비스 취소 후 재구매 바랍니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="popupBtnWrap">
+                    <a class="close">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+<script>
+	$(document).ready(function(){
+		$('.slider').bxSlider({
+			/*slidewidth: 360,*//*for loungeContainer .slider*/
+            slidewidth: 736,/*for loungeContainer2 .slider*/
+			controls: true,
+			pager: false,
+			autoHover: true
+		});
+	});
+
+	/*결제정보 Sidebar 고정*/
+    (function(fixedSidebar){
+        var $target = $(".priceContainer"),
+            targetHeight = $target.height(),
+            targetPosY1 = $target.offset().top;
+        function sidebarHandler(){
+            var currentScrollTop = $(document).scrollTop(),
+                targetRail = $(document).height() - currentScrollTop - targetHeight - 300 ;
+            if (currentScrollTop > targetPosY1 && targetRail > 100) {
+                $target.addClass("menuFixed").css({
+                    "top": currentScrollTop - 257,
+                    "bottom": "initial"
+                })
+            } else if (currentScrollTop > targetPosY1 && 100 > targetRail) {
+                $target.css({
+                    "top": "initial",
+                    "bottom": "0"
+                });
+            } else {
+                $target.removeClass("menuFixed")
+            }
+        }
+        $(window).on("scroll", function(){
+            sidebarHandler();
+        }).scroll()
+    })();
+
+    /*구간 Tab Menu 고정*/
+    (function(fixedTabHeader){
+        var $target = $("#fixedTabs"),
+            $targetParent = $target.parent(),
+            targetPosY = $target.offset().top - $target.height(),
+            targetPosL,
+            targetWidth;
+
+        function tabHandler(){
+            var currentScrollTop = $(document).scrollTop();
+            if (currentScrollTop > targetPosY) {
+                $target.addClass("active").css({
+                    "left": targetPosL,
+                    "right": targetPosL + targetWidth,
+                    "width": targetWidth
+                })
+            } else {
+                $target.removeClass("active")
+            }
+        }
+        $(window).on("resize", function(){
+            targetPosL = $targetParent.offset().left;
+            targetWidth = $targetParent.parent().width();
+            tabHandler();
+        }).resize();
+        $(window).on("scroll", function(){
+            tabHandler();
+        }).scroll()
+    })();
+
+</script>
+</body>
+</html>

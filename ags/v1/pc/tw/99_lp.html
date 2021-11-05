@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>POPUP</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectric.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/selectric.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+	<style>
+		.popupLayout	{text-align:center; font-size: 14px;  font-weight: bold;letter-spacing: -0.18px;line-height:42px;}
+	</style>
+</head>
+<body>
+	<div class="popupLayout">
+		<ul>
+			<li><a class="popupBtn" id="exitSeatPopup">비상구 좌석 배정 제한 규정</a></li>
+            <li><a class="popupBtn" id="seatInfoChildConfirmPopup">항공기 좌석에 대한 안내(소아 비상구열 선택불가)</a></li>
+            <li><a class="popupBtn" id="mustAgree1ConfirmPopup">약관 동의 필수 안내</a></li>
+            <li><a class="popupBtn" id="mustAgree2ConfirmPopup">취소/환불 약관 동의 필수 안내</a></li>
+            <li><a class="popupBtn" id="refundCompleted">부가서비스 취소가 완료되었습니다.</a></li>
+            <li><a class="popupBtn" id="noServices1ConfirmPopup">오는 편 미선택 시 추가구매 권유 팝업</a></li>
+            <li><a class="popupBtn" id="noServices2ConfirmPopup">가는 편 미선택 시 추가구매 권유 팝업</a></li>
+            <li><a class="popupBtn" id="payDetail">결제 정보 자세히 보기</a></li>
+            <li><a class="popupBtn" id="qnaPopup">1:1 문의하기</a></li>
+            <li><a class="popupBtn" id="mealPopup01">기내식 자세히 보기</a></li>
+            <li><a class="popupBtn" id="baggageDenied1">사전 수하물 구매 불가 안내 - 당사 구매로 인한 추가 구매 불가 안내</a></li>
+            <li><a class="popupBtn" id="baggageDenied2">사전 수하물 구매 불가 안내 - 타사 구매로 인한 추가 구매 불가 안내</a></li>
+            <li><a class="popupBtn" id="qnaPopup2">고객센터 접수</a></li><!-- 210104 추가 -->
+		</ul>
+	</div>
+
+    <!-- popup - 비상구 좌석 배정 제한 규정, 200602 수정 -->
+    <div class="popupContainer exitSeatPopup">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">비상구 좌석 배정 제한 규정</p>
+                <a class="close">close</a><!-- 닫기 버튼으로 팝업을 닫으면, 고객이 선택한 좌석이 선택되지 않도록 처리합니다. -->
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <ul class="list-dot">
+                        <li>
+                            활동성, 체력 또는 양팔이나 두 손 및 양다리의 민첩성이 다음 각 항목의 사항을 수행하기에 충분치 않은 승객
+                            <ul class="list-bar">
+                                <li>비상구나 탈출용 슬라이드 조작 장치에 대한 접근</li>
+                                <li>탈출용 슬라이드 조작 장치를 잡고 밀거나 당기고 돌리거나 조작 밀거나 당기거나 하는 등의 동작을 통한 비상구 개방 날개 위의 창문 형 비상구를 들어 올리거나 분리된 부분을 옆자리로 옮기거나 다음 열로 옮기는 등의 동작</li>
+                                <li>날개 위의 창문 형 비상구와 비슷한 크기와 무게의 장애물 제거 신속한 비상구로의 접근</li>
+                                <li>장애물 제거 시 균형의 유지</li>
+                                <li>신속한 탈출</li>
+                                <li>슬라이드 전개 또는 팽창 후 안정유지</li>
+                                <li>탈출용 슬라이드로 탈출한 승객이 슬라이드로부터 벗어날 수 있도록 하는 동작</li>
+                            </ul>
+                        </li>
+                        <li>만 15세 미만이거나 동반자 도움 없이 비상 상황에서의 역할을 수행하기에 불충분한 승객</li>
+                        <li>글 또는 그림의 형태로 제공된 비상탈출에 관한 지시를 읽고 이해하지 못하거나 승무원의 구두지시를 이해하지 못하는 승객</li>
+                        <li>콘택트렌즈나 안경을 제외한 다른 시력 보조 장비 없이는 위에 열거한 기능을 하나이상 수행 할 수 없는 승객</li>
+                        <li>일반적 보청기를 제외한 다른 청력 보조 장비 없이는 승무원의 탈출지시를 듣고 이해할 수 없는 승객</li>
+                        <li>다른 승객들에게 정보를 적절하게 전달할 수 있는 능력이 부족한 승객</li>
+                        <li>승객의 상태나 책임, 예를 들어 어린이를 돌보기 때문에 상기 열거된 하나 이상의 역할을 수행하는데 방해가 되는 승객 또는 이러한 역할을 수행할 경우 해를 입게 되는 승객</li>
+                    </ul>
+                </div>
+                <div class="popupBtnWrap">
+                    <span class="inputWrap">
+                        <input type="checkbox" name="" id="exitSeatAgree" data-bind="#exitSeatAgreeConfirm">
+                        <label for="exitSeatAgree">비상구 좌석 배정 제한 규정을 확인하고 동의합니다.</label>
+                    </span>
+                    <a id="exitSeatAgreeConfirm" class="close" disabled="disabled">확인</a><!-- #exitSeatAgree가 :checked 상태일 때, disabled attribute를 삭제하여 활성화 시킵니다. 활성화 되지 않았을 때는 팝업이 닫히지 않습니다.(js 수정됨) -->
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed preventClick"></div>
+    </div>
+    <script>
+        //popup - 비상구열 좌석 배정에 대한 안내 정의
+        $(document).on("change", "#exitSeatAgree", function(){
+            if($("#exitSeatAgree").is(":checked")){
+                $($(this).attr("data-bind")).removeAttr("disabled")
+            } else {
+                $($(this).attr("data-bind")).attr("disabled", "disabled")
+            }
+        })
+    </script>
+
+    <!-- popup - 항공기 좌석에 대한 안내 -->
+    <div class="popupContainer seatInfoChildConfirmPopup">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">항공기 좌석에 대한 안내</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        소아 탑승객은 해당 좌석(비상구열)을<br>
+                        선택할 수 없습니다.
+                    </div>
+                </div>
+                <div class="popupBtnWrap">
+                    <a class="close">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!-- popup - 약관 동의 필수 안내 -->
+    <div class="popupContainer mustAgree1ConfirmPopup">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">약관 동의 필수 안내</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        요금 규정 및 약관에 대한 동의가 필요합니다.
+                    </div>
+                </div>
+                <div class="popupBtnWrap">
+                    <a class="close">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!-- popup - 취소/환불 약관 동의 필수 안내 -->
+    <div class="popupContainer mustAgree2ConfirmPopup">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">취소/환불 약관 동의 필수 안내</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        부가서비스 취소/환불 동의가 필요합니다.
+                    </div>
+                </div>
+                <div class="popupBtnWrap">
+                    <a class="close">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!-- popup - 부가서비스 취소가 완료되었습니다. -->
+    <div class="popupContainer refundCompleted">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">부가서비스 취소가 완료되었습니다.</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <ul>
+                        <li>· 선택하신 예약이 모두 취소되었으며, 정상적으로 환불처리가 요청되었습니다.</li>
+                        <li>· 신용카드 결제 취소는 신용카드사 규정에 따라 차이가 있습니다. 정확한 환불 일자는 <span>취소일로 부터 영업일 기준 3일</span> 경과 후 해당 신용카드사로 문의해 주시기 바랍니다. <span>(부분 취소의 경우 취소일로 부터 영업일 기준 7일 경과 이후 카드사에 확인 가능)</span></li>
+                    </ul>
+                </div>
+                <div class="popupBtnWrap">
+                    <a class="close">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!-- popup - popup - 결제 정보 자세히 보기 -->
+    <div class="popupContainer payDetail">
+            <div class="popupWrap">
+                <div class="popupTitleWrap">
+                    <p class="title">결제 정보 자세히 보기</p>
+                    <a class="close">close</a>
+                </div>
+                <div class="popupContentWrap">
+                    <div class="popupContent">
+                        <div class="tableWrap">
+                            <h3 class="from-to-title">[구간 1] 인천<span class="ico_airplane">에서</span> 하네다 <span class="flight-num">TW667</span></h3>
+                            <table class="history">
+                                <caption class="blind">결제 정보</caption>
+                                <colgroup>
+                                    <col style="width:160px">
+                                    <col >
+                                    <col style="width:160px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th><span>탑승객 명</span></th>
+                                        <th><span>구매 내역</span></th>
+                                        <th><span>결제 금액</span></th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3">총 결제 금액<span>59,000원</span></td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Bae, Sungjune</td>
+                                        <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                        <td>28,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PARK, Bogeom</td>
+                                        <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                        <td>31,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Son, Seungwan</td>
+                                        <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                        <td>28,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kang, Seulgi</td>
+                                        <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                        <td>28,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Park, Jimin</td>
+                                        <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                        <td>28,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tableWrap">
+                            <h3 class="from-to-title">[구간 2] 하네다<span class="ico_airplane">에서</span> 인천 <span class="flight-num">TW667</span></h3>
+                            <table class="history">
+                                <caption class="blind">결제 정보</caption>
+                                <colgroup>
+                                    <col style="width:160px">
+                                    <col >
+                                    <col style="width:160px">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th><span>탑승객 명</span></th>
+                                    <th><span>구매 내역</span></th>
+                                    <th><span>결제 금액</span></th>
+                                </tr>
+                                </thead>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="3">총 결제 금액<span>59,000원</span></td>
+                                </tr>
+                                </tfoot>
+                                <tbody>
+                                <tr>
+                                    <td>Bae, Sungjune</td>
+                                    <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                    <td>28,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>PARK, Bogeom</td>
+                                    <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                    <td>31,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>Son, Seungwan</td>
+                                    <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                    <td>28,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>Kang, Seulgi</td>
+                                    <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                    <td>28,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>Park, Jimin</td>
+                                    <td>사전 좌석 (8B/5,000원), 수하물 (10KG/50,000원), 기내식 (불고기/10,000원)</td>
+                                    <td>28,000원</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="totalSummary">
+                            <p>구간 1 결제금액 <span>59,000</span>원 <span class="plus">+</span> 구간 2 결제금액 <span>59,000</span>원</p>
+                            <p class="total"><span class="equal">=</span>총 결제금액<span>999,000</span>원</p>
+                        </div>
+                    </div>
+                    <div class="popupBtnWrap">
+                        <a class="close">확인</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popupDimmed"></div>
+        </div>
+
+    <!-- popup - 오는편 미선택 시 추가구매 권유 팝업 -->
+    <div class="popupContainer noServices1ConfirmPopup">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">구매 전 확인하세요</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        현재 오는편만 선택내역이 없습니다.<br>
+                        <strong class="text-emphasis">[오는편 선택하기]</strong>로 이동할까요?
+                    </div>
+                </div>
+                <div class="popupBtnWrap double">
+                    <a class="close">가는편만 결제하기</a>
+                    <a class="confirm" href="#">네</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!-- popup - 가는편 미선택 시 추가구매 권유 팝업 -->
+    <div class="popupContainer noServices2ConfirmPopup">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">구매 전 확인하세요</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        현재 가는편만 선택내역이 없습니다.<br>
+                        <strong class="text-emphasis">[가는편 선택하기]</strong>로 이동할까요?
+                    </div>
+                </div>
+                <div class="popupBtnWrap double">
+                    <a class="close">오는편만 결제하기</a>
+                    <a class="confirm" href="#">네</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!-- popup - 1:1 문의하기 -->
+    <div class="popupContainer qnaPopup">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">1:1 문의하기</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="scrollbox">
+                        <ul>
+                            <li class="name">
+                                <label for="name">이름</label>
+                                <input type="text" id="name" placeholder="홍길동" />
+                            </li>
+                            <li class="mail left">
+                                <label for="mail">이메일</label>
+                                <input type="text" id="mail" placeholder="exam@mail.com" />
+                            </li>
+                            <li class="phone right">
+                                <label for="phone">휴대폰 번호</label>
+                                <input type="tel" id="phone" placeholder="숫자만 입력하세요 (-제외)" />
+                            </li>
+                            <!--	191107	-->
+                            <li class="category left">
+                                <label for="category">유형</label>
+                                    <!--
+                                        <div class="selectForm">
+                                            <p>선택</p>
+                                            <ul>
+                                                <li>옵션 1</li>
+                                                <li>옵션 2</li>
+                                                <li>옵션 3</li>
+                                            </ul>
+                                        </div>
+                                    -->
+                                    <select name="" id="category">
+                                        <option>선택</option>
+                                        <option>옵션 1</option>
+                                        <option>옵션 2</option>
+                                        <option>옵션 3</option>
+                                    </select>
+                            </li>
+                            <!--	//191107	-->
+                            <li class="ordernum right">
+                                <label for="ordernum">주문번호</label>
+                                <input type="text" id="ordernum" placeholder="주문번호를 입력하세요" />
+                            </li>
+                            <li class="title">
+                                <label for="title">제목</label>
+                                <input type="text" id="title" placeholder="제목을 입력하세요" />
+                            </li>
+                            <li class="content">
+                                <label for="content">내용</label>
+                                <textarea id="content" rows="6" placeholder="문의 내용을 입력하세요&#13;&#10;문의 내용을 입력하세요 (line-height 20)"></textarea>
+                            </li>
+                            <li class="file">
+                                <div class="fileInputWrap">
+                                    <label for="file">파일</label>
+                                    <input type="text" value="abc.jpg" disabled="disabled" />
+                                    <button id="file" type="button">파일업로드</button>
+                                    <ul class="fileNameWrap">
+                                        <li><span>abc.jpg</span><a href="#"><img src="images/ico_delete.png" width="16" height="16" alt="" /></a></li>
+                                        <li><span>abc.jpg</span><a href="#"><img src="images/ico_delete.png" width="16" height="16" alt="" /></a></li>
+                                        <li><span>abc.jpg</span><a href="#"><img src="images/ico_delete.png" width="16" height="16" alt="" /></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popupBtnWrap double">
+                    <a class="close">취소</a>
+                    <a class="confirm" href="#">문의하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!-- popup - 기내식 자세히 보기 --><!-- 200428 수정 -->
+    <div class="popupContainer mealPopup01">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">갈비찜덮밥</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="thumb-wrap">
+                        <img src="images/crop_meals_tway01.jpg" alt="갈비찜덮밥">
+                    </div>
+                    <div class="info-wrap">
+                        <dl>
+                            <dt class="name">메뉴명</dt>
+                            <dd>갈비찜덮밥</dd>
+                            <dt class="notify-tag">기내식 특이사항</dt>
+                            <dd>콜드밀</dd>
+                            <dt class="price">가격</dt>
+                            <dd>KRW 13,000</dd>
+                            <dt class="config">메뉴구성</dt>
+                            <dd>갈비찜, 볶음김치</dd>
+                            <dt class="allergy">알러지 주요성분</dt>
+                            <dd>소고기, 대두, 밀</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!-- popup: 사전 수하물 구매 불가 안내 - 당사 구매로 인한 추가 구매 불가 안내 -->
+    <div class="popupContainer baggageDenied1">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">구매 불가 안내</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        <h4 class="inner-title">수하물을 이미 구매하셨습니다.</h4>
+                        <p class="inner-text">
+                            추가 구매를 원하시면 기존 구매한 부가서비스<br>
+                            취소 후 재구매 바랍니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="popupBtnWrap">
+                    <a class="close">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+
+    <!-- popup: 사전 수하물 구매 불가 안내 - 타사 구매로 인한 추가 구매 불가 안내 -->
+    <div class="popupContainer baggageDenied2">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">구매 불가 안내</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="content">
+                        <h4 class="inner-title">수하물을 이미 구매하셨습니다.</h4>
+                        <p class="inner-text">
+                            추가 구매를 원하시면 기존 구매처를 통해<br>
+                            부가서비스 취소 후 재구매 바랍니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="popupBtnWrap">
+                    <a class="close">확인</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+
+    <!--	popup - 고객센터 접수 (210104 추가) -->
+    <div class="popupContainer qnaPopup2">
+        <div class="popupWrap">
+            <div class="popupTitleWrap">
+                <p class="title">고객센터 접수</p>
+                <a class="close">close</a>
+            </div>
+            <div class="popupContentWrap">
+                <div class="popupContent">
+                    <div class="scrollbox">
+                        <ul>
+                            <li class="category left">
+                                <label for="category2">유형</label>
+                                <select name="" id="category2">
+                                    <option>선택하세요</option>
+                                    <option>예약 확인</option>
+                                    <option>예약 취소</option>
+                                </select>
+                            </li>
+                            <li class="ordernum right">
+                                <label for="ordernum2">주문번호</label>
+                                <input type="text" id="ordernum2" value="10000000000005036/JPB6R">
+                                <p class="input-exp">이관요청일자 : 2020-12-22</p>
+                            </li>
+                            <li class="content">
+                                <label for="content2">내용</label>
+                                <textarea id="content2" rows="6" placeholder="문의 내용을 입력해주세요"></textarea>
+                                <p>* 고객센터 운영 마감 시 다음 운영일에 순차 처리됩니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popupBtnWrap double">
+                    <a class="close">취소</a>
+                    <a class="confirm" href="#">접수하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="popupDimmed"></div>
+    </div>
+    <!--	//	popup - 고객센터 접수	-->
+
+	<script>
+		$(function() {
+			$('select').selectric();
+		});
+	</script>
+</body>
+</html>

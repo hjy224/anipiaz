@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>수하물 / 기내식 / JJ라운지 선택 - (동시구매)부가서비스 구매하기</title>
+    <link rel="stylesheet" href="../resource/css/ags_mo.sim.css"><!-- 동시결제일 경우 -->
+    <script src="../resource/js/jquery-3.4.1.min.js"></script>
+    <script src="../resource/js/ags_mo.ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $win = $(window),
+                $doc = $(document);
+
+            /*[data-role='process-btn-wrap'] 버튼의 탭 전환 기능 정의*/
+            (function(nextTab){
+
+                /*가는 편 탭의 .btn_confirm 버튼을 누르면 오는 편 탭으로 이동합니다*/
+                moveTabByClick("#tab-panel1 [data-role='process-btn-wrap'] .btn_confirm", "li[aria-controls='tab-panel2']", 0, 800);
+
+                /*오는 편 탭의 .btn_cancel 버튼을 누르면 가는 편 탭으로 이동합니다*/
+                moveTabByClick("#tab-panel2 [data-role='process-btn-wrap'] .btn_cancel", "li[aria-controls='tab-panel1']", 0, 800);
+            })();
+
+            /*셀렉트의 선택된 옵션값이 null이 아닐때, 폰트 컬러를 바꾸어 줍니다.*/
+            $("select").each(function(){
+                $(this).on("change", function() {
+                    var current = $(this).val();
+                    if (current !== "null") {
+                        $(this).addClass("active");
+                    } else {
+                        $(this).removeClass("active");
+                    }
+                });
+            });
+
+            $(".btn_content-fold").on("click", function(){
+                $(this).toggleClass("active");
+                $($(this).attr("data-target")).toggleClass("active");
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="ags-wrap" class="ags-wrap">
+    <h1 class="site-name">올윈에어</h1>
+
+    <!-- ags-header -->
+    <header id="ags-header" class="ags-header">
+        <h2 class="page-name">수하물 / 기내식 / JJ라운지 선택</h2>
+        <p class="sim-pagination">2 / 2</p>
+
+        <nav class="ags-gnb">
+            <h3 class="sr-only">전역메뉴</h3>
+            <ul class="gnb-wrap">
+                <li><a href="#none" target="_self" class="btn_close">화면 닫기</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //ags-header -->
+
+    <hr>
+
+    <!-- ags-container -->
+    <div class="ags-container">
+        <section class="ags-contents" data-page-id="buy__anc-etc_sim">
+            <h3 class="sr-only">컨텐츠</h3>
+
+            <!-- 가는편/오는편 선택 탭 -->
+            <div class="tab-wrap">
+                <h4 class="sr-only">승객별 수하물 / 기내식 / JJ라운지 선택</h4>
+
+                <!-- 탭버튼 -->
+                <div class="tabs tabs_route">
+                    <ul role="tablist">
+                        <li role="tab" aria-controls="tab-panel1" class="active">가는 편</li>
+                        <li role="tab" aria-controls="tab-panel2">오는 편</li>
+                    </ul>
+                </div>
+                <!-- //탭버튼 -->
+
+                <div class="tab-panels">
+                    <div class="align-horizontal">
+                        <!-- 가는 편 탭 컨텐츠 -->
+                        <div id="tab-panel1" class="tab-panel active" role="tabpanel">
+                            <h5 class="sr-only">가는 편</h5>
+
+                            <div class="anc-etc-plan">
+                                <h6 class="passenger-name">Bae, Sungjune</h6>
+                                <ul class="plan-list">
+                                    <li class="list-item">
+                                        <label for="select-baggage01">사전 수하물</label>
+                                        <div class="select-wrap">
+                                            <select id="select-baggage01">
+                                                <option value="null">기본 15kg</option>
+                                                <option>기본 15kg + 10kg 추가 - ₩60,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-meal01">사전 기내식</label>
+                                        <div class="select-wrap">
+                                            <select id="select-meal01">
+                                                <option value="null">선택하세요</option>
+                                                <option>오색비빔밥 - ₩12,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-lounge01">JJ 라운지 이용권</label>
+                                        <div class="select-wrap">
+                                            <select id="select-lounge01">
+                                                <option value="null">선택하세요</option>
+                                                <option>이용권 구매 - 성인 : ₩14,900</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="anc-etc-plan">
+                                <h6 class="passenger-name">Son, Seungwan</h6>
+                                <ul class="plan-list">
+                                    <li class="list-item">
+                                        <label for="select-baggage02">사전 수하물</label>
+                                        <div class="select-wrap">
+                                            <select id="select-baggage02">
+                                                <option value="null">기본 15kg</option>
+                                                <option>기본 15kg + 10kg 추가 - ₩60,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-meal02">사전 기내식</label>
+                                        <div class="select-wrap">
+                                            <select id="select-meal02">
+                                                <option value="null">선택하세요</option>
+                                                <option>오색비빔밥 - ₩12,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-lounge02">JJ 라운지 이용권</label>
+                                        <div class="select-wrap">
+                                            <select id="select-lounge02">
+                                                <option value="null">선택하세요</option>
+                                                <option>이용권 구매 - 성인 : ₩14,900</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="anc-etc-plan">
+                                <h6 class="passenger-name">Kim, Taehyeong</h6>
+                                <ul class="plan-list">
+                                    <li class="list-item">
+                                        <label for="select-baggage03">사전 수하물</label>
+                                        <div class="select-wrap">
+                                            <select id="select-baggage03">
+                                                <option value="null">기본 15kg</option>
+                                                <option>기본 15kg + 10kg 추가 - ₩60,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-meal03">사전 기내식</label>
+                                        <div class="select-wrap">
+                                            <select id="select-meal03">
+                                                <option value="null">선택하세요</option>
+                                                <option>오색비빔밥 - ₩12,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-lounge03">JJ 라운지 이용권</label>
+                                        <div class="select-wrap">
+                                            <select id="select-lounge03">
+                                                <option value="null">선택하세요</option>
+                                                <option>이용권 구매 - 성인 : ₩14,900</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 프로세스 버튼 그룹 -->
+                            <div class="process-btn-wrap" data-role="process-btn-wrap">
+                                <button type="button" class="btn_cancel" onClick="location.href='buy_seat.sim.html'">이전</button>
+                                <button type="button" class="btn_confirm">다음</button>
+                            </div>
+                            <!-- 프로세스 버튼 그룹 -->
+                        </div>
+                        <!-- //가는 편 탭 컨텐츠 -->
+
+                        <!-- 오는 편 탭 컨텐츠 -->
+                        <div id="tab-panel2" class="tab-panel" role="tabpanel">
+                            <h5 class="sr-only">오는 편</h5>
+
+                            <div class="anc-etc-plan">
+                                <h6 class="passenger-name">Bae, Sungjune</h6>
+                                <ul class="plan-list">
+                                    <li class="list-item">
+                                        <label for="select-baggage11">사전 수하물</label>
+                                        <div class="select-wrap">
+                                            <select id="select-baggage11">
+                                                <option value="null">기본 15kg</option>
+                                                <option>기본 15kg + 10kg 추가 - ₩60,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-meal11">사전 기내식</label>
+                                        <div class="select-wrap">
+                                            <select id="select-meal11">
+                                                <option value="null">선택하세요</option>
+                                                <option>오색비빔밥 - ₩12,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-lounge11">JJ 라운지 이용권</label>
+                                        <div class="select-wrap">
+                                            <select id="select-lounge11">
+                                                <option value="null">선택하세요</option>
+                                                <option>이용권 구매 - 성인 : ₩14,900</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="anc-etc-plan">
+                                <h6 class="passenger-name">Son, Seungwan</h6>
+                                <ul class="plan-list">
+                                    <li class="list-item">
+                                        <label for="select-baggage12">사전 수하물</label>
+                                        <div class="select-wrap">
+                                            <select id="select-baggage12">
+                                                <option value="null">기본 15kg</option>
+                                                <option>기본 15kg + 10kg 추가 - ₩60,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-meal12">사전 기내식</label>
+                                        <div class="select-wrap">
+                                            <select id="select-meal12">
+                                                <option value="null">선택하세요</option>
+                                                <option>오색비빔밥 - ₩12,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-lounge12">JJ 라운지 이용권</label>
+                                        <div class="select-wrap">
+                                            <select id="select-lounge12">
+                                                <option value="null">선택하세요</option>
+                                                <option>이용권 구매 - 성인 : ₩14,900</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="anc-etc-plan">
+                                <h6 class="passenger-name">Kim, Taehyeong</h6>
+                                <ul class="plan-list">
+                                    <li class="list-item">
+                                        <label for="select-baggage13">사전 수하물</label>
+                                        <div class="select-wrap">
+                                            <select id="select-baggage13">
+                                                <option value="null">기본 15kg</option>
+                                                <option>기본 15kg + 10kg 추가 - ₩60,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-meal13">사전 기내식</label>
+                                        <div class="select-wrap">
+                                            <select id="select-meal13">
+                                                <option value="null">선택하세요</option>
+                                                <option>오색비빔밥 - ₩12,000</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="list-item">
+                                        <label for="select-lounge13">JJ 라운지 이용권</label>
+                                        <div class="select-wrap">
+                                            <select id="select-lounge13">
+                                                <option value="null">선택하세요</option>
+                                                <option>이용권 구매 - 성인 : ₩14,900</option>
+                                                <option>option3</option>
+                                                <option>option4</option>
+                                                <option>option5</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 프로세스 버튼 그룹 -->
+                            <div class="process-btn-wrap" data-role="process-btn-wrap">
+                                <button type="button" class="btn_cancel">이전</button>
+                                <button type="button" class="btn_confirm">선택 완료</button>
+                            </div>
+                            <!-- 프로세스 버튼 그룹 -->
+                        </div>
+                        <!-- //오는 편 탭 컨텐츠 -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- //가는편/오는편 좌석 선택 탭 -->
+
+            <!-- 기타 부가서비스 관련 안내문 -->
+            <div class="notification-wrap">
+                <!-- 기내식 알레르기 유의사항 -->
+                <h4 class="notification-title"><i class="ico"></i>기내식 알레르기 유의사항</h4>
+                <a href="#none" target="_self" class="btn_content-fold" data-target="#content-allergy">기내식마다 <i>알레르기 유의사항</i>을 확인하세요.<i class="ico"></i></a>
+                <div id="content-allergy" class="notification-list content-fold-target">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">불고기덮밥</th>
+                            <td>대두, 밀, 새우, 돼지고기, 닭고기, 토마토, 이산화황, 조개류</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">풍스질질샌드위치</th>
+                            <td>대두, 밀, 새우, 돼지고기, 닭고기, 토마토, 이산화황, 조개류</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">스튜어디스/<br>스튜어드기내식</th>
+                            <td>대두, 밀, 새우, 돼지고기, 닭고기, 토마토, 이산화황, 조개류</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">저칼로리도시락</th>
+                            <td>대두, 밀, 새우, 돼지고기, 닭고기, 토마토, 이산화황, 조개류</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">패밀리세트</th>
+                            <td>대두, 밀, 새우, 돼지고기, 닭고기, 토마토, 이산화황, 조개류</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 티웨이항공용 안내 텍스트 -->
+                <!--<h4 class="notification-title"><i class="ico"></i>꼭 읽어보세요!</h4>
+                <ul class="notification-list">
+                    &lt;!&ndash; 수하물 안내 &ndash;&gt;
+                    <li>출발 2일 전까지 사전수하물 환불 가능합니다. 단, 출발 1일 전부터 취소 시에는 환불되지 않습니다.</li>
+                    <li>위탁수하물 구매는 1인당 1회 가능합니다. (무게 변경을 원하실 경우 출발 2일 전까지 취소 후 재구매 하셔야 합니다.)</li>
+                    <li>항공권 취소 시, 구매하신 수하물은 자동 취소 및 환불되며, 여정 변경시에는 구매하신 수하물을 취소하신 후 다시 구매하셔야 합니다. (단, 출발일 1일 전부터 수하물 취소 및 환불이 불가합니다.)</li>
+                    <li>위탁 수하물 1개 무게는 32Kg을 초과할 수 없으며, 초과시 분리 포장해주셔야 합니다.</li>
+                    &lt;!&ndash; 기내식 안내 &ndash;&gt;
+                    <li>기내식 사전 주문은 출발일 기준 3일 전까지 환불이 가능하며, 출발일 2일 전부터 환불 불가능합니다.</li>
+                    <li>항공권 취소 시, 구매하신 기내식은 자동 취소 및 환불되며 마이페이지에서 재 구매 가능합니다. (단, 출발일 2일 전부터 환불 불가)</li>
+                </ul>-->
+                <!-- 제주항공용 안내 텍스트 -->
+                <h4 class="notification-title"><i class="ico"></i>꼭 읽어보세요!</h4>
+                <ul class="notification-list">
+                    <!-- 수하물 안내 -->
+                    <li>출발 24시간 전 까지만 구매 가능합니다.</li>
+                    <li>최초 출발 시간 기준 24시간 전부터 환불이 불가합니다.</li>
+                    <li>취소시 건당 시스템 사용료 1,000원이 부과됩니다. (취소 가능 기간 이후, 구매 금액 전체 징수)</li>
+                    <li>이미 구매한 경우 변경이 불가합니다. 변경을 원할 경우 취소 후 재구매 해주시기 바랍니다.</li>
+                    <!-- 기내식 안내 -->
+                    <li>최소 출발 3일 전까지 구매 가능합니다</li>
+                    <li>최초 출발 2일 전부터 환불이 불가합니다.</li>
+                    <li>취소시 건당 시스템 사용료 1,000원이 부과됩니다. (취소 가능 기간 이후, 구매 금액 전체 징수)</li>
+                    <li>이미 구매한 경우 변경이 불가합니다. 변경을 원할 경우 취소 후 재구매 해주시기 바랍니다.</li>
+                    <!-- 라운지 안내 -->
+                    <li>JJ라운지 이용권은 이용일 전일 23시 50분까지 구매 가능합니다.</li>
+                    <li>이용일 전일 23시 50분 이후로는 환불이 불가합니다.</li>
+                    <li>JJ라운지 이용권은 탑승일에만 이용하실 수 있습니다. </li>
+                </ul>
+            </div>
+            <!-- //기타 부가서비스 관련 안내문 -->
+        </section>
+    </div>
+    <!-- //ags-container -->
+
+    <hr>
+
+    <!-- ags-summary -->
+    <footer id="ags-summary" class="ags-summary">
+        <h4 class="sr-only">부가서비스 결제금액</h4>
+        <a href="#none" target="_self" class="btn_drawer" data-popup="#passenger-summary"><i class="ico"></i>총 결제 금액 슬라이드 열기/닫기</a>
+        <div class="inner-wrap">
+            <div class="total">
+                <h5 class="sr-only">총 결제 금액</h5>
+                <dl>
+                    <dt><a href="#none" target="_self" data-popup="#passenger-summary">총 결제 금액 자세히 보기</a></dt>
+                    <dd><span class="digits">30000</span></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <!-- //ags-summary -->
+</div>
+
+<!-- 팝업 : 총 결제 금액 자세히보기 -->
+<div id="passenger-summary" class="passenger-summary theme-dark" data-type="drawer">
+    <a href="#none" target="_self" class="btn_drawer" data-popup="#passenger-summary"><i class="ico"></i>총 결제 금액 슬라이드 열기/닫기</a>
+    <h4 class="summary-title">총 결제 금액 자세히보기</h4>
+    <div class="inner-wrap">
+        <h5 class="title">가는 편</h5>
+        <dl class="flight-num">
+            <dt>항공편명</dt>
+            <dd>7C4602</dd>
+        </dl>
+        <div class="table-wrap">
+            <h6 class="passenger-name">Kim, Allwin</h6>
+            <table class="charge-sheet">
+                <caption>Kim, Allwin 결제 금액</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">좌석</th>
+                    <td>D4</td>
+                    <td><span class="digits">10000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">수하물</th>
+                    <td>30kg</td>
+                    <td><span class="digits">60000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">기내식</th>
+                    <td><a href="#none" target="_self">구매하기</a></td>
+                    <td><span class="digits">0</span></td>
+                    <td><span class="btn_delete disabled">삭제</span></td><!-- 결제 금액이 없을 때는 삭제버튼의 href, target 어트리뷰트 제거 후 span으로 교체(개발 상황에 따라 a 태그 유지해도 무방), .disabled 클래스를 붙입니다. -->
+                </tr>
+                <tr>
+                    <th scope="row">라운지</th>
+                    <td>이용권 선택</td>
+                    <td><span class="digits">14900</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrap">
+            <h6 class="passenger-name">Bae, Sungjune</h6>
+            <table class="charge-sheet">
+                <caption>Bae, Sungjune 결제 금액</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">좌석</th>
+                    <td>D4</td>
+                    <td><span class="digits">10000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">수하물</th>
+                    <td>30kg</td>
+                    <td><span class="digits">60000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">기내식</th>
+                    <td><a href="#none" target="_self">구매하기</a></td>
+                    <td><span class="digits">0</span></td>
+                    <td><span class="btn_delete disabled">삭제</span></td><!-- 결제 금액이 없을 때는 삭제버튼의 href, target 어트리뷰트 제거 후 span으로 교체(개발 상황에 따라 a 태그 유지해도 무방), .disabled 클래스를 붙입니다. -->
+                </tr>
+                <tr>
+                    <th scope="row">라운지</th>
+                    <td>이용권 선택</td>
+                    <td><span class="digits">14900</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrap">
+            <h6 class="passenger-name">Kim, Kukjin</h6>
+            <table class="charge-sheet">
+                <caption>Kim, Kukjin 결제 금액</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">좌석</th>
+                    <td>D4</td>
+                    <td><span class="digits">10000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">수하물</th>
+                    <td>30kg</td>
+                    <td><span class="digits">60000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">기내식</th>
+                    <td><a href="#none" target="_self">구매하기</a></td>
+                    <td><span class="digits">0</span></td>
+                    <td><span class="btn_delete disabled">삭제</span></td><!-- 결제 금액이 없을 때는 삭제버튼의 href, target 어트리뷰트 제거 후 span으로 교체(개발 상황에 따라 a 태그 유지해도 무방), .disabled 클래스를 붙입니다. -->
+                </tr>
+                <tr>
+                    <th scope="row">라운지</th>
+                    <td>이용권 선택</td>
+                    <td><span class="digits">14900</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="total-wrap">
+            <dl>
+                <dt>금액</dt>
+                <dd><span class="digits">999000</span></dd>
+            </dl>
+        </div>
+
+        <h5 class="title">오는 편</h5>
+        <dl class="flight-num">
+            <dt>항공편명</dt>
+            <dd>7C4602</dd>
+        </dl>
+        <div class="table-wrap">
+            <h6 class="passenger-name">Kim, Allwin</h6>
+            <table class="charge-sheet">
+                <caption>Kim, Allwin 결제 금액</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">좌석</th>
+                    <td>D4</td>
+                    <td><span class="digits">10000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">수하물</th>
+                    <td>30kg</td>
+                    <td><span class="digits">60000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">기내식</th>
+                    <td><a href="#none" target="_self">구매하기</a></td>
+                    <td><span class="digits">0</span></td>
+                    <td><span class="btn_delete disabled">삭제</span></td><!-- 결제 금액이 없을 때는 삭제버튼의 href, target 어트리뷰트 제거 후 span으로 교체(개발 상황에 따라 a 태그 유지해도 무방), .disabled 클래스를 붙입니다. -->
+                </tr>
+                <tr>
+                    <th scope="row">라운지</th>
+                    <td>이용권 선택</td>
+                    <td><span class="digits">14900</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrap">
+            <h6 class="passenger-name">Bae, Sungjune</h6>
+            <table class="charge-sheet">
+                <caption>Bae, Sungjune 결제 금액</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">좌석</th>
+                    <td>D4</td>
+                    <td><span class="digits">10000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">수하물</th>
+                    <td>30kg</td>
+                    <td><span class="digits">60000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">기내식</th>
+                    <td><a href="#none" target="_self">구매하기</a></td>
+                    <td><span class="digits">0</span></td>
+                    <td><span class="btn_delete disabled">삭제</span></td><!-- 결제 금액이 없을 때는 삭제버튼의 href, target 어트리뷰트 제거 후 span으로 교체(개발 상황에 따라 a 태그 유지해도 무방), .disabled 클래스를 붙입니다. -->
+                </tr>
+                <tr>
+                    <th scope="row">라운지</th>
+                    <td>이용권 선택</td>
+                    <td><span class="digits">14900</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrap">
+            <h6 class="passenger-name">Kim, Kukjin</h6>
+            <table class="charge-sheet">
+                <caption>Kim, Kukjin 결제 금액</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">좌석</th>
+                    <td>D4</td>
+                    <td><span class="digits">10000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">수하물</th>
+                    <td>30kg</td>
+                    <td><span class="digits">60000</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">기내식</th>
+                    <td><a href="#none" target="_self">구매하기</a></td>
+                    <td><span class="digits">0</span></td>
+                    <td><span class="btn_delete disabled">삭제</span></td><!-- 결제 금액이 없을 때는 삭제버튼의 href, target 어트리뷰트 제거 후 span으로 교체(개발 상황에 따라 a 태그 유지해도 무방), .disabled 클래스를 붙입니다. -->
+                </tr>
+                <tr>
+                    <th scope="row">라운지</th>
+                    <td>이용권 선택</td>
+                    <td><span class="digits">14900</span></td>
+                    <td><a href="#none" target="_self" class="btn_delete">삭제</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="total-wrap">
+            <dl>
+                <dt>금액</dt>
+                <dd><span class="digits">999000</span></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<!-- //팝업 : 총 결제 금액 자세히보기 -->
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>(국내선)부가서비스 구매하기 - 모든 부가서비스를 구매할 수 없을 때</title>
+    <link rel="stylesheet" href="../resource/css/swiper.min.css">
+    <link rel="stylesheet" href="../resource/css/ags_mo.dom.css"><!-- 국내선일 경우 -->
+    <script src="../resource/js/jquery-3.4.1.min.js"></script>
+    <script src="../resource/js/swiper.min.js"></script>
+    <script src="../resource/js/ags_mo.ui.js"></script>
+    <script>
+        var $win = $(window),
+            $doc = $(document),
+            $html = $("html"),
+            $body = $("body");
+
+        /*좌석 범례 스크롤 기능 정의*/
+        function legendHandler(target){
+            var $psgWrap = $(target).find(".passenger-wrap"),
+                $legendWrap = $(target).find(".seat-legend"),
+                pd = 7,
+                mgTop = $psgWrap.height() + $legendWrap.height(),
+                items = [],
+                pos = [];
+
+            $($legendWrap.find("a")).each(function(index, item){
+                var position = $($(".tab-panel.active .seat-num ." + $(item)[0].dataset.scrollto + ":first-of-type")).offset().top - mgTop - pd;
+                pos.push(position);
+                items.push($(item)[0].dataset.scrollto)
+            });
+            $win.on("scroll", function(e){
+                if($legendWrap.parents(".tab-panel.active").length > 0) {
+                    setTimeout(function(){
+                        var currentScroll = $html.scrollTop();
+                        for (i in pos) {
+                            if (pos[i] <= currentScroll + 5) {
+                                var index = i,
+                                    $currentLegend = $(".tab-panel.active .seat-legend ." + items[index]);
+                                $currentLegend.addClass("active").siblings().removeClass("active");
+                            } else if(currentScroll + 5 <= pos[0]) {
+                                $(".tab-panel.active .seat-legend ." + items[0]).addClass("active").siblings().removeClass("active");
+                            }
+                        }
+                    }, 800);
+                    activeLinkScrollLeft($(".tab-panel.active .seat-legend .active"), $legendWrap, 800);
+                }
+            }).scroll()
+        }
+
+        /*번들선택 버튼 스크롤 기능 정의*/
+        function floatingBannerGroup(){
+            $(window).on("scroll", function(){
+                if ($(window).scrollTop() > 100){
+                    $(".floating-banner").css("opacity", "0").removeClass("active")
+                } else {
+                    $(".floating-banner").css("opacity", 1 - ($(window).scrollTop() * 0.01)).addClass("active")
+                }
+            }).scroll();
+        }
+
+        $doc.ready(function(){
+            /*팝업 불러오기*/
+            $("#popup").load("include/common_popup.html");
+
+            /*[data-role='process-btn-wrap'] 버튼의 탭 전환 기능 정의*/
+            (function(nextTab){
+
+                /*가는 편 탭의 .btn_confirm 버튼을 누르면 오는 편 탭으로 이동합니다*/
+                moveTabByClick("#tab-panel1-1 [data-role='process-btn-wrap'] .btn_confirm", "li[aria-controls='tab-panel1-2']", 0, 800);
+                moveTabByClick("#tab-panel1-2 [data-role='process-btn-wrap'] .btn_cancel", "li[aria-controls='tab-panel1-1']", 0, 800);
+
+                /*오는 편 탭의 .btn_cancel 버튼을 누르면 가는 편 탭으로 이동합니다*/
+                moveTabByClick("#tab-panel2-1 [data-role='process-btn-wrap'] .btn_confirm", "li[aria-controls='tab-panel2-2']", 0, 800);
+                moveTabByClick("#tab-panel2-2 [data-role='process-btn-wrap'] .btn_cancel", "li[aria-controls='tab-panel2-1']", 0, 800);
+            })();
+        });
+
+        $win.on("load", function(){
+            /*가는 편/오는 편 스와이프 탭 기능 정의*/
+            (function(){
+                var swiper = new Swiper('#tabs_route', {
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    slidesPerView: 1,
+                    loop: false,
+                });
+                swiper.on('transitionStart', function() {
+                    var $this = $($("#tabs_route").find(".swiper-slide")[swiper.activeIndex]);
+                    $(".ags-snb").find("li[aria-controls='" + $this.attr("data-aria-target") + "']").mousedown();
+                    if($this.attr("data-aria-target") === 'tab-panel1-1'){
+                        $(".ags-snb li[aria-controls^='tab-panel2']").css("display", "none");
+                        $(".ags-snb li[aria-controls^='tab-panel1']").css("display", "table-cell");
+                        $("#floating-banner-wrap").removeClass("active").hide();
+                        legendHandler(".tab-panel.active");
+                    } else if($this.attr("data-aria-target") === 'tab-panel2-1'){
+                        $(".ags-snb li[aria-controls^='tab-panel1']").css("display", "none");
+                        $(".ags-snb li[aria-controls^='tab-panel2']").css("display", "table-cell");
+                        $("#floating-banner-wrap").addClass("active").show();
+                        legendHandler(".tab-panel.active");
+                        floatingBannerGroup();
+                    }
+                }).transitionStart();
+            })();
+        })
+    </script>
+</head>
+<body>
+	<div id="ags-wrap" class="ags-wrap">
+        <h1 class="site-name">올윈에어</h1>
+
+        <!-- ags-header -->
+        <header id="ags-header" class="ags-header">
+            <!-- 제주항공이고 && 기내면세 오픈했을 경우 -->
+            <!--<h2 class="page-name"><a href="#nav-shortcut" target="_self" id="btn_nav-shortcut" class="btn_nav-shortcut">부가서비스 신청 <i class="ico_nav-dropdown"></i></a></h2>
+            <div id="nav-shortcut" class="nav-shortcut">
+                <ul>
+                    <li class="active"><a href="#none" target="_self">부가서비스 사전구매</a></li>
+                    <li><a href="dfs_list.html" target="_self">기내면세 예약</a></li>
+                </ul>
+            </div>-->
+
+            <!-- 기내면세 오픈 전 제주항공 || 티웨이항공일 경우 -->
+            <!--<h2 class="page-name">부가서비스 사전구매</h2>--><!-- 렌터카 서비스 미제공 시 -->
+            <h2 class="page-name">사전 좌석 / 수하물 / 렌터카</h2><!-- 렌터카 서비스 제공 시 -->
+
+            <nav class="ags-gnb">
+                <h3 class="sr-only">전역메뉴</h3>
+                <ul class="gnb-wrap">
+                    <li><a href="#none" target="_self" class="btn_back">뒤로가기</a></li>
+                    <li>
+                        <a href="#none" target="_self" id="btn_gnb" class="btn_gnb">메뉴</a>
+                        <div id="gnb-2dp" class="gnb-2dp-wrap">
+                            <a href="#none" target="_self" id="btn_gnb-close" class="btn_close">메뉴 닫기</a>
+                            <p class="welcome-msg">
+                                안녕하세요!<br>
+                                <span class="customer-name">Bae, Sungjune</span>님
+                            </p>
+                            <ul class="depth1">
+                                <li><a href="#none" target="_self">항공 부가서비스 사전 신청</a></li>
+                                <li class="new active"><a href="#none" target="_self">기내 면세품 예약</a></li><!-- 활성화된 메뉴는 .active -->
+                                <li>
+                                    <a href="#none" target="_self">마이페이지</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none" target="_self">부가서비스 신청내역</a></li>
+                                        <li><a href="#none" target="_self">기내 면세품 예약내역</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="fnb">
+                                <li><a href="#none" target="_self">개인정보취급방침</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#none" target="_self" class="btn_close">화면 닫기</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- //ags-header -->
+
+        <hr>
+
+        <!-- ags-container -->
+        <div class="ags-container">
+            <section class="ags-contents" data-page-id="buy__dom">
+                <h3 class="sr-only">컨텐츠</h3>
+
+
+                <div class="tab-wrap">
+
+                    <!-- 가는편/오는편 선택 -->
+                    <div id="tabs_route" class="tabs_route swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide" data-aria-target="tab-panel1-1">
+                                <i class="ico_tag">가는 편</i>
+                                <div class="ticket-info">
+                                    <h3 class="sr-only">티켓 정보</h3>
+                                    <dl class="airport">
+                                        <dt class="departure">출발지</dt>
+                                        <dd><span class="iata-code">GMP</span> 서울(김포)</dd>
+                                        <dt class="arrival">도착지</dt>
+                                        <dd><span class="iata-code">PUS</span> 부산</dd>
+                                        <dt class="airline">항공사</dt>
+                                        <dd><i class="ico_7c">제주항공</i></dd>
+                                        <dt class="schedule">여정일</dt>
+                                        <dd>2020.11.16(월)</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="swiper-slide" data-aria-target="tab-panel2-1">
+                                <i class="ico_tag">오는 편</i>
+                                <div class="ticket-info">
+                                    <h3 class="sr-only">티켓 정보</h3>
+                                    <dl class="airport">
+                                        <dt class="departure">출발지</dt>
+                                        <dd><span class="iata-code">PUS</span> 부산</dd>
+                                        <dt class="arrival">도착지</dt>
+                                        <dd><span class="iata-code">GMP</span> 서울(김포)</dd>
+                                        <dt class="airline">항공사</dt>
+                                        <dd><i class="ico_tw">티웨이항공</i></dd>
+                                        <dt class="schedule">여정일</dt>
+                                        <dd>2020.11.26(월)</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-next"><i class="ico"></i></div>
+                        <div class="swiper-button-prev"><i class="ico"></i></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="tabs ags-snb sr-only">
+                        <h4 class="sr-only">서브메뉴</h4>
+                        <ul class="tablist snb-wrap" role="tablist">
+                            <li role="tab" aria-controls="tab-panel1-1" class="btn_seat active"><span class="sr-only">가는 편 </span>좌석 지정</li><!-- 현재 활성화 된 메뉴일 경우 .active -->
+                            <li role="tab" aria-controls="tab-panel1-2" class="btn_baggage"><span class="sr-only">가는 편 </span>수하물</li>
+                            <li role="tab" aria-controls="tab-panel1-3" class="btn_rentacar"><span class="sr-only">가는 편 </span>렌터카</li>
+                            <li role="tab" aria-controls="tab-panel2-1" class="btn_seat"><span class="sr-only">오는 편 </span>좌석 지정</li>
+                            <li role="tab" aria-controls="tab-panel2-2" class="btn_baggage"><span class="sr-only">오는 편 </span>수하물</li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="tab-panels">
+                        <div class="align-horizontal">
+                            <div id="tab-panel1-1" class="tab-panel active" role="tabpanel">
+                                <h3 class="sr-only">가는 편</h3>
+
+                                <!-- **** 분기 : 제주항공 / 가는 편 또는 오는 편의 모든 부가서비스를 제공할 수 없을 때 **** -->
+                                <div class="no-item">
+                                    <div class="ico-wrap">
+                                        <i class="ico_alert--primary">!</i>
+                                    </div>
+                                    <h3 class="alert-title">
+                                        항공기 출발 시간이 임박하여<br>
+                                        부가 서비스를 구매할 수 없습니다.
+                                    </h3>
+                                    <ul class="alert-text">
+                                        <li>
+                                            <strong class="alert-text-title">좌석</strong>
+                                            출발 24시간전까지 구매 가능
+                                        </li>
+                                        <li>
+                                            <strong class="alert-text-title">수하물</strong>
+                                            출발 24시간전까지 구매 가능
+                                        </li>
+                                        <li>
+                                            <strong class="alert-text-title">기내식</strong>
+                                            출발 3일전까지 구매 가능<br>
+                                            (예 : 5/5일 출발 → 5/2일까지 구매 가능)
+                                        </li>
+                                        <li>
+                                            <strong class="alert-text-title">라운지</strong>
+                                            출발 1일전 23:50까지 구매 가능<br>
+                                            (예 : 5/5일 출발 → 5/4일 23:50 이 전까지 구매 가능)
+                                        </li>
+                                    </ul>
+                                    <div class="process-btn-wrap">
+                                        <button type="button" class="btn_confirm">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="tab-panel2-1" class="tab-panel" role="tabpanel">
+                                <h3 class="sr-only">오는 편</h3>
+
+                                <!-- **** 분기 : 티웨이항공 / 가는 편 또는 오는 편의 모든 부가서비스를 제공할 수 없을 때 **** -->
+                                <div class="no-item">
+                                    <div class="ico-wrap">
+                                        <i class="ico_alert--primary">!</i>
+                                    </div>
+                                    <h3 class="alert-title">
+                                        항공기 출발 시간이 임박하여<br>
+                                        부가 서비스를 구매할 수 없습니다.
+                                    </h3>
+                                    <ul class="alert-text">
+                                        <li>
+                                            <strong class="alert-text-title">좌석</strong>
+                                            사전 좌석은 항공기 출발 2일전까지만 구매 가능<br>
+                                            (예 : 5월 5일 출발인 경우 5월 3일까지 구매 가능)
+                                        </li>
+                                        <li>
+                                            <strong class="alert-text-title">수하물</strong>
+                                            사전 수하물은 항공기 출발 2일전까지만 구매 가능<br>
+                                            (예 : 5월 5일 출발인 경우 5월 3일까지 구매 가능)
+                                        </li>
+                                        <li>
+                                            <strong class="alert-text-title">기내식</strong>
+                                            사전 기내식은 항공기 출발 3일전까지만 구매 가능<br>
+                                            (예 : 5월 5일 출발인 경우 5월 2일까지 구매 가능)
+                                        </li>
+                                    </ul>
+                                    <div class="process-btn-wrap">
+                                        <button type="button" class="btn_confirm">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+        <!-- //ags-container -->
+
+        <hr>
+
+        <!-- ags-summary -->
+        <footer id="ags-summary" class="ags-summary">
+            <h4 class="sr-only">부가서비스 결제금액</h4>
+            <a href="#none" target="_self" class="btn_drawer" data-popup="#passenger-summary_dom"><i class="ico"></i>총 결제 금액 슬라이드 열기/닫기</a>
+            <div class="inner-wrap">
+                <div class="total">
+                    <h5 class="sr-only">총 결제 금액</h5>
+                    <dl>
+                        <dt><a href="#none" target="_self" data-popup="#passenger-summary_dom">총 결제 금액 자세히 보기</a></dt>
+                        <dd><span class="digits">30000</span></dd>
+                        <dd><button type="button" class="btn_pay-imm">바로 결제하기</button></dd>
+                    </dl>
+                </div>
+            </div>
+        </footer>
+        <!-- //ags-summary -->
+    </div>
+
+    <div id="popup"></div>
+</body>
+</html>
