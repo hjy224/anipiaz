@@ -996,8 +996,9 @@ strong {
   font-weight: 400;
 }
 
-
 .cardDiv4 { width: 50% !important; text-align: center; margin-right: 5px !important; }
+.cardDiv5 { width: 66px !important; text-align: center; margin-right: 5px !important; }
+
 
 
 /* popup common layout */
