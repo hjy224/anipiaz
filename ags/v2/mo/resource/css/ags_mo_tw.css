@@ -191,6 +191,11 @@
   width: 21rem;
 }
 
+[data-page-id='buy__seat'] .seat-sheet .seat-num-w {
+  margin: 0 auto;
+  width: 25rem;
+}
+
 [data-page-id='buy__seat'] .seat-sheet.B73780001 {
   min-height: 67.5rem;
 }

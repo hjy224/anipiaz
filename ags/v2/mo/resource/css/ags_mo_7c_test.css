@@ -6693,11 +6693,11 @@ div:not([data-page-id='buy__dom']) .ags-container .ags-snb a.btn_rentacar {
 }
 
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc + .hallway {
-  margin: 0 16px;
+  margin: 0 -12px;
 }
 
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc + .hallway {
-  margin: 0 16px;
+  margin: 0 -12px;
 }
 
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc {
