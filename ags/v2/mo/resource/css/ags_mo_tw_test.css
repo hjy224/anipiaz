@@ -327,6 +327,34 @@
   display: inline-block;
 }
 
+[data-page-id='buy__seat'] .seat-num-w .row-num2 {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 0.85714rem;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: -0.03em;
+  position: absolute;
+  left: 34%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+[data-page-id='buy__seat'] .seat-num-w .row-num3 {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 0.85714rem;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: -0.03em;
+  position: absolute;
+  left: 65.5%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
 
 [data-page-id='buy__seat'] .seat-num-w:not(.excluded-numbering) {
   counter-reset: seat-row-numbering;
