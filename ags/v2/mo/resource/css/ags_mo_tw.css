@@ -639,10 +639,35 @@
 }
 
 
-[data-page-id='buy__seat'] .seat-code1 {
+
+
+ .seat-code1 {
   position: absolute;
-  top: 10px;
+  top: 1px;
+  left: 54%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  display: table;
+  table-layout: fixed;
   width: 100%;
+  margin: 0 auto;
+}
+
+ .seat-code1 span{
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+  color: #000;
+  display: table-cell;
+  text-align: center;
+  padding-right: 22px;
+}
+
+.hallway-b{
+  margin: 0 1px;
+  width: 15px;
+  height: 5px;
 }
 
 
