@@ -3806,13 +3806,13 @@ div:not([data-page-id='buy__dom']) .ags-container .ags-snb a.btn_rentacar {
   color: #000;
   letter-spacing: -0.03em;
   position: fixed;
-  right: 1.71429rem;
-  bottom: 8.42857rem;
+  right: 279px;
+  bottom: 134px;
 }
 
 [data-page-id^='buy__'] .floating-banner .btn_bundle {
   display: inline-block;
-  padding: 0.92857rem 0.57143rem;
+  padding: 15px 9px;
   width: 4.90909em;
   height: 4.90909em;
   background-color: #000;
@@ -6679,13 +6679,6 @@ div:not([data-page-id='buy__dom']) .ags-container .ags-snb a.btn_rentacar {
   border-radius: 12px 12px 3px 3px;
 }
 
-
-.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.type01, 
-.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.type01 + .hallway,
- .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.type01 + .hallway {
-  width: 31px;
-  height: 37px;
-}
 
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc,
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc {

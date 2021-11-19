@@ -500,3 +500,87 @@
   width: 2rem;
   height: 2rem;
 }
+
+
+/*티웨이 중형항공기 */
+
+/*비즈항공 좌석 크기*/
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.type01, 
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.type01 + .hallway,
+ .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.type02 + .hallway {
+  width: 32px;
+  height: 38px;
+}
+
+/*비즈항공 좌석 통로*/
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.jagan01 + .hallway {
+  margin: 0 1px;
+}
+
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.jagan01 + .hallway {
+  margin: 0 1px;
+}
+/*
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc:nth-of-type(1) {
+  margin-left: 1px;
+}
+
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc:nth-of-type(1) {
+  margin-left: 1px;
+}
+*/
+
+/*비즈항공 좌석 크기 disabled*/
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.type02 {
+  width: 32px !important;
+  height: 38px !important;
+}
+.hallway-m{
+
+  margin: 0 1px;
+  width: 27px;
+  height: 38px;
+}
+
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.type01,
+.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.type02 {
+  margin: 0 3px;
+}
+
+
+.row-num-left {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 0.85714rem;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: -0.03em;
+  position: absolute;
+  left: 32%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.row-num-right {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 0.85714rem;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: -0.03em;
+  position: absolute;
+  left: 68%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 321px) {
+  
+
+
+}
