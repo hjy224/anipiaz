@@ -427,7 +427,7 @@
   color: #ffffff;
 }
 
-[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type1 {
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type1.chair1 {
   height: 2.57143rem !important;
   border-color: #FF4F24;
 }
@@ -437,7 +437,7 @@
   box-shadow: 0 4px 8px rgba(255, 79, 36, 0.5);
 }
 
-[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type2 {
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type2.chair2 {
   border-color: #2A2167;
 }
 
@@ -446,7 +446,7 @@
   box-shadow: 0 4px 8px rgba(42, 33, 103, 0.5);
 }
 
-[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type3 {
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type3.chair3 {
   border-color: #8BC4AA;
 }
 
@@ -455,7 +455,7 @@
   box-shadow: 0 4px 8px rgba(139, 196, 170, 0.5);
 }
 
-[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type4 {
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type4.chair4 {
   border-color: #AAC8E4;
 }
 
@@ -520,15 +520,7 @@
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.jagan01 + .hallway {
   margin: 0 1px;
 }
-/*
-.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc:nth-of-type(1) {
-  margin-left: 1px;
-}
 
-.seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc:nth-of-type(1) {
-  margin-left: 1px;
-}
-*/
 
 /*비즈항공 좌석 크기 disabled*/
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.type02 {
@@ -541,6 +533,7 @@
   width: 27px;
   height: 38px;
 }
+
 
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.type01,
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.type02 {
@@ -578,9 +571,79 @@
   display: inline-block;
 }
 
+/*앞좌석 비상구좌석*/
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type1.chair1 {
+  margin: 0 3.2px;
+  width: 25px;
+  height: 32px;
 
-@media only screen and (min-width: 300px) and (max-width: 321px) {
-  
+}
+.hallway-a{
+  margin: 0 1px;
+  width: 15px;
+  height: 32px;
+}
+
+.row-num-left2 {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 0.85714rem;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: -0.03em;
+  position: absolute;
+  left: 25.5%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+.row-num-right2 {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 0.85714rem;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: -0.03em;
+  position: absolute;
+  left: 74%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+/*일반좌석 파랑*/
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type2.chair2 {
+  margin: 0 3.2px;
+  width: 25px;
+  height: 32px;
+}
+/*일반좌석 초록*/
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type3.chair3 {
+  margin: 0 3.2px;
+  width: 25px;
+  height: 32px;
+}
+/*일반좌석 등받이*/
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type4.chair4 {
+  margin: 0 3.2px;
+  width: 25px;
+  height: 32px;
+}
 
 
+
+
+
+
+
+@media only screen and (max-width: 321px) {
+
+  .seat-plan .seat-sheet.B73780002:after {
+    z-index:-1;
+    }
+  .ags-summary .total .btn_pay-imm, .ags-summary .total .btn_resv-imm, .ags-summary .total .btn_refund-imm{
+    padding:0 6px;
+  }
 }
