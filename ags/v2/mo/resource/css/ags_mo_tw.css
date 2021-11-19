@@ -280,7 +280,7 @@
   text-align: center;
 }
 
-[data-page-id='buy__seat'] .seat-num {
+[data-page-id='buy__seat'] .seat-num.tw-seat-pa {
   padding: 3.78571rem 0 3.14286rem;
   /*비행기 행번호 수동입력용*/
   /*비행기 행번호 자동 입력용*/
@@ -633,8 +633,17 @@
 }
 
 
+/*비행기 행번호 와 좌석 간격*/
+[data-page-id='buy__seat'] .seat-num.tw-seat-pa {
+  padding: 30px 0 3.14286rem;
+}
 
 
+[data-page-id='buy__seat'] .seat-code1 {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
 
 
 
