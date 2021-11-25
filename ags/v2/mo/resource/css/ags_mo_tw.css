@@ -502,7 +502,7 @@
 }
 
 
-/*티웨이 중형항공기 */
+/*티웨이 중형항공기---------------------------------------------------------------------------------------------------------- */
 
 /*비즈항공 좌석 크기*/
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.type01, 
@@ -528,12 +528,10 @@
   height: 38px !important;
 }
 .hallway-m{
-
   margin: 0 1px;
   width: 27px;
-  height: 38px;
+  height: 18px;
 }
-
 
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-type-nc.type01,
 .seat-plan .seat-sheet.B73780002 a[class^='seat-'].seat-disabled-nc.type02 {
@@ -578,10 +576,12 @@
   height: 32px;
 
 }
+
+/* 좌석간 간격 */
 .hallway-a{
   margin: 0 1px;
   width: 15px;
-  height: 32px;
+  height: 19px;
 }
 
 .row-num-left2 {
@@ -666,6 +666,19 @@
   width: 15px;
   height: 5px;
 }
+.test{
+
+  border: 1px solid; 
+  padding:10px; 
+  width:25px; 
+  height: 25px; 
+  margin-left: 280px; 
+  background-image:url("../resource/img/buy/ico_babyseat.png"); 
+
+}
+
+
+
 
 @media only screen and (max-width: 321px) {
 
@@ -676,3 +689,4 @@
     padding:0 6px;
   }
 }
+
