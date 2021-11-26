@@ -280,12 +280,12 @@
   /*비행기 행번호 수동입력용*/
   /*비행기 행번호 자동 입력용*/
 }
-
+/*지워도 되면 지워버려.
 [data-page-id='buy__seat'] .seat-num li {
   position: relative;
   padding: 0.42857rem 0.28571rem;
 }
-
+*/
 [data-page-id='buy__seat'] .seat-num li:after {
   content: '';
   display: table;
@@ -758,9 +758,7 @@
   height: 5px;
 }
 
-.test{
-  
-  position: absolute;
+.babyseat{  
   top: 0px;
   left: 237.5px;
   border: 2px solid; 
@@ -770,14 +768,32 @@
   height: 25px; 
   background-image:url("../img/back/ico_babyseat_x3.png");
   background-repeat: no-repeat;
-  background-size: 70% auto;
+  background-size: 80% auto;
   background-position: center;
 }
+.babyseat_c{
+
+  left: 119px;
+}
+
+.restaurant{ 
+  top: 0px;
+  left: 119px;
+  border: 2px solid; 
+  border-color: #ddd;
+  border-radius: 5px;
+  width:59px; 
+  height: 30px; 
+  background-image:url("../img/back/ico_restaurant_x3.png");
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+
+}
+.wcbox{
 
 
-
-
-
+}
 
 
 
