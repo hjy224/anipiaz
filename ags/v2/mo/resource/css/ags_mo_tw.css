@@ -154,6 +154,18 @@
   background-color: #ffffff;
 }
 
+
+.ui-fixed-1 [data-page-id='buy__seat'] .tab-panel.active .seat-legend {
+  z-index: 10;
+  position: fixed;
+  top: 7.64286rem;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+
+
+
 [data-page-id='buy__seat'] .approach-comment {
   font-family: NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 0.78571rem;
@@ -510,16 +522,16 @@
 /*티웨이 중형항공기 A330-300*/
 
 .seat-plan .seat-sheet.B73780001, .seat-plan .seat-sheet.A330-300 {
-  min-height: 67.5rem;
+  min-height: 1400px;
 }
 .seat-plan .seat-sheet.B73780001:before, .seat-plan .seat-sheet.A330-300:before {
   content: "";
   background-image: url("../img/buy/bg_B73780001_seat-left.png");
   background-repeat: no-repeat;
-  background-size: 2.85714rem 67.5rem;
+  background-size: 2.85714rem 1400px;
   display: inline-block;
   width: 2.85714rem;
-  height: 67.5rem;
+  height: 1400px;
   position: absolute;
   left: 0;
   top: 0;
@@ -539,10 +551,10 @@
   content: "";
   background-image: url("../img/buy/bg_B73780001_seat-right.png");
   background-repeat: no-repeat;
-  background-size: 2.85714rem 67.5rem;
+  background-size: 2.85714rem 1400px;
   display: inline-block;
   width: 2.85714rem;
-  height: 67.5rem;
+  height: 1400px;
   position: absolute;
   right: 0;
   top: 0;
@@ -596,6 +608,12 @@
   width: 32px !important;
   height: 38px !important;
   border-radius: 12px 12px 3px 3px;
+}
+
+.seat-plan .seat-sheet.A330-300 a[class^='seat-'].seat-disabled {
+  width: 25px !important;
+  height: 25px !important;
+  margin: 0 3.2px;
 }
 
 .hallway-m{
@@ -827,6 +845,11 @@
   left: 5px;
 }
 
+
+[data-page-id='buy__seat'] .seat-num a[class^='seat-'] {
+  font-size: 12.5PX;
+
+}
 
 
 @media only screen and (max-width: 321px) {
