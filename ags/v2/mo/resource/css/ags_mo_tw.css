@@ -707,7 +707,6 @@
   height: 25px;
 }
 
-
 /*일반좌석 등받이*/
 [data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type4.chair4 {
   margin: 0 3.2px;
