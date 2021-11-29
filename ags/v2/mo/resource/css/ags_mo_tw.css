@@ -423,7 +423,7 @@
 }
 
 [data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type1 {
-  height: 2.57143rem !important;
+  height: 2.57143rem;
   border-color: #FF4F24;
 }
 
@@ -575,13 +575,10 @@
   border-radius: 12px 12px 3px 3px;
 }
 
-
 .seat-plan .seat-sheet.A330-300 a[class^='seat-'].seat-type-nc.type01,
 .seat-plan .seat-sheet.A330-300 a[class^='seat-'].seat-disabled-nc.type02 {
   margin: 0 3px;
 }
-
-
 
 .seat-plan .seat-sheet.A330-300 a[class^='seat-'].seat-disabled-nc:nth-of-type(1) {
   margin-left: 16px;
@@ -641,7 +638,7 @@
 [data-page-id='buy__seat'] .seat-num a[class^='seat-'].seat-type1.chair1 {
   margin: 0 3.2px;
   width: 25px;
-  height: 32px;
+  height: 32px !important;
 
 }
 
@@ -823,6 +820,11 @@
   position: relative;
   top:0px;
   left:2px;
+}
+
+/*하늘색 등받이 선 간격*/
+.seat-num a.seat-type4.chair4:after {
+  left: 5px;
 }
 
 
