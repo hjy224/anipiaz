@@ -1,0 +1,66 @@
+/*
+cdn파일 생성 21년 5월
+수정 작업은, 일반 css 파일 수정 후, cnd에 적용
+
+background-image: url("../
+↓
+background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.ags-aws.com/air/tk/v2/p/
+*/
+.ags-header .symbol-wrap .symbol_agency + dd {
+  height: 6.23077rem;
+}
+
+[data-page-id^='anc_'] .agreement-wrap input[type='checkbox'][disabled='disabled'] + label .ico,
+[data-page-id^='my_'] .agreement-wrap input[type='checkbox'][disabled='disabled'] + label .ico {
+  border: 1px solid #dddddd;
+  background-color: #f0f0f0;
+}
+[data-page-id^='anc_'] .agreement-wrap input[type='checkbox'][disabled='disabled'] + label .ico:before,
+[data-page-id^='my_'] .agreement-wrap input[type='checkbox'][disabled='disabled'] + label .ico:before {
+  border-color: #dddddd;
+}
+.mCSB_inside > .mCSB_container:not(.mCS_no_scrollbar_y.mCS_y_hidden) {
+  margin-right: 0;
+  padding-right: 1.23077rem;
+}
+
+[data-pop-id="pop_payment_credit-card"] .select_owner-type1, [data-pop-id="pop_payment_credit-card"] .select_owner-type2,
+[data-pop-id="pop_payment_credit-card"] .select_card-company, [data-pop-id="pop_payment_credit-card"] .select_pay-plan, [data-pop-id="pop_payment_credit-card"] .pay-plan-group,
+[data-pop-id="pop_payment_credit-card"] .input_owner-name, [data-pop-id="pop_payment_credit-card"] .owner-info-group, [data-pop-id="pop_payment_credit-card"] .card-pw-group {
+  width: 50%;
+}
+[data-pop-id="pop_payment_credit-card"] .input_card-pw input[type='password'] {
+  width: 6.15385rem !important;
+  text-align: center;
+}
+[data-page-id='anc_main'] .function-wrap .btn-group input[type='checkbox'] + label .ico:before {
+  content: "";
+  transition: border-color 0.5s;
+  transition-delay: 0.2s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: solid #e4e4e4;
+  border-width: 0 0 1px 1px;
+  transform: rotate(-45deg);
+}
+[data-page-id='anc_main'] .function-wrap .btn-group input[type='checkbox'] + label .ico {
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+}
+/* 부가서비스 신청 > 사전 좌석 선택(티웨이항공) */
+[data-page-id='anc_main'] .anc_seat .seat-legend li.seat-type1:before {
+  border-color: #FF4F24;
+}
+[data-page-id='anc_main'] .anc_seat .seat-legend li.seat-type3:before {
+  border-color: #8BC4AA;
+}
+.seat-sheet .seat-num a[class^='seat-'].seat-type3 {
+  border-color: #8BC4AA;
+}
+.seat-sheet .seat-num a[class^='seat-'].seat-type3.active {
+  background-color: #8BC4AA;
+  box-shadow: 0 4px 8px rgba(139, 196, 170, 0.5);
+}
+.refund0315 {padding-right: 36px !important;}
+
