@@ -21,7 +21,7 @@ background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.ags-aws.com/a
 }
 .mCSB_inside > .mCSB_container:not(.mCS_no_scrollbar_y.mCS_y_hidden) {
   margin-right: 0;
-  padding-right: 1.23077rem;
+  /*이거 왜있는거임? padding-right: 1.23077rem; */
 }
 
 [data-pop-id="pop_payment_credit-card"] .select_owner-type1, [data-pop-id="pop_payment_credit-card"] .select_owner-type2,
