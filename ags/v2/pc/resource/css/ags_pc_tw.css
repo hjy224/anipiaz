@@ -68,7 +68,7 @@ background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.ags-aws.com/a
 /*티웨이 중형항공기 A330-300*/
 
 
-.seat-plan .seat-sheet.A330-300:before {
+.seat-plan .seat-sheet.A330-300 .seat-num:before {
   content: "";
   background-image: url("../img/anc/bg_B73780001_seat-left.png");
   background-repeat: no-repeat;
@@ -82,18 +82,18 @@ background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.ags-aws.com/a
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
-  .seat-plan .seat-sheet.A330-300:before {
+  .seat-plan .seat-sheet.A330-300 .seat-num:before {
     background-image: url("../img/anc/bg_B73780001_seat-left@2x.png");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
-  .seat-plan .seat-sheet.A330-300:before {
+  .seat-plan .seat-sheet.A330-300 .seat-num:before {
     background-image: url("../img/anc/bg_B73780001_seat-left@3x.png");
   }
 }
 
-.seat-plan .seat-sheet.A330-300:after {
+.seat-plan .seat-sheet.A330-300 .seat-num:after {
   content: "";
   background-image: url("../img/anc/bg_B73780001_seat-right.png");
   background-repeat: no-repeat;
@@ -107,13 +107,13 @@ background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.ags-aws.com/a
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
-  .seat-plan .seat-sheet.A330-300:after {
+  .seat-plan .seat-sheet.A330-300 .seat-num:after {
     background-image: url("../img/anc/bg_B73780001_seat-right@2x.png");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
-  .seat-plan .seat-sheet.A330-300:after {
+  .seat-plan .seat-sheet.A330-300 .seat-num:after {
     background-image: url("../img/anc/bg_B73780001_seat-right@3x.png");
   }
 }
