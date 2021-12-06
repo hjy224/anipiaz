@@ -70,7 +70,7 @@ background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.ags-aws.com/a
 
 .seat-plan .seat-sheet.B73780001:before, .seat-plan .seat-sheet.A330-300:before {
   content: "";
-  background-image: url("../img/buy/bg_B73780001_seat-left.png");
+  background-image: url("../img/anc/bg_B73780001_seat-left.png");
   background-repeat: no-repeat;
   background-size: 2.85714rem 1400px;
   display: inline-block;
@@ -82,18 +82,18 @@ background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.ags-aws.com/a
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
   .seat-plan .seat-sheet.B73780001:before, .seat-plan .seat-sheet.A330-300:before {
-    background-image: url("../img/buy/bg_B73780001_seat-left@2x.png");
+    background-image: url("../img/anc/bg_B73780001_seat-left@2x.png");
   }
 }
 @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
   .seat-plan .seat-sheet.B73780001:before, .seat-plan .seat-sheet.A330-300:before {
-    background-image: url("../img/buy/bg_B73780001_seat-left@3x.png");
+    background-image: url("../img/anc/bg_B73780001_seat-left@3x.png");
   }
 }
 
 .seat-plan .seat-sheet.B73780001:after, .seat-plan .seat-sheet.A330-300:after {
   content: "";
-  background-image: url("../img/buy/bg_B73780001_seat-right.png");
+  background-image: url("../img/anc/bg_B73780001_seat-right.png");
   background-repeat: no-repeat;
   background-size: 2.85714rem 1400px;
   display: inline-block;
@@ -105,13 +105,13 @@ background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.ags-aws.com/a
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
   .seat-plan .seat-sheet.B73780001:after, .seat-plan .seat-sheet.A330-300:after {
-    background-image: url("../img/buy/bg_B73780001_seat-right@2x.png");
+    background-image: url("../img/anc/bg_B73780001_seat-right@2x.png");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
   .seat-plan .seat-sheet.B73780001:after, .seat-plan .seat-sheet.A330-300:after {
-    background-image: url("../img/buy/bg_B73780001_seat-right@3x.png");
+    background-image: url("../img/anc/bg_B73780001_seat-right@3x.png");
   }
 }
 
