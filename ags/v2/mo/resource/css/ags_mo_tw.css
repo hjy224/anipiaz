@@ -318,9 +318,9 @@
 }
 
 
-[data-page-id='buy__seat'] .seat-num a[class^='seat-'][class^='seat-disabled-ncq']{
+.A330-300 .seat-type-nc.seat-disabled-ncq{
 
-border: #aaa !important;
+border: #999 !important;
 }
 
 
