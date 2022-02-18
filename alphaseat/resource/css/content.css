@@ -1,0 +1,141 @@
+/*사이트 이름*/
+.site-name {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*상단 AI 제목*/
+.ags-wrap .ags-header .page-name {
+  font-family: NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:15px;
+  width: 100%;
+}
+/*상단 왼쪽 메뉴 값 고정*/
+.ags-wrap .ags-header .gnb-wrap {
+  position: absolute;
+  left: 20px;
+  top:20px
+}
+
+/*상단 AI 이미지*/
+.ags-wrap .ags-header .page-name img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.ags-wrap .ags-header .gnb-wrap ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ags-wrap .ags-header .gnb-wrap .btn_back {
+  background: url(../img/common/ico_header-back@3x.png) no-repeat center / 16px 16px;
+}
+
+.ags-wrap .ags-header .gnb-wrap .btn_gnb {
+  background: url(../img/common//ico_header-gnb@3x.png) no-repeat center / 16px 16px;
+  margin-left: 20px;
+}
+
+.ags-wrap .ags-header .gnb-wrap .btn_back,.btn_gnb {
+  width: 16px;
+  height: 16px;
+  display: block;
+  text-indent: -9999px;
+}
+
+
+/*오는편 */
+.ags-wrap .ags-header .btn_come {
+  
+  position: absolute;
+  top: 14px;
+  right: 20px; 
+  border: 1px solid #ff6600;
+  padding: 5px 19px 8px 12px;
+  border-radius: 20px;
+  color: #ff6600;
+  background: url(../img/common/ico_nav-next.png) no-repeat right 9px top 7px / 7px 12px;
+  font-size: 14px;
+  font-weight: 800;
+}
+/*가는편 
+.ags-wrap .ags-header .btn_go {
+  border: 1px solid #ff6600;
+  padding: 5px 19px 8px 12px;
+  border-radius: 20px;
+  color: #ff6600;
+  background: url(../img/common/ico_nav-next.png) no-repeat right 9px top 7px / 7px 12px;
+  font-size: 14px;
+  font-weight: 800;
+}
+*/
+
+
+/* GNB 메뉴 팝업 */
+.ags-header .gnb-wrap .gnb-2dp-wrap {
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+  opacity: 100;
+  visibility: hidden;
+  overflow: auto;
+  position: fixed;
+  left: calc(-375 / 375 * 100%);  
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+}
+
+.ags-header .gnb-wrap .gnb-2dp-wrap.active {
+  opacity: 1;
+  visibility: visible;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ags-header .gnb-wrap .gnb-2dp-wrap .btn_close {
+  z-index: 1;
+  background: url(../img/common/ico_pop-close.png) no-repeat center / 14px 14px;
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  background-position: 50% 50%;
+  background-color: transparent;
+  text-indent: -9999px;
+}
+
+.ags-header .gnb-wrap .gnb-2dp-wrap .fnb {
+  position: absolute;
+}
+
+.ags-header .gnb-wrap .gnb-2dp-wrap .fnb a {
+  font-family: NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  display: block;
+}
+
+.test{
+  font-size: 100px;
+  color:#ffffff
+}
