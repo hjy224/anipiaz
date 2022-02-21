@@ -8,10 +8,12 @@
   overflow: hidden;
 }
 
+header {height: 56px;}
+
 /*상단 AI 제목*/
 .ags-wrap .ags-header .page-name {
-  font-family: NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-weight: 800;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,8 +58,7 @@
 
 
 /*오는편 */
-.ags-wrap .ags-header .btn_come {
-  
+.ags-wrap .ags-header .btn_come {  
   position: absolute;
   top: 14px;
   right: 20px; 
@@ -127,7 +128,6 @@
 }
 
 .ags-header .gnb-wrap .gnb-2dp-wrap .fnb a {
-  font-family: NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 20px;
   font-weight: 800;
   color: #ffffff;
@@ -135,7 +135,88 @@
   display: block;
 }
 
+/*왼쪽 사이드바*/
 .test{
   font-size: 100px;
   color:#ffffff
+}
+
+/*상단 스마일 박스*/
+.smile_boximg ul {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  padding: 12px 0;
+}
+
+.smile_boximg ul::before {
+  content:'';
+  border: 2px solid #111;
+  display: inline-block;
+  width: 2px; height: 25px; border-right: none;
+  margin-right: 2px;
+}
+.smile_boximg ul::after {
+  content:'';
+  border: 2px solid #111;
+  display: inline-block;
+  width: 2px; height: 25px; border-left: none;
+  margin-left: 2px;
+}
+.smile_boximg ul li{  
+  background: url(../img/common/seat_smile.jpg) no-repeat center / 25px 25px;
+  margin-right: 2px;
+  width: 25px;
+  height: 25px;
+  margin: 0 3px;
+}
+
+/*상단 셀렉트 박스*/
+.select_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  border-top: 1px solid #eee;
+  -webkit-box-shadow: 0px 1px 3px 0px #bbb;
+  -moz-box-shadow: 0px 1px 3px 0px #bbb;
+  box-shadow: 0px 1px 3px 0px #bbb
+   
+}
+.select_group select{
+  width: 125px;
+  font-family: inherit;
+  background: url(../img/common/ico_select-arrow.png) no-repeat 15px 10px;
+  background-size: 15px 10px;
+  background-position: right;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+
+.select_txt span{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 1px;
+}
+
+.select_txt .sp2{
+  background: url(../img/common/ico_airplane.png) no-repeat center / 15px 15px;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  
+}
+
+.find_txt{
+  background-color: #000;
+  opacity: 90%;
+  color: #fff;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 12px;
 }
