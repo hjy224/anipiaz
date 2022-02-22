@@ -8,7 +8,17 @@
   overflow: hidden;
 }
 
-header {height: 56px;}
+.ags-wrap header {
+  position:fixed ;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  height: 150px;
+  background: #fff;
+}
+.ags-wrap .ags-header {
+  height: 50px;
+}
 
 /*상단 AI 제목*/
 .ags-wrap .ags-header .page-name {
@@ -146,7 +156,7 @@ header {height: 56px;}
   display: flex;
   justify-content: center;  
   align-items: center;
-  padding: 12px 0;
+  padding: 15px 0;
 }
 
 .smile_boximg ul::before {
@@ -193,7 +203,7 @@ header {height: 56px;}
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.7px;
 }
@@ -202,21 +212,177 @@ header {height: 56px;}
   font-size: 13px;
   font-weight: 600;
   margin: 0 1px;
+  display:inline-block
 }
 
-.select_txt .sp2{
-  background: url(../img/common/ico_airplane.png) no-repeat center / 15px 15px;
-  width: 15px;
-  height: 15px;
-  padding: 10px;
-  
+.select_txt span:first-child{
+  background: url(../img/common/ico_airplane.png) no-repeat center right / 15px 15px;
+  padding: 5px 20px 0px 0px;
 }
-
+.contents{
+  padding-top: 150px;
+}
+.seat_sheet{
+  position: relative;
+}
+/*가격대별 선호도 1위 그룹석을 찾았어요!*/
 .find_txt{
-  background-color: #000;
-  opacity: 90%;
+  position: fixed;
+  width: 100%;
+  top: 150px;
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 15px 0px;
   text-align: center;
   font-size: 12px;
 }
+
+/*좌석전체 코딩 첫부분*/
+
+.exit_img{
+  text-align: center;
+  top: 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: #555;
+  padding-right: 14px;
+}
+
+.contents .seat_sheet{
+  padding: 10px 30px;
+}
+.seat_code{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seat_code span{
+  border-bottom: 4px solid #000;
+  border-radius: 2px;
+  width: 48px;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.seat_code span:nth-child(3){ 
+  border-bottom: 0; 
+}
+.seat_code span:nth-child(5){ 
+  border-bottom: 0; 
+}
+
+.seat_code .hallway{
+  width: 45px;
+  border-bottom: 0;
+}
+
+.seat_sheet .hallway{
+  width: 45px;
+  border-bottom: 0;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: -2px;
+  color: #111;
+}
+
+/*좌석 이미지 클릭 코드*/
+.seat_num{
+  padding-top: 5px;
+}
+
+.seat_sheet li{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0;
+  padding-top: 10px;
+}
+
+.seat_sheet li a{  
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  margin: 0px 5px;
+  clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
+  background-color: #08a7e1;  
+  border-bottom: 5px solid #008cc1;
+  font-size: 10.5px;
+  color: #fff;
+  line-height: 38px;
+  font-weight: 600;  
+  letter-spacing: -1px;
+}
+
+/*좌석 가격 일괄바꿈 - 그외 다른건 class삭제 후 직접 입력*/
+.seat_type1_txt::after{
+  display: block;
+  content: "20,000";
+}
+.seat_type2_txt::after{
+  display: block;
+  content: "10,000";
+}
+.seat_type3_txt::after{
+  display: block;
+  content: "8,000";
+}
+.seat_type4_txt::after{
+  display: block;
+  content: "5,000";
+}
+.seat_type5_txt::after{
+  display: block;
+  content: "1,000";
+}
+
+/*좌석 disabled-------------------------------------------------*/
+.disabled_seat{  
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  margin: 0px 5px;
+  clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);  
+  background: url(../img/common/ico_seat-disabled.png) no-repeat center /15px 15px;
+  background-color: #dedede !important; 
+  border-bottom: 5px solid #bababa !important;
+}
+.seat_type1_txt.disabled_seat::after ,.seat_type2_txt.disabled_seat::after,
+.seat_type3_txt.disabled_seat::after ,.seat_type4_txt.disabled_seat::after,
+.seat_type5_txt.disabled_seat::after {
+  content: "";
+}
+/*--------------------------------------------------------------*/
+
+/*항공기 이미지 작게 */
+.scale_s{
+  transform: scale(0.3);
+}
+
+/*항공기 이미지 크게 */
+.scale{
+  transform: scale(3.3);
+}
+
+
+.page-wrapper .btn {
+  position: absolute;
+    padding-top: 100px;
+    width: 80px;
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border-radius: 0;
+    background: #e2525c;
+    z-index: 11;
+    
+  }
+  .page-wrapper.btn::after{
+    display: block;
+  }
+  
