@@ -16,11 +16,18 @@ $(document).on("click", "#btn_gnb-close", function () {
 $('.btn_footer_open').click(function () {
   $('.ags-summary').addClass('modal-open');
 });
-
 $('.btn_footer_close').click(function () {
   $('.ags-summary').removeClass('modal-open');
 });
 
+/*좌석선택*/
+
+$(document).on("click", ".seat_type2_txt", function () {
+  $(this).addClass("seat_active");
+});
+$(document).on("click", ".seat_active", function () {
+  $(this).removeClass("seat_active");
+});
 
  
 /*스케일*/

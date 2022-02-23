@@ -193,20 +193,40 @@
   box-shadow: 0px 1px 3px 0px #bbb
    
 }
-.select_group select{
-  width: 125px;
+.select_group{
   font-family: inherit;
-  background: url(../img/common/ico_select-arrow.png) no-repeat 15px 10px;
-  background-size: 15px 10px;
-  background-position: right;
-  border-radius: 0px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.7px;
+  z-index: 11px;
 }
+.select_group a{
+  background: url(../img/common/ico_select-arrow.png) no-repeat 15px 10px;
+  background-size: 15px 10px;
+  background-position: right;
+  padding-right: 20px;
+}
+
+.passenger{
+  position: fixed;
+  width: 100%;
+  margin-top: 14.1px;
+  padding: 30px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+.passenger span{
+  margin-right: 50px;
+}
+.passenger span::after{
+  margin-right: none;
+}
+
+
+/*가는여정과 비행시간*/
 
 .select_txt span{
   font-size: 13px;
@@ -248,8 +268,10 @@
   padding-right: 14px;
 }
 
-.contents .seat_sheet{
-  padding: 10px 30px;
+.contents .seat_sheet{  
+  margin: 0 auto;
+  width: 294px;
+  padding: 10px 0;
 }
 .seat_code{
   display: inline-block;
@@ -260,9 +282,8 @@
 }
 
 .seat_code span{
-  border-bottom: 4px solid #000;
-  border-radius: 2px;
-  width: 48px;
+  border-bottom: 3px solid #000;
+  width: 42px;
   text-align: center;
   padding: 5px 0px;
 }
@@ -298,7 +319,6 @@
 .seat_sheet li{
   display: flex;
   justify-content: space-between;
-  flex-grow: 0;
   padding-top: 10px;
 }
 
@@ -306,7 +326,6 @@
   width: 36px;
   height: 36px;
   text-align: center;
-  margin: 0px 5px;
   clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
   background-color: #08a7e1;  
   border-bottom: 5px solid #008cc1;
@@ -315,6 +334,16 @@
   line-height: 38px;
   font-weight: 600;  
   letter-spacing: -1px;
+
+  transition: 0.3s all;
+  transition-delay: 0.2s;
+}
+
+.seat_sheet li a.seat_active{ 
+  background-color: #ff6600;  
+  border-bottom: 5px solid #ff0000;
+  transition: 0.3s all;
+  transition-delay: 0.2s;
 }
 
 /*좌석 가격 일괄바꿈 - 그외 다른건 class삭제 후 직접 입력*/
