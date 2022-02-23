@@ -20,8 +20,25 @@ $('.btn_footer_close').click(function () {
   $('.ags-summary').removeClass('modal-open');
 });
 
-/*좌석선택*/
+/*상단 셀렉트 그룹*/
 
+$( document ).ready( function() {
+  $( '.select_group_btn' ).click( function() {
+    if($( '.passenger' ).css("height") == "55px"){
+      
+      $( '.passenger' ).animate( {
+        height: '0px'
+      });
+    }else{
+      $( '.passenger' ).animate( {
+        height: '55px'
+      });      
+    }
+  } );
+});
+
+
+/*좌석선택*/
 $(document).on("click", ".seat_type2_txt", function () {
   $(this).addClass("seat_active");
 });
