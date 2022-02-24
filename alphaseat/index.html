@@ -8,10 +8,10 @@
     <title>AlphaSeat</title>
     <link rel="stylesheet" href="./resource/css/content.css">
     <link rel="stylesheet" href="./resource/css/reset.css">
-    <script src='./resource/js/jquery-2.2.4.min.js'></script>    
+    <script src='./resource/js/jquery-2.2.4.min.js'></script>
     <script src='./resource/js/jquery.min.js'></script>
     <script src="./resource/js/script.js"></script>
-    
+
 </head>
 
 <body>
@@ -45,7 +45,7 @@
             <div class="smile_boximg">
                 <ul>
                     <li>^^</li>
-                    <span></span>
+                    <span>86%</span>
                     <li>^^</li>
                 </ul>
             </div>
@@ -69,182 +69,338 @@
             </div>
         </header>
         <div class="find_txt" style="display: none;">가격대별 선호도 1위 그룹석을 찾았어요!</div>
-        
-        <div class="contents" style="transition: all 1s ease;">
-            <div class="seat_sheet">
-                <div class="exit_img">◀ EXIT</div>
-                <!-- 
+
+        <div class="contents" id="element" >
+            <div class="seat_sheet_bg">
+                <div class="seat_sheet_price">
+                    <div class="seat_sheet_price_box">
+                        <div>구역가격</div>
+                        <div>백그라운드버튼</div>
+                    </div>
+                    <div class="seat_sheet_price_box">
+                        <div>구역가격</div>
+                        <div>백그라운드버튼</div>
+                    </div>
+                    <div class="seat_sheet_price_box">
+                        <div>구역가격</div>
+                        <div>백그라운드버튼</div>
+                    </div>
+
+                </div>
+                <div class="seat_sheet_loading">로딩</div>
+                <div class="seat_sheet scale_s">
+                    <span class="exit_left_c"><i class="ico_a">&lt;&lt;</i>EXIT</span>
+                   
                 <div class="page-wrapper">
                     <a href="" class="btn trigger" >좌석추천</a>
                 </div>
-                -->
-                <div class="seat_code">
-                    <span>A</span>
-                    <span>B</span>
-                    <span>C</span>
-                    <span class="hallway"></span>
-                    <span>D</span>
-                    <span>E</span>
-                    <span>F</span>
-                </div>
-                <ul class="seat_num">
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
-                    <li>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <span class="hallway">01</span>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                        <a href="#none" class="seat_type2_txt"></a>
-                    </li>
+                
+                    <div class="seat_code">
+                        <span>A</span>
+                        <span>B</span>
+                        <span>C</span>
+                        <span class="hallway"></span>
+                        <span>D</span>
+                        <span>E</span>
+                        <span>F</span>
+                    </div>
+                    <ul class="seat_num">
+                        <li>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <span class="hallway" style="margin-right: 124px;">01</span>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <span class="hallway">02</span>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <span class="hallway">03</span>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <span class="hallway">04</span>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <span class="hallway">05</span>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                            <a href="#none" class="seat_btn seat_type2_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <span class="hallway">06</span>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <span class="hallway">07</span>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <span class="hallway">08</span>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <span class="hallway">09</span>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <span class="hallway">10</span>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <span class="hallway">11</span>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                            <a href="#none" class="seat_btn seat_type3_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">12</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">13</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
 
-                </ul>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">14</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <span class="hallway">15</span>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                        </li>
+                        <li class="exit-row">
+                            <span class="exit_left"><i class="ico_a">&lt;&lt;</i>EXIT</span>
+                            <span class="exit_right">EXIT<i class="ico_b">&gt;&gt;</i></span>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <span class="hallway">16</span>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                            <a href="#none" class="seat_btn seat_type1_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">17</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">18</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">19</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">20</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">21</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">22</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <span class="hallway">23</span>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                            <a href="#none" class="seat_btn seat_type4_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">24</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">25</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">26</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">27</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">28</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">29</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">30</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">31</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+                        <li>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <span class="hallway">32</span>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                            <a href="#none" class="seat_btn seat_type5_txt"></a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-        </div>    
+        </div>
     </div>
 </body>
+
 </html>

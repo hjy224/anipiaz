@@ -158,6 +158,12 @@
   align-items: center;
   padding: 15px 0;
 }
+.smile_boximg span{
+  font-size: 18px;
+  font-weight: 800;
+  color: #ff6600;
+  padding: 0 15px;
+}
 
 .smile_boximg ul::before {
   content:'';
@@ -174,7 +180,7 @@
   margin-left: 2px;
 }
 .smile_boximg ul li{  
-  background: url(../img/common/seat_smile.jpg) no-repeat center / 25px 25px;
+  background: url(../img/common/seat_smile.png) no-repeat center / 25px 25px;
   margin-right: 2px;
   width: 25px;
   height: 25px;
@@ -200,7 +206,6 @@
   -moz-appearance: none;
   appearance: none;
   font-size: 14px;
-  font-weight: 600;
   letter-spacing: -0.7px;
 }
 .select_group a{
@@ -221,19 +226,13 @@
   z-index: 9px;
 }
 
-
 .passenger span{
   margin-right: 50px;
-
 }
 
 .passenger span::after{
   margin-right: none;
 }
-
-
-
-
 
 /*가는여정과 비행시간*/
 
@@ -253,6 +252,8 @@
 }
 .seat_sheet{
   position: relative;
+  transition: all 1s ease;
+  top: -500px;
 }
 /*가격대별 선호도 1위 그룹석을 찾았어요!*/
 .find_txt{
@@ -264,6 +265,7 @@
   padding: 15px 0px;
   text-align: center;
   font-size: 12px;
+  z-index: 8;
 }
 
 /*좌석전체 코딩 첫부분*/
@@ -284,8 +286,7 @@
 }
 .seat_code{
   display: inline-block;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 13px;
   display: flex;
   justify-content: space-between;
 }
@@ -312,13 +313,39 @@
 .seat_sheet .hallway{
   width: 45px;
   border-bottom: 0;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 13px;
   text-align: center;
   line-height: 40px;
-  letter-spacing: -2px;
+  letter-spacing: 0;
   color: #111;
 }
+
+/*좌석 첫페이지 구역 나누기*/
+.seat_sheet_bg {
+  position: relative;
+}
+
+.seat_sheet_price {
+  position: absolute;
+  top: 100px;
+}
+
+.seat_sheet_price_box {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  border-bottom: 1px solid #333;
+  height: 200px;
+}
+
+/*로딩*/
+.seat_sheet_loading{
+  position: absolute;
+  top: 100px;
+  left:300px;
+}
+
+
 
 /*좌석 이미지 클릭 코드*/
 .seat_num{
@@ -333,7 +360,7 @@
 
 .seat_sheet li a{  
   width: 36px;
-  height: 36px;
+  height: 35px;
   text-align: center;
   clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
   background-color: #08a7e1;  
@@ -341,8 +368,7 @@
   font-size: 10.5px;
   color: #fff;
   line-height: 38px;
-  font-weight: 600;  
-  letter-spacing: -1px;
+  letter-spacing: -0.6px;
 
   transition: 0.3s all;
   transition-delay: 0.2s;
@@ -354,6 +380,9 @@
   transition: 0.3s all;
   transition-delay: 0.2s;
 }
+
+
+
 
 /*좌석 가격 일괄바꿈 - 그외 다른건 class삭제 후 직접 입력*/
 .seat_type1_txt::after{
@@ -402,7 +431,7 @@
 
 /*항공기 이미지 크게 */
 .scale{
-  transform: scale(3.3);
+  transform: scale(1);
 }
 
 
@@ -424,3 +453,60 @@
     display: block;
   }
   
+
+
+/*exit*/
+
+.exit_left, .exit_left_c,
+.exit_right {
+  margin: 0;
+}
+
+.exit_left {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #aaa;
+  letter-spacing: -0.03em;
+}
+
+.exit_left_c {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #aaa;
+  letter-spacing: -0.03em;
+}
+
+.exit_right {
+  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #aaa;
+  letter-spacing: -0.03em;
+  float: right;
+}
+
+.exit_left .ico_a,
+.exit_left_c .ico_a,
+.exit_right .ico_b {
+  display: inline-block;
+  width: 12px;
+  height: 6px;
+  text-indent: -999em;
+  border-style: solid;
+  border-width: 3px 6px;
+  vertical-align: middle;
+}
+
+.ico_a {
+  margin: 0 0.28571rem 0 -6px;
+  border-color: transparent #aaa transparent transparent;
+}
+
+.ico_b {
+  margin: 0 -6px 0 0.28571rem;
+  border-color: transparent transparent transparent #aaa;
+}
+
+

@@ -24,33 +24,41 @@ $('.btn_footer_close').click(function () {
 
 $( document ).ready( function() {
   $( '.select_group_btn' ).click( function() {
-    if($( '.passenger' ).css("height") == "55px"){
-      
+    if($( '.passenger' ).css("height") == "55px"){      
       $( '.passenger' ).animate( {
-        height: '0px'
+        height: '0px'       
       });
     }else{
       $( '.passenger' ).animate( {
-        height: '55px'
+        height: '55px'       
       });      
     }
-  } );
+  });
 });
 
 
+
+$('#element').on('scroll touchmove mousewheel', function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  return false;
+});
+
+
+
 /*좌석선택*/
-$(document).on("click", ".seat_type2_txt", function () {
+$(document).on("click", ".seat_btn", function () {
   $(this).addClass("seat_active");
 });
 $(document).on("click", ".seat_active", function () {
   $(this).removeClass("seat_active");
 });
 
- 
+
 /*스케일*/
 $( document ).ready(function() {
   $('.trigger').on('click', function() {
-    $('.contents').toggleClass('scale');
+    $('.seat_sheet').toggleClass('scale');
      return false;
   });
 });
