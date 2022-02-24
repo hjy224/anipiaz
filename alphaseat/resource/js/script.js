@@ -37,14 +37,20 @@ $( document ).ready( function() {
 });
 
 
-
-$('#element').on('scroll touchmove mousewheel', function(event) {
+/*스크롤 멈춤*/
+$('.element').on('scroll touchmove mousewheel', function(event) {
   event.preventDefault();
   event.stopPropagation();
   return false;
 });
 
 
+
+/*스크롤 다시허용
+
+$('#element').off('scroll touchmove mousewheel');
+ 
+*/
 
 /*좌석선택*/
 $(document).on("click", ".seat_btn", function () {
@@ -59,6 +65,7 @@ $(document).on("click", ".seat_active", function () {
 $( document ).ready(function() {
   $('.trigger').on('click', function() {
     $('.seat_sheet').toggleClass('scale');
+    $('.airplane_bg').removeClass('airplane_bg');
      return false;
   });
 });

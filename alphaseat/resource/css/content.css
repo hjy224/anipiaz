@@ -248,10 +248,10 @@
   padding: 5px 20px 0px 0px;
 }
 .contents{
-  padding-top: 150px;
+  padding-top: 150px;  
+  position: relative;
 }
 .seat_sheet{
-  position: relative;
   transition: all 1s ease;
 }
 /*가격대별 선호도 1위 그룹석을 찾았어요!*/
@@ -322,10 +322,10 @@
 /*좌석 첫페이지 구역 나누기*/
 .seat_sheet_bg {
   position: relative;
-  
-  background: url(../img/common/airplane_bgx3.png) no-repeat center / 224px 604px;
-  
-  top: -500px;
+}
+.airplane_bg{
+  background: url(../img/common/airplane_bgx3.png) no-repeat center / 234px 675px;
+  top: -490px;
 }
 
 .seat_sheet_price {
@@ -347,8 +347,6 @@
   top: 100px;
   left:300px;
 }
-
-
 
 /*좌석 이미지 클릭 코드*/
 .seat_num{
@@ -431,11 +429,15 @@
 .scale_s{
   transform: scale(0.3);
 }
-
 /*항공기 이미지 크게 */
 .scale{
   transform: scale(1);
 }
+
+.scale_p{
+  transform: scale(1);
+}
+
 .page-wrapper .btn {
   position: absolute;
   padding-top: 100px;
