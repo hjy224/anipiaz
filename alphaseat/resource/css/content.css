@@ -325,6 +325,9 @@
 }
 .airplane_bg{
   background: url(../img/common/airplane_bgx3.png) no-repeat center / 234px 675px;
+  
+  transition: 1s all;
+  transition-delay: 1s;
 }
 
 .seat_sheet_price {
@@ -343,7 +346,7 @@
 /*로딩*/
 .seat_sheet_loading{
   position: absolute;
-  top: 100px;
+  top: 300px;
   left:300px;
 }
 
@@ -351,6 +354,8 @@
 .seat_num{
   padding-top: 5px;
 }
+
+
 
 .seat_sheet li{
   display: flex;
@@ -380,7 +385,11 @@
   transition: 0.3s all;
   transition-delay: 0.2s;
 }
+.seat_sheet li a.seat_active::after{
 
+  border: 2px solid #ff6600;
+
+}
 
 
 
@@ -409,9 +418,8 @@
 /*좌석 disabled-------------------------------------------------*/
 .disabled_seat{  
   width: 36px;
-  height: 36px;
+  height: 35px;
   text-align: center;
-  margin: 0px 5px;
   clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);  
   background: url(../img/common/ico_seat-disabled.png) no-repeat center /15px 15px;
   background-color: #dedede !important; 
@@ -426,15 +434,14 @@
 
 /*항공기 이미지 작게 */
 .scale_s{
+  transform: translate(-500px,0);
   transform: scale(0.3);
+  
+  
 }
 /*항공기 이미지 크게 */
 .scale{
-  transform: scale(1);
-}
-
-.scale_p{
-  transform: scale(1);
+  transform: none;
 }
 
 .page-wrapper .btn {

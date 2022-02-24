@@ -65,6 +65,8 @@ $(document).on("click", ".seat_active", function () {
 $( document ).ready(function() {
   $('.trigger').on('click', function() {
     $('.seat_sheet').toggleClass('scale');
+    $('.seat_sheet').css('top','200px');
+
     $('.airplane_bg').removeClass('airplane_bg');
      return false;
   });

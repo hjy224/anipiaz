@@ -1,0 +1,40 @@
+/*사이트 이름*/
+.site-name {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.aaa{
+  position: relative;
+}
+
+.scale_s{
+  transform: scale(0.3);
+  
+  transition: 0.3s all;
+  transition-delay: 0.2s;
+}
+.scale{
+  transform: scale(1);
+
+  
+  transition: 0.3s all;
+  transition-delay: 0.2s;
+}
+.seat_sheet{
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  border: 2px solid #000;
+  width: 100px;
+  height: 100px;
+  background: #e2525c;
+  
+  transition: 0.3s all;
+  transition-delay: 0.2s;
+}
