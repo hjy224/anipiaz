@@ -253,7 +253,6 @@
 .seat_sheet{
   position: relative;
   transition: all 1s ease;
-  top: -500px;
 }
 /*가격대별 선호도 1위 그룹석을 찾았어요!*/
 .find_txt{
@@ -323,6 +322,10 @@
 /*좌석 첫페이지 구역 나누기*/
 .seat_sheet_bg {
   position: relative;
+  
+  background: url(../img/common/airplane_bgx3.png) no-repeat center / 224px 604px;
+  
+  top: -500px;
 }
 
 .seat_sheet_price {
@@ -433,27 +436,24 @@
 .scale{
   transform: scale(1);
 }
-
-
 .page-wrapper .btn {
   position: absolute;
-    padding-top: 100px;
-    width: 80px;
-    top: 100px;
-    left: 100px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    border-radius: 0;
-    background: #e2525c;
-    z-index: 11;
-    
-  }
-  .page-wrapper.btn::after{
-    display: block;
-  }
-  
+  padding-top: 100px;
+  width: 80px;
+  top: 100px;
+  left: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 0;
+  background: #e2525c;
+  z-index: 11;
 
+}
+
+.page-wrapper.btn::after {
+  display: block;
+}
 
 /*exit*/
 
