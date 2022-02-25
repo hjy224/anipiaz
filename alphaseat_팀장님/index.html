@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="height=device-height, width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<title>AlphaSeat</title>
+		<link rel="stylesheet" href="./resource/css/content.css">
+		<link rel="stylesheet" href="./resource/css/reset.css">
+		<script src='./resource/js/jquery-2.2.4.min.js'></script>
+		<script src='./resource/js/jquery.min.js'></script>
+		<script src="./resource/js/script.js"></script>
+	</head>
+	<body>
+
+		<div class="ags-wrap">
+
+			<h1 class="site-name">올윈에어</h1>
+
+			<header>
+
+				<div class="ags-header">
+					<h2 class="page-name"><img src="./resource/img/common/ico_header-ai@3x.png">가성비 1위 찾는중</h2>
+					<div class="gnb-wrap">
+						<ul>
+							<li><a href="" class="btn_back">뒤로가기</a></li>
+							<li><a href="#none" id="btn_gnb" class="btn_gnb">메뉴</a>
+								<div id="gnb-2dp" class="gnb-2dp-wrap">
+									<a href="#none" target="_self" id="btn_gnb-close" class="btn_close">메뉴 닫기</a>
+									<ul>
+										<li class="test">올윈에어</li>
+									</ul>
+									<ul class="fnb">
+										<li><a href="#none" target="_self">개인정보취급방침</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<span id="ags-wrap" class="btn_come"><a href="">오는편</a></span>
+					<!--가는편 가림
+					<span class="btn_go"><a href="">가는편</a></span>
+					가는편 가림-->
+				</div>
+
+				<div class="smile_boximg">
+					<ul>
+						<li>^^</li>
+						<span>86%</span>
+						<li>^^</li>
+					</ul>
+				</div>
+
+				<div class="select_box">
+
+					<div class="select_group">
+						<a href="#none" class="select_group_btn">
+							<span>홍길동</span>님
+							<span>2</span>인 그룹
+						</a>
+						<div class="passenger">
+							<span>고길동</span>
+							<span>둘리</span>
+							<span>도우너</span>
+						</div>
+					</div>
+
+					<div class="select_txt">
+						<span>ICN</span>
+						<span>SIN</span>
+						<span>6시 15분 비행</span>
+					</div>
+
+				</div>
+
+			</header>
+			<div class="find_txt" style="display: none;">가격대별 선호도 1위 그룹석을 찾았어요!</div>
+
+			<div class="contents">
+
+				<div class="seat_sheet_bg airplane_bg" id="ag-seat-bg" zoomYn="N">
+
+					<div class="seat_sheet_price">
+
+						<div class="seat_sheet_price_box">
+							<div>구역가격</div>
+							<div>백그라운드버튼</div>
+						</div>
+
+						<div class="seat_sheet_price_box">
+							<div>구역가격</div>
+							<div>백그라운드버튼</div>
+						</div>
+
+						<div class="seat_sheet_price_box">
+							<div>구역가격</div>
+							<div>백그라운드버튼</div>
+						</div>
+
+					</div>
+
+					<div class="seat_sheet_loading">로딩</div>
+					<div class="seat_sheet scale_s" id='as-seat-sheet'>
+						<span class="exit_left_c"><i class="ico_a">&lt;&lt;</i>EXIT</span>
+<!--
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="F">앞좌석</a>
+						</div>
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="A">A구역</a>
+						</div>
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="E">비상구</a>
+						</div>
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="B">B구역</a>
+						</div>
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="C">C구역</a>
+						</div>
+-->
+						<div class="seat_code">
+							<span>A</span>
+							<span>B</span>
+							<span>C</span>
+							<span class="hallway"></span>
+							<span>D</span>
+							<span>E</span>
+							<span>F</span>
+						</div>
+
+						<ul class="seat_num" id="seat-num-ul">
+
+							<li as-seat-gr="F" id="seat-row-01">
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<span class="hallway" style="margin-right: 124px;">01</span>
+							</li>
+
+							<li as-seat-gr="A" id="seat-row-02">
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<span class="hallway">02</span>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+							</li>
+							<li as-seat-gr="A" id="seat-row-03">
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<span class="hallway">03</span>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+							</li>
+							<li as-seat-gr="A" id="seat-row-04">
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<span class="hallway">04</span>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+							</li>
+							<li as-seat-gr="A" id="seat-row-05">
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<span class="hallway">05</span>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+								<a href="#none" class="seat_btn seat_type2_txt"></a>
+							</li>
+
+							<li as-seat-gr="B" id="seat-row-06">
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<span class="hallway">06</span>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+							</li>
+							<li as-seat-gr="B" id="seat-row-07">
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<span class="hallway">07</span>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+							</li>
+							<li as-seat-gr="B" id="seat-row-08">
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<span class="hallway">08</span>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+							</li>
+							<li as-seat-gr="B" id="seat-row-09">
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<span class="hallway">09</span>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+							</li>
+							<li as-seat-gr="B" id="seat-row-10">
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<span class="hallway">10</span>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+							</li>
+							<li as-seat-gr="B" id="seat-row-11">
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<span class="hallway">11</span>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+								<a href="#none" class="seat_btn seat_type3_txt"></a>
+							</li>
+							<li as-seat-gr="B" id="seat-row-12">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">12</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="B" id="seat-row-13">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">13</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+
+							<li as-seat-gr="E" id="seat-row-14">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">14</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="E" id="seat-row-15">
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<span class="hallway">15</span>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+							</li>
+
+							<li class="exit-row">
+								<span class="exit_left"><i class="ico_a">&lt;&lt;</i>EXIT</span>
+								<span class="exit_right">EXIT<i class="ico_b">&gt;&gt;</i></span>
+							</li>
+
+							<li as-seat-gr="C" id="seat-row-16">
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<span class="hallway">16</span>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+								<a href="#none" class="seat_btn seat_type1_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-17">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">17</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-18">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">18</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-19">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">19</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-20">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">20</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-21">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">21</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-22">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">22</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-23">
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<span class="hallway">23</span>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+								<a href="#none" class="seat_btn seat_type4_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-24">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">24</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-25">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">25</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-26">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">26</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-27">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">27</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-28">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">28</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-29">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">29</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-30">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">30</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-31">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">31</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+							<li as-seat-gr="C" id="seat-row-32">
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<span class="hallway">32</span>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+								<a href="#none" class="seat_btn seat_type5_txt"></a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="F">앞좌석</a>
+						</div>
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="A">A구역</a>
+						</div>
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="E">비상구</a>
+						</div>
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="B">B구역</a>
+						</div>
+
+						<div class="page-wrapper">
+							<a href="" class="btn trigger" as-recom-btn="C">C구역</a>
+						</div>
+
+	</body>
+
+</html>

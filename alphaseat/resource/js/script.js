@@ -37,8 +37,6 @@ $( document ).ready( function() {
 });
 
 
-
-
 /*스크롤 다시허용
 
 $('#element').off('scroll touchmove mousewheel');
@@ -61,7 +59,9 @@ $( document ).ready(function() {
     $('.seat_sheet').css('top','0px');
 
     $('.airplane_bg').removeClass('airplane_bg');
-     return false;
+    $('.seat_sheet_price_box').removeClass('seat_sheet_price_box');
+    $(this).remove();
+         return false;
   });
 });
 
