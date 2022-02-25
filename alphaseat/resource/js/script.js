@@ -38,31 +38,6 @@ $( document ).ready( function() {
 
 
 
-// 모달창 나타날시 스크롤 안되게
-
-comBtn.on('touchend', function(){
-  modal.fadeIn(300, function(){
-      $('html, body').addClass('no-scroll');
-  });
-});
-// 모달창 닫혔을때 다시 스크롤 되도록..
-$('.modalBox').on('click', function(e){
-  e.preventDefault();
-  $(this).fadeOut(300, function(){
-      $('html, body').removeClass('no-scroll');
-  });
-});
-
-
-
-/*스크롤 멈춤*/
-$(this).on('scroll touchmove mousewheel', function(event) {
-  event.preventDefault();
-  event.stopPropagation();
-  return false;
-});
-
-
 
 /*스크롤 다시허용
 
