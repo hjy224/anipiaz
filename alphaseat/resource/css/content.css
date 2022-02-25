@@ -252,7 +252,10 @@
   position: relative;
 }
 .seat_sheet{
+  position: relative;
   transition: all 1s ease;
+  top: -490px;
+  
 }
 /*가격대별 선호도 1위 그룹석을 찾았어요!*/
 .find_txt{
@@ -323,11 +326,16 @@
 .seat_sheet_bg {
   position: relative;
 }
+
 .airplane_bg{
-  background: url(../img/common/airplane_bgx3.png) no-repeat center / 234px 675px;
-  
-  transition: 1s all;
-  transition-delay: 1s;
+  position:absolute;
+  background: url(../img/common/airplane_bgx4.png) no-repeat center / 234px 675px;
+  width: 234px;
+  height: 675px;
+  transition: 0.3s all;
+  top: 10px;
+  left: 20%;
+  z-index: -1;
 }
 
 .seat_sheet_price {
@@ -396,23 +404,23 @@
 /*좌석 가격 일괄바꿈 - 그외 다른건 class삭제 후 직접 입력*/
 .seat_type1_txt::after{
   display: block;
-  content: "20,000";
+  content: "";
 }
 .seat_type2_txt::after{
   display: block;
-  content: "10,000";
+  content: "";
 }
 .seat_type3_txt::after{
   display: block;
-  content: "8,000";
+  content: "";
 }
 .seat_type4_txt::after{
   display: block;
-  content: "5,000";
+  content: "";
 }
 .seat_type5_txt::after{
   display: block;
-  content: "1,000";
+  content: "";
 }
 
 /*좌석 disabled-------------------------------------------------*/
