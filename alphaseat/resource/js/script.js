@@ -59,7 +59,9 @@ $( document ).ready(function() {
     $('.seat_sheet').css('top','0px');
 
     $('.airplane_bg').removeClass('airplane_bg');
-    $('.seat_sheet_price_box').removeClass('seat_sheet_price_box');
+    $('.seat_sheet_price_box').remove();
+    $('.seat_sheet_loading').remove();
+    
     $(this).remove();
          return false;
   });
