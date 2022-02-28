@@ -1,4 +1,10 @@
 /*사이트 이름*/
+
+body{
+  overflow: hidden;
+}
+
+
 .site-name {
   position: absolute;
   width: 0;
@@ -539,6 +545,8 @@
 
 /*좌석 disabled-------------------------------------------------*/
 .disabled_seat{  
+  pointer-events: none;
+  cursor: default;
   width: 36px;
   height: 35px;
   text-align: center;

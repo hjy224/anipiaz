@@ -54,9 +54,12 @@ $(document).on("click", ".seat_active", function () {
 
 /*스케일*/
 $( document ).ready(function() {
+
   $('.trigger').on('click', function() {
     $('.seat_sheet').toggleClass('scale');
     $('.seat_sheet').css('top','0px');
+    $('body').css('overflow','scroll');
+
 
     $('.airplane_bg').removeClass('airplane_bg');
     $('.seat_sheet_price_box').remove();
@@ -68,6 +71,28 @@ $( document ).ready(function() {
          return false;
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*배경 DIM 생성*/
