@@ -60,7 +60,9 @@ $( document ).ready(function() {
 
     $('.airplane_bg').removeClass('airplane_bg');
     $('.seat_sheet_price_box').remove();
+    $('.seat_sheet_recom_box').remove();
     $('.seat_sheet_loading').remove();
+
     
     $(this).remove();
          return false;

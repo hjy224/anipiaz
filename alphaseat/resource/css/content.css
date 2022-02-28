@@ -11,7 +11,7 @@
 .ags-wrap header {
   position:fixed ;
   width: 100%;
-  z-index: 10;
+  z-index: 900;
   top: 0;
   height: 150px;
   background: #fff;
@@ -55,8 +55,8 @@
 }
 
 .ags-wrap .ags-header .gnb-wrap .btn_gnb {
-  background: url(../img/common//ico_header-gnb@3x.png) no-repeat center / 16px 16px;
-  margin-left: 20px;
+  background: url(../img/common//ico_header-gnb@3.png) no-repeat center / 20px 20px;
+  margin-left: 18px;
 }
 
 .ags-wrap .ags-header .gnb-wrap .btn_back,.btn_gnb {
@@ -197,7 +197,6 @@
   -webkit-box-shadow: 0px 1px 3px 0px #bbb;
   -moz-box-shadow: 0px 1px 3px 0px #bbb;
   box-shadow: 0px 1px 3px 0px #bbb;
-  z-index: 10px;
    
 }
 .select_group{
@@ -210,9 +209,9 @@
 }
 .select_group a{
   background: url(../img/common/ico_select-arrow.png) no-repeat 15px 10px;
-  background-size: 15px 10px;
+  background-size: 10px 7px;
   background-position: right;
-  padding: 0 20px 0 10px;
+  padding: 0 17px 0 10px;
 }
 
 .passenger{  
@@ -223,22 +222,28 @@
   margin-top: 13.4px;
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
-  z-index: 9px;
+  display: flex;
+  align-items: center;  
+  padding-left: 10px;
+}
+.passenger dl{
+  display: flex;
+  font-size: 12px;flex-direction: column;
+  
+  padding-right: 20px;
+}
+.passenger dl dd{
+  padding-top: 5px;
+  color: #ff0000;
+
+ 
 }
 
-.passenger span{
-  margin-right: 50px;
-}
-
-.passenger span::after{
-  margin-right: none;
-}
 
 /*가는여정과 비행시간*/
 
 .select_txt span{
   font-size: 13px;
-  font-weight: 600;
   margin: 0 1px;
   display:inline-block
 }
@@ -247,6 +252,14 @@
   background: url(../img/common/ico_airplane.png) no-repeat center right / 15px 15px;
   padding: 5px 20px 0px 0px;
 }
+
+.select_txt span:nth-child(2)
+{
+ margin-right:8px;
+}
+
+
+
 .contents{
   padding-top: 150px;  
   position: relative;
@@ -324,49 +337,142 @@
 
 /*좌석 첫페이지 구역 나누기*/
 .seat_sheet_bg {
+  margin: 0 auto;
+  width: 294px;
+  padding: 10px 0;
   position: relative;
 }
 
 .airplane_bg{
   position:absolute;
   background: url(../img/common/airplane_bgx4.png) no-repeat center / 234px 675px;
-  width: 234px;
+  width: 294px;
   height: 675px;
   transition: 0.3s all;
   top: 10px;
-  left: 20%;
   z-index: -1;
 }
 
+/* 첫페이지 왼쪽 구입가격*/
 .seat_sheet_price {
   position: absolute;
-  top: 100px;
+  top: 95px;
   z-index: 14;
+  display: flex;
 }
 
 .seat_sheet_price_box {
   display: flex;
-  justify-content: space-between;
-  width: 252px;
+  width: 88px;
+  flex-direction: column;
+  align-content: flex-start;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+.seat_sheet_price_box .buy_num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid #333;
-  height: 200px;
+}
+.seat_sheet_price_box .buy_num:first-child {
+  border-top:none;
 }
 
-.seat_sheet_price_box div{
-  margin: 0 auto;
-  background: #eee;
-}
+
+
 .seat_sheet_price_box .skybox{
   width: 120px;
   background: #000000;
   opacity: 0.5;
 }
 
-/*로딩*/
-.seat_sheet_loading{
+
+/* 첫페이지 중앙 버튼*/
+.seat_sheet_recom_box {
+  width: 120px;
+  position: relative;
+}
+
+.seat_sheet_recom_box .recom_num a {
+  background: #000;
+  opacity: 0.5;
+  display: block;
+  border-top: 1px solid #333;
+  width: 100%;
+}
+/*버튼 disabled*/
+.seat_sheet_recom_box .recom_num a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.seat_sheet_price_box .buy_num.type1 {height: 50px;}
+.seat_sheet_price_box .buy_num.type2 {height: 192px;}
+.seat_sheet_price_box .buy_num.type3 {height: 37px;}
+.seat_sheet_price_box .buy_num.type4 {height: 120px;}
+.seat_sheet_price_box .buy_num.type5 {height: 120px;}
+
+.seat_sheet_recom_box .recom_num.type1 a {  
+  height: 34px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 51% 100%, 51% 59%, 0 59%);
   position: absolute;
-  top: 300px;
-  left:300px;
+  top:29px;
+  
+}
+.seat_sheet_recom_box .recom_num.type2 a {
+  height: 193px;
+  clip-path: polygon(0 0, 50% 0, 50% 7.5%, 100% 7.5%, 100% 100%, 0 100%);
+  background: #08A7E1;
+  position: absolute;
+  top: 49.5px;
+}
+
+.seat_sheet_recom_box .recom_num.type2 a:hover{
+  background: #08A7E1;
+}
+
+.seat_sheet_recom_box .recom_num.type3 a {
+  height: 35px;
+  position: absolute;
+  background: #000;
+  top: 243px;
+
+}
+
+.seat_sheet_recom_box .recom_num.type4 a {
+  height: 119px;
+  position: absolute;
+  background: #000;
+  top: 279px;
+}
+.seat_sheet_recom_box .recom_num.type5 a {
+  height: 119px;
+  position: absolute;
+  background: #000;
+  top: 399px;
+}
+
+
+/*로딩*/
+.seat_sheet_loading{  
+  position: absolute;
+  top: 230px;
+  left: 210px;
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.5;
+  line-height:20px;
+  padding-top: 100px;
+  background: url(../img/common/loading-6.gif) no-repeat center / 90px 26px;
+
+}
+
+.seat_sheet_loading span{
+  color: #ff0000;
 }
 
 /*좌석 이미지 클릭 코드*/
@@ -393,7 +499,7 @@
   color: #fff;
   line-height: 38px;
   letter-spacing: -0.6px;
-
+  display: inline-block;
 }
 
 .seat_sheet li a.seat_active{ 
@@ -537,4 +643,13 @@
   border-color: transparent transparent transparent #aaa;
 }
 
-
+.seat_num .a1-1{position: relative;}
+.seat_num .a1-1::before {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #ff6600;}
