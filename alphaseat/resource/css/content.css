@@ -725,10 +725,10 @@ body{
   border-color: transparent transparent transparent #aaa;
 }
 
-
+/*좌석 박스 만들기*/
 
 .seat_num .a1-1{position: relative;}
-.seat_num .a1-1::before {
+.seat_num .a1-1::after {
   position: absolute;
   top: -4px;
   left: -4px;
@@ -736,10 +736,26 @@ body{
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #ff6600;}
+  border: 2px solid #ff6600;
+  z-index: -1;
+}
+
 
 .seat_num .a1-2{position: relative;}
 .seat_num .a1-2::before {
+  content: "AI 1위 98%";
+  text-align: center;
+  position: absolute;
+  top:-14px;
+  left:-4px;
+  background: #ff6600;
+  color: #fff;
+  font-size:10px;
+  width:55px;
+  z-index:10;
+  text
+}
+.seat_num .a1-2::after {
   position: absolute;
   top: -4px;
   left: -4px;
@@ -747,10 +763,24 @@ body{
   width: 82px;
   height: 40px;
   background: transparent;
-  border: 2px solid #ff6600;}
+  border: 2px solid #ff6600;
+  z-index: -1;
+}
 
 .seat_num .a1-4{position: relative;}
 .seat_num .a1-4::before {
+  content: "AI 1위 81%";
+  text-align: center;
+  position: absolute;
+  top:-14px;
+  left:-4px;
+  background: #ff6600;
+  color: #fff;
+  font-size:10px;
+  width:55px;
+  z-index:10;
+}
+.seat_num .a1-4::after {
   position: absolute;
   top: -4px;
   left: -4px;
@@ -758,7 +788,9 @@ body{
   width: 82px;
   height: 88px;
   background: transparent;
-  border: 2px solid #ff6600;}
+  border: 2px solid #ff6600;
+  z-index: -1;
+}
 
 
 

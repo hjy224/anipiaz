@@ -131,8 +131,9 @@
 }
 
 .layer_popup .popup_con2 {
-  padding: 0 20px;
   border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+  width: 294px;
 }
 
 .layer_popup .pay_group {
@@ -201,7 +202,7 @@
 
 
 .layer_popup .seat_num .hallway{
-  width: 70px;
+  width: 36px;
   border-bottom: 0;
   font-size: 13px;
   text-align: center;
