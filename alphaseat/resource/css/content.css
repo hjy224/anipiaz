@@ -37,6 +37,18 @@ body{
   width: 100%;
 }
 
+/*상단 AI 제목 결과쪽*/
+.ags-wrap .ags-header .page-name-pay {
+  font-weight: 800;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:20px;
+  width: 100%;
+}
+
 /*상단 왼쪽 메뉴 값 고정*/
 .ags-wrap .ags-header .gnb-wrap {
   position: absolute;
@@ -150,6 +162,50 @@ body{
   letter-spacing: -0.03em;
   display: block;
 }
+
+/*choice_seat 좌석배정*/
+
+
+.pay-header{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.pay-header .pay_choice_txt{
+  
+  font-weight: 800;
+  font-size: 17px;
+  position: absolute;
+  top:20px;
+  left: 20px;
+  width: 100%;
+
+}
+
+.pay-header .btn_close_pay{
+  z-index: 1;
+  background: url(../img/common/ico_header-close@3x.png) no-repeat center / 14px 14px;
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  background-position: 50% 50%;
+  background-color: transparent;
+  
+  text-indent: -9999px;
+}
+.pay-header-txt{
+  position: absolute;
+  top: 45px;
+  left: 20px;
+
+}
+
+
 
 /*왼쪽 사이드바*/
 .test{
@@ -292,7 +348,7 @@ body{
 .popup_price{
 
   top: 180px;
-  position: relative;
+  position: absolute;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -349,11 +405,6 @@ body{
 }
 .seat_code span:nth-child(5){ 
   border-bottom: 0; 
-}
-
-.seat_code .hallway{
-  width: 45px;
-  border-bottom: 0;
 }
 
 .seat_sheet .hallway{
@@ -511,8 +562,6 @@ body{
   padding-top: 5px;
 }
 
-
-
 .seat_sheet li{
   display: flex;
   justify-content: space-between;
@@ -535,7 +584,7 @@ body{
 
 .seat_sheet li a.seat_active{ 
   background-color: #ff6600;  
-  border-bottom: 5px solid #ff0000;
+  border-bottom: 5px solid #CE3802;
   transition: 0.2s all;
 }
 .seat_sheet li a.seat_active::after{
@@ -549,23 +598,23 @@ body{
 /*좌석 가격 일괄바꿈 - 그외 다른건 class삭제 후 직접 입력*/
 .seat_type1_txt::after{
   display: block;
-  content: "";
+  content: "11,000";
 }
 .seat_type2_txt::after{
   display: block;
-  content: "";
+  content: "8,000";
 }
 .seat_type3_txt::after{
   display: block;
-  content: "";
+  content: "5,000";
 }
 .seat_type4_txt::after{
   display: block;
-  content: "";
+  content: "3,000";
 }
 .seat_type5_txt::after{
   display: block;
-  content: "";
+  content: "1,000";
 }
 
 /*좌석 disabled-------------------------------------------------*/
@@ -710,3 +759,111 @@ body{
   height: 88px;
   background: transparent;
   border: 2px solid #ff6600;}
+
+
+
+
+/*payment 결과*/
+
+.pay_content {
+  padding: 10px 20px 10px 20px;
+}
+.pay_txt{
+  font-size: 17px;
+  font-weight: 800;
+}
+.pay_way{
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: bold;  
+  display:flex; 
+  align-items:flex-end;
+}
+.pay_way .airname{
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 15px;
+  padding-left: 75px;
+  padding-top: 12px;
+  background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 15px;
+  background-position: 0px 6px;
+}
+
+
+.pay_gro{
+  border-top: 1px solid #BBBBBB;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #eeeeee;
+}
+.pay_gro span{
+  color: #222222;
+}
+.pay_gro span:nth-last-child(1){
+  color: #F5581A;
+}
+.pay_group {padding: 5px 0;}
+.pay_group li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: -0.7px;
+  padding: 4px 0;
+}
+
+.pay_group_s {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+}
+
+
+.pay_group li .pay_group_s span:first-child{
+  text-align: center;
+  clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
+  background-color: #F5581A;
+  font-size: 12px;
+  color: #fff;
+  line-height: 22px;
+  width: 22px;
+  height: 20px;
+}
+
+
+.pay_choice{  
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #999;
+  font-weight: bold;  
+  padding: 15px 0;
+}
+.pay_choice a{
+  color: #222;
+  font-weight: 800;
+}
+.pay_pay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 54px;
+  background-color: #F5581A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pay_pay button{
+  width: 100%;
+  height: 100%;
+}
