@@ -1,4 +1,154 @@
 @charset "UTF-8";
+
+
+@font-face {
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSansL';
+	src: url('../font/NotoSans-Light.eot'); /* IE9+ Compat Modes */
+	src: url('../font/NotoSans-Light.woff2') format('woff2'), /* Super Modern Browser */
+         url('../font/NotoSans-Light.woff') format('woff'), /* Modern Browser */
+         url('../font/NotoSans-Light.otf') format('opentype'); /* Android, iOS, Safari */
+}
+@font-face {
+	font-family: 'NotoSansDL';
+	src: url('../font/NotoSans-DemiLight.eot');
+	src: url('..//font/NotoSans-DemiLight.woff2') format('woff2'),
+         url('../font/NotoSans-DemiLight.woff') format('woff'),
+         url('../font/NotoSans-DemiLight.otf') format('opentype');
+}
+@font-face {
+	font-family: 'NotoSansR';
+	src: url('../font/NotoSans-Regular.eot');
+	src: url('../font/NotoSans-Regular.woff2') format('woff2'),
+         url('../font/NotoSans-Regular.woff') format('woff'),
+         url('../font/NotoSans-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: 'NotoSansM';
+	src: url('../font/NotoSans-Medium.eot');
+	src: url('../font/NotoSans-Medium.woff2') format('woff2'),
+         url('../font/NotoSans-Medium.woff') format('woff'),
+         url('../font/NotoSans-Medium.otf') format('opentype');
+}
+@font-face {
+	font-family: 'NotoSansB';
+	src: url('../font/NotoSans-Bold.eot');
+	src: url('../font/NotoSans-Bold.woff2') format('woff2'),
+         url('../font/NotoSans-Bold.woff') format('woff'),
+         url('../font/NotoSans-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 100;
+  font-style: italic;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 300;
+  font-style: italic;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 100;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 200;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 300;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 400;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 500;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 600;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  font-weight: 700;
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.eot");
+  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.ttf") format("truetype");
+}
+
 body,object,iframe,
 h1,h2,h3,h4,h5,h6,div,span,p,blockquote,pre,abbr,acronym,address,cite,code,del,dfn,em,img,figure,
 ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
@@ -16,7 +166,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  font-family: NotoSansM, NanumSquare, Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: NotoSansT, Geogrotesque, "Apple SD Gothic NEO", sans-serif;
   color: #111;
   font-size: 14px;
   letter-spacing: -0.5px;
@@ -167,205 +317,6 @@ html.hidden {
 
 /* alert common style */
 /* 규정 및 약관 아코디언 */
-
-
-@font-face {
-	font-family: 'NotoSansL';
-	src: url('./resource/font/NotoSans-Light.eot'); /* IE9+ Compat Modes */
-	src: url('./resource/font/NotoSans-Light.woff2') format('woff2'), /* Super Modern Browser */
-         url('./resource/font/NotoSans-Light.woff') format('woff'), /* Modern Browser */
-         url('./resource/font/NotoSans-Light.otf') format('opentype'); /* Android, iOS, Safari */
-}
-@font-face {
-	font-family: 'NotoSansDL';
-	src: url('./resource/font/NotoSans-DemiLight.eot');
-	src: url('./resource/font/NotoSans-DemiLight.woff2') format('woff2'),
-         url('./resource/font/NotoSans-DemiLight.woff') format('woff'),
-         url('./resource/font/NotoSans-DemiLight.otf') format('opentype');
-}
-@font-face {
-	font-family: 'NotoSansR';
-	src: url('./resource/font/NotoSans-Regular.eot');
-	src: url('./resource/font/NotoSans-Regular.woff2') format('woff2'),
-         url('./resource/font/NotoSans-Regular.woff') format('woff'),
-         url('./resource/font/NotoSans-Regular.otf') format('opentype');
-}
-@font-face {
-	font-family: 'NotoSansM';
-	src: url('./resource/font/NotoSans-Medium.eot');
-	src: url('./resource/font/NotoSans-Medium.woff2') format('woff2'),
-         url('./resource/font/NotoSans-Medium.woff') format('woff'),
-         url('./resource/font/NotoSans-Medium.otf') format('opentype');
-}
-@font-face {
-	font-family: 'NotoSansB';
-	src: url('./resource/font/NotoSans-Bold.eot');
-	src: url('./resource/font/NotoSans-Bold.woff2') format('woff2'),
-         url('./resource/font/NotoSans-Bold.woff') format('woff'),
-         url('./resource/font/NotoSans-Bold.otf') format('opentype');
-}
-@font-face {
-	font-family: 'RobotoL';
-	src: url('./resource/font/Roboto-Light.eot');
-	src: url('./resource/font/Roboto-Light.woff2') format('woff2'),
-         url('./resource/font/Roboto-Light.woff') format('woff'),
-         url('./resource/font/Roboto-Light.otf') format('opentype');
-}
-@font-face {
-	font-family: 'RobotoR';
-	src: url('./resource/font/Roboto-Regular.eot');
-	src: url('./resource/font/Roboto-Regular.woff2') format('woff2'),
-         url('./resource/font/Roboto-Regular.woff') format('woff'),
-         url('./resource/font/Roboto-Regular.otf') format('opentype');
-}
-@font-face {
-	font-family: 'RobotoM';
-	src: url('./resource/font/Roboto-Medium.eot');
-	src: url('./resource/font/Roboto-Medium.woff2') format('woff2'),
-         url('./resource/font/Roboto-Medium.woff') format('woff'),
-         url('./resource/font/Roboto-Medium.otf') format('opentype');
-}
-@font-face {
-	font-family: 'RobotoB';
-	src: url('./resource/font/Roboto-Bold.eot');
-	src: url('./resource/font/Roboto-Bold.woff2') format('woff2'),
-         url('./resource/font/Roboto-Bold.woff') format('woff'),
-         url('./resource/font/Roboto-Bold.otf') format('opentype');
-}
-
-
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 300;
-  src: url(./resource/font/NanumSquareL.eot);
-  src: url(./resource/font/NanumSquareL.eot?#iefix) format("embedded-opentype"), url(./resource/font/NanumSquareL.woff) format("woff"), url(./resource/font/NanumSquareL.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 400;
-  src: url(./resource/font/NanumSquareR.eot);
-  src: url(./resource/font/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(./resource/font/NanumSquareR.woff) format("woff"), url(./resource/font/NanumSquareR.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 700;
-  src: url(./resource/font/NanumSquareB.eot);
-  src: url(./resource/font/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(./resource/font/NanumSquareB.woff) format("woff"), url(./resource/font/NanumSquareB.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 800;
-  src: url(./resource/font/NanumSquareEB.eot);
-  src: url(./resource/font/NanumSquareEB.eot?#iefix) format("embedded-opentype"), url(./resource/font/NanumSquareEB.woff) format("woff"), url(./resource/font/NanumSquareEB.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 100;
-  font-style: italic;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_B_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 200;
-  font-style: italic;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_C_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 300;
-  font-style: italic;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_D_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 400;
-  font-style: italic;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_3_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 500;
-  font-style: italic;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_2_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 600;
-  font-style: italic;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_8_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 700;
-  font-style: italic;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_0_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 100;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 200;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 300;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 400;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 500;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 600;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Geogrotesque';
-  font-weight: 700;
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.eot");
-  src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.ttf") format("truetype");
-}
 
 .sr-only {
   position: absolute;
