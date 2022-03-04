@@ -728,6 +728,18 @@ body{
 /*좌석 박스 만들기*/
 
 .seat_num .a1-1{position: relative;}
+.seat_num .a1-1::before {
+  content: "AI 1위 98%";
+  text-align: center;
+  position: absolute;
+  top:-14px;
+  left:-4px;
+  background: #ff6600;
+  color: #fff;
+  font-size:10px;
+  width:55px;
+  z-index:10;
+}
 .seat_num .a1-1::after {
   position: absolute;
   top: -4px;
@@ -753,7 +765,6 @@ body{
   font-size:10px;
   width:55px;
   z-index:10;
-  text
 }
 .seat_num .a1-2::after {
   position: absolute;
