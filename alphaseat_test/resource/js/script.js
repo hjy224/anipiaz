@@ -9,7 +9,6 @@ $(document).on("click", "#ags-wrap-back", function () {
   $("#con_slider").removeClass("active");
   $("#ags-wrap-back").css("display", "none");
   $("#ags-wrap").css("display", "block");
-
 });
 
 /*좌석선택*/
@@ -30,13 +29,17 @@ $(document).on("click", "#btn_gnb-close", function () {
 
 
 
-/*모달팝업*/
-$('.btn_footer_open').click(function () {
-  $('.ags-summary').addClass('modal-open');
+/*푸터 슬라이드 팝업*/
+
+$(document).on("click", ".btn_footer_open", function () {
+  $(".ags-summary").addClass("active");
 });
-$('.btn_footer_close').click(function () {
-  $('.ags-summary').removeClass('modal-open');
+
+$(document).on("click", ".btn_footer_close", function () {
+  $(".ags-summary").removeClass("active");
 });
+
+
 
 /*상단 셀렉트 그룹*/
 
