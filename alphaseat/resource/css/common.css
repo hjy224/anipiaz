@@ -303,5 +303,47 @@
 
 .layer_popup.alert .grp_title_popup{
   justify-content: flex-end !important;
+}
 
+.layer_popup.alert .smile_boximg ul{
+  padding: 0 0 10px 0;
+}
+
+.layer_popup.alert .smile_boximg ul::before{
+  height: 18px;
+}
+
+.layer_popup.alert .smile_boximg ul::after{
+  height: 18px;
+}
+
+.layer_popup.alert .smile_boximg ul li{
+  background: url(../img/common/seat_smile.png) no-repeat center / 23px 23px;
+  margin-right: 2px;
+  width: 23px;
+  height: 23px;
+  margin: 0 3px;
+}
+.layer_popup.alert .popup_con_txt{
+  display: flex;
+  flex-direction: column;
+  left: 50px;
+  margin: 0 auto;
+  width: 160px;
+  padding-bottom: 10px;  
+}
+.layer_popup.alert .popup_con_txt span{
+  font-size: 16px;
+  text-align: left;
+  padding: 0 0 10px 20px;
+}
+
+.layer_popup.alert .popup_con_txt span:first-child{
+  color: #444;
+  background: url(../img/common/pathv_x3.png) no-repeat left / 14px 12px;
+  background-position: 0 3px;
+}
+.layer_popup.alert .popup_con_txt span:last-child{
+  background: url(../img/common/waring_x3.png) no-repeat left / 14px 12px;
+  background-position: 0 3px;
 }
