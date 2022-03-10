@@ -57,8 +57,8 @@ body{
 
 /*상단 AI 이미지*/
 .ags-wrap .ags-header .page-name img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 18px;
   margin-right: 5px;
 }
 
@@ -235,11 +235,11 @@ body{
 }
 
 .smile_boximg .smile_box_txt{
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   justify-content: center;  
   color: #666666;
-  
+  font-family: 'NotoSansR';
   padding-bottom: 10px ;
 
 }
@@ -856,13 +856,18 @@ body{
 }
 .pay_gro span{
   color: #222222;
-  font-family: 'robotoM';
+  font-family: 'RobotoB';
 }
 .pay_gro span:nth-last-child(1){
   color: #F5581A;
 }
 .pay_group {
   padding: 5px 20px;
+  scrollbar-width: 300px;
+  height: 400px;
+  height: 145px;
+  overflow-y: scroll;
+  
 }
 .pay_group li{
   display: flex;
@@ -878,6 +883,7 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 80px;
+  font-family: 'RobotoM';
 }
 
 
@@ -1041,7 +1047,7 @@ body{
 .ags-summary .pay_content{
   font-family: 'NotoSansB';
   padding-top: 40px;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1070,6 +1076,52 @@ body{
 }
 
 
+.ags-summary .pay_pay_bg{
+  width: 100%;
+  height: 130px;
+  background-color: #000;
+  padding: 15px 20px 15px 20px;
+  font-family: 'NotoSansL';
+  font-size: 12px;
+  background: url(../img/common/photo_01.png) no-repeat center / 375px 130px;
+  background-size: 100%;
+}
+
+.ags-summary .pay_pay_bg ul:first-child {
+  padding-bottom: 5px;
+
+}
+
+.ags-summary .pay_pay_bg .pay_bg_ai{
+  padding: 5px 0 5px 25px;
+  background: url(../img/common/ico_header-ai@3x.png) no-repeat left / 20px 18px;
+  
+  font-family: 'NotoSansM';
+  font-size: 15px;
+}
+
+.ags-summary .pay_pay_bg .pay_txt_v1{
+  display: flex;
+  align-items: center;
+  font-family: 'Labdigital';
+  font-size: 24px;
+}
+
+.ags-summary .pay_pay_bg .pay_txt_v1 span:last-child{
+  font-family: 'NotoSansL';
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+
+.ags-summary .pay_pay_bg li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  color: #fff;
+}
+
 .ags-summary .pay_pay_footer {
   width: 100%;
   height: 54px;
@@ -1078,10 +1130,12 @@ body{
   justify-content: space-around;
   align-items: center;
   color: #fff;
-  font-size: 15px;
+  
 }
 
 .ags-summary .pay_pay_footer button{
   width: 100%;
   height: 100%;
+  font-family: 'NotoSansM';
+  font-size: 15px;
 }
