@@ -538,6 +538,12 @@ body{
   cursor: default;
 }
 
+
+
+
+
+/*맨앞좌석 오른쪽 좌석 없을때*/
+
 .seat_sheet_price_box .buy_num.type1 {height: 50px;}
 .seat_sheet_price_box .buy_num.type2 {height: 192px;}
 .seat_sheet_price_box .buy_num.type3 {height: 37px;}
@@ -550,30 +556,53 @@ body{
   position: absolute;
   top:29px;
 }
-
-/*보더 깜빡이 깜빡깜빡*/
-
-
 .seat_sheet_recom_box .recom_num.type2 a {
   height: 193px;
   clip-path: polygon(0 0, 50% 0, 50% 7.5%, 100% 7.5%, 100% 100%, 0 100%);
+  position: absolute;
+  top: 49.5px;
+}
+
+.seat_sheet_recom_box .recom_num.type1 a {
+ border:3px solid #14c0ff;
+  border-bottom-color: #ff0000;
+ 
+}
+
+
+
+   
+/*맨앞좌석 왼쪽 좌석 없을때*/
+
+.seat_sheet_price_box .buy_num.type1_2 {height: 62px;}
+.seat_sheet_price_box .buy_num.type2_2 {height: 180px;}
+.seat_sheet_price_box .buy_num.type3_2 {height: 37px;}
+.seat_sheet_price_box .buy_num.type4_2 {height: 120px;}
+.seat_sheet_price_box .buy_num.type5_2 {height: 120px;}
+
+.seat_sheet_recom_box .recom_num.type1_2 a {  
+  height: 34px;
+  clip-path: polygon(0 0, 100% 0, 100% 59%, 49% 59%, 49% 100%, 0 100%);
+  position: absolute;
+  top:29px;
+}
+.seat_sheet_recom_box .recom_num.type2_2 a {
+  height: 193px;
+  clip-path: polygon(0 7.5%, 50% 7.5%, 50% 0, 100% 0, 100% 100%, 0 100%);
   background: #08A7E1;
   position: absolute;
   top: 49.5px;
 }
 
-.seat_sheet_recom_box .recom_num.type2 a:hover{
-  background: #08A7E1;
-}
+
+
 
 .seat_sheet_recom_box .recom_num.type3 a {
   height: 35px;
   position: absolute;
   background: #000;
   top: 243px;
-
 }
-
 .seat_sheet_recom_box .recom_num.type4 a {
   height: 119px;
   position: absolute;
@@ -599,7 +628,9 @@ body{
   letter-spacing: -0.5;
   line-height:20px;
   padding-top: 100px;
-  background: url(../img/common/loading-6.gif) no-repeat center / 90px 26px;
+
+  background: url(../img/common/loading-1.gif) no-repeat center / 66px 45px;
+ /* background: url(../img/common/loading-6.gif) no-repeat center / 90px 26px;*/
 
 }
 
@@ -774,6 +805,60 @@ body{
 
 /*좌석 박스 만들기*/
 
+
+.bd_t_line{position: relative;}
+.bd_t_line::after{
+  position: absolute;
+  border-top: 2px solid #ff6600;
+  top: -8px;
+  left: -4px;
+  content: "";
+  width: 40px;
+  height:48px;
+  background: transparent;
+  z-index: -1;
+}
+.bd_b_line{position: relative;}
+.bd_b_line::after{
+  border-bottom: 2px solid #ff6600;
+  position: absolute;
+  top: -8px;
+  left: -4px;
+  content: "";
+  width: 40px;
+  height:48px;
+  background: transparent;
+  z-index: -1;
+}
+.bd_l_line{position: relative;}
+.bd_l_line::after{
+  border-left: 2px solid #ff6600;
+  position: absolute;
+  top: -8px;
+  left: -4px;
+  content: "";
+  width: 40px;
+  height:48px;
+  background: transparent;
+  z-index: -1;
+}
+.bd_r_line{position: relative;}
+.bd_r_line::after{
+  border-right: 2px solid #ff6600;
+  position: absolute;
+  top: -8px;
+  left: -4px;
+  content: "";
+  width: 40px;
+  height:48px;
+  background: transparent;
+  z-index: -1;
+}
+
+
+/*좌석 라인 테스트----------------------------------------------*/
+
+
 .seat_num .a1-1{position: relative;}
 .seat_num .a1-1::before {
   content: "AI 1위 98%";
@@ -851,8 +936,6 @@ body{
 }
 
 
-
-
 /*payment 결과*/
 
 .pay_content {
@@ -896,6 +979,10 @@ body{
 .pay_gro span:nth-last-child(1){
   color: #F5581A;
 }
+.pay_gro span:nth-last-child(1):before {
+  content: "￦";
+}
+
 .pay_group {
   padding: 5px 20px;
   scrollbar-width: 300px;

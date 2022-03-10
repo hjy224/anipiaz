@@ -255,9 +255,12 @@
 .ex_pop{
   padding: 50px;
   background-color: #eee;
-  display: flex;  
-  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+.ex_pop div{
+padding: 10px;
 }
 
 .layer_popup.alert .wrapper_popup{
@@ -347,3 +350,14 @@
   background: url(../img/common/waring_x3.png) no-repeat left / 14px 12px;
   background-position: 0 3px;
 }
+
+#popup2 .popup_body .popup_content.direct{
+  padding: 30px 24px 40px;
+}
+
+#popup2 .popup_body .popup_con_txt.direct{
+  width: 100%;
+  font-size: 15px;
+  color:#444444;
+}
+
