@@ -319,7 +319,7 @@ body{
 .contents{
   padding-top: 150px;  
   position: relative;
-
+  overflow-y: scroll;
   display: flex;
   justify-content: flex-start;
   width: 200%;
@@ -327,6 +327,7 @@ body{
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease;
+  height: 95vh;
 }
 
 .contents.active{
@@ -482,7 +483,7 @@ body{
   top: 130px;
   left: 72px;
   width: 100px;
-  font-size: 8px;
+  font-size: 7px;
   color: #444;
   font-family: 'RobotoM';
 }
