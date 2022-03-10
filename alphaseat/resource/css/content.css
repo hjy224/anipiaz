@@ -856,6 +856,7 @@ body{
 }
 .pay_gro span{
   color: #222222;
+  font-family: 'robotoM';
 }
 .pay_gro span:nth-last-child(1){
   color: #F5581A;
@@ -1040,6 +1041,10 @@ body{
 .ags-summary .pay_content{
   font-family: 'NotoSansB';
   padding-top: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .ags-summary .pay_way{
@@ -1065,11 +1070,7 @@ body{
 }
 
 
-.ags-summary .pay_content .pay_pay {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.ags-summary .pay_pay_footer {
   width: 100%;
   height: 54px;
   background-color: #F5581A;
@@ -1080,7 +1081,7 @@ body{
   font-size: 15px;
 }
 
-.ags-summary .pay_pay button{
+.ags-summary .pay_pay_footer button{
   width: 100%;
   height: 100%;
 }
