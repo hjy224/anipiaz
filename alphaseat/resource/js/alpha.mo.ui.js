@@ -81,7 +81,9 @@ $( document ).ready(function() {
     $('.scale_type_a').css('top','0px');
     $('body').css('overflow-y','scroll');
 
-
+    
+    $('.slider1 .seat_sheet_number').remove();
+    $('.slider1 .seat_sheet_abcdef').remove();
     $('.slider1 .airplane_bg').remove();
     $('.slider1 .seat_sheet_price_box').remove();
     $('.slider1 .seat_sheet_recom_box').remove();
@@ -100,7 +102,9 @@ $( document ).ready(function() {
     $('.scale_type_b').css('top','0px');
     $('body').css('overflow-y','scroll');
 
-
+    
+    $('.slider2 .seat_sheet_number').remove();
+    $('.slider2 .seat_sheet_abcdef').remove();
     $('.slider2 .airplane_bg').remove();
     $('.slider2 .seat_sheet_price_box').remove();
     $('.slider2 .seat_sheet_recom_box').remove();

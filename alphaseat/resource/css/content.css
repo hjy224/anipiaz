@@ -477,8 +477,39 @@ body{
 .seat_sheet_price_box .buy_num:first-child {
   border-top:none;
 }
+.seat_sheet_number{
+  position: absolute;
+  top: 130px;
+  left: 72px;
+  width: 100px;
+  font-size: 8px;
+  color: #444;
+  font-family: 'RobotoM';
+}
+.seat_sheet_abcdef{
+  position: absolute;
+  top: 113px;
+  left: 103.5px;
+  width: 85px;
+  height: 11px;
+  font-size: 8px;
+  color: #444;
+  font-family: 'RobotoM';
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  z-index: 15;
+}
+.seat_sheet_abcdef li:nth-child(3){
+  padding-right: 9px;
 
-
+}
+.seat_sheet_number li{
+  padding-bottom: 5.1px;
+}
+.seat_sheet_number li:nth-child(15){
+  padding-bottom: 11px;
+}
 
 .seat_sheet_price_box .skybox{
   width: 120px;
@@ -517,8 +548,11 @@ body{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 51% 100%, 51% 59%, 0 59%);
   position: absolute;
   top:29px;
-  
 }
+
+/*보더 깜빡이 깜빡깜빡*/
+
+
 .seat_sheet_recom_box .recom_num.type2 a {
   height: 193px;
   clip-path: polygon(0 0, 50% 0, 50% 7.5%, 100% 7.5%, 100% 100%, 0 100%);
@@ -995,7 +1029,7 @@ body{
   margin: 0;
   padding: 0;
   transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-  top: 100%;
+  top: 101%;
   position: fixed;
   left: 0;
   text-align: left;
@@ -1004,7 +1038,7 @@ body{
   -webkit-box-shadow: 0 -2px 9px 0px #bbb;
   -moz-box-shadow: 0 -2px 9px 0px #bbb;
   box-shadow: 0 -2px 9px 0px #bbb;
-
+  
 }
 
 .footer_contents .fc_header {
@@ -1051,6 +1085,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 .ags-summary .pay_way{
