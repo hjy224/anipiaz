@@ -327,7 +327,7 @@ body{
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-  height: 95vh;
+  height: 100vh;
 }
 
 .contents.active{
@@ -938,9 +938,6 @@ body{
 
 /*payment 결과*/
 
-.pay_content {
-
-}
 .pay_txt{
   display: flex;
   justify-content: space-between;
@@ -1174,10 +1171,6 @@ body{
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
-}
-
-.ags-summary .pay_way{
-
 }
 
 .ags-summary .pay_group{
