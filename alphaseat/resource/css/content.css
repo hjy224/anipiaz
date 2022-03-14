@@ -352,20 +352,31 @@ body{
 
 /*오른쪽박스*/
 
-.seat_sheet .right_box{
+.contents .right_box{
   
 }
 
-.seat_sheet .right_box .front_box{
+.contents .right_box .front_box{
 
   position: absolute;
   width: 26px;
   height: 36px;
-  background-color: #008cc1;
-  right: -48px;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+  right: 0;
+  color: #999;
+  font-size: 9px;
+  font-family: 'NotoSansL';
+  
+}
+.contents .right_box .front_box span{
+  transform: rotate(90deg);
+
 
 }
-
 
 /*가격대별 선호도 1위 그룹석을 찾았어요!*/
 .find_txt{
