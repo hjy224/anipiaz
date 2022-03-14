@@ -373,6 +373,7 @@ body{
   
 }
 .contents .right_box .front_box span{
+  padding: 10px;
   transform: rotate(90deg);
 
 
@@ -1279,8 +1280,14 @@ body{
   margin-left: 10px;
   padding-left: 65px;
   padding-top: 10px;
-  background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 60px 11px;
   background-position: 0px 7px;
+}
+.ags-summary .pay_way .airname.tway {
+  background: url(/images/alpha/common/symbol_flight-way_tw_dom@3x.png) no-repeat left / 0 55px;
+  background-size: 60px 15px;
+}
+.ags-summary .pay_way .airname.jeju {
+  background: url(/images/alpha/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 0 55px;
   background-size: 60px 13px;
 }
 
