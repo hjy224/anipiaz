@@ -81,7 +81,6 @@
 }
 .grp_title_popup h2{
   font-size: 17px;
-  font-weight: 800;
 
 }
 .grp_title_popup .btn_close_popup{
@@ -157,7 +156,6 @@
 
 .layer_popup .pay_turn{
   font-size: 13px;
-  font-weight: 800;
   padding-left: 13px;
   background: url(../img/common/path_x3.png) no-repeat left / 10px 10px;
   
@@ -186,7 +184,6 @@
   border-bottom: 5px solid #CE3802;
   opacity: 40%;
   font-size: 13px;
-  font-weight: 700;
   color: #fff;
   line-height: 38px;
   letter-spacing: -0.6px;
@@ -218,11 +215,9 @@
   color: #111;
 }
 
-.layer_popup .pay_group{
-  font-weight: 700;
-}
 
 .layer_popup .pay_group_s a{
+  text-align: right;
   color: #08A7E1;
 }
 
