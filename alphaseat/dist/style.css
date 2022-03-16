@@ -1,0 +1,12 @@
+
+
+#div1 {
+  position: relative;
+  background: blue;
+  top:1000px;
+  height: 500px;
+}
+#div2 {
+  background: #ff6600;
+  height: 500px;
+}

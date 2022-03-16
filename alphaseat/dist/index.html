@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - No Fixed Nav: Click - Scroll to section</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#btn1').click(function () {
+
+                var offset = $('#div1').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+                $('html').animate({
+                    scrollTop: offset.top
+                }, 400);
+
+            });
+            $('#btn2').click(function () {
+
+                var offset = $('#div2').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+                $('html').animate({
+                    scrollTop: offset.top
+                }, 400);
+
+            });
+
+        });
+    </script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+    <button id="btn1">div1로 이동</button>
+    <button id="btn2">div2로 이동</button>
+  <ul>
+    <li id="div1"></li>
+    <li id="div2"></li>
+  </ul>
+
+</body>
+
+
+</html>
