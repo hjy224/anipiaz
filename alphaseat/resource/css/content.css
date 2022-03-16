@@ -797,32 +797,16 @@ body{
   display: inline-block;  
   transition: 0.2s all;
 }
-/* 주황색으로 표시할때
-
-.seat_sheet li a{  
-  width: 36px;
-  height: 35px;
-  text-align: center;
-  clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
-  background-color: #f5581a;  
-  border-bottom: 5px solid #CE3802;
-  font-size: 10.5px;
-  color: #fff;
-  line-height: 38px;
-  letter-spacing: -0.6px;
-  display: inline-block;  
-  transition: 0.2s all;
+/* 주황색으로 표시할때*/
+.seat_orange{  
+  background-color: #f5581a !important;
+  border-bottom: 5px solid #CE3802 !important;
+ 
 }
-
-
-*/
-
-
-
+/* 좌석 클릭했을때*/
 .seat_sheet li a.seat_active{ 
   background: url(../img/common/seat_click.png) no-repeat top 4px right 50% / 14px 14px;
   background-color: #f5581a;
-
   border-bottom: 5px solid #CE3802;
   transition: 0.2s all;
   
@@ -833,8 +817,6 @@ body{
   font-family: 'NotoSansL';
   letter-spacing: 0;
 }
-
-
 
 /*좌석 가격 일괄바꿈 - 그외 다른건 class삭제 후 직접 입력*/
 
