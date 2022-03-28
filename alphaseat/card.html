@@ -98,7 +98,7 @@
                     <div class="method_card_box1">신용카드</div>
                     <div class="method_card_box2">현재 신용카드 결제만 지원됩니다.</div>           
                 </div>
-                <div class="method_card_boxbox pdt10">
+                <div class="pdt10">
                     <div class="card-select-wrap">
                         <label class="forms_li_title">카드 구분</label>
                         <select>
@@ -107,26 +107,64 @@
                         </select>
                     </div>
                 </div>
-                <div class="method_card_boxbox">
-                    <div class="card-select-wrap">
-                        <label class="forms_li_title">할부 기간</label>
-                        <select>
-                            <option>할부기간1</option>
-                            <option>할부기간2</option>
-                            <option>할부기간3</option>
-                            <option>할부기간4</option>
-                        </select>
-                        <span>체크카드 할부 불가</span>
-                    </div>
+                <div class="card-select-wrap">
+                    <label class="forms_li_title">할부 기간</label>
+                    <select>
+                        <option>할부기간1</option>
+                        <option>할부기간2</option>
+                        <option>할부기간3</option>
+                        <option>할부기간4</option>
+                    </select>
+                    <span>체크카드 할부 불가</span>
                 </div>
-                <div class="method_card_boxbox">
+                <div class="card_write">
+                    <label class="forms_li_title">카드 번호</label>
                     <div class="card-pass-wrap">
                         <span>
                             <label for="" class="sr-only">첫째자리</label>
+                            <input class="input_case_card " pattern="[0-9]*" inputmode="numeric" type="text" id=""
+                                maxlength="4">
+                        </span>
+                        <span>
+                            <label for="" class="sr-only">둘째자리</label>
+                            <input class="input_case_card " pattern="[0-9]*" inputmode="numeric" type="text" id=""
+                                maxlength="4">
+                        </span>
+                        <span>
+                            <label for="" class="sr-only">셋째자리</label>
+                            <input class="input_case_card " pattern="[0-9]*" inputmode="numeric" type="text" id=""
+                                maxlength="4">
+                        </span>
+                        <span>
+                            <label for="" class="sr-only">넷째자리</label>
+                            <input class="input_case_card " pattern="[0-9]*" inputmode="numeric" type="password"
+                                id="" maxlength="4">
                         </span>
                     </div>
                 </div>
-            
+                <div class="card-select-moon">
+                    <label class="forms_li_title">유효 기간</label>
+                    <div class="card-pass-wrap">
+                        <span>
+                            <label for="" class="sr-only">첫째자리</label>
+                            <input class="input_case_card" type="text" id="" placeholder="월" maxlength="4">
+                        </span>
+                        <span>
+                            <label for="" class="sr-only">둘째자리</label>
+                            <input class="input_case_card" type="text" id="" placeholder="년" maxlength="4">
+                        </span>
+                    </div>
+                </div>
+                <div class="card-select-pass">
+                    <label class="forms_li_title">카드<br>비밀번호</label>
+                    <div class="card-pass-wrap">
+                        <span>
+                            <label for="" class="sr-only">첫째자리</label>
+                            <input class="input_case_card" type="text" id="" placeholder="앞2자리" maxlength="2">
+                        </span>
+                        <span>●●</span>
+                    </div>
+                </div>
             
             
             

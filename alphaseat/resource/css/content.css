@@ -1567,14 +1567,15 @@ body{
 	width: 100%;
 }
 
-.creditcard{	
-}
-
 .card_warp{
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 15px 10px 20px;
 	border-bottom: 1px solid #aaa;
+}
+.creditcard{
+	overflow-y: auto;
+	height: 1000px;
 }
 
 .creditcard .card_warp .card_slider{
@@ -1708,11 +1709,11 @@ body{
     white-space: nowrap;
     font-size: 11px;
     font-weight: 600;
-    color: #ccc;
+    color: #999;
     letter-spacing: -0.3px;
     padding: 0 30px 0 20px;
     height: 35px;
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
 	
 	background: url(../img/common/down_arrow.png) no-repeat right 5px top 50%  / 22px 22px;
 }
@@ -1723,39 +1724,124 @@ body{
 	font-family: 'NotoSansR';
 }
 
-.forms_li_title{
-	padding: 0 20px;
+
+.card_write{
+	position: relative;
+	padding-top: 20px;	
+}
+
+.card-pass-wrap{	
+	position: absolute;
+	top: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 81px;
+	padding-right: 20px;
+}
+.card-pass-wrap span{
+	width: 23%;
+}
+
+.input_case_card {
+    display: inline-block;
+    margin: 0;
+    color: #999;
+    padding: 0 5px;
+    height: 35px;
+	width: 100%;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+	text-align: center;
+	font-size: 11px;
+}
+
+
+.card-select-moon{
+	position: relative;
+	padding: 35px 0 20px 0;
+}
+
+.card-select-moon .card-pass-wrap{	
+	position: absolute;
+	top: 25px;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 81px;
+	padding-right: 20px;
+}
+
+.card-select-moon .card-pass-wrap span {
+	
+	font-size: 11px;
+	color: #aaa;
+	margin-right: 8px;
+}
+
+.card-select-pass{
+	position: relative;
+	padding: 10px 0;
+
+}
+.card-select-pass .card-pass-wrap{	
+	position: absolute;
+	top: 5px;
+	padding-left: 81px;
+	padding-right: 20px;
+}
+
+.card-select-pass .card-pass-wrap span {
+	width:35%
+}
+.card-select-pass .card-pass-wrap span:nth-child(2){
+	position: absolute;
+	top:30%;
+	left: 140px;
+}
+
+
+.card-select-pass .forms_li_title{
+	text-align: left;
 }
 
 
 
 
 
-
-
+.forms_li_title{
+	padding: 0 10px 0 20px;
+}
 
 
 
 /*크기에 따라서 화면구성*/
 
 @media (max-width: 376px) {
-
 	.seat_sheet_bg.ac1{	
 		height: 100vh;
 	}
 	.seat_sheet_bg.ac2{	
 		height: 100vh;
 	}
+	.card-select-moon .card-pass-wrap span {
+		margin-right: 7px;
+	}
+	
 
 }
 
 @media (max-width: 321px) {
-
 	.seat_sheet_bg.ac1{	
 		height: 120vh;
 	}
 	.seat_sheet_bg.ac2{	
 		height: 120vh;
 	}
+	.card-select-wrap span{
+		display: none;
+	}
+	.card-select-moon .card-pass-wrap span {
+		margin-right: 6px;
+	}
+	
 
 }
