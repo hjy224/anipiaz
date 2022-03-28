@@ -147,7 +147,7 @@ $(document).ready(function () {
 	$(document).on("click", ".btn_footer_open", function () {
 		$(".ags-summary").addClass("active");				
 		$(".dimmed").css("display", "block");
-		$(".contents").css("overflow-y", "hidden");
+		$("body").css("overflow", "hidden");
 		
 		
 	});
@@ -155,6 +155,7 @@ $(document).ready(function () {
 	$(document).on("click", ".btn_footer_close", function () {
 		$(".ags-summary").removeClass("active");
 		$(".dimmed").css("display", "none");
+		$("body").css("overflow", "");
 	});
 	
 	/*상단 내려오는 슬라이드*/
