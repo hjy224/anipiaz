@@ -126,11 +126,7 @@
   font-size: 12px;
 }
 
-.layer_popup .pay_way.type1 {
-  padding: 8px 23px 10px;
-  border-bottom: 1px solid #ddd;
-  justify-content: space-between;
-}
+
 
 .layer_popup .popup_con2 {
   border-bottom: 1px solid #ddd;
@@ -336,10 +332,16 @@ padding: 10px;
   background: url(../img/common/waring_x3.png) no-repeat left / 14px 12px;
   background-position: 0 3px;
 }
-#popup1 .wrapper_popup .popup_header .grp_title_popup{
-  
+#popup1 .wrapper_popup .popup_header .grp_title_popup{  
   justify-content: space-between
 }
+
+#popup1 .pay_way.type1 {
+  padding: 18px 20px 20px 20px;
+  justify-content: space-between;
+}
+
+
 
 #popup11 .smile_boximg ul{
   padding: 0 0 10px 0;
@@ -557,7 +559,7 @@ padding: 10px;
   border-radius: 0 0 10px 10px;
 }
 #popup6 .pay_exr .pay_exr_btn{
-    width: 100%;
+  width: 100%;
   height: 50px;
   background:#FE6845;
   border-radius: 0 0 10px 10px;
@@ -570,6 +572,8 @@ padding: 10px;
   font-size: 16px;
   font-family: 'NotoSansR';
   color: #fff;
+  width: 100%;
+  height: 100%;
 }
 
 #popup7 .popup_con_txt{
@@ -718,6 +722,8 @@ padding: 10px;
   font-size: 16px;
   font-family: 'NotoSansR';
   color: #fff;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -792,6 +798,8 @@ padding: 10px;
   font-size: 16px;
   font-family: 'NotoSansR';
   color: #fff;
+  width: 100%;
+height: 100%;
 }
 
 
