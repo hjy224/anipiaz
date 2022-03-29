@@ -1340,7 +1340,7 @@ body{
 
 /*딤드*/
 
-.dimmed{
+.dimmed_bg{
 	position: absolute;
 	z-index: 900;    
     left: 0;
