@@ -343,6 +343,7 @@ body{
 	appearance: none;
 	font-size: 14px;
 	letter-spacing: -0.7px;
+	padding-right: 7px;
 }
 .select_group a{
 	background: url(../img/common/ico_select-arrow.png) no-repeat 15px 10px;
@@ -355,8 +356,8 @@ body{
 	overflow: auto;
 	position: fixed;
 	width: 100%;
-	height: 0;
-	margin-top: 13.4px;
+	left: 0;
+	margin-top: 17.8px;
 	background-color: #fafafa;
 	display: flex;
 	align-items: center;
@@ -365,7 +366,6 @@ body{
 .passenger dl{
 	display: flex;
 	font-size: 12px;flex-direction: column;
-
 	padding-right: 20px;
 }
 .passenger dl dd{
@@ -376,28 +376,32 @@ body{
 
 /*가는여정과 비행시간*/
 
+
+.select_txt{
+	padding: 5px 12px 5px 12px;
+	border-radius: 15px;
+	border: 1px solid #ccc;
+	margin-left: 20px;
+}
+
 .select_txt span{
 	font-size: 13px;
 	margin: 0 1px;
 	display:inline-block
 }
-
-.select_txt span:first-child{
+.select_txt span:nth-child(1){
+	margin-right: 6px;
+	color: #00aae7;
+}
+.select_txt span:nth-child(2){
 	background: url(../img/common/ico_airplane.png) no-repeat center right / 15px 15px;
 	padding: 0 22px 0px 0px;
 }
-
-.select_txt span:nth-child(2)
-{
- margin-right:8px;
-}
-
 .contents{
 	padding-top: 150px;
 	position: relative;
 	margin: 0 auto;
 	transition-duration: 0.3s;	
-	
 }
 
 .separate200{
