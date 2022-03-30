@@ -18,7 +18,7 @@ body{
 	width: 100%;
 	z-index: 800;
 	top: 0;
-	height: 150px;
+	height: auto;
 	background: #fff;
 }
 .ags-wrap .ags-header {
@@ -632,10 +632,11 @@ body{
 
 }
 .seat_sheet_number li{
-	padding-bottom: 5.1px;
+	line-height: 14.9px;
 }
 .seat_sheet_number li:nth-child(15){
-	padding-bottom: 11px;
+	padding-top: 1px;
+	padding-bottom: 6.5px;
 }
 
 .seat_sheet_price_box .skybox{
