@@ -1312,9 +1312,16 @@ body{
 
 /*payment 결과*/
 
-.popup_con1{
+.payment{
+
+	height: auto;
+	padding-bottom: 100px;
+}
 
 
+.pay_pilyo{
+	width: 90%;	
+	margin: 0 auto;
 }
 
 .pay_txt1{
@@ -1327,41 +1334,92 @@ body{
 	display: flex;
 	justify-content: space-between;
 	font-size: 15px;
-	padding: 10px 20px;
+	padding: 10px 0;
 }
 
-.pay_service{
+.pay_bag{
+	margin-top: 10px;
 	border: 1px solid #ff4700;
 	color: #ff4700;
 	border-radius: 5px;
-	width: 90%;
-	margin: 0 auto;
 	height: 50px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding: 0 15px;
 }
-.pay_service_txt1{
-	width: 120px;
+.pay_bag_txt1{
+	font-family: 'NotoSansR';
+	width: 110px;
 	height: 24px;
-	padding-left: 30px;
+	padding-left: 25px;
 	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -1px;
 	background: url(../img/common/ico_bag.png) no-repeat left center / 13px 20px;
 	
 }
-.pay_service_txt2{
-	width: 20px;
+.pay_bag_txt2{
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #ff4700;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;	
+}
+.pay_bag_txt3{
+	width: 110px;
 	height: 24px;
+	padding-right: 15px;
+	font-size: 13px;
+	line-height: 24px;
+	color: #555;
+	text-align: right;
+	background: url(../img/common/ico_down.png) no-repeat right / 11px 12px;
+}
+.pay_meat{
+	margin-top: 10px;
+	border: 1px solid #ff4700;
+	color: #ff4700;
+	border-radius: 5px;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 15px;
+}
+.pay_meat_txt1{
+	font-family: 'NotoSansR';
+	width: 110px;
+	height: 24px;
+	padding-left: 25px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -1px;
+	background: url(../img/common/ico_meat.png) no-repeat left / 16px 20px;
 	
 }
-.pay_service_txt3{
-	width: 100px;
-	height: 24px;
-	padding-right: 10px;
-	font-size: 14px;
-	background: url(../img/common/ico_bag.png) no-repeat right / 13px 20px;
-	
+.pay_meat_txt2{
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #ff4700;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;	
 }
+.pay_meat_txt3{
+	width: 110px;
+	height: 24px;
+	font-size: 13px;
+	line-height: 24px;
+	color: #555;
+	text-align: right;
+}
+
 .pay_way{
 	font-size: 15px;
 	display:flex;
