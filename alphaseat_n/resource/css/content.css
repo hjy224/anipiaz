@@ -16,7 +16,7 @@ body{
 .ags-wrap header {
 	position:fixed ;
 	width: 100%;
-	z-index: 800;
+	z-index: 890;
 	top: 0;
 	height: auto;
 	background: #fff;
@@ -154,6 +154,8 @@ body{
 
 .ags-header .gnb-wrap .gnb-2dp-wrap .fnb {
 	position: absolute;
+	left: 20px;
+	bottom: 6rem;
 }
 
 .ags-header .gnb-wrap .gnb-2dp-wrap .fnb a {
@@ -163,9 +165,54 @@ body{
 	display: block;
 }
 
+.ags-header .gnb-wrap .gnb-2dp-wrap .welcome-msg{
+	padding-top: 50px;	
+	color: #ffffff;
+	font-family: 'NotoSansL';
+}
+
+.ags-header .gnb-wrap .gnb-2dp-wrap .depth1{
+	padding-top: 50px;	
+	color: #ffffff;
+	font-size: 20px;
+	font-family: 'NotoSansB';
+	display: inline-block;
+	line-height: 50px
+}
+.ags-header .gnb-wrap .gnb-2dp-wrap .depth1 > li.active a{
+	color: #FEE700;	
+}
+
+
+.ags-header .gnb-wrap .gnb-2dp-wrap .depth1 > li.new a:after{
+	content: "new";
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    display: inline-block;
+    margin-left: 0.57143rem;
+    padding: 0 0.53333em;
+    height: 1.6em;
+    line-height: 1.6em;
+    background-color: rgba(219, 16, 16, 0.9);
+    border: 1px solid #FF0000;
+    border-radius: 0.86667em;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.ags-header .gnb-wrap .gnb-2dp-wrap .depth1 .depth2{
+	padding-left: 15px;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'NotoSansM';
+	display: block;
+	line-height: 30px
+}
+
+
 /*choice_seat 좌석배정*/
-
-
 .pay-header{
 	position: relative;
 	display: flex;
@@ -179,9 +226,7 @@ body{
 	top:20px;
 	left: 20px;
 	width: 100%;
-
 }
-
 .pay-header .btn_close_pay{
 	z-index: 1;
 	background: url(../img/common/ico_header-close@3x.png) no-repeat center / 14px 14px;
@@ -193,20 +238,12 @@ body{
 	height: 25px;
 	background-position: 50% 50%;
 	background-color: transparent;
-
 	text-indent: -9999px;
 }
 .pay-header-txt{
 	position: absolute;
 	top: 45px;
 	left: 20px;
-
-}
-
-/*왼쪽 사이드바*/
-.test{
-	font-size: 100px;
-	color:#ffffff
 }
 
 /*상단 스마일 박스*/
@@ -1280,14 +1317,51 @@ body{
 
 }
 
-
-.pay_txt{
+.pay_txt1{
 	display: flex;
 	justify-content: space-between;
 	font-size: 17px;
 	padding: 0 20px;
 }
+.pay_txt2{
+	display: flex;
+	justify-content: space-between;
+	font-size: 15px;
+	padding: 10px 20px;
+}
 
+.pay_service{
+	border: 1px solid #ff4700;
+	color: #ff4700;
+	border-radius: 5px;
+	width: 90%;
+	margin: 0 auto;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.pay_service_txt1{
+	width: 120px;
+	height: 24px;
+	padding-left: 30px;
+	font-size: 16px;
+	background: url(../img/common/ico_bag.png) no-repeat left center / 13px 20px;
+	
+}
+.pay_service_txt2{
+	width: 20px;
+	height: 24px;
+	
+}
+.pay_service_txt3{
+	width: 100px;
+	height: 24px;
+	padding-right: 10px;
+	font-size: 14px;
+	background: url(../img/common/ico_bag.png) no-repeat right / 13px 20px;
+	
+}
 .pay_way{
 	font-size: 15px;
 	display:flex;
@@ -1779,7 +1853,7 @@ body{
 	height: 1000px;
 }
 
-.creditcard .card_warp .card_slider{
+.creditcard .card_warp .credit_box_btn{
 	display: block;
 	cursor: pointer;
 	font-size: 11px;
@@ -1789,14 +1863,55 @@ body{
 	background: url(../img/common/down_arrow.png) no-repeat right 0 top -4px / 22px 22px;
 	
 }
-.creditcard .card_warp .card_slider.on{
+.creditcard .card_warp .credit_box_btn.on{
 	background: url(../img/common/up_arrow.png) no-repeat right 0 top -4px / 22px 22px;
 }
 
-#card_slider_box{	
-	overflow: hidden;
+
+/*슬라이드 버튼 과 내용 css*/
+.credit_box_btn{
+	padding-right: 25px;
+	background: url(../img/common/down_arrow.png) no-repeat right / 22px 22px;
 }
-#card_slider_box .card_box1{	
+.credit_box_btn.on{
+	padding-right: 25px;
+	background: url(../img/common/up_arrow.png) no-repeat right / 22px 22px;
+}
+.credit_agree_box_content{
+	overflow: hidden;
+	border-top: 1px solid #ddd;
+	overflow: hidden;
+	padding-bottom: 10px;
+	background-color: #F8F8F8;
+}
+.credit_agree_box_content{
+	padding: 20px 20px
+}
+.credit_agree_box_content table tr th{
+	font-size: 12px;
+	font-family: 'NotoSansL';
+	padding: 30px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+.credit_agree_box_content table tr td{
+	border-left: 1px solid #ddd;
+}
+
+
+.credit_agree_box_content table tr:first-child th{
+	font-size: 12px;
+	font-family: 'NotoSansL';
+	color: #fff;
+	background-color: #000;
+	padding: 10px 20px;	
+}
+
+
+
+/*부가서비스 신청내역 산당 슬라이드내용 css*/
+
+.credit_agree_box_content .card_box1{	
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 20px 15px 20px;
@@ -1804,11 +1919,11 @@ body{
 	justify-content: space-between;
 	border-bottom: 1px solid #eee;
 }
-#card_slider_box .card_box1 div{
+.credit_agree_box_content .card_box1 div{
 	font-size: 11px;
 }
 
-#card_slider_box .card_box1 div span:first-child {
+.credit_agree_box_content .card_box1 div span:first-child {
 	color: #f5581a;
 	border: 1px solid #f5581a;
 	width: 10px;
@@ -1816,12 +1931,12 @@ body{
 	padding: 0 5px;
 }
 
-#card_slider_box .card_box1 div span:nth-child(2) {
+.credit_agree_box_content .card_box1 div span:nth-child(2) {
 	background: url(../img/common/ico_airplane.png) no-repeat center right / 11px 11px;
     padding: 0 17px 0px 10px;
 }
 
-#card_slider_box .card_box2{	
+.credit_agree_box_content .card_box2{	
 	font-size: 13px;
 	display: flex;
 	justify-content: space-between;
@@ -1830,11 +1945,11 @@ body{
 	border-bottom: 1px solid #eee;
 }
 
-#card_slider_box .card_box2 span:nth-child(2) {
-	 padding: 0 70px 0px 0px;
+.credit_agree_box_content .card_box2 span:nth-child(2) {
+	padding: 0 70px 0px 0px;
 }
 
-#card_slider_box .card_box3{	
+.credit_agree_box_content .card_box3{	
 	font-size: 13px;
 	display: flex;
 	justify-content: space-between;
@@ -1842,7 +1957,7 @@ body{
 	width: 100%;
 	border-bottom: 1px solid #eee;
 }
-#card_slider_box .card_box3 div{
+.credit_agree_box_content .card_box3 div{
 	padding: 0 50px 0px 0px;
 }
 
@@ -2015,17 +2130,54 @@ body{
 
 }
 .notification-list{
-	padding: 20px 20px;
-	font-family: 'NotoSansL';
+	
+	padding: 10px 20px 0 20px;
+	font-family: 'NotoSansR';
 	font-size: 12px;
 	color: #999;
 
 }
 .notification-list li{
+	position: relative;
 	padding-top: 10px;
-
+	padding: 10px 0 0 5px;	
 }
 
+.notification-list li:before{
+	position: absolute;
+	content: "";
+    left: 0;
+    top: 15px;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+
+.credit_agree{
+	padding-bottom: 20px;
+}
+
+.credit_agree_txt1{
+	padding: 20px 0 10px 20px;
+	border-bottom: 1px solid #aaa;
+}
+
+.credit_agree h3{
+	height: 16px;
+	font-size: 13px;
+	padding-left: 20px;
+	background: url(../img/common/war_check.png) no-repeat left / 16px 16px;
+}
+
+.credit_agree_box{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+
+}
 
 
 
