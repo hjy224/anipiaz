@@ -116,37 +116,42 @@ $(document).ready(function () {
 	/*좌석선택 오렌지*/
 	$(document).on("click", ".seat_btn", function () {
 		$(this).addClass("seat_active");
-		
+		$(".seat_num .seat_active span").css("display", "none");
 	});
 
 	$(document).on("click", ".seat_active", function () {
 		$(this).removeClass("seat_active");
+		$(".seat_num .seat_btn span").css("display", "block");
 	});
 
 	/*좌석선택 블루*/
 	$(document).on("click", ".seat_btn_blue", function () {
 		$(this).addClass("seat_active_blue");
+		$(".seat_num .seat_active_blue span").css("display", "none");
 	});
 
 	$(document).on("click", ".seat_active_blue", function () {
 		$(this).removeClass("seat_active_blue");
+		$(".seat_num .seat_btn_blue span").css("display", "block");
 	});
 
 	/*gnb 팝업 정의*/
 	$(document).on("click", "#btn_gnb", function () {
 		$("#gnb-2dp").addClass("active");
 		$("html, body").css("overflow", "hidden");
+		$(".ags-summary").css("display", "none");
 	});
 
 	$(document).on("click", "#btn_gnb-close", function () {
 		$("#gnb-2dp").removeClass("active");
 		$("html, body").css("overflow", "");
+		$(".ags-summary").css("display", "block");
 	});
 
 	/*푸터 슬라이드 팝업*/
 	$(document).on("click", ".btn_footer_open", function () {
 		$(".ags-summary").addClass("active");				
-		$(".dimmed").css("display", "block");
+		$(".dimmed_bg").css("display", "block");
 		$("body").css("overflow", "hidden");
 		
 		
@@ -154,7 +159,7 @@ $(document).ready(function () {
 
 	$(document).on("click", ".btn_footer_close", function () {
 		$(".ags-summary").removeClass("active");
-		$(".dimmed").css("display", "none");
+		$(".dimmed_bg").css("display", "none");
 		$("body").css("overflow", "");
 	});
 	
@@ -185,6 +190,9 @@ $(document).ready(function () {
 		$('.slider1 .seat_sheet_price_box').remove();
 		$('.slider1 .seat_sheet_recom_box').remove();
 		$('.slider1 .seat_sheet_loading').remove();
+		$('.air_logo').remove();
+
+		
 
 		$('.slider1 .seat_sheet_touch').remove();
 		$('.slider1 .digital_loading').remove();
@@ -206,6 +214,8 @@ $(document).ready(function () {
 		$('.slider2 .seat_sheet_price_box').remove();
 		$('.slider2 .seat_sheet_recom_box').remove();
 		$('.slider2 .seat_sheet_loading').remove();
+		$('.air_logo').remove();
+
 
 		$('.slider2 .seat_sheet_touch').remove();
 		$('.slider2 .digital_loading').remove();
@@ -237,21 +247,47 @@ $(document).ready(function () {
 		}, 400);
 	});
 	
-	/*카드결제 슬라이드*/
+	
+	/*카드결제 슬라이드
 
 	$(".card_slider").click(function () {
-		/*
+		
 		$(this).next("#card_slider_box").stop().slideToggle(300);
 		$(this).toggleClass('on').siblings().removeClass('on');
 		$(this).next("#card_slider_box").siblings("#card_slider_box").slideUp(300); // 1개씩 펼치기
-	 */
+	 
 		$('#card_slider_box').stop().slideToggle(300);
 		$(this).toggleClass('on').siblings().removeClass('on');
 		$('#card_slider_box').siblings("#card_slider_box").slideUp(300); // 1개씩 펼치기
-	 
-	
-	
 	});
+	*/
+	/*약관동의*/
+	$(".credit_box_btn").click(function () {
+		var _self	= this;
+
+//alert(		$(_self).attr("agrBtn")	);
+
+		$("div [agrLt]").each(function(idx, obj) {
+
+			if( _self == $("div [agrBtn]").get(idx) && $(obj).hasClass("on") == false) {
+				$(obj).addClass("on").slideDown(300);
+//				$(obj).slideDown(300);
+			} else {
+				$(obj).removeClass("on").slideUp(300);
+//				$(obj).slideUp(300);
+			}
+
+		});
+	});
+/*
+
+	$(".credit_box_right").click(function () {
+
+		$('#credit_agree_box_content').stop().slideToggle(300);
+		$(this).toggleClass('on').siblings().removeClass('on');
+		$('#credit_agree_box_content').siblings("#credit_agree_box_content").slideUp(300); // 1개씩 펼치기
+	});
+*/
 
 	/*$('.contents').addClass("ovrFlw");*/
 

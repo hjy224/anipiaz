@@ -1313,7 +1313,6 @@ body{
 /*payment 결과*/
 
 .payment{
-
 	height: auto;
 	padding-bottom: 100px;
 }
@@ -1322,6 +1321,15 @@ body{
 .pay_pilyo{
 	width: 90%;	
 	margin: 0 auto;
+}
+
+
+/*메인 슬라이드*/
+.pay_txt{
+	display: flex;
+	justify-content: space-between;
+	font-size: 17px;
+	padding: 0 20px;
 }
 
 .pay_txt1{
@@ -1434,9 +1442,6 @@ body{
 	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
 	height: 15px;
 }
-
-
-
 .pay_gro{
 	border-top: 1px solid #BBBBBB;
 	display: flex;
@@ -1550,6 +1555,112 @@ body{
 	width: 100%;
 	height: 100%;
 }
+
+/*수하물 baggage-----------------------------------------------------------*/
+
+.baggage{
+	height: auto;
+	padding-bottom: 100px;
+}
+
+.baggage .baggage_txt1{
+	font-size: 12px;
+	letter-spacing: -0.8px;
+	padding: 0 20px;
+	font-family: 'NotoSansR';
+}
+
+
+.baggage .baggage_pay{
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	padding: 15px 20px;
+	font-size: 13px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.baggage .baggage_way{
+	font-size: 15px;
+	display:flex;
+	align-items:flex-end;
+	padding: 15px 20px 10px 20px;
+	border-bottom: 1px solid #bbb;
+}
+.baggage .baggage_way .airname{
+	font-size: 11px;
+	margin-left: 15px;
+	padding-left: 75px;
+	padding-top: 3px;
+	height: 15px;
+}
+
+.baggage .baggage_way .airname.tway {
+	background: url(../img/common/symbol_flight-way_tw_dom@3x.png) no-repeat left / 67px 24px;
+	height: 24px;
+	line-height: 24px;
+	align-items: center;	
+}
+.baggage .baggage_way .airname.jeju {
+	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
+}
+
+.baggage_group {
+	padding: 5px 20px;
+}
+
+.baggage_group li{
+	border-bottom: 1px solid #eeeeee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	letter-spacing: -0.7px;
+	padding: 15px 0;
+}
+.baggage_group li span{
+	width: 80px;
+}
+.baggage_group li span:nth-child(3){
+	text-align: right;
+	width: 80px;
+}
+
+.baggage_group_s{
+	width: 120px;
+	text-align: center;
+}
+.baggage_group_s .minus_b{
+	width: 25px;
+	height: 25px;
+	background-color: #fff;	
+	border: 1px solid #bbb;
+	margin-right: 20px;
+	font-family: 'NotoSansB';
+}
+
+.baggage_group_s .plus_b{
+	width: 25px;
+	height: 25px;
+	background-color: #fff;	
+	border: 1px solid #bbb;
+	margin-left: 20px;
+	font-family: 'NotoSansB';
+}
+
+
+.baggage_pay strong span{
+	color: #f5581a;
+}
+
+.baggage_pay strong span::before {
+	content: "￦";
+}
+
+.baggage .pay_pay button{
+}
+
+
 
 /*푸터 FOOTER ------------------------------------------------------------*/
 .ags-summary{
@@ -1749,14 +1860,17 @@ body{
 	padding-left: 75px;
 	padding-top: 3px;
 }
-.ags-summary .pay_way .airname.tway {
-	background: url(/images/alpha/common/symbol_flight-way_tw_dom@3x.png) no-repeat left / 0 55px;
-	background-size: 60px 12px;
+
+.ags-summary .pay_way  .airname.tway {
+	background: url(../img/common/symbol_flight-way_tw_dom@3x.png) no-repeat left / 67px 24px;
+	height: 24px;
+	line-height: 24px;
+	align-items: center;	
 }
 .ags-summary .pay_way .airname.jeju {
-	background: url(/images/alpha/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 0 55px;
-	background-size: 60px 12px;
+	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
 }
+
 
 .ags-summary .pay_txt_b{
 	font-size: 13px;
