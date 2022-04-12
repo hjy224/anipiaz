@@ -2387,20 +2387,23 @@ body{
 }
 .service_com_btn{
 	padding: 0 20px;
+	display: flex;
+
 }
 
 .service_com_btn button:nth-child(1){
-	padding: 10px 20px;
+	padding: 15px 10px;
 	border: 1px solid #f5581a;
 	border-radius: 5px;
 	color: #f5581a;
 	font-family: 'NotoSansM';
-	width: auto;
+	width: 120px;
+	margin-right: 10px;
 }
 
 .service_com_btn button:nth-child(2){
-	
-	padding: 10px 20px;
+	width: 100%;
+	padding: 15px 10px;
 	border: 1px solid #f5581a;
 	background-color: #f5581a;
 	color: #fff;
