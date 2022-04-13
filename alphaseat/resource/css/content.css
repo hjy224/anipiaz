@@ -2216,12 +2216,84 @@ body{
 }
 
 .credit_method .credit_method_card .method_card_box1 {
-	padding-left: 25px;
-	height: 17px;
 	display: flex;
 	align-items:center;
-	background: url(../img/common/war_check.png) no-repeat left / 16px 16px;
 }
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"] + label{
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	border:1px solid #ddd;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 8px;
+	
+}
+input[id="check1"] + label:before{
+	content: "";
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    border: solid #ddd;
+    border-width: 0 0 1px 1px;
+    transform: rotate(-45deg);
+	width: 7px;
+	height: 3px;
+}
+
+input[id="check1"]:checked + label:before{
+	content: "";
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    border: solid #fff;
+    border-width: 0 0 1px 1px;
+    transform: rotate(-45deg);
+	width: 7px;
+	height: 3px;
+}
+input[id="check1"]:checked + label{
+	border: 1px solid #FF4F24;
+    background-color: #FF4F24;
+}
+
+
+input[id="check2"] + label:before{
+	content: "";
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    border: solid #ddd;
+    border-width: 0 0 1px 1px;
+    transform: rotate(-45deg);
+	width: 7px;
+	height: 3px;
+}
+
+input[id="check2"]:checked + label:before{
+	content: "";
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    border: solid #fff;
+    border-width: 0 0 1px 1px;
+    transform: rotate(-45deg);
+	width: 7px;
+	height: 3px;
+}
+input[id="check2"]:checked + label{
+	border: 1px solid #FF4F24;
+    background-color: #FF4F24;
+}
+
+
+
+
 .method_card_box2 {
 	font-size: 11px;
 	color: #aaa;
@@ -2382,12 +2454,6 @@ body{
 	border-bottom: 1px solid #aaa;
 }
 
-.credit_agree h3{
-	height: 16px;
-	font-size: 13px;
-	padding-left: 20px;
-	background: url(../img/common/war_check.png) no-repeat left / 16px 16px;
-}
 
 .credit_agree_box{
 	display: flex;

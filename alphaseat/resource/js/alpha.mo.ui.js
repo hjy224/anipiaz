@@ -160,6 +160,19 @@ $(document).ready(function () {
 		$(".dimmed_bg").css("display", "none");
 		$("body").css("overflow", "");
 	});
+
+	/*푸터 슬라이드 팝업 01*/
+	$(document).on("click", ".slider_btn_01", function () {
+		$(".ags-summary").addClass("active");				
+		$(".dimmed_bg").css("display", "block");
+		$("body").css("overflow", "hidden");
+	});
+
+	$(document).on("click", ".slider_btn_01_close", function () {
+		$(".ags-summary").removeClass("active");
+		$(".dimmed_bg").css("display", "none");
+		$("body").css("overflow", "");
+	});
 	
 	/*상단 내려오는 슬라이드*/
 	$('.select_group_btn').click(function () {
