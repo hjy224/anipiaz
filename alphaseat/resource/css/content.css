@@ -2094,6 +2094,21 @@ body{
 	padding-right: 25px;
 	background: url(../img/common/up_arrow.png) no-repeat right / 22px 22px;
 }
+
+.credit_agree{
+	padding-bottom: 80px;
+}
+.credit_agree_txt1{
+	padding: 20px 0 10px 20px;
+	border-bottom: 1px solid #aaa;
+}
+
+.credit_agree_box{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
 .credit_agree_box_content{
 	overflow: hidden;
 	border-top: 1px solid #ddd;
@@ -2102,20 +2117,25 @@ body{
 	background-color: #F8F8F8;
 }
 .credit_agree_box_content{
-	padding: 20px 20px
+	padding: 20px 20px;
+}
+
+.credit_agree_box_content table tr th:nth-child(1){
+	border-left:none;
 }
 .credit_agree_box_content table tr th{
 	font-size: 12px;
 	font-family: 'NotoSansL';
-	padding: 30px 0;
+	padding: 15px 0;
+	box-sizing: border-box;
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;		
 }
 .credit_agree_box_content table tr td{
-	border-left: 1px solid #ddd;
+	background-color: #fff;
+	padding-bottom: 20px;
 }
-
-
 .credit_agree_box_content table tr:first-child th{
 	font-size: 12px;
 	font-family: 'NotoSansL';
@@ -2124,6 +2144,20 @@ body{
 	padding: 10px 20px;	
 }
 
+.credit_agree_box_content table tr:nth-child(4) th{
+	font-size: 12px;
+	font-family: 'NotoSansL';
+	color: #fff;
+	background-color: #000;
+	padding: 10px 20px;	
+}
+.credit_agree_box_content table tr:nth-child(7) th{
+	font-size: 12px;
+	font-family: 'NotoSansL';
+	color: #fff;
+	background-color: #000;
+	padding: 10px 20px;	
+}
 
 
 /*부가서비스 신청내역 산당 슬라이드내용 css*/
@@ -2211,8 +2245,16 @@ body{
 	justify-content: space-between;	
 	align-items:center;
 	padding: 10px 20px 10px 20px;
-	
 	border-bottom: 1px solid #ddd;
+}
+
+input[type="checkbox"] + label{
+	display: flex;
+	align-items:center;
+}
+
+.method_card_box1{
+	display: flex;
 }
 
 input[type="checkbox"] + label i{
@@ -2224,7 +2266,6 @@ input[type="checkbox"] + label i{
 	border:1px solid #ddd;
 	border-radius: 50%;
 	margin-right: 8px;
-
 	transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;	
@@ -2262,6 +2303,38 @@ input[id="check1"]:checked + label i{
     background-color: #FF4F24;
 }
 
+
+input[id="check2"] + label i:before{
+	content: "";
+    position: absolute;
+	width: 7px;
+	height: 3px;
+    left: 3px;
+    top: 4px;
+    border: solid #ddd;
+    border-width: 0 0 1px 1px;
+    transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);	
+}
+
+input[id="check2"]:checked + label i:before{
+	content: "";
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    border: solid #fff;
+    border-width: 0 0 1px 1px;
+    transform: rotate(-45deg);	
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	width: 7px;
+	height: 3px;
+}
+input[id="check2"]:checked + label i{
+	border: 1px solid #FF4F24;
+    background-color: #FF4F24;
+}
 
 
 
@@ -2416,22 +2489,6 @@ input[id="check1"]:checked + label i{
 }
 
 
-.credit_agree{
-	padding-bottom: 20px;
-}
-
-.credit_agree_txt1{
-	padding: 20px 0 10px 20px;
-	border-bottom: 1px solid #aaa;
-}
-
-
-.credit_agree_box{
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 20px;
-
-}
 
 
 /*부가서비스 신청완료*/
