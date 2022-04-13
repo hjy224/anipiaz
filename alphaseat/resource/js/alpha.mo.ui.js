@@ -153,8 +153,6 @@ $(document).ready(function () {
 		$(".ags-summary").addClass("active");				
 		$(".dimmed_bg").css("display", "block");
 		$("body").css("overflow", "hidden");
-		
-		
 	});
 
 	$(document).on("click", ".btn_footer_close", function () {
@@ -183,7 +181,6 @@ $(document).ready(function () {
 		$('.contents').css('overflow-y', 'scroll');
 		$('.seat_sheet_bg.ac1').css('height', '100%');
 		
-
 		$('.slider1 .seat_sheet_number').remove();
 		$('.slider1 .seat_sheet_abcdef').remove();
 		$('.slider1 .airplane_bg').remove();
@@ -191,10 +188,11 @@ $(document).ready(function () {
 		$('.slider1 .seat_sheet_recom_box').remove();
 		$('.slider1 .seat_sheet_loading').remove();
 		$('.air_logo').remove();
-
-		
+		$('.air_time').remove();
 
 		$('.slider1 .seat_sheet_touch').remove();
+		$('.slider1 .seat_sheet_touch_v2').remove();
+		$('.slider1 .seat_sheet_touch_v3').remove();
 		$('.slider1 .digital_loading').remove();
 
 		$(this).remove();
@@ -215,9 +213,11 @@ $(document).ready(function () {
 		$('.slider2 .seat_sheet_recom_box').remove();
 		$('.slider2 .seat_sheet_loading').remove();
 		$('.air_logo').remove();
+		$('.air_time').remove();
 
-
-		$('.slider2 .seat_sheet_touch').remove();
+		$('.slider2 .seat_sheet_touch').remove();		
+		$('.slider1 .seat_sheet_touch_v2').remove();
+		$('.slider1 .seat_sheet_touch_v3').remove();
 		$('.slider2 .digital_loading').remove();
 
 		$(this).remove();

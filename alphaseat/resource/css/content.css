@@ -931,6 +931,36 @@ body{
 	letter-spacing: -0.5px;
 }
 
+.seat_sheet_touch_v3{
+	position: absolute;
+	top: 330px;
+	left: 220px;
+	width: 110px;
+	font-size: 15px;
+	color: #08a7e1;
+	text-align: center;
+}
+
+.seat_sheet_touch_v3 .touch_a{
+	font-size: 16px;
+	font-family: 'NotoSansM';
+	width: 20px;
+	height: 18px;
+
+}
+.seat_sheet_touch_v3 .touch_b{	
+	font-size: 14px;
+	color: #222;
+	font-family: 'NotoSansR';
+	width: 100%;
+	position: absolute;
+	top: 25px;
+    left: 0;
+	line-height: 20px;
+	letter-spacing: -0.5px;
+}
+
+
 /*digital_loading 깜빡깜빡*/
 /*왼쪽숫자 오른쪽 동그라미*/
 .contents .digital_loading{
@@ -2412,9 +2442,6 @@ body{
 }
 
 
-
-
-
 /*첫부분 이미지 css*/
 
 /*앞부부만 쓸꺼면 */
@@ -2492,8 +2519,12 @@ body{
 	.air_time{
 		right: -10px;
 	}
-	
-	
+	.seat_sheet_touch_v3{
+		left: 200px;
+	}
+	.seat_sheet_touch_v3 .touch_b{
+		font-size: 12px;
+	}
 
 
 	.seat_sheet_bg.ac1{	
