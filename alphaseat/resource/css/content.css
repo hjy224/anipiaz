@@ -585,17 +585,9 @@ body{
 }
 
 .seat_code span{
-	border-bottom: 2px solid #666;
 	width: 42px;
 	text-align: center;
 	padding: 5px 0px;
-}
-
-.seat_code span:nth-child(3){
-	border-bottom: 0;
-}
-.seat_code span:nth-child(5){
-	border-bottom: 0;
 }
 
 .seat_sheet .hallway{
@@ -1473,33 +1465,17 @@ body{
 	text-align: right;
 }
 
-.pay_way{
-	font-size: 15px;
-	display:flex;
-	align-items:flex-end;
-	padding: 15px 20px 10px 20px;
-}
-.pay_way .airname{
-	font-size: 11px;
-	margin-left: 15px;
-	padding-left: 75px;
-	padding-top: 3px;
-	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
-	height: 15px;
-}
 .pay_gro{
 	border-top: 1px solid #BBBBBB;
 	display: flex;
 	justify-content: space-between;
-	
 	align-items: center;
 	padding: 15px 20px;
-	font-size: 13px;
+	font-size: 14px;
 	border-bottom: 1px solid #eeeeee;
 }
 .pay_gro span{
 	color: #222222;
-	font-family: 'RobotoB';
 }
 .pay_gro span:nth-last-child(1){
 	color: #F5581A;
@@ -1549,8 +1525,6 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	width: 80px;
-	font-family: 'RobotoM';
 }
 
 
@@ -1562,12 +1536,23 @@ body{
 	color: #fff;
 	line-height: 22px;
 	width: 22px;
-	height: 20px;
-	margin-bottom: 1px;
+	height: 22px;
+	margin-right: 10px;
 }
 
-.pay_group li .pay_group_s .chair_comple{
+.pay_group li .chair_comple{
 	padding-left: 10px;
+}
+
+.pay_select_i{
+	padding-right: 20px;
+	height: 15px;
+	background: url(../img/common/ico_delete-s@3x.png) no-repeat right / 15px 15px;
+	
+}
+
+.pay_select_o{
+	color: #08A7E1;
 }
 
 .pay_choice{
@@ -1899,22 +1884,51 @@ body{
 .ags-summary .pay_group{
 	font-family: 'NotoSansM';
 }
-.ags-summary .pay_way .airname {
-	font-size: 11px;
-	margin-left: 15px;
-	padding-left: 75px;
-	padding-top: 3px;
+
+.pay_way{
+	font-size: 15px;
+	display:flex;
+	align-items:flex-end;
+	justify-content: space-between;
+	padding: 20px 20px 15px 20px;
 }
 
-.ags-summary .pay_way  .airname.tway {
+.pay_way .select_txt2{
+	color: #666;
+	font-family: 'NotoSansM';
+}
+
+.pay_way .select_txt2 span{
+	font-size: 13px;
+	margin: 0 1px;
+	display:inline-block;
+}
+.pay_way .select_txt2 span:nth-child(1){
+	margin-right: 6px;
+	font-size: 16px;
+	font-family: 'NotoSansB';
+	color: #000;
+}
+.pay_way .select_txt2 span:nth-child(2){
+	background: url(../img/common/ico_airplane.png) no-repeat center right / 15px 15px;
+	padding: 0 22px 0px 0px;
+}
+
+.pay_way .airname {
+	padding-left: 70px;
+}
+
+.pay_way .airname.tway {
 	background: url(../img/common/symbol_flight-way_tw_dom@3x.png) no-repeat left / 67px 24px;
 	height: 24px;
 	line-height: 24px;
 	align-items: center;	
 }
-.ags-summary .pay_way .airname.jeju {
+.pay_way .airname.jeju {
 	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
+	height: 24px;
 }
+
 
 
 .ags-summary .pay_txt_b{
@@ -2066,8 +2080,6 @@ body{
 	border-bottom: 1px solid #aaa;
 }
 .creditcard{
-	overflow-y: auto;
-	height: 1000px;
 }
 
 .creditcard .card_warp .credit_box_btn{
@@ -2113,11 +2125,13 @@ body{
 	overflow: hidden;
 	border-top: 1px solid #ddd;
 	overflow: hidden;
-	padding-bottom: 10px;
-	background-color: #F8F8F8;
-}
-.credit_agree_box_content{
 	padding: 20px 20px;
+}
+.credit_agree_box_content.dis{
+	padding: 0px 0px;
+}
+.credit_agree_box_content table{
+	width: 100%;
 }
 
 .credit_agree_box_content table tr th:nth-child(1){
@@ -2126,38 +2140,20 @@ body{
 .credit_agree_box_content table tr th{
 	font-size: 12px;
 	font-family: 'NotoSansL';
-	padding: 15px 0;
+	padding: 10px 0;
 	box-sizing: border-box;
-    background-color: #ffffff;
     border-bottom: 1px solid #ddd;
 	border-left: 1px solid #ddd;		
 }
 .credit_agree_box_content table tr td{
 	background-color: #fff;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
-.credit_agree_box_content table tr:first-child th{
-	font-size: 12px;
-	font-family: 'NotoSansL';
+.agree_box_black{
 	color: #fff;
 	background-color: #000;
-	padding: 10px 20px;	
 }
 
-.credit_agree_box_content table tr:nth-child(4) th{
-	font-size: 12px;
-	font-family: 'NotoSansL';
-	color: #fff;
-	background-color: #000;
-	padding: 10px 20px;	
-}
-.credit_agree_box_content table tr:nth-child(7) th{
-	font-size: 12px;
-	font-family: 'NotoSansL';
-	color: #fff;
-	background-color: #000;
-	padding: 10px 20px;	
-}
 
 
 /*부가서비스 신청내역 산당 슬라이드내용 css*/
@@ -2169,11 +2165,15 @@ body{
 	width: 100%;
 	justify-content: space-between;
 	border-bottom: 1px solid #eee;
+
 }
 .credit_agree_box_content .card_box1 div{
 	font-size: 11px;
 }
 
+.credit_agree_box_content .card_box1 div:nth-child(2){
+	color: #aaa;
+}
 .credit_agree_box_content .card_box1 div span:first-child {
 	color: #f5581a;
 	border: 1px solid #f5581a;
@@ -2191,25 +2191,50 @@ body{
 	font-size: 13px;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 20px 15px 20px;
+	padding: 5px 20px 10px 20px;
+	line-height: 20px;
+}
+.credit_agree_box_content .card_box2 .card_box2_a{
+	font-family: 'NotoSansB';
+	width: 140px;
+}
+.credit_agree_box_content .card_box2 .card_box2_b{
 	width: 100%;
-	border-bottom: 1px solid #eee;
 }
-
-.credit_agree_box_content .card_box2 span:nth-child(2) {
-	padding: 0 70px 0px 0px;
-}
-
-.credit_agree_box_content .card_box3{	
-	font-size: 13px;
+.credit_agree_box_content .card_box2 .card_box2_b .card_box2_bi{
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 20px 15px 20px;
-	width: 100%;
-	border-bottom: 1px solid #eee;
 }
-.credit_agree_box_content .card_box3 div{
-	padding: 0 50px 0px 0px;
+.credit_agree_box_content .card_box2 .card_box2_b .card_box2_bi div:nth-child(1){
+	width: 100px;
+}
+.credit_agree_box_content .card_box2 .card_box2_b .card_box2_bi div:nth-child(2){
+	text-align: right;
+}
+.credit_agree_box_content .card_box3{		
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	padding: 5px 20px 10px 20px;
+	border-bottom: 1px solid #eee;	
+	line-height: 25px;
+}
+.credit_agree_box_content .card_box3 .card_box3_a{
+	font-family: 'NotoSansB';
+	width: 140px;
+}
+.credit_agree_box_content .card_box3 .card_box3_b{
+	width: 100%;
+}
+.credit_agree_box_content .card_box3 .card_box3_b .card_box3_bi{
+	display: flex;
+	justify-content: space-between;
+}
+.credit_agree_box_content .card_box3 .card_box3_b .card_box3_bi div:nth-child(1){
+	width: 100px;
+}
+.credit_agree_box_content .card_box3 .card_box3_b .card_box3_bi div:nth-child(2){
+	text-align: right;
 }
 
 
@@ -2463,11 +2488,11 @@ input[id="check2"]:checked + label i{
 
 }
 .notification-list{
-	
-	padding: 10px 20px 0 20px;
-	font-family: 'NotoSansR';
+	padding: 20px;
+	font-family: 'NotoSansL';
 	font-size: 12px;
 	color: #999;
+	line-height: 15px;
 
 }
 .notification-list li{
@@ -2487,7 +2512,17 @@ input[id="check2"]:checked + label i{
     border-radius: 50%;
     background-color: #999;
 }
+.notification-list ul{
+	padding-left: 8px;	
+}
 
+.notification-list ul li:before{
+	content: "-";
+	width: 0px;
+	height: 0px;
+	top:8px;
+	left: -2px;	
+}
 
 
 

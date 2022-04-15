@@ -146,7 +146,7 @@
 }
 
 .layer_popup .pay_group .pay_group_s {
-  width: 90px;
+  /*width: 90px;*/
 }
 
 .layer_popup .pay_turn{
@@ -339,22 +339,22 @@ padding: 10px;
   justify-content: space-between
 }
 
-#popup1 .pay_way.type1 {
-  padding: 18px 20px 20px 20px;
-  justify-content: space-between;
-}
-
-
 #popup1 .popup_con1 .passenger_number_choice{
-  width: 100%;
-  padding: 0 20px 20px 20px;
   font-size: 13px;
   color: #222;
 }
 
-#popup1 .popup_con1 .passenger_number_choice span{
+#popup1 .popup_con1 .pay_del .passenger_number_choice span{
   color: #08A7E1;
 }
+
+#popup1 .popup_con1 .pay_del {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 15px 20px;
+  align-items: center;
+}
+
 
 
 #popup11 .smile_boximg ul{
