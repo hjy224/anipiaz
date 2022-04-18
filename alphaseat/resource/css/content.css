@@ -1393,13 +1393,14 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	padding: 0 15px;
+	font-family: 'NotoSansR';
 }
 .pay_bag_txt1{
-	font-family: 'NotoSansR';
+	
 	width: 110px;
 	height: 24px;
 	padding-left: 25px;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: -1px;
 	background: url(../img/common/ico_bag.png) no-repeat left center / 13px 20px;
@@ -1418,12 +1419,11 @@ body{
 .pay_bag_txt3{
 	width: 110px;
 	height: 24px;
-	padding-right: 15px;
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 24px;
-	color: #555;
+	color: #666666;
 	text-align: right;
-	background: url(../img/common/ico_down.png) no-repeat right / 11px 12px;
+	margin-left: 10px;
 }
 .pay_meat{
 	margin-top: 10px;
@@ -1434,14 +1434,14 @@ body{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 15px;
+	padding: 0 15px;	
+	font-family: 'NotoSansR';
 }
 .pay_meat_txt1{
-	font-family: 'NotoSansR';
 	width: 110px;
 	height: 24px;
 	padding-left: 25px;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: -1px;
 	background: url(../img/common/ico_meat.png) no-repeat left / 16px 20px;
@@ -1460,10 +1460,11 @@ body{
 .pay_meat_txt3{
 	width: 110px;
 	height: 24px;
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 24px;
-	color: #555;
+	color: #666666;
 	text-align: right;
+	margin-left: 10px;
 }
 
 .pay_gro{
@@ -1503,9 +1504,10 @@ body{
 .pay_group {
 	padding: 5px 20px;
 	scrollbar-width: 300px;
-	height: 280px;
+	height: 130px;
 	overflow-y: scroll;
 }
+
 .pay_group.cho {
 	scrollbar-width: none;
 	height: 400px;
@@ -1582,13 +1584,30 @@ body{
 	align-items: center;
 	color: #fff;
 	font-size: 15px;
+	z-index: 700;
 }
 
 .pay_pay button{
 	width: 100%;
 	height: 100%;
+	font-family: 'NotoSansM';
 }
 
+.pay_pay .pay_ment_btn1{
+	width: 30%;
+    background: #F2F2F2;
+    line-height: 50px;
+	border-top: 1px solid #ff6600;
+	color: #ff6600;
+	font-size: 15px;
+}
+.pay_pay .pay_ment_btn2{
+	width: 70%;
+    background: #ff6600;
+    line-height: 50px;
+	
+	font-size: 15px;
+}
 /*수하물 baggage-----------------------------------------------------------*/
 
 .baggage{
@@ -2541,22 +2560,22 @@ input[id="check2"]:checked + label i{
 
 .service_com{
 	margin-top: 30px;
-	padding: 20px 20px 50px 20px;
-	background: url(../img/common/bg_pay-complete.png) no-repeat right / 200px 169px ;
+	padding: 20px;
+	background: url(../img/common/bg_pay-complete.png) no-repeat right top  / 167px 91px ;
 	
 }
 .service_com div:nth-child(1){
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 25px;
 }
 .service_com div:nth-child(2){
 	padding-top: 10px;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 20px;
 	color: #555;
 }
 .service_com_btn{
-	padding: 0 20px;
+	padding: 30px 20px;
 	display: flex;
 
 }
