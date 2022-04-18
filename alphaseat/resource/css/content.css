@@ -370,7 +370,7 @@ body{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	font-size: 14px;
+	font-size: 12px;
 	letter-spacing: -0.7px;
 }
 .select_group a{
@@ -411,12 +411,12 @@ body{
 
 /*가는여정과 비행시간*/
 .select_txt{
-	padding: 5px 12px 5px 12px;
+	padding: 5px 11px 5px 11px;
 	border-radius: 15px;
 	border: 1px solid #ccc;
 	color: #666;
 	font-family: 'NotoSansM';
-	font-size: 14px;
+	font-size: 12px;
 	display: flex;
 	align-items: center;
 	line-height: 14px;
@@ -429,22 +429,24 @@ body{
 
 /*가는편 오는편 */
 .ags-wrap .btn_come_a {
-	color: #00aae7;
+	color: #08a7e1;
 	background: url(../img/common/arrow_come.png) no-repeat right 10px top 2px / 15px 15px;
 	padding-right: 30px;
 	font-family: 'NotoSansM';
+	font-size: 12px;
 }
 .ags-wrap .btn_back_a {
-	color: #00aae7;
+	color: #08a7e1;
 	background: url(../img/common/arrow_back.png) no-repeat right 10px top 2px / 15px 15px;
 	padding-right: 30px;
 	font-family: 'NotoSansM';
+	font-size: 12px;
 }
 
 
 
 .contents{
-	padding-top: 150px;
+	padding-top: 170px;
 	position: relative;
 	margin: 0 auto;
 	transition-duration: 0.3s;
@@ -526,13 +528,13 @@ body{
 
 .finger{
 	position:absolute;
-	top: 140px;
-	left: 240px;
+	top: 183px;
+	left: 253px;
 	width: 45px;
 	height: 42px;
-	background: url(../img/common/finger.png) no-repeat center / 45px 42px;
+	background: url(../img/common/circle_blue.gif) no-repeat center / 30px 30px;
 	z-index:20;
-	text-indent: -999em;
+	text-indent: -9999em;
   }
   
 
@@ -1173,21 +1175,18 @@ body{
 }
 
 .exit_left {
-	font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
 	font-size: 12px;
 	color: #aaa;
 	letter-spacing: -0.03em;
 }
 
 .exit_left_c {
-	font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
 	font-size: 12px;
 	color: #aaa;
 	letter-spacing: -0.03em;
 }
 
 .exit_right {
-	font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
 	font-size: 12px;
 	color: #aaa;
 	letter-spacing: -0.03em;
@@ -1504,7 +1503,7 @@ body{
 .pay_group {
 	padding: 5px 20px;
 	scrollbar-width: 300px;
-	height: 120px;
+	height: 280px;
 	overflow-y: scroll;
 }
 .pay_group.cho {
@@ -1540,6 +1539,8 @@ body{
 	width: 22px;
 	height: 22px;
 	margin-right: 10px;
+	font-family: 'NotoSansL';
+	letter-spacing: 0.5px;
 }
 
 .pay_group li .chair_comple{
@@ -1848,24 +1849,22 @@ body{
 .ags-summary .btf_b_number:before {
 	content: "￦";
 	font-size: 14px;
-	color: #fff;
+	color: #fe6845;
 }
 
 .ags-summary .btf_b {
 	width: 50%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	width: 180px;
 	margin-right: 20px;
 	padding: 15px 15px ;
 	border-radius: 5px;
-	background-color: #ddd;
-	color: #fff;
+	color: #fe6845;
+	
+	letter-spacing: 0.5px;
 }
 
-.ags-summary .btf_b.comp {
-	background-color: #f5581a;
-}
 .ags-summary .btf_b.comp span{
 	font-family: 'NotoSansM';
 }
@@ -1981,7 +1980,6 @@ body{
 
 .ags-summary .pay_pay_footer {
 	width: 100%;
-	
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -1997,10 +1995,9 @@ body{
 }
 
 .ags-summary .pay_pay_footer .pay_pay_footer_btn1 .pay_f_go{
-  
 	font-size: 16px;
 	font-family: 'NotoSansR';
-	color: #999999;
+	color: #999999;	
 }
 .ags-summary .pay_pay_footer .pay_pay_footer_btn2 .pay_f_turn{
 	
@@ -2021,9 +2018,27 @@ body{
 	line-height: 50px;
 }
 
-
-
-
+.ags-summary .pay_pay_footer .pay_pay_footer_btn3 {
+	width: 100%;
+	background:#F2F2F2;
+	line-height: 50px;
+}
+.ags-summary .pay_pay_footer .pay_pay_footer_btn3 .pay_f_go{
+	font-size: 16px;
+	font-family: 'NotoSansR';
+	color: #999999;	
+}
+.ags-summary .pay_pay_footer .pay_pay_footer_btn4 {
+	width: 100%;
+	background:#FE6845;
+	line-height: 50px;
+}
+.ags-summary .pay_pay_footer .pay_pay_footer_btn4 .pay_f_turn{
+	
+	font-size: 16px;
+	font-family: 'NotoSansR';
+	color: #fff;
+}
 
 .ico-wrap{
 	background: url(../img/common/war_alert.png) no-repeat center / 47px 48px;
@@ -2381,7 +2396,7 @@ input[id="check2"]:checked + label i{
     font-weight: 600;
     color: #999;
     letter-spacing: -0.3px;
-    padding: 0 30px 0 20px;
+    padding: 0 30px 0 8px;
     height: 35px;
     border: 1px solid #ddd;
 	
@@ -2620,6 +2635,9 @@ input[id="check2"]:checked + label i{
 /*크기에 따라서 화면구성*/
 
 @media (max-width: 376px) {
+	.pay_group{
+		height: 157px;
+	}
 	.seat_sheet_bg.ac1{	
 		height: 100vh;
 	}
@@ -2631,6 +2649,10 @@ input[id="check2"]:checked + label i{
 	}
 }
 @media (max-width: 321px) {
+
+	.pay_group{
+		height: 120px;
+	}
 
 	.select_group {
 		font-size: 11px;
@@ -2664,7 +2686,8 @@ input[id="check2"]:checked + label i{
 		height: 120vh;
 	}
 	.card-select-wrap span {
-		display: none;
+		display: block;
+		padding: 7px 0 0 82px;
 	}
 	.card-select-moon .card-pass-wrap span {
 		margin-right: 6px;

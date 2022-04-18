@@ -151,8 +151,8 @@
 
 .layer_popup .pay_turn{
   font-size: 13px;
-  padding-left: 13px;
-  background: url(../img/common/path_x3.png) no-repeat left / 10px 10px;
+  padding-left: 15px;
+  background: url(../img/common/path_x3.png) no-repeat left / 11px 11px;
   
 }
 
@@ -270,13 +270,13 @@ padding: 10px;
 }
 .layer_popup.alert .pay_ex .pay_ex_go{
   
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'NotoSansR';
   color: #999999;
 }
 .layer_popup.alert .pay_ex .pay_ex_turn{
   
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'NotoSansR';
   color: #fff;
 }
@@ -537,6 +537,7 @@ padding: 10px;
   left: 50px;
   margin: 0 auto;
   width: 160px;
+  padding-left: 10px;
 }
 #popup6 .popup_con_txt span{
   font-size: 15px;
@@ -586,10 +587,10 @@ padding: 10px;
 }
 
 .ico_check{
-  background: url(../img/common/pathv_x3.png) no-repeat;
+  background: url(../img/common/pathv_x3.png) no-repeat center / 13px 10px;;
   background-size: 13px 10px;
   padding: 3px 10px;
-  ;
+  
 }
 
 #popup6_1 .smile_boximg ul{
