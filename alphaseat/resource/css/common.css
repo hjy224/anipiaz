@@ -516,12 +516,6 @@ padding: 10px;
 }
 
 
-#popup6 .popup_content div:nth-child(1){
-}
-
-#popup6 .smile_boximg ul{
-}
-
 #popup6 .smile_boximg ul::before{
   height: 15px;
 }
@@ -587,11 +581,25 @@ padding: 10px;
   height: 100%;
 }
 
-
 #popup6 .popup_content div:nth-child(3){
-
   padding:10px 0 20px 0;
 }
+
+.ico_check{
+  background: url(../img/common/pathv_x3.png) no-repeat;
+  background-size: 13px 10px;
+  padding: 3px 10px;
+  ;
+}
+
+#popup6_1 .smile_boximg ul{
+  padding: 15px 0 15px 0;
+}
+
+#popup6_1 .pay_ex{
+  padding-top: 30px;
+}
+
 
 
 

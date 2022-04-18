@@ -89,21 +89,7 @@ body{
 }
 
 
-/*가는편 오는편 */
-.ags-wrap .ags-header .btn_come {
-	position: absolute;
-	top: 14px;
-	right: 20px;
-	border: 1px solid #ff6600;
-	width: 62px;
-	height: 26px;
-	border-radius: 20px;
-	color: #ff6600;
-	background: url(../img/common/ico_nav-next.png) no-repeat right 8px top 8px / 4px 8px;
-	font-family: 'NotoSansB';
-	font-size: 12px;
-	padding-right: 6px;
-}
+
 
 /* GNB 메뉴 팝업 */
 .ags-header .gnb-wrap .gnb-2dp-wrap {
@@ -386,14 +372,19 @@ body{
 	appearance: none;
 	font-size: 14px;
 	letter-spacing: -0.7px;
-	padding-right: 7px;
 }
 .select_group a{
-	background: url(../img/common/ico_select-arrow.png) no-repeat 15px 10px;
+	background: url(../img/common/ico_select-arrow.png) no-repeat right top 8px / 15px 10px;
 	background-size: 8px 5px;
-	background-position: right;
-	padding: 0 17px 0 10px;
+	padding-right:17px;
+	line-height: 18px;
+	
+	
 }
+.select_group a span{
+	padding-left: 17px;
+}
+
 
 .passenger{
 	overflow: auto;
@@ -409,12 +400,13 @@ body{
 }
 .passenger dl{
 	display: flex;
-	font-size: 12px;flex-direction: column;
+	font-size: 14px;
+	flex-direction: column;
 	padding-right: 20px;
 }
 .passenger dl dd{
 	padding-top: 5px;
-	color: #ff0000;
+	color: #ff6600;
 }
 
 /*가는여정과 비행시간*/
@@ -422,24 +414,34 @@ body{
 	padding: 5px 12px 5px 12px;
 	border-radius: 15px;
 	border: 1px solid #ccc;
-	margin-left: 20px;
 	color: #666;
+	font-family: 'NotoSansM';
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	line-height: 14px;
+}
+
+.select_txt span:nth-child(2){
+	background: url(../img/common/ico_airplane.png) no-repeat right 3px top 0px / 15px 15px;
+	padding: 0 27px 0px 0px;
+}
+
+/*가는편 오는편 */
+.ags-wrap .btn_come_a {
+	color: #00aae7;
+	background: url(../img/common/arrow_come.png) no-repeat right 10px top 2px / 15px 15px;
+	padding-right: 30px;
+	font-family: 'NotoSansM';
+}
+.ags-wrap .btn_back_a {
+	color: #00aae7;
+	background: url(../img/common/arrow_back.png) no-repeat right 10px top 2px / 15px 15px;
+	padding-right: 30px;
 	font-family: 'NotoSansM';
 }
 
-.select_txt span{
-	font-size: 13px;
-	margin: 0 1px;
-	display:inline-block;
-}
-.select_txt span:nth-child(1){
-	margin-right: 6px;
-	color: #00aae7;
-}
-.select_txt span:nth-child(2){
-	background: url(../img/common/ico_airplane.png) no-repeat center right / 15px 15px;
-	padding: 0 22px 0px 0px;
-}
+
 
 .contents{
 	padding-top: 150px;
@@ -948,7 +950,7 @@ body{
 	position: absolute;
 	top: 25px;
     left: 0;
-	line-height: 20px;
+	line-height: 18px;
 	letter-spacing: -0.5px;
 }
 
@@ -1687,10 +1689,6 @@ body{
 	content: "￦";
 }
 
-.baggage .pay_pay button{
-}
-
-
 
 /*푸터 FOOTER ------------------------------------------------------------*/
 .ags-summary{
@@ -2078,8 +2076,6 @@ body{
 	justify-content: space-between;
 	padding: 10px 15px 10px 20px;
 	border-bottom: 1px solid #aaa;
-}
-.creditcard{
 }
 
 .creditcard .card_warp .credit_box_btn{
@@ -2621,8 +2617,6 @@ input[id="check2"]:checked + label i{
   }
 
 
-
-
 /*크기에 따라서 화면구성*/
 
 @media (max-width: 376px) {
@@ -2635,48 +2629,55 @@ input[id="check2"]:checked + label i{
 	.card-select-moon .card-pass-wrap span {
 		margin-right: 7px;
 	}
-	
-
 }
-
 @media (max-width: 321px) {
 
-	.air_logo{
-		
+	.select_group {
+		font-size: 11px;
+	}
+	.select_txt {
+		font-size: 11px;
+	}
+	.btn_come_a{
+		font-size: 11px;
+	}
+	.btn_back_a{
+		font-size: 11px;
+	}
+	.air_logo {
 		left: 0px;
 	}
-	.air_time{
+	.air_time {
 		right: -10px;
 	}
-	.seat_sheet_touch_v3{
+	.seat_sheet_touch_v3 {
 		left: 200px;
 	}
-	.seat_sheet_touch_v3 .touch_b{
+
+	.seat_sheet_touch_v3 .touch_b {
 		font-size: 12px;
 	}
-
-
-	.seat_sheet_bg.ac1{	
+	.seat_sheet_bg.ac1 {
 		height: 120vh;
 	}
-	.seat_sheet_bg.ac2{	
+	.seat_sheet_bg.ac2 {
 		height: 120vh;
 	}
-	.card-select-wrap span{
+	.card-select-wrap span {
 		display: none;
 	}
 	.card-select-moon .card-pass-wrap span {
 		margin-right: 6px;
 	}
-	.hd_txt{
+	.hd_txt {
 		font-size: 14px;
 		padding: 10px 0 20px 39px;
 		background: url(../img/common/circle_blue.gif) no-repeat left 18px top 7px / 20px 20px;
 	}
-	.pay_choice{
+	.pay_choice {
 		font-size: 10px;
 	}
-	.pay_choice a{
+	.pay_choice a {
 		font-size: 11px;
 	}
 
