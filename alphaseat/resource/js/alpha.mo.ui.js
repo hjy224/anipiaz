@@ -90,20 +90,49 @@ var seatCtl	= {
 /*상단 셀렉트 그룹*/
 $(document).ready(function () {
 
+	var height_ac1 = $('.seat_sheet_bg.ac1').css("height");
+	var height_ac2 = $('.seat_sheet_bg.ac2').css("height");
+
 	/*가는편 오는편*/
 	$(document).on("click", "#ags-wrap", function () {
 		$("#con_slider").addClass("active");
 		$("#ags-wrap").css("display", "none");
 		$("#ags-wrap-back").css("display", "block");
-/*
-		if ($('.seat_sheet_bg.ac1').css("height") == "100%") {
-			
-		} else {
-			$('.seat_sheet_bg.ac2').css('height', '100vh');
-			$('.contents').css('overflow', 'hidden');
-		}
-*/
 		seatCtl.setScrollEvent();
+
+		var height_click1 = $('.seat_sheet_bg.ac1').css("height");
+		var height_click2 = $('.seat_sheet_bg.ac2').css("height");
+
+		//alert("height_click1-"+height_click1 +", height_click2-"+height_click2);
+		//alert("height_ac1-"+height_ac1+", height_ac2-"+height_ac2);
+
+		if (height_ac1 != height_click1) {
+			//alert("1_1");
+
+			if (height_ac2 != height_click2) {
+				//alert("2_1");
+				
+				$('.seat_sheet_bg.ac2').css('height', '100%');
+	
+			} else {
+				//alert("2_2");	
+				$('.contents').css('overflow', 'hidden');
+				$('.seat_sheet_bg.ac1').css('height', '100vh');
+			}
+
+		} else {
+			//alert("1_2");
+
+			if (height_ac2 != height_click2) {
+				//alert("2_1");
+	
+			} else {
+				//alert("2_2");	
+				$('.seat_sheet_bg.ac2').css('height', '100%');
+			}
+
+		}
+		
 	});
 
 	$(document).on("click", "#ags-wrap-back", function () {
@@ -111,7 +140,62 @@ $(document).ready(function () {
 		$("#ags-wrap-back").css("display", "none");
 		$("#ags-wrap").css("display", "block");
 		seatCtl.setScrollEvent();
+
+		var height_click1 = $('.seat_sheet_bg.ac1').css("height");
+		var height_click2 = $('.seat_sheet_bg.ac2').css("height");
+			
+		//alert("height_click1-"+height_click1 +", height_click2-"+height_click2);
+		//alert("height_ac1-"+height_ac1+", height_ac2-"+height_ac2);
+
+		if (height_ac2 != height_click2) {
+			//alert("2_1");
+			
+			if (height_ac1 != height_click1) {
+				//alert("1_1");
+				$('.contents').css('overflow', 'hidden');
+				$('.seat_sheet_bg.ac2').css('height', '100vh');
+			} else {
+				//alert("1_2");	
+				$('.seat_sheet_bg.ac1').css('height', '100%');
+			}
+
+		} else {
+			//alert("2_2");
+
+			$('.seat_sheet_bg.ac1').css('height', '100%');
+
+
+		}
+
 	});
+
+
+	/*부가서비스 가는편 오는편--------------------------------*/
+	$(document).on("click", "#service-come", function () {
+		$("#sor_slider").removeClass("active");
+		$(".service-come_btn").css("color","#222");
+		$(".service-come_btn").css("border-bottom","1px solid #222");
+		$(".service-back_btn").css("border-bottom","none");
+		$(".service-back_btn").css("color","#aaa");		
+		
+		seatCtl.setScrollEvent();
+		
+	});
+
+	$(document).on("click", "#service-back", function () {
+		$("#sor_slider").addClass("active");				
+		$(".service-come_btn").css("color","#aaa");
+		$(".service-back_btn").css("color","#222");
+		$(".service-come_btn").css("border-bottom","none");
+		$(".service-back_btn").css("border-bottom","1px solid #222");
+
+		seatCtl.setScrollEvent();
+
+	});
+
+
+
+
 
 	/*좌석선택 오렌지*/
 	$(document).on("click", ".seat_btn", function () {
@@ -260,20 +344,6 @@ $(document).ready(function () {
 		}, 400);
 	});
 	
-	
-	/*카드결제 슬라이드
-
-	$(".card_slider").click(function () {
-		
-		$(this).next("#card_slider_box").stop().slideToggle(300);
-		$(this).toggleClass('on').siblings().removeClass('on');
-		$(this).next("#card_slider_box").siblings("#card_slider_box").slideUp(300); // 1개씩 펼치기
-	 
-		$('#card_slider_box').stop().slideToggle(300);
-		$(this).toggleClass('on').siblings().removeClass('on');
-		$('#card_slider_box').siblings("#card_slider_box").slideUp(300); // 1개씩 펼치기
-	});
-	*/
 	/*약관동의*/
 	$(".credit_box_btn").click(function () {
 		var _self	= this;
@@ -294,17 +364,7 @@ $(document).ready(function () {
 
 		});
 	});
-/*
 
-	$(".credit_box_right").click(function () {
-
-		$('#credit_agree_box_content').stop().slideToggle(300);
-		$(this).toggleClass('on').siblings().removeClass('on');
-		$('#credit_agree_box_content').siblings("#credit_agree_box_content").slideUp(300); // 1개씩 펼치기
-	});
-*/
-
-	/*$('.contents').addClass("ovrFlw");*/
 
 });
 
