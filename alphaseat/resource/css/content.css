@@ -472,11 +472,13 @@ body{
 .slider1{
 	width: 100%;
 	padding-bottom: 100px;
+	overflow: hidden;
 }
 
 .slider2{
 	width: 100%;
 	padding-bottom: 100px;
+	overflow: hidden;
 }
 
 #ags-wrap-back{
@@ -1992,9 +1994,12 @@ body{
 
 /*푸드 food_warp ------------------------------------------------------------*/
 
+
+
 .food_warp{
-	padding: 15px 0 15px 16px;	
-	overflow: hidden;
+	padding: 15px 0 25px 16px;	
+	width: 100%;
+	overflow-x: scroll;
 }
 .food_warp ul{	
 	display: flex;
@@ -2002,12 +2007,14 @@ body{
 
 .food_warp ul li{
 	margin-right: 40px;
-
-	
+		
 }
 .food_warp ul li dl dd:nth-child(4){
 	color: #aaa;
 	font-size: 10px;
+}
+.food_warp ul li dl dd:nth-child(4).active{
+	color: #f5581a;
 }
 .food_warp input[type=radio]+dl dd label{	
 	color: #aaa;
@@ -2017,10 +2024,11 @@ body{
     vertical-align: middle;
     display: block;
     line-height: 18px;
-	height: 20px;
+	height: 25px;
+	padding: 0 16px 0 0;
 }
 .food_warp input[type=radio]:checked+dl dd label{
-	color: #ff6600;
+	color: #000;
 }
 
 
@@ -2036,7 +2044,29 @@ body{
     border: 0;
 }
 
+.food_warp_txt1{
+	padding: 15px 16px 15px 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	border-bottom: 1px solid #aaa;
+}
+.food_warp_txt1 span:nth-child(1){
+	font-size: 13px;
+	line-height: 18px;
+	font-family: 'NotoSansR';
+}
+.food_warp_txt1 span:nth-child(1) span{
+	color: #f5581a;
+}
+.food_warp_txt1 span:nth-child(2) div{
+	font-size: 11px;
+}
 
+
+.food_warp_txt1 input[type="checkbox"] + label i {
+    margin-right: 3px;	
+}
 
 /*푸터 FOOTER ------------------------------------------------------------*/
 .ags-summary{
