@@ -1,13 +1,10 @@
 /*사이트 이름*/
 
-html{
+html, body{
 	overflow-x: hidden;
+	max-width:100%;
 }
 
-
-body{
-	overflow-x: hidden;
-}
 
 .site-name {
 	position: absolute;
