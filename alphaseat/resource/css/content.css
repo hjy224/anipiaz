@@ -745,6 +745,7 @@ html, body{
 .seat_sheet_recom_box .recom_num.type1 a {
 	height: 30px;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 51% 100%, 51% 59%, 0 59%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 51% 100%, 51% 59%, 0 59%);
 	position: absolute;
 	top:29px;
 }
@@ -753,6 +754,7 @@ html, body{
 .seat_sheet_recom_box .recom_num.type1s a {
 	height: 58.5px;
 	clip-path: polygon(0 0, 50% 0, 50% 21%, 100% 21%, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 0, 50% 0, 50% 21%, 100% 21%, 100% 100%, 0 100%);
 	position: absolute;
 	top: 47.5px;
 }
@@ -769,12 +771,14 @@ html, body{
 .seat_sheet_recom_box .recom_num.type1_2 a {
 	height: 34px;
 	clip-path: polygon(0 0, 100% 0, 100% 59%, 49% 59%, 49% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 59%, 49% 59%, 49% 100%, 0 100%);
 	position: absolute;
 	top: 29px;
 }
 .seat_sheet_recom_box .recom_num.type1s_2 a {
 	height: 56.5px;
 	clip-path: polygon(0 24.5%, 50% 24.5%, 50% 0, 100% 0, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 24.5%, 50% 24.5%, 50% 0, 100% 0, 100% 100%, 0 100%);
 	/* background: #08A7E1; */
 	position: absolute;
 	top: 50px;
