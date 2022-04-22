@@ -1,5 +1,10 @@
 /*사이트 이름*/
 
+html{
+	overflow-x: hidden;
+}
+
+
 body{
 	overflow-x: hidden;
 }
