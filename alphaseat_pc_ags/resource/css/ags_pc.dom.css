@@ -4415,182 +4415,6 @@ body {
   width: auto;
 }
 
-/* 박스박스 가운데 비행기 박스*/
-
-.box1_left{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 35%;
-  height: inherit;
-  background-color: #00aae7;
-}
-
-.box1_right{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 65%;
-  height: inherit;
-	margin: 0 auto;
-  
-	padding-bottom: 100px;
-  overflow-y: scroll;
-  
-}
-.seat_sheet_bg {
-	margin: 0 auto;
-	width: 450px;
-	padding: 10px 0;
-	position: relative;
-}
-.seat_sheet{  
-	padding: 10px 0;
-}
-
-.seat_sheet .hallway{
-	width: 45px;
-	border-bottom: 0;
-	font-size: 13px;
-	text-align: center;
-	line-height: 54px;
-	letter-spacing: 0;
-	color: #111;
-}
-
-/*좌석 이미지 클릭 코드*/
-.seat_num{
-	padding-top: 7px;
-}
-
-.seat_sheet li{
-	display: flex;
-	justify-content: space-between;
-	padding-top: 20px;
-}
-
-.seat_sheet li a{
-	width: 60px;
-	height: 54px;
-	text-align: center;
-	clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
-	background-color: #08a7e1;
-	border-bottom: 5px solid #008cc1;
-	font-size: 16px;
-	color: #fff;
-	line-height: 54px;
-	letter-spacing: -0.6px;
-	display: inline-block;
-  text-decoration: none;
-	transition: 0.2s all;
-	-webkit-transition: 0.2s all;
-	-moz-transition: 0.2s all;
-	
-}
-
-/* 좌석을 주황색으로 표시할때*/
-.seat_orange{
-	background-color: #f5581a !important;
-	border-bottom: 5px solid #CE3802 !important;
-}
-/* 좌석을 파란색으로 표시할때*/
-.seat_blue{
-  background-color: #08a7e1!important;
-	border-bottom: 5px solid #008cc1 !important;
-}
-/* 좌석 클릭했을때*/
-.seat_sheet li a.seat_active{
-	background: url(../img/common/seat_click.png) no-repeat top 4px right 50% / 14px 14px;
-	background-color: #f5581a;
-	border-bottom: 5px solid #CE3802;
-	transition: 0.2s all;
-	-webkit-transition: 0.2s all;
-	-moz-transition: 0.2s all;
-}
-
-.seat_sheet li a.seat_active::after{	
-	content: attr(seatno);
-	letter-spacing: 0;
-}
-.seat_sheet li a.seat_active::after span{	
-	margin-top: 20px;
-}
-
-/* 블루로 표시할때*/
-/* 좌석 클릭했을때*/
-.seat_sheet li a.seat_active_blue{
-	background: url(../img/common/seat_click.png) no-repeat top 4px right 50% / 14px 14px;
-	background-color: #08a7e1;
-	border-bottom: 5px solid #008cc1;
-	transition: 0.2s all;
-	-webkit-transition: 0.2s all;
-	-moz-transition: 0.2s all;
-
-}
-.seat_sheet li a.seat_active_blue::after{
-	content: attr(seatno);
-	font-family: 'NotoSansL';
-	letter-spacing: 0;
-}
-
-
-/*좌석 disabled-------------------------------------------------*/
-.disabled_seat{
-	pointer-events: none;
-	cursor: default;	background: url(../img/common/ico_seat-disabled.png) no-repeat center /20px 20px;
-	background-color: #dedede !important;
-	border-bottom: 5px solid #bababa !important;
-}
-.seat_btn.disabled_seat{
-	text-indent: -999em;
-}
-
-
-
-
-
-
-
-
-
-/*-------------------------------------------------*/
-
-.anc-service .box2_left{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 35%;
-  height: inherit;
-  background-color:#2A2167;
-}
-
-.anc-service .box2_right{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 65%;
-  height: inherit;
-  background-color:#587729;
-}
-
-
-.airplane_bg{
-	position:absolute;
-	background: url(../img/common/airplane_bgx4.png) no-repeat center / 234px 675px;
-	width: 294px;
-	height: 675px;
-	transition: 0.3s all;
-	-webkit-transition: 0.3s all;
-	-moz-transition: 0.3s all;
-	
-	top: 10px;
-	z-index: -1;
-}
-
 
 
 [data-pop-id='pop_bundle-summary'] .bundle-wrap {
@@ -6494,7 +6318,7 @@ padding-top: 20px;
 [data-page-id='anc_main'] .anc-service-wrap.anc_lounge .anc-service,
 [data-page-id='anc_main'] .anc-service-wrap.anc_car .anc-service {
   padding-right: 32.61538rem;
-  min-height: 49.84615rem;
+  min-height: 750px;
 }
 
 [data-page-id='anc_main'] .anc-service-wrap.anc_seat .anc-service .tab-panels,
@@ -20937,5 +20761,266 @@ padding-top: 20px;
     background-image: url("../img/anc/symbol_flight-way_bx@3x.png");
   }
 }
+
+
+
+
+/* 박스박스 가운데 비행기 박스 220427 추가 수정 작업*/
+
+.box1_left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 35%;
+  height: inherit;
+}
+
+.box1_right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 65%;
+  height: inherit;
+	margin: 0 auto;
+	padding-bottom: 100px;
+  overflow-y: scroll;  
+}
+
+.seat_sheet_bg {
+	margin: 0 auto;
+	width: 450px;
+	padding: 30px 0;
+	position: relative;
+}
+
+.seat_sheet.scale_s{
+  transform: scale(0.18);
+	-webkit-transform: scale(0.18);
+  top: -900px;
+  left: -75px;
+}
+
+.box1_left .seat_sheet .hallway{
+  width: 55px;
+  padding: 0 40px;
+}
+.box1_left .seat_sheet_bg{
+  width: 520px;
+}
+
+.airplane_bg{
+	position:absolute;
+	background: url(../img/common/airplane_bgx4.png) no-repeat center / 218px 590px;
+	width: 218px;
+	height: 590px;
+	transition: 0.3s all;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	left: 75px;
+	top: 70px;
+	z-index: -1;
+}
+
+
+
+
+.seat_sheet{
+  position: relative;
+	padding: 30px 0;
+}
+
+.seat_sheet .hallway{
+	width: 45px;
+	border-bottom: 0;
+	font-size: 13px;
+	text-align: center;
+	line-height: 54px;
+	letter-spacing: 0;
+	color: #111;
+}
+
+.seat_code{
+	display: inline-block;
+	font-size: 13px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.seat_code span{
+	width: 60px;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+/*좌석 이미지 클릭 코드*/
+.seat_num{
+	padding-top: 7px;
+}
+
+.seat_sheet li{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.seat_sheet li a{
+	width: 60px;
+	height: 54px;
+	text-align: center;
+	clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
+	background-color: #08a7e1;
+	border-bottom: 5px solid #008cc1;
+	font-size: 16px;
+	color: #fff;
+	line-height: 54px;
+	letter-spacing: -0.6px;
+	display: inline-block;
+  text-decoration: none;
+	transition: 0.2s all;
+	-webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+	
+}
+
+/* 좌석을 주황색으로 표시할때*/
+.seat_orange{
+	background-color: #f5581a !important;
+	border-bottom: 5px solid #CE3802 !important;
+}
+/* 좌석을 파란색으로 표시할때*/
+.seat_blue{
+  background-color: #08a7e1!important;
+	border-bottom: 5px solid #008cc1 !important;
+}
+/* 좌석 클릭했을때*/
+.seat_sheet li a.seat_active{
+	background: url(../img/common/seat_click.png) no-repeat top 7px right 50% / 16px 16px;
+	background-color: #f5581a;
+	border-bottom: 5px solid #CE3802;
+	transition: 0.2s all;
+	-webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+}
+
+.seat_sheet li a.seat_active::after{	
+	content: attr(seatno);
+  display: block;
+	letter-spacing: 0;  
+  margin-top: 5px;
+}
+.seat_sheet li a.seat_active::after span{	
+	margin-top: 20px;
+}
+
+/* 블루로 표시할때*/
+/* 좌석 클릭했을때*/
+.seat_sheet li a.seat_active_blue{
+	background: url(../img/common/seat_click.png) no-repeat top 4px right 50% / 14px 14px;
+	background-color: #08a7e1;
+	border-bottom: 5px solid #008cc1;
+	transition: 0.2s all;
+	-webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+
+}
+.seat_sheet li a.seat_active_blue::after{
+	content: attr(seatno);
+	font-family: 'NotoSansL';
+	letter-spacing: 0;
+}
+
+
+/*좌석 disabled-------------------------------------------------*/
+.disabled_seat{
+	pointer-events: none;
+	cursor: default;	background: url(../img/common/ico_seat-disabled.png) no-repeat center /20px 20px;
+	background-color: #dedede !important;
+	border-bottom: 5px solid #bababa !important;
+}
+.seat_btn.disabled_seat{
+	text-indent: -999em;
+}
+
+/*exit*/
+
+.exit_left, .exit_left_c,
+.exit_right {
+	margin: 0;
+}
+
+.exit_left {
+	font-size: 16px;
+	color: #aaa;
+	letter-spacing: 1px;
+}
+
+.exit_left_c {
+	position: absolute;
+  left: 49%;
+  top: -5px;
+  transform: translate(-50%);
+  font-size: 16px;
+	color: #aaa;
+	letter-spacing: 1px;
+  
+}
+
+.exit_right {
+	font-size: 16px;
+	color: #aaa;
+	letter-spacing: 1px;
+	float: right;
+}
+
+.exit_left .ico_a,
+.exit_left_c .ico_a,
+.exit_right .ico_b {
+	display: inline-block;
+	width: 15px;
+	height: 5px;
+	text-indent: -999em;
+	border-style: solid;
+	border-width: 6px 9px;
+	vertical-align: middle;
+  margin-top: -4px;
+}
+
+.ico_a {
+	margin: 0 0.28571rem 0 -6px;
+	border-color: transparent #aaa transparent transparent;
+}
+
+.ico_b {
+	margin: 0 -6px 0 0.28571rem;
+	border-color: transparent transparent transparent #aaa;
+}
+
+
+/*-------------------------------------------------*/
+
+.anc-service .box2_left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 35%;
+  height: inherit;
+  background-color:#2A2167;
+}
+
+.anc-service .box2_right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 65%;
+  height: inherit;
+  background-color:#587729;
+}
+
+
+
 
 

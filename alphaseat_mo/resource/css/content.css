@@ -3373,7 +3373,7 @@ input[id="check2"]:checked + label i{
 
 }
 
-.service_com_btn button:nth-child(1){
+.service_com_btn .com_btn1{
 	padding: 15px 10px;
 	border: 1px solid #f5581a;
 	border-radius: 5px;
@@ -3383,7 +3383,16 @@ input[id="check2"]:checked + label i{
 	margin-right: 10px;
 }
 
-.service_com_btn button:nth-child(2){
+.service_com_btn .com_btn2{
+	width: 100%;
+	padding: 15px 10px;
+	border: 1px solid #f5581a;
+	background-color: #f5581a;
+	color: #fff;
+	border-radius: 5px;
+	font-family: 'NotoSansM';
+}
+.service_com_btn .com_btn3{
 	width: 100%;
 	padding: 15px 10px;
 	border: 1px solid #f5581a;
