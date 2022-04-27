@@ -20913,6 +20913,22 @@ padding-top: 20px;
 .seat_sheet li a.seat_active::after span{	
 	margin-top: 20px;
 }
+/* 좌석 왼쪽 작은거*/
+
+.box1_left .seat_sheet li a.seat_active{
+  background: none;
+	
+	background-color: #f5581a;
+	border-bottom: 5px solid #CE3802;
+	transition: 0.2s all;
+	-webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+}
+
+.box1_left .seat_sheet li a.seat_active::after{	
+	content: "";
+}
+
 
 /* 블루로 표시할때*/
 /* 좌석 클릭했을때*/
