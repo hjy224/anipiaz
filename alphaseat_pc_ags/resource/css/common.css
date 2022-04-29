@@ -45,8 +45,6 @@
   
   border: 1px solid #ddd;
   background-color: #fff;
-
-
 }
 
 
@@ -65,13 +63,15 @@
   width: 300px;
   height: 100%;
   overflow: hidden;
+}
+.layer_popup.type2 .wrapper_popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  
   
 }
-
-
-
-
-
 .layer_popup.alert .wrapper_popup {
   top: 50%;
   left: 40px;
@@ -159,13 +159,10 @@
   width: 100%;
   background-color: #fafafa;
 
-  -webkit-box-shadow: 0px 1px 7px 0px #bbb;
-	-moz-box-shadow: 0px 1px 7px 0px #bbb;
-	box-shadow: 0px 1px 7px 0px #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px #bbb;
+	-moz-box-shadow: inset 0px 1px 4px 0px #bbb;
+	box-shadow: inset 0px 1px 4px 0px #bbb;
 }
-
-
-
 
 
 .layer_popup .pay_group {
@@ -175,11 +172,6 @@
 .layer_popup .pay_group li {
   padding: 8px 0;
 }
-
-.layer_popup .pay_group .pay_group_s {
-  /*width: 90px;*/
-}
-
 .layer_popup .pay_turn{
   font-size: 13px;
   padding-left: 15px;
@@ -245,7 +237,6 @@
 
 .layer_popup .pay_group_s a{
   text-align: right;
-  color: #08A7E1;
 }
 
 .layer_popup .seat_num .a1-1{position: relative;}

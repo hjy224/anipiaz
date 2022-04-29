@@ -22,6 +22,7 @@ input, button, form, select, textarea, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -2423,7 +2424,7 @@ strong {
   text-align: center;
   font-size: 13px;
   color: #000;
-  font-family: 'Geogrotesque-Regular';
+  font-family: 'NotoSansR';
 }
 
 .awa-datepicker.single-month tbody td .day.real-today {
@@ -2805,6 +2806,7 @@ body {
   color: #000;
   letter-spacing: -0.08em;
   font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  
 }
 
 .ags-wrap {
@@ -7259,8 +7261,9 @@ padding-top: 20px;
 }
 
 [data-page-id='anc_main'] .anc-summary .total-sum {
-  padding: 1.84615rem 0;
-  border-top: 1px solid #000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+  
 }
 
 [data-page-id='anc_main'] .anc-summary .total-sum:after {
@@ -7270,23 +7273,26 @@ padding-top: 20px;
 }
 
 [data-page-id='anc_main'] .anc-summary .total-sum .total {
-  font-size: 0.92308rem;
-  
+  font-size: 13px;
   color: #000;
   letter-spacing: -0.08em;
-  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: 'NotoSansM', Geogrotesque, "Apple SD Gothic NEO", sans-serif;
   float: left;
   line-height: 2.16667em;
+
 }
 
 [data-page-id='anc_main'] .anc-summary .total-sum .total + dd {
-  font-size: 1.07692rem;
-  
+  font-size: 13px;
   color: #FF4F24;
   letter-spacing: -0.08em;
-  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: 'NotoSansM', Geogrotesque, "Apple SD Gothic NEO", sans-serif;
   float: right;
   line-height: 1.85714em;
+}
+
+.testtest{
+  padding: 10px 0 50px 0;
 }
 
 [data-page-id='anc_main'] .anc-summary .total-sum .total + dd .digits:before {
@@ -7301,15 +7307,14 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #fff;
   letter-spacing: -0.08em;
   font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.76923rem;
   line-height: 4.61538rem;
-  border: 1px solid #FEE700;
-  background-color: #FEE700;
-  color: #000;
+  border: 1px solid #ff6600;
+  background-color: #ff6600;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -7744,6 +7749,7 @@ padding-top: 20px;
 
 [data-page-id='anc_main'] .anc-summary {
   padding-top: 63px;
+  padding-bottom: 100px;
 }
 
 [data-page-id='anc_main'] .flight-way-selector {
@@ -21415,7 +21421,7 @@ margin-right: 11px;
 .pay_gro span{
 	color: #222222;
 }
-.pay_gro span:nth-last-child(1){
+.pay_gro strong span{
 	color: #F5581A;
 }
 .pay_gro strong span:before {
@@ -21448,8 +21454,12 @@ margin-right: 11px;
 	align-items: center;
 	font-size: 14px;
 	letter-spacing: -0.7px;
-	padding: 4px 0;
+	padding: 6px 0;
 }
+.pay_group.fst li{
+	padding: 10px 0;
+}
+
 
 .pay_group_s {
 	display: flex;
@@ -21457,11 +21467,22 @@ margin-right: 11px;
 	align-items: center;
 }
 
-
 .pay_group li .pay_group_s .chair_s{
 	text-align: center;
 	clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
 	background-color: #F5581A;
+	font-size: 12px;
+	color: #fff;
+	line-height: 22px;
+	width: 24px;
+	height: 22px;
+	margin-right: 10px;
+	font-family: 'NotoSansL';
+	letter-spacing: 0.5px;
+}
+
+.pay_group li .pay_group_s .chair_c{
+	text-align: center;
 	font-size: 12px;
 	color: #fff;
 	line-height: 22px;
@@ -21490,6 +21511,37 @@ margin-right: 11px;
   text-decoration: none;
 }
 
+/*체크박스 오렌지*/
+
+
+.pay_group_s .check_orange{
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;	
+	line-height: 18px;
+	border:1px solid #ddd;
+	border-radius: 50%;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;	
+  margin-left: 3px;
+  margin-right: 10px;
+}
+
+.pay_group_s .check_orange:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 5px;
+  left: 3.5px;
+  top: 5px;
+  border: 1px solid #ddd;
+  border-width: 0 0 1px 1px;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 
 /*가는편 오는편 */
 .pay_way{
@@ -21541,6 +21593,7 @@ margin-right: 11px;
 	height: 15px;
 	background: url(../img/common/ico_delete-s@3x.png) no-repeat right / 15px 15px;
 	text-decoration: none;
+  color: #222;
 }
 
 .pay_select_o{
@@ -21566,9 +21619,6 @@ margin-right: 11px;
   font-size: 14px;
 }
 
-.gojung{
-  position: relative;
-}
 
 
 /* 오는편쪽 탭-------------------------------------------------*/
