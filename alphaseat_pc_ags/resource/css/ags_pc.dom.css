@@ -6919,12 +6919,13 @@ padding-top: 20px;
   position: absolute;
   top: 50px;
   left: calc(50% + 333px);
-  padding: 5.84615rem 0 1.84615rem 0;
+  padding: 0 0 100px 0;
   width: 20.53846rem;
   transition-duration: 0.2s;
   transition-delay: 0.2s;
   transition-property: height, bottom, left;
 }
+
 
 [data-page-id='anc_main'] .anc-summary .scroll-wrap {
   overflow: hidden;
@@ -7747,10 +7748,6 @@ padding-top: 20px;
   /*.anc-summary { top: rem(213) }*/
 }
 
-[data-page-id='anc_main'] .anc-summary {
-  padding-top: 63px;
-  padding-bottom: 100px;
-}
 
 [data-page-id='anc_main'] .flight-way-selector {
   margin-bottom: -3.07692rem;
