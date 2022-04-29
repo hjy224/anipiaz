@@ -41,21 +41,36 @@
   background-color: #fff;
 }
 
+.layer_popup.type2 .wrapper_popup.type3{
+  
+  border: 1px solid #ddd;
+  background-color: #fff;
+
+
+}
+
+
 .layer_popup.full .wrapper_popup {
   position: relative;
   top: 0;
   height: 100%;
 }
 
-
-.layer_popup.small .wrapper_popup {
+/*220429 좌석배정팝업*/
+.layer_popup.type2 {
+  z-index: 20;
   position: absolute;
-  top: 280px;
-  left: 1030px;
+  top: 80px;
+  left: -15px;
   width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  height: 100%;
+  overflow: hidden;
+  
 }
+
+
+
+
 
 .layer_popup.alert .wrapper_popup {
   top: 50%;
@@ -149,6 +164,10 @@
 	box-shadow: 0px 1px 7px 0px #bbb;
 }
 
+
+
+
+
 .layer_popup .pay_group {
   padding: 20px 16px;
   font-size: 13px;
@@ -195,6 +214,7 @@
   line-height: 38px;
   letter-spacing: -0.6px;
   display: inline-block;
+  text-decoration: none;
 }
 
 .layer_popup .seat_num li a.seat_active{ 
@@ -456,6 +476,7 @@ padding: 10px;
 #popup1 .wrapper_popup .popup_header .grp_title_popup{  
   justify-content: space-between
 }
+
 
 #popup1 .popup_con1 .passenger_number_choice{
   font-size: 13px;

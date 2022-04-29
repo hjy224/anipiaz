@@ -21439,7 +21439,7 @@ margin-right: 11px;
 
 .pay_group {
 	padding: 5px 1px;
-	height: 130px;
+  height: auto;
 }
 
 .pay_group li{
@@ -21553,8 +21553,6 @@ margin-right: 11px;
 }
 .pay_save {
 	padding: 30px 16px 20px 16px;
-  background-color: #fff;
-  border-radius: 5px;
 }
 
 .pay_save button{
@@ -21566,6 +21564,10 @@ margin-right: 11px;
   border-radius: 5px;
   font-family: 'NotoSansM';
   font-size: 14px;
+}
+
+.gojung{
+  position: relative;
 }
 
 
