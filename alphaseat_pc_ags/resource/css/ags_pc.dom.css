@@ -6097,21 +6097,26 @@ padding-top: 20px;
 }
 
 .smile_boximg_radar{
+  position: absolute;
 	text-indent: -9999px;
-	display: flex;
-	justify-content: center;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%);
 	color: #666666;
 	font-family: 'NotoSansR';
-	padding: 45px 0 0 0;
 	background: url(../img/common/circle_blue.gif) no-repeat center/ 30px 30px ;
 }
 
 .smile_boximg_radar_txt{
+  position: absolute;
 	font-size: 16px;
-  text-align: center;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
 	color: #00aae7;
 	margin: 0 auto;	
-  padding: 25px 0 10px 0;
 }
 
 
@@ -6120,28 +6125,6 @@ padding-top: 20px;
 	background: url(../img/common/circle_blue.gif) no-repeat left 0px top 2px/ 20px 20px;
 
 }
-
-
-
-/*상단 AI 제목*/
-
-
-[data-page-id='anc_main'] .new_wraps .anc-header .page-name {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%);
-	font-size: 18px;
-	font-family: 'NotoSansB';
-  color: #222;
-  padding-left: 30px;
-  display: block;
-  background: url(../img/common/ico_header-ai@3x.png) no-repeat left / 22px 20px;
-  height: 20px;
-  line-height: 20px;
-
-}
-
 
 
 [data-page-id='anc_main'] .anc-service-wrap .anc-header .service-symbol {
@@ -20789,6 +20772,24 @@ padding-top: 20px;
 }
 
 
+
+
+
+/*상단 AI 제목*/
+.new_wraps .anc-header .smile_name {
+  position: absolute;
+  left: 0;
+  top: 0;
+	font-size: 18px;
+	font-family: 'NotoSansB';
+  color: #222;
+  padding-left: 30px;
+  display: block;
+  background: url(../img/common/ico_header-ai@3x.png) no-repeat left / 22px 20px;
+  height: 20px;
+  line-height: 20px;
+
+}
 
 
 /* 박스박스 가운데 비행기 박스 220427 추가 수정 작업*/
