@@ -308,7 +308,8 @@ $(document).ready(function () {
 	});
 
 	/*스케일*/
-	$('.trigger_1').on('click', function () {
+	$(document).on("click",".trigger_1", function () {
+		console.log("2222");
 		$('.scale_type_1').toggleClass('scale');
 		$('.scale_type_1').css('top', '0px');
 		$('.contents').css('overflow-y', 'scroll');
@@ -333,7 +334,7 @@ $(document).ready(function () {
 		seatCtl.setScrollEvent();
 		return false;
 	});
-	$('.trigger_2').on('click', function () {
+	$(document).on("click",".trigger_2", function () {
 		$('.scale_type_2').toggleClass('scale');
 		$('.scale_type_2').css('top', '0px');
 		$('.contents').css('overflow-y', 'scroll');
