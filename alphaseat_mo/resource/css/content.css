@@ -544,6 +544,9 @@ html, body{
 	text-indent: -9999em;
   }
   
+  #bx_40 .finger{
+	  top:340px;
+  }
 
 
 /* popup_price */
@@ -656,15 +659,20 @@ html, body{
 }
 
 #bx_40 .seat_sheet{
-	top: -630px;
+	top: -620px;
 }
 
 #bx_40 .seat_sheet{
-	transition: all 1.5s ease;
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
+	transition: all 2.5s ease;
+    -webkit-transition: all 2.5s ease;
+    -moz-transition: all 2.5s ease;
 }
 
+#bx_40 .seat_sheet.nodelay{
+	transition: all 0s ease;
+	-webkit-transition: all 0s ease;
+	-moz-transition: all 0s ease;
+}
 
 
 /* 첫페이지 왼쪽 구입가격*/
@@ -713,8 +721,13 @@ html, body{
 	display: flex;
 	justify-content: space-between;
 	background-color: #f8f8f8;
-	z-index: 15;
+	z-index: 12;
 }
+
+#bx_40 .seat_sheet_abcdef{
+	top: 115px;
+}
+
 .seat_sheet_abcdef li:nth-child(3){
 	padding-right: 9px;
 
@@ -732,6 +745,31 @@ html, body{
 	background: #000000;
 	opacity: 0.5;
 }
+
+
+/*부산에어 백그라운드 비행기 이미지*/
+
+
+.airplane_bg_front{
+	position: absolute;
+	top: 23px;
+	left: 85px;
+	width: 125px;
+	height: 110px;
+	background: url(../img/common/airplane_bgx_front.png) no-repeat center / 125px 110px;
+}
+
+/*li 지울때 제이쿼리에서 $('.airplane_bg_end').css('top', '값변경');*/
+
+.airplane_bg_end{
+	position: absolute;
+	top: 720px;
+	left: 85px;
+	width: 125px;
+	height: 93px;
+	background: url(../img/common/airplane_bgx_end.png) no-repeat center / 125px 93px;
+}
+
 
 
 /* 첫페이지 중앙 버튼*/
@@ -854,6 +892,18 @@ html, body{
     background: #000;
     top: 279px;
 }
+
+
+/*부산 좌석선*/
+.seat_sheet_price_box .buy_num.busan-default {height: 635px;}
+.seat_sheet_recom_box .recom_num.busan-default a {
+	height: 618px;
+	position: absolute;
+	background: #000;
+	top: 29px;
+}
+
+
 
 
 /*로딩*/
@@ -1140,6 +1190,8 @@ html, body{
 .seat_btn.disabled_seat {
     text-indent: -999em;
 }
+
+
 
 /* 주황색으로 표시할때*/
 .seat_orange{

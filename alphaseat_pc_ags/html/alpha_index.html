@@ -6,7 +6,7 @@
     <title>AlphaSeat PC</title> <link rel="stylesheet"
             href="../resource/js/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
             <link rel="stylesheet" href="../resource/js/selectric/selectric.css">
-            <link rel="stylesheet" href="../resource/css/ags_pc.dom.css">
+            <link rel="stylesheet" href="../resource/css/contents.css">
             <link rel="stylesheet" href="../resource/css/common.css">    
             <script type="text/javascript" src="../resource/js/modernizr-custom.js"></script>
             <script type="text/javascript" src="../resource/js/jquery-3.4.1.min.js"></script>
@@ -64,14 +64,23 @@
                         <!-- 상단 텍스트 및 이미지 -->
                         <div class="smile_name">좌석 위치 선택하기</div>
                         <div class="smile_boximg_mov1" style="display: none;">
-                            <span>동행과 좌석이 떨어질 확률</span>
+                            <span>KIM, FOUR</span>님 좌석이 떨어져 앉을 확률
                         </div>
-                        <div class="smile_boximg_radar" >
+                        <div class="smile_boximg_radar" style="display: none;">
                             <span>레이다 깜빡깜빡</span></div>                        
-                        <div class="smile_boximg_radar_txt" style="display: none;">
+                        <div class="smile_boximg_radar_txt" >
                             <span>레이더가 가성비 1위 4인 그룹좌석을 찾았어요!</span>
                         </div>
-                        
+
+                        <div class="select_group_btn">
+                            <a href="#none"><span>KIM, FOUR</span>님 <span>4</span>인 그룹</a>
+                            <ul class="select_group_pass">
+                                <li>KIM, FOUR</li>
+                                <li>KIM, ONE</li>
+                                <li>KIM, TWO</li>
+                                <li>KIM, THREE</li>
+                            </ul>
+                        </div>                        
                     </header>
 
                     <div class="anc-service" data-type="tab-group">
@@ -161,12 +170,12 @@
                                             </div>
                                             <div class="seat_sheet_recom_box">
                                                 <!-- 좌석 막을때 class="disabled" -->
-                                                <div class="recom_num type1"><a href="#none"></a></div>
-                                                <div class="recom_num type1s"><a href="#none"></a></div>
-                                                <div class="recom_num type2"><a href="#none"></a></div>
-                                                <div class="recom_num type3"><a href="#none"></a></div>
-                                                <div class="recom_num type4"><a href="#none"></a></div>
-                                                <div class="recom_num type5"><a href="#none"></a></div>
+                                                <div class="recom_num type1"><a href="#target1" class="planscroll"></a></div>
+                                                <div class="recom_num type1s"><a href="#target2" class="planscroll"></a></div>
+                                                <div class="recom_num type2"><a href="#target3" class="planscroll"></a></div>
+                                                <div class="recom_num type3"><a href="#target4" class="planscroll"></a></div>
+                                                <div class="recom_num type4"><a href="#target5" class="planscroll"></a></div>
+                                                <div class="recom_num type5"><a href="#target6"  class="planscroll"></a></div>
                                             </div>
                                         </div>
 
@@ -231,7 +240,7 @@
                                                     <span><a href="#none" class="seat_btn" seatno="5E"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="5F"></a></span>
                                                 </li>
-                                                <li id="section3">
+                                                <li>
                                                     <span><a href="#none" class="seat_btn" seatno="6A"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="6B"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="6C"></a></span>
@@ -285,7 +294,7 @@
                                                     <span><a href="#none" class="seat_btn" seatno="11E"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="11F"></a></span>
                                                 </li>
-                                                <li id="section4">
+                                                <li>
                                                     <span><a href="#none" class="seat_btn" seatno="12A"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="12B"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="12C"></a></span>
@@ -501,7 +510,7 @@
                                                     <span>F</span>
                                                 </div>
                                                 <ul class="seat_num">
-                                                    <li>
+                                                    <li id="target1">
                                                         <span><a href="#none" class="seat_btn" seatno="1A"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="1B"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="1C"><span>15,000</span></a></span>
@@ -513,7 +522,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="1E"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="1F"><span>15,000</span></a></span>
                                                     </li>
-                                                    <li>
+                                                    <li id="target2">
                                                         <!--AI분석후 좌석 라인 후 박스 stand_box-->
                                                         <span class="stand_box"><a href="#none" class="seat_btn" seatno="2A"><span>11,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="2B"><span>11,000</span></a></span>
@@ -550,7 +559,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="5E"><span>11,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="5F"><span>11,000</span></a></span>
                                                     </li>
-                                                    <li id="section3">
+                                                    <li id="target3">
                                                         <span><a href="#none" class="seat_btn" seatno="6A"><span>10,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="6B"><span>10,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="6C"><span>10,000</span></a></span>
@@ -604,7 +613,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="11E"><span>10,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="11F"><span>10,000</span></a></span>
                                                     </li>
-                                                    <li id="section4">
+                                                    <li >
                                                         <span><a href="#none" class="seat_btn" seatno="12A"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="12B"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="12C"><span>5,000</span></a></span>
@@ -632,7 +641,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="14E"><span>2,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="14F"><span>2,000</span></a></span>
                                                     </li>
-                                                    <li>
+                                                    <li id="target4">
                                                         <span><a href="#none" class="seat_btn" seatno="15A"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="15B"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="15C"><span>15,000</span></a></span>
@@ -654,7 +663,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="16E"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="16F"><span>15,000</span></a></span>
                                                     </li>
-                                                    <li>
+                                                    <li id="target5">
                                                         <span><a href="#none" class="seat_btn" seatno="17A"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="17B"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="17C"><span>5,000</span></a></span>
@@ -708,7 +717,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="22E"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="22F"><span>5,000</span></a></span>
                                                     </li>
-                                                    <li>
+                                                    <li id="target6">
                                                         <span><a href="#none" class="seat_btn" seatno="23A"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="23B"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="23C"><span>5,000</span></a></span>
@@ -2305,6 +2314,20 @@
                                     </div>
                                     <span class="chair_comple">11,000</span>
                                 </li>
+                                <li>									
+                                    <div class="pay_group_s">
+                                        <span class="chair_s">2E</span>
+                                        <span>LEE J K</span>
+                                    </div>
+                                    <span class="chair_comple">11,000</span>
+                                </li>
+                                <li>									
+                                    <div class="pay_group_s">
+                                        <span class="chair_s">2E</span>
+                                        <span>LEE J K</span>
+                                    </div>
+                                    <span class="chair_comple">11,000</span>
+                                </li>
                             </ul>
                         </div>                        
                     </div>
@@ -2393,8 +2416,33 @@
                         <dd><span class="digits">999999</span></dd>
                     </dl>
                 </div>
-                <div class="testtest">
-
+                <div class="right_agreebox">
+                    <!-- (가는 편)요금규정 및 약관동의 -->
+                    <div class="agreement-wrap active" data-id="departure">
+                        <ul class="agreement-list">
+                            <!-- 제주항공(가는 편) 좌석 선택 규정 -->
+                            <li>
+                                <input type="checkbox" id="input-check11" name="check-group2"><label
+                                    for="input-check11"><i class="ico"></i>제주항공 좌석 선택 규정</label>
+                                <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            </li>
+                            <!-- 제주항공(가는 편) 위탁 수하물 규정 -->
+                            <li>
+                                <input type="checkbox" id="input-check13" name="check-group2"><label
+                                    for="input-check13"><i class="ico"></i>제주항공 위탁 수하물 규정</label>
+                                <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="input-check14" name="check-group2"><label
+                                    for="input-check14"><i class="ico"></i>렌터카 이용 규정</label>
+                                <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            </li>
+                        </ul>
+                        <div class="agreement-all-list">
+                            <input type="checkbox" id="input-check15" name="check-group2" data-checked="all"><label
+                                for="input-check15"><i class="ico"></i>모두 동의하기</label>
+                        </div>
+                    </div>
                 </div>
                 <button type="button" class="btn_pay">결제하기</button>
 
@@ -2643,7 +2691,7 @@
             $html = $("html"),
             $body = $("body");
 
-        $("#ags-header").load("include/ags-header.dom.html");
+        $("#ags-header").load("include/ags-header.html");
         $("#ags-footer").load("include/ags-footer.html");
         $("#ags-center_box1").load("include/ags-center_box1.html");
 

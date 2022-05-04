@@ -6,7 +6,7 @@
     <title>AlphaSeat PC</title> <link rel="stylesheet"
             href="../resource/js/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
             <link rel="stylesheet" href="../resource/js/selectric/selectric.css">
-            <link rel="stylesheet" href="../resource/css/ags_pc.dom.css">
+            <link rel="stylesheet" href="../resource/css/contents.css">
             <link rel="stylesheet" href="../resource/css/common.css">    
             <script type="text/javascript" src="../resource/js/modernizr-custom.js"></script>
             <script type="text/javascript" src="../resource/js/jquery-3.4.1.min.js"></script>
@@ -64,14 +64,23 @@
                         <!-- 상단 텍스트 및 이미지 -->
                         <div class="smile_name">좌석 위치 선택하기</div>
                         <div class="smile_boximg_mov1" style="display: none;">
-                            <span>동행과 좌석이 떨어질 확률</span>
+                            <span>KIM, FOUR</span>님 좌석이 떨어져 앉을 확률
                         </div>
-                        <div class="smile_boximg_radar" >
+                        <div class="smile_boximg_radar" style="display: none;">
                             <span>레이다 깜빡깜빡</span></div>                        
-                        <div class="smile_boximg_radar_txt" style="display: none;">
+                        <div class="smile_boximg_radar_txt" >
                             <span>레이더가 가성비 1위 4인 그룹좌석을 찾았어요!</span>
                         </div>
-                        
+
+                        <div class="select_group_btn">
+                            <a href="#none"><span>KIM, FOUR</span>님 <span>4</span>인 그룹</a>
+                            <ul class="select_group_pass">
+                                <li>KIM, FOUR</li>
+                                <li>KIM, ONE</li>
+                                <li>KIM, TWO</li>
+                                <li>KIM, THREE</li>
+                            </ul>
+                        </div>                        
                     </header>
 
                     <div class="anc-service" data-type="tab-group">
@@ -161,12 +170,12 @@
                                             </div>
                                             <div class="seat_sheet_recom_box">
                                                 <!-- 좌석 막을때 class="disabled" -->
-                                                <div class="recom_num type1"><a href="#none"></a></div>
-                                                <div class="recom_num type1s"><a href="#none"></a></div>
-                                                <div class="recom_num type2"><a href="#none"></a></div>
-                                                <div class="recom_num type3"><a href="#none"></a></div>
-                                                <div class="recom_num type4"><a href="#none"></a></div>
-                                                <div class="recom_num type5"><a href="#none"></a></div>
+                                                <div class="recom_num type1"><a href="#target1" class="planscroll"></a></div>
+                                                <div class="recom_num type1s"><a href="#target2" class="planscroll"></a></div>
+                                                <div class="recom_num type2"><a href="#target3" class="planscroll"></a></div>
+                                                <div class="recom_num type3"><a href="#target4" class="planscroll"></a></div>
+                                                <div class="recom_num type4"><a href="#target5" class="planscroll"></a></div>
+                                                <div class="recom_num type5"><a href="#target6"  class="planscroll"></a></div>
                                             </div>
                                         </div>
 
@@ -231,7 +240,7 @@
                                                     <span><a href="#none" class="seat_btn" seatno="5E"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="5F"></a></span>
                                                 </li>
-                                                <li id="section3">
+                                                <li>
                                                     <span><a href="#none" class="seat_btn" seatno="6A"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="6B"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="6C"></a></span>
@@ -285,7 +294,7 @@
                                                     <span><a href="#none" class="seat_btn" seatno="11E"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="11F"></a></span>
                                                 </li>
-                                                <li id="section4">
+                                                <li>
                                                     <span><a href="#none" class="seat_btn" seatno="12A"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="12B"></a></span>
                                                     <span><a href="#none" class="seat_btn" seatno="12C"></a></span>
@@ -501,7 +510,7 @@
                                                     <span>F</span>
                                                 </div>
                                                 <ul class="seat_num">
-                                                    <li>
+                                                    <li id="target1">
                                                         <span><a href="#none" class="seat_btn" seatno="1A"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="1B"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="1C"><span>15,000</span></a></span>
@@ -513,7 +522,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="1E"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="1F"><span>15,000</span></a></span>
                                                     </li>
-                                                    <li>
+                                                    <li id="target2">
                                                         <!--AI분석후 좌석 라인 후 박스 stand_box-->
                                                         <span class="stand_box"><a href="#none" class="seat_btn" seatno="2A"><span>11,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="2B"><span>11,000</span></a></span>
@@ -550,7 +559,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="5E"><span>11,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="5F"><span>11,000</span></a></span>
                                                     </li>
-                                                    <li id="section3">
+                                                    <li id="target3">
                                                         <span><a href="#none" class="seat_btn" seatno="6A"><span>10,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="6B"><span>10,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="6C"><span>10,000</span></a></span>
@@ -604,7 +613,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="11E"><span>10,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="11F"><span>10,000</span></a></span>
                                                     </li>
-                                                    <li id="section4">
+                                                    <li >
                                                         <span><a href="#none" class="seat_btn" seatno="12A"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="12B"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="12C"><span>5,000</span></a></span>
@@ -632,7 +641,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="14E"><span>2,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="14F"><span>2,000</span></a></span>
                                                     </li>
-                                                    <li>
+                                                    <li id="target4">
                                                         <span><a href="#none" class="seat_btn" seatno="15A"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="15B"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="15C"><span>15,000</span></a></span>
@@ -654,7 +663,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="16E"><span>15,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="16F"><span>15,000</span></a></span>
                                                     </li>
-                                                    <li>
+                                                    <li id="target5">
                                                         <span><a href="#none" class="seat_btn" seatno="17A"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="17B"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="17C"><span>5,000</span></a></span>
@@ -708,7 +717,7 @@
                                                         <span><a href="#none" class="seat_btn" seatno="22E"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="22F"><span>5,000</span></a></span>
                                                     </li>
-                                                    <li>
+                                                    <li id="target6">
                                                         <span><a href="#none" class="seat_btn" seatno="23A"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="23B"><span>5,000</span></a></span>
                                                         <span><a href="#none" class="seat_btn" seatno="23C"><span>5,000</span></a></span>
@@ -1713,7 +1722,255 @@
                     </footer>
                 </article>
 
-                
+                <!-- (가는 편)요금규정 및 약관동의 -->
+                <div class="agreement-wrap active" data-id="departure">
+                    <h5 class="agreement-title">요금규정 및 약관동의 <span class="ico_tag">가는 편</span></h5>
+                    <ul class="agreement-list">
+                        <!-- 제주항공(가는 편) 좌석 선택 규정 -->
+                        <li>
+                            <input type="checkbox" id="input-check11" name="check-group2"><label for="input-check11"><i
+                                    class="ico"></i>제주항공 좌석 선택 규정</label>
+                            <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            <div class="notification-wrap">
+                                <div class="table-wrap">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width: 25%">
+                                            <col style="width: 25%">
+                                            <col style="width: 25%">
+                                            <col style="width: 25%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="colgroup" colspan="2">변경</th>
+                                                <th scope="colgroup" colspan="2">환불</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">출발 2일 전</th>
+                                                <td>가능</td>
+                                                <th scope="row">출발 2일 전</th>
+                                                <td>가능</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">출발 1일 전 ~ 출발 당일</th>
+                                                <td>불가</td>
+                                                <th scope="row">출발 1일 전 ~ 출발 당일</th>
+                                                <td>불가</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="colgroup" colspan="4">환불규정</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <ul class="notification-list">
+                                                        <li>사전 수하물 구매 : 최초 출발 시간 기준 24시간 전부터 환불 불가</li>
+                                                        <li>환불 시 시스템 사용료 부과 / 인당, 편도 구간당 <span
+                                                                class="digits">1000</span></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="colgroup" colspan="4">유의사항</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <ul class="notification-list">
+                                                        <li>최초 출발(여정 첫 구간) 출발 24시간 전까지만 구매 가능합니다.</li>
+                                                        <li>항공권 예약/발권 완료 후 사전 좌석 구매가 가능합니다.</li>
+                                                        <li>이미 구매한 탑승객의 경우 변경이 불가합니다. 변경을 원할 경우 취소 후 재구매 해주시기 바랍니다.</li>
+                                                        <li>여정 변경 및 항공권 취소 시 구매한 부가서비스는 자동 취소되지 않으므로 별도 취소 요청을 해주셔야 합니다
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="colgroup" colspan="4">비상구 좌석 배정 제한 규정</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <p class="notification-text">국토교통부 고시에 의거 비상구 좌석에 착석한 승객들이 비상시에 비상구
+                                                        개발, 승무원의 지시에 따라 임무 수행 등 승무원을 돕도록 되어 있어 아래에 규정된 승객에게는 비상구 좌석 배정을
+                                                        제한하고 있습니다.</p>
+                                                    <ul class="notification-list">
+                                                        <li>활동성, 체력 또는 양팔이나 두 손 및 양다리의 민첩성이 승무원의 지시를 수행하기에 충분치 않은 승객
+                                                        </li>
+                                                        <li>만 15세 미만이거나 동반자의 도움 없이 승무원의 지시를 수행하기에 불충분한 승객</li>
+                                                        <li>글 또는 그림으로 제공된 비상탈출에 관한 지시를 읽고 이해하지 못하거나 승무원의 구두지시를 이해하지 못하는
+                                                            승객</li>
+                                                        <li>콘텍트 렌즈나 안경을 제외한 다른 시력보조장비 없이는 승무원의 지시를 수행할 수 없는 승객</li>
+                                                        <li>일반적인 보청기를 제외한 다른 청력보조장비 없이는 승무원의 탈출지시를 듣고 이해할 수 없는 승객</li>
+                                                        <li>다른 승객들에게 정보를 적절하게 전달할 수 있는 능력이 부족한 승객</li>
+                                                        <li>승객의 상태나 책임<i class="text-emphasis">(유소아 동반 승객, 임산부 승객, 노약자,
+                                                                장애인 등)</i>이 비상시 승무원의 지시를 수행하는데 방해가 되거나 수행할 경우 해를 입게 되는
+                                                            승객</li>
+                                                    </ul>
+                                                    <p class="notification-text">상기 규정된 승객에게는 비상구 좌석 배정을 제한 하고 있사오니, 제한
+                                                        사항 확인 후 구매를 부탁드립니다.</p>
+                                                    <p class="notification-text">비상구 좌석 구매 후 출발지 공항에서 비상구 착석 불가능한 승객이라고
+                                                        판단될 경우 현장에서 임의로 취소될 수 있으며, 비상구 구매 승객에 한하여 웹 체크인 및 모바일 체크인이 불가능
+                                                        합니다.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 제주항공(가는 편) 위탁 수하물 규정 -->
+                        <li>
+                            <input type="checkbox" id="input-check13" name="check-group2"><label for="input-check13"><i
+                                    class="ico"></i>제주항공 위탁 수하물 규정</label>
+                            <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            <div class="notification-wrap">
+                                <div class="table-wrap">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width: 25%">
+                                            <col style="width: 25%">
+                                            <col style="width: 25%">
+                                            <col style="width: 25%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="colgroup" colspan="2">변경</th>
+                                                <th scope="colgroup" colspan="2">환불</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">출발 2일 전</th>
+                                                <td>가능</td>
+                                                <th scope="row">출발 2일 전</th>
+                                                <td>가능</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">출발 1일 전 ~ 출발 당일</th>
+                                                <td>불가</td>
+                                                <th scope="row">출발 1일 전 ~ 출발 당일</th>
+                                                <td>불가</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="colgroup" colspan="4">위탁수하물 추가 구매 제외 대상</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <ul class="notification-list">
+                                                        <li>유아는 기본 위탁 제공(10kg) 외에 추가 수하물 구매 불가합니다.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="colgroup" colspan="4">유의사항</th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <ul class="notification-list">
+                                                        <li>이미 구매한 탑승객의 경우 변경이 불가합니다. 변경을 원할 경우 취소 후 재구매 해주시기 바랍니다.</li>
+                                                        <li>여정 변경 및 항공권 취소 시 구매한 부가서비스는 자동 취소되지 않으므로 별도 취소 요청을 해주셔야 합니다.
+                                                        </li>
+                                                        <li>수하물은 구간별로 각각 구매할 수 있습니다.</li>
+                                                        <li>사전 구매하신 수하물은 수속 카운터에서 위탁 접수시에만 사용/이용 가능합니다. (탑승게이트에서 사용 불가)
+                                                        </li>
+                                                        <li>구매하신 수하물은 다른 고객에게 양도할 수 없습니다.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 렌터카 이용 규정 -->
+                        <!--
+                        렌터카 이용 규정에 관한 전달말씀
+                        1. 렌터카는 도착지가 '제주공항'인 '가는 편' 항공권에만 제공되는 서비스입니다.
+                        2. 1을 충족하는 PNR 탑승객이 렌터카를 결제항목에 추가하였을 경우 가는 편의 약관동의 항목에만 렌터카 이용 규정이 노출되도록 합니다.
+                        3. 렌터카 약관은 렌터카 회사에 따라 모두 다르므로, 코드화하여 관리하기 어려울 것으로 보입니다. 따라서 아래 코드처럼 렌터카 회사의 약관을 단순 복사 + 붙여넣기 하여 관리합니다.
+                    -->
+                        <li>
+                            <input type="checkbox" id="input-check14" name="check-group2"><label for="input-check14"><i
+                                    class="ico"></i>렌터카 이용 규정</label>
+                            <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            <div class="notification-wrap">
+                                <div class="table-wrap">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col">대여규정</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="notification-text pre-wrap">
+                                                        1. 운영시간 : 08:00 ~ 20:00(운영시간 외 차종 인수/반납은 불가하거나 추가 비용 발생할 수
+                                                        있습니다.)
+                                                        2. 대여불가 항목
+                                                        　① 탑승인원 초과 ② 30일 이내 예약 일정 144시간(6박 7일) 초과 ③ 군 장병(직업군인 가능)
+                                                        3. 대여 시 주의사항
+                                                        　* 렌트카 미사용 일정에 대한 대여료·보험료 환불불가
+                                                        　* 반려동물 동반(이동장 필수) 및 낚시용품 소지 가능. 단, 악취발생 시 클리닝비용 10만원 발생(상태에 따라
+                                                        추가금 발생 될 수 있음)
+                                                        　* 외국인은 예약 전 대여 가능 여부 확인 필요
+                                                        4. 운전자 대여 조건 : 만 21세 이상, 면허취득 1년 경과, 2종보통 이상
+                                                        　* SUV·RV, 고급, 수입, 승합(9~12인) : 만 26세 이상 면허취득 1년 경과, 2종 보통 (승합
+                                                        11인 이상 1종 보통)
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">보험규정</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="notification-text pre-wrap">
+                                                        1. 가입기준 : 만 21세 이상, 면허취득 1년 경과
+                                                        ＊SUV·RV, 고급, 수입, 승합(9~12인) : 만 26세 이상, 면허취득 1년 경과
+                                                        2. 보상한도 : 무제한
+                                                        3. 보상내용 : 수리비, 면책금, 휴차보상료 면제
+                                                        4. 보험 미적용 사항
+                                                        ① 사고미보고 및 11대 중과실 사고
+                                                        ② 타이어/휠 훼손, 키분실, 키/체인/실내부품/네비게이션 분실 및 훼손
+                                                        ③ 견인 및 긴급출동비용, 차종침수
+                                                        ④ 2회 이상 사고건(자차보험 1회성 소멸)
+
+                                                        ※ 11대 중과실 교통사고
+                                                        ① 신호위반 ② 중앙선침범 ③ 제한속도보다 20km 이상 과속 ④ 앞지르기 방법위반 ⑤ 철길건널목 통과방법위반
+                                                        ⑥ 횡단보도사고 ⑦ 무면허 운전 ⑧ 음주운전 ⑨ 보도를 침범 ⑩ 승객추락방지의무위반 ⑪ 어린이보호구역 안전운전
+                                                        의무위반
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">취소/환불규정</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p class="notification-text pre-wrap">
+                                                        * 예약취소
+                                                        예약당일(당일 23:59분까지/인수 24시간 내 취소시 적용 불가) : 수수료 없음
+                                                        예약 다음날~인수 7일전까지(168시간 이전까지) : 수수료 없음
+                                                        인수 6일전~인수 3일전까지(72시간 이전까지) : 수수료 없음
+                                                        인수 2일전~인수 1일전까지(24시간 이전까지) : 수수료 없음
+                                                        인수 24시간 이내 : 수수료 30%
+                                                        No-show : 취소수수료 50%
+
+                                                        * 차종 인수 24시간 내 취소하는 경우, 예약 당일 취소 구간(수수료 없음)이 적용되지 않습니다.
+                                                        * 차종 인수 후 예약 취소 또는 조기반납 시 결제금액 환불 불가
+                                                        * 천재지변으로 예약 취소 시 결제금액 환불 가능
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="agreement-all-list">
+                        <input type="checkbox" id="input-check15" name="check-group2" data-checked="all"><label
+                            for="input-check15"><i class="ico"></i>모두 동의하기</label>
+                    </div>
+                </div>
 
                 <!-- (오는 편)요금규정 및 약관동의 -->
                 <div class="agreement-wrap" data-id="arrival">
@@ -2057,6 +2314,20 @@
                                     </div>
                                     <span class="chair_comple">11,000</span>
                                 </li>
+                                <li>									
+                                    <div class="pay_group_s">
+                                        <span class="chair_s">2E</span>
+                                        <span>LEE J K</span>
+                                    </div>
+                                    <span class="chair_comple">11,000</span>
+                                </li>
+                                <li>									
+                                    <div class="pay_group_s">
+                                        <span class="chair_s">2E</span>
+                                        <span>LEE J K</span>
+                                    </div>
+                                    <span class="chair_comple">11,000</span>
+                                </li>
                             </ul>
                         </div>                        
                     </div>
@@ -2145,256 +2416,33 @@
                         <dd><span class="digits">999999</span></dd>
                     </dl>
                 </div>
-                <div class="testtest">
+                <div class="right_agreebox">
                     <!-- (가는 편)요금규정 및 약관동의 -->
-                <div class="agreement-wrap active" data-id="departure">
-                    <h5 class="agreement-title">요금규정 및 약관동의 <span class="ico_tag">가는 편</span></h5>
-                    <ul class="agreement-list">
-                        <!-- 제주항공(가는 편) 좌석 선택 규정 -->
-                        <li>
-                            <input type="checkbox" id="input-check11" name="check-group2"><label for="input-check11"><i
-                                    class="ico"></i>제주항공 좌석 선택 규정</label>
-                            <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
-                            <div class="notification-wrap">
-                                <div class="table-wrap">
-                                    <table>
-                                        <colgroup>
-                                            <col style="width: 25%">
-                                            <col style="width: 25%">
-                                            <col style="width: 25%">
-                                            <col style="width: 25%">
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="colgroup" colspan="2">변경</th>
-                                                <th scope="colgroup" colspan="2">환불</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">출발 2일 전</th>
-                                                <td>가능</td>
-                                                <th scope="row">출발 2일 전</th>
-                                                <td>가능</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">출발 1일 전 ~ 출발 당일</th>
-                                                <td>불가</td>
-                                                <th scope="row">출발 1일 전 ~ 출발 당일</th>
-                                                <td>불가</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="colgroup" colspan="4">환불규정</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4">
-                                                    <ul class="notification-list">
-                                                        <li>사전 수하물 구매 : 최초 출발 시간 기준 24시간 전부터 환불 불가</li>
-                                                        <li>환불 시 시스템 사용료 부과 / 인당, 편도 구간당 <span
-                                                                class="digits">1000</span></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="colgroup" colspan="4">유의사항</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4">
-                                                    <ul class="notification-list">
-                                                        <li>최초 출발(여정 첫 구간) 출발 24시간 전까지만 구매 가능합니다.</li>
-                                                        <li>항공권 예약/발권 완료 후 사전 좌석 구매가 가능합니다.</li>
-                                                        <li>이미 구매한 탑승객의 경우 변경이 불가합니다. 변경을 원할 경우 취소 후 재구매 해주시기 바랍니다.</li>
-                                                        <li>여정 변경 및 항공권 취소 시 구매한 부가서비스는 자동 취소되지 않으므로 별도 취소 요청을 해주셔야 합니다
-                                                        </li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="colgroup" colspan="4">비상구 좌석 배정 제한 규정</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4">
-                                                    <p class="notification-text">국토교통부 고시에 의거 비상구 좌석에 착석한 승객들이 비상시에 비상구
-                                                        개발, 승무원의 지시에 따라 임무 수행 등 승무원을 돕도록 되어 있어 아래에 규정된 승객에게는 비상구 좌석 배정을
-                                                        제한하고 있습니다.</p>
-                                                    <ul class="notification-list">
-                                                        <li>활동성, 체력 또는 양팔이나 두 손 및 양다리의 민첩성이 승무원의 지시를 수행하기에 충분치 않은 승객
-                                                        </li>
-                                                        <li>만 15세 미만이거나 동반자의 도움 없이 승무원의 지시를 수행하기에 불충분한 승객</li>
-                                                        <li>글 또는 그림으로 제공된 비상탈출에 관한 지시를 읽고 이해하지 못하거나 승무원의 구두지시를 이해하지 못하는
-                                                            승객</li>
-                                                        <li>콘텍트 렌즈나 안경을 제외한 다른 시력보조장비 없이는 승무원의 지시를 수행할 수 없는 승객</li>
-                                                        <li>일반적인 보청기를 제외한 다른 청력보조장비 없이는 승무원의 탈출지시를 듣고 이해할 수 없는 승객</li>
-                                                        <li>다른 승객들에게 정보를 적절하게 전달할 수 있는 능력이 부족한 승객</li>
-                                                        <li>승객의 상태나 책임<i class="text-emphasis">(유소아 동반 승객, 임산부 승객, 노약자,
-                                                                장애인 등)</i>이 비상시 승무원의 지시를 수행하는데 방해가 되거나 수행할 경우 해를 입게 되는
-                                                            승객</li>
-                                                    </ul>
-                                                    <p class="notification-text">상기 규정된 승객에게는 비상구 좌석 배정을 제한 하고 있사오니, 제한
-                                                        사항 확인 후 구매를 부탁드립니다.</p>
-                                                    <p class="notification-text">비상구 좌석 구매 후 출발지 공항에서 비상구 착석 불가능한 승객이라고
-                                                        판단될 경우 현장에서 임의로 취소될 수 있으며, 비상구 구매 승객에 한하여 웹 체크인 및 모바일 체크인이 불가능
-                                                        합니다.</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- 제주항공(가는 편) 위탁 수하물 규정 -->
-                        <li>
-                            <input type="checkbox" id="input-check13" name="check-group2"><label for="input-check13"><i
-                                    class="ico"></i>제주항공 위탁 수하물 규정</label>
-                            <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
-                            <div class="notification-wrap">
-                                <div class="table-wrap">
-                                    <table>
-                                        <colgroup>
-                                            <col style="width: 25%">
-                                            <col style="width: 25%">
-                                            <col style="width: 25%">
-                                            <col style="width: 25%">
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="colgroup" colspan="2">변경</th>
-                                                <th scope="colgroup" colspan="2">환불</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">출발 2일 전</th>
-                                                <td>가능</td>
-                                                <th scope="row">출발 2일 전</th>
-                                                <td>가능</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">출발 1일 전 ~ 출발 당일</th>
-                                                <td>불가</td>
-                                                <th scope="row">출발 1일 전 ~ 출발 당일</th>
-                                                <td>불가</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="colgroup" colspan="4">위탁수하물 추가 구매 제외 대상</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4">
-                                                    <ul class="notification-list">
-                                                        <li>유아는 기본 위탁 제공(10kg) 외에 추가 수하물 구매 불가합니다.</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="colgroup" colspan="4">유의사항</th>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4">
-                                                    <ul class="notification-list">
-                                                        <li>이미 구매한 탑승객의 경우 변경이 불가합니다. 변경을 원할 경우 취소 후 재구매 해주시기 바랍니다.</li>
-                                                        <li>여정 변경 및 항공권 취소 시 구매한 부가서비스는 자동 취소되지 않으므로 별도 취소 요청을 해주셔야 합니다.
-                                                        </li>
-                                                        <li>수하물은 구간별로 각각 구매할 수 있습니다.</li>
-                                                        <li>사전 구매하신 수하물은 수속 카운터에서 위탁 접수시에만 사용/이용 가능합니다. (탑승게이트에서 사용 불가)
-                                                        </li>
-                                                        <li>구매하신 수하물은 다른 고객에게 양도할 수 없습니다.</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- 렌터카 이용 규정 -->
-                        <!--
-                        렌터카 이용 규정에 관한 전달말씀
-                        1. 렌터카는 도착지가 '제주공항'인 '가는 편' 항공권에만 제공되는 서비스입니다.
-                        2. 1을 충족하는 PNR 탑승객이 렌터카를 결제항목에 추가하였을 경우 가는 편의 약관동의 항목에만 렌터카 이용 규정이 노출되도록 합니다.
-                        3. 렌터카 약관은 렌터카 회사에 따라 모두 다르므로, 코드화하여 관리하기 어려울 것으로 보입니다. 따라서 아래 코드처럼 렌터카 회사의 약관을 단순 복사 + 붙여넣기 하여 관리합니다.
-                    -->
-                        <li>
-                            <input type="checkbox" id="input-check14" name="check-group2"><label for="input-check14"><i
-                                    class="ico"></i>렌터카 이용 규정</label>
-                            <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
-                            <div class="notification-wrap">
-                                <div class="table-wrap">
-                                    <table>
-                                        <colgroup>
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="col">대여규정</th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="notification-text pre-wrap">
-                                                        1. 운영시간 : 08:00 ~ 20:00(운영시간 외 차종 인수/반납은 불가하거나 추가 비용 발생할 수
-                                                        있습니다.)
-                                                        2. 대여불가 항목
-                                                        　① 탑승인원 초과 ② 30일 이내 예약 일정 144시간(6박 7일) 초과 ③ 군 장병(직업군인 가능)
-                                                        3. 대여 시 주의사항
-                                                        　* 렌트카 미사용 일정에 대한 대여료·보험료 환불불가
-                                                        　* 반려동물 동반(이동장 필수) 및 낚시용품 소지 가능. 단, 악취발생 시 클리닝비용 10만원 발생(상태에 따라
-                                                        추가금 발생 될 수 있음)
-                                                        　* 외국인은 예약 전 대여 가능 여부 확인 필요
-                                                        4. 운전자 대여 조건 : 만 21세 이상, 면허취득 1년 경과, 2종보통 이상
-                                                        　* SUV·RV, 고급, 수입, 승합(9~12인) : 만 26세 이상 면허취득 1년 경과, 2종 보통 (승합
-                                                        11인 이상 1종 보통)
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="col">보험규정</th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="notification-text pre-wrap">
-                                                        1. 가입기준 : 만 21세 이상, 면허취득 1년 경과
-                                                        ＊SUV·RV, 고급, 수입, 승합(9~12인) : 만 26세 이상, 면허취득 1년 경과
-                                                        2. 보상한도 : 무제한
-                                                        3. 보상내용 : 수리비, 면책금, 휴차보상료 면제
-                                                        4. 보험 미적용 사항
-                                                        ① 사고미보고 및 11대 중과실 사고
-                                                        ② 타이어/휠 훼손, 키분실, 키/체인/실내부품/네비게이션 분실 및 훼손
-                                                        ③ 견인 및 긴급출동비용, 차종침수
-                                                        ④ 2회 이상 사고건(자차보험 1회성 소멸)
-
-                                                        ※ 11대 중과실 교통사고
-                                                        ① 신호위반 ② 중앙선침범 ③ 제한속도보다 20km 이상 과속 ④ 앞지르기 방법위반 ⑤ 철길건널목 통과방법위반
-                                                        ⑥ 횡단보도사고 ⑦ 무면허 운전 ⑧ 음주운전 ⑨ 보도를 침범 ⑩ 승객추락방지의무위반 ⑪ 어린이보호구역 안전운전
-                                                        의무위반
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="col">취소/환불규정</th>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p class="notification-text pre-wrap">
-                                                        * 예약취소
-                                                        예약당일(당일 23:59분까지/인수 24시간 내 취소시 적용 불가) : 수수료 없음
-                                                        예약 다음날~인수 7일전까지(168시간 이전까지) : 수수료 없음
-                                                        인수 6일전~인수 3일전까지(72시간 이전까지) : 수수료 없음
-                                                        인수 2일전~인수 1일전까지(24시간 이전까지) : 수수료 없음
-                                                        인수 24시간 이내 : 수수료 30%
-                                                        No-show : 취소수수료 50%
-
-                                                        * 차종 인수 24시간 내 취소하는 경우, 예약 당일 취소 구간(수수료 없음)이 적용되지 않습니다.
-                                                        * 차종 인수 후 예약 취소 또는 조기반납 시 결제금액 환불 불가
-                                                        * 천재지변으로 예약 취소 시 결제금액 환불 가능
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="agreement-all-list">
-                        <input type="checkbox" id="input-check15" name="check-group2" data-checked="all"><label
-                            for="input-check15"><i class="ico"></i>모두 동의하기</label>
+                    <div class="agreement-wrap active" data-id="departure">
+                        <ul class="agreement-list">
+                            <!-- 제주항공(가는 편) 좌석 선택 규정 -->
+                            <li>
+                                <input type="checkbox" id="input-check11" name="check-group2"><label
+                                    for="input-check11"><i class="ico"></i>제주항공 좌석 선택 규정</label>
+                                <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            </li>
+                            <!-- 제주항공(가는 편) 위탁 수하물 규정 -->
+                            <li>
+                                <input type="checkbox" id="input-check13" name="check-group2"><label
+                                    for="input-check13"><i class="ico"></i>제주항공 위탁 수하물 규정</label>
+                                <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="input-check14" name="check-group2"><label
+                                    for="input-check14"><i class="ico"></i>렌터카 이용 규정</label>
+                                <a href="#none" target="_self" class="btn_more">자세히 보기<i class="ico"></i></a>
+                            </li>
+                        </ul>
+                        <div class="agreement-all-list">
+                            <input type="checkbox" id="input-check15" name="check-group2" data-checked="all"><label
+                                for="input-check15"><i class="ico"></i>모두 동의하기</label>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <button type="button" class="btn_pay">결제하기</button>
 
@@ -2643,7 +2691,7 @@
             $html = $("html"),
             $body = $("body");
 
-        $("#ags-header").load("include/ags-header.dom.html");
+        $("#ags-header").load("include/ags-header.html");
         $("#ags-footer").load("include/ags-footer.html");
         $("#ags-center_box1").load("include/ags-center_box1.html");
 

@@ -1,3 +1,4 @@
+
 /*HTML Include*/
 function includeHTML(callback) {
     var z, i, elmnt, file, xhr;
@@ -317,7 +318,12 @@ $(document).ready(function () {
 		
 		$('.slider1 .seat_sheet_number').remove();
 		$('.slider1 .seat_sheet_abcdef').remove();
+		$('.slider1 .airplane_bg_front').remove();
+		$('.slider1 .airplane_bg_end').remove();
 		$('.slider1 .airplane_bg').remove();
+
+
+
 		$('.slider1 .seat_sheet_price_box').remove();
 		$('.slider1 .seat_sheet_recom_box').remove();
 		$('.slider1 .seat_sheet_loading').remove();
@@ -342,7 +348,9 @@ $(document).ready(function () {
 		
 		$('.slider2 .seat_sheet_number').remove();
 		$('.slider2 .seat_sheet_abcdef').remove();
-		$('.slider2 .airplane_bg').remove();
+		$('.slider2 .airplane_bg').remove();		
+		$('.slider2 .airplane_bg_front').remove();
+		$('.slider2 .airplane_bg_end').remove();
 		$('.slider2 .seat_sheet_price_box').remove();
 		$('.slider2 .seat_sheet_recom_box').remove();
 		$('.slider2 .seat_sheet_loading').remove();
@@ -380,19 +388,14 @@ $(document).ready(function () {
 			scrollTop: offset.top
 		}, 400);
 	});
-	
 	/*약관동의*/
 	$(".credit_box_btn").click(function () {
 		var _self	= this;
-
 //alert(		$(_self).attr("agrBtn")	);
-
 		$("div [agrLt]").each(function(idx, obj) {
-
 			if( _self == $("div [agrBtn]").get(idx) && $(obj).hasClass("on") == false) {
 				$('.credit_box_btn').eq(idx).addClass('on');
 				$(obj).addClass("on").slideDown(300);
-				
 			} else {
 				$('.credit_box_btn').eq(idx).removeClass('on');			
 				$(obj).removeClass("on").slideUp(300);				

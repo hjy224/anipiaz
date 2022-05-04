@@ -542,6 +542,27 @@ $(document).ready(function () {
 		$(".seat_num .seat_btn_blue span").css("display", "block");
 	});
 
+    /* 헤더 승객 슬라이더*/
+    $(".select_group_btn>a").click(function(){
+        var submenu = $(this).next("ul");
+         if( submenu.is(":visible") ){
+            submenu.slideUp(300);
+            $(".select_group_btn").removeClass('active');
+        }else{
+            submenu.slideDown(300);
+            $(".select_group_btn").addClass('active');
+        }
+    });
+    /* 특정위치로 스크롤 이동*/
+
+    $(".planscroll").click(function (event) {
+        event.preventDefault();
+        $('.box1_right').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 500);
+
+    });
+
 });
 
 // 레이어팝업
