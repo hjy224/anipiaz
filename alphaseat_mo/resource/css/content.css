@@ -490,9 +490,9 @@ html, body{
 }
 .seat_sheet{
 	position: relative;
-	transition: all 2.5s ease;
-	-webkit-transition: all 2.5s ease;
-	-moz-transition: all 2.5s ease;
+	transition: all 1s ease-out ;
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out ;
 	top: -490px;
 }
 
@@ -1256,9 +1256,7 @@ html, body{
 
 /*항공기 이미지 작게 */
 .scale_s{
-	transform: translate(-500px,0);
 	transform: scale(0.3);
-	-webkit-transform: translate(-500px,0);
 	-webkit-transform: scale(0.3);
 }
 
@@ -1824,6 +1822,11 @@ html, body{
 .baggage .baggage_way .airname.jeju {
 	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
 }
+.baggage .baggage_way .airname.airbusan{	
+	background: url(../img/common/symbol_flight-way_bx_dom@3x.png) no-repeat center /80px 25px;
+	height: 25px;
+}
+
 
 .baggage_group {
 	padding: 5px 20px;
@@ -2652,7 +2655,11 @@ input[id="food_item_btn2"]:checked + label i{
 	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
 	height: 24px;
 }
-
+.pay_way .airname.airbusan{	
+	background: url(../img/common/symbol_flight-way_bx_dom@3x.png) no-repeat left /80px 25px;
+	padding-left: 80px;
+	height: 25px;
+}
 
 
 .ags-summary .pay_txt_b{

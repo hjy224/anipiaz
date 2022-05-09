@@ -9739,13 +9739,11 @@ padding-top: 20px;
 
 /* 부가서비스 신청 > 구매완료 */
 [data-page-id='anc_pay-complete'] .thanks-message {
-  background-image: url("../img/common/bg_pay-complete.png");
-  background-repeat: no-repeat;
-  background-size: 197px 121px;
   margin: -3.84615rem 0 0;
-  padding: 3.84615rem 0 0;
-  background-position: right 200px top 0;
+  padding: 5.84615rem 0 0;
   text-align: center;
+  background: url(../img/common/bg_pay-complete_v2.png) no-repeat left 800px top 10px ;
+  background-size: 200px 200px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
@@ -9852,6 +9850,7 @@ padding-top: 20px;
   display: inline-block;
   width: 6.30769rem;
   letter-spacing: 0;
+  font-family: 'NotoSansB'
 }
 
 [data-page-id='anc_pay-complete'] .receipt-wrap table thead th {
@@ -9907,6 +9906,8 @@ padding-top: 20px;
 
 [data-page-id='anc_pay-complete'] .receipt-wrap table tbody th.passenger-name {
   letter-spacing: -0.03em;
+  vertical-align: top;
+  padding-top: 25px;
 }
 
 [data-page-id='anc_pay-complete'] .receipt-wrap table dd.pay {
@@ -9933,7 +9934,7 @@ padding-top: 20px;
 }
 
 [data-page-id='anc_pay-complete'] .receipt-wrap table dl:not([class^='bundle-type']):not(.ticket-info) dt {
-  
+  text-align: right;
 }
 
 [data-page-id='anc_pay-complete'] .receipt-wrap table dl:not([class^='bundle-type']):not(.ticket-info) dd {
@@ -21704,7 +21705,23 @@ margin-right: 11px;
   font-size: 14px;
 }
 
+.chair_s{
+	text-align: center;
+	clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
+	background-color: #F5581A;
+	font-size: 12px;
+	color: #fff;
+	line-height: 22px;
+	margin-right: 5px;
+	font-family: 'NotoSansL';
+	letter-spacing: 0.5px;
+  padding: 3px 5px;
+}
+.jagan{
 
+  padding: 0 0 10px 0;
+
+}
 
 /* 오는편쪽 탭-------------------------------------------------*/
 

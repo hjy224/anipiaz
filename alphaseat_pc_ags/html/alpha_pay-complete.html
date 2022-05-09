@@ -30,13 +30,15 @@
 
             <div class="content-wrap">
                 <h2 class="sr-only">컨텐츠 본문</h2>
-
+                
                 <div class="thanks-message">
                     <h3 class="title">좌석지정 구매가 정삭적으로 완료되었습니다.</h3>
                     <p class="description">일행과 편안한 여행되세요! 혹시, 더 필요한 부가서비스가 있으신가요?</p>
                     <p class="notification-text" style="display: none;">항공권을 취소하는 경우 부가서비스는 자동취소 되지 않으니 여행사 마이페이지를 통해서 반드시 직접 취소 바랍니다. 취소 시에는
                         건당 1,000원의 시스템사용료가 부가됩니다.</p><!-- 웹투어 제주항공 부가서비스 결제 시에만 표시, 201229 추가 -->
-                </div>
+                        <div class="thanks-message-bg"></div>
+                    </div>
+                
                 <div class="process-btn-wrap">             
                     <a href="#none" target="_self" class="btn_to-bagfood">
                         <div class="pay_bagmeat_txt1">사전 기내식 / 수하물</div>
@@ -64,7 +66,7 @@
                             </colgroup>
                             <tfoot>
                                 <tr>
-                                    <td colspan="4"><i class="ico_tag">결제금액</i> <span class="digits">999000</span></td>
+                                    <td colspan="4"><i class="ico_tag">가는편 결제금액</i> <span class="digits">999000</span></td>
                                 </tr>
                             </tfoot>
                             <thead>
@@ -80,31 +82,37 @@
                                     <th scope="rowgroup" class="passenger-name">사전좌석</th>
                                     <td colspan="3">
                                         <dl>
-                                            <dt>사전 좌석</dt>
-                                            <dd class="pay">E4(A구역)</dd>
+                                            <dt>
+                                                <span>4</span>인 그룹석
+                                            </dt>
+                                            <dd class="pay">
+                                                <div class="jagan">
+                                                    <span class="chair_s">2E</span>
+                                                    <span>LEE J K</span>
+                                                </div>
+                                                <div class="jagan">
+                                                    <span class="chair_s">2E</span>
+                                                    <span>LEE J K</span>
+                                                </div>
+                                                <div class="jagan">
+                                                    <span class="chair_s">2E</span>
+                                                    <span>LEE J K</span>
+                                                </div>
+                                                <div class="jagan">
+                                                    <span class="chair_s">2E</span>
+                                                    <span>LEE J K</span>
+                                                </div>
+                                            </dd>
+                                            
+
                                             <dd class="price" aria-label="사전 좌석 금액"><span class="digits">99000</span>
                                             </dd>
                                             <dd class="status">결제완료</dd>
-                                            <dt>수하물</dt>
-                                            <dd class="pay">30kg</dd>
-                                            <dd class="price" aria-label="수하물 금액"><span class="digits">99000</span></dd>
-                                            <dd class="status">결제완료</dd>
-                                            <dt>기내식</dt>
-                                            <dd class="pay">돌솥비빔밥</dd>
-                                            <dd class="price" aria-label="기내식 금액"><span class="digits">99000</span></dd>
-                                            <dd class="status">결제완료</dd>
-                                            <dt>렌터카</dt>
-                                            <dd class="pay">
-                                                베뉴(휘)(제주OK렌터카)
-                                                <p class="car-plan-detail">2020.11.11(월) 09:00~11.12(화) 19:00 34시간 /
-                                                    완전자차 포함</p>
-                                            </dd>
-                                            <dd class="price" aria-label="기내식 금액"><span class="digits">99000</span></dd>
-                                            <dd class="status">결제완료</dd>
+                                            
                                         </dl>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr style="display: none;">
                                     <th scope="rowgroup" class="passenger-name">베더리</th>
                                     <td colspan="3">
                                         <dl class="bundle-type2">
@@ -125,7 +133,7 @@
                                         </dl>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr style="display: none;">
                                     <th scope="rowgroup" class="passenger-name">손승완</th>
                                     <td colspan="3">
                                         <dl>
@@ -159,7 +167,7 @@
                                     </td>
                                 </tr>
                                 <!-- 번들을 선택한 고객일 때 -->
-                                <tr>
+                                <tr style="display: none;">
                                     <!-- 분기 1 : 국제선일 때 -->
                                     <!--<th scope="rowgroup" class="passenger-name">Kim, Taehyeong</th>-->
                                     <!-- 분기 2 : 국내선일 때 -->
@@ -194,8 +202,8 @@
                         <!-- 분기 1 : 국제선일 때 -->
                         <!--<h4 class="receipt-title">하네다<i class="ico_airplane">&rarr;</i>인천 <i class="ico_tag">TW703</i></h4>-->
                         <!-- 분기 2 : 국내선일 때 -->
-                        <h4 class="receipt-title">제주<i class="ico_airplane">&rarr;</i>서울(김포) <i
-                                class="ico_tag">TW703</i></h4>
+                        <h4 class="receipt-title">제주<i class="ico_airplane">&rarr;</i>서울(김포) 
+                            <i class="ico_tag" style="display: none;">TW703</i></h4>
                         <table>
                             <colgroup>
                                 <col>
@@ -208,20 +216,54 @@
                                     <!-- 분기 1 : 국제선일 때 -->
                                     <!--<td colspan="4"><i class="ico_tag">오는 편 결제금액</i> <span class="digits">999000</span></td>-->
                                     <!-- 분기 2 : 국내선일 때 -->
-                                    <td colspan="4"><i class="ico_tag">결제금액</i> <span class="digits">999000</span></td>
+                                    <td colspan="4"><i class="ico_tag">오는편 결제금액</i> <span class="digits">888000</span></td>
                                 </tr>
                             </tfoot>
                             <thead>
                                 <tr>
-                                    <th scope="col">탑승객명</th>
-                                    <th scope="col">구매 항목</th>
+                                    <th scope="col">부가서비스</th>
+                                    <th scope="col">구매 내역</th>
                                     <th scope="col">결제금액</th>
                                     <th scope="col">결제상태</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- 번들을 선택하지 않은 고객일 때 -->
                                 <tr>
+                                    <th scope="rowgroup" class="passenger-name">사전좌석</th>
+                                    <td colspan="3">
+                                        <dl>
+                                            <dt>
+                                                <span>4</span>인 그룹석
+                                            </dt>
+                                            <dd class="pay">
+                                                <div class="jagan">
+                                                    <span class="chair_s">2E</span>
+                                                    <span>LEE J K</span>
+                                                </div>
+                                                <div class="jagan">
+                                                    <span class="chair_s">2E</span>
+                                                    <span>LEE J K</span>
+                                                </div>
+                                                <div class="jagan">
+                                                    <span class="chair_s">2E</span>
+                                                    <span>LEE J K</span>
+                                                </div>
+                                                <div class="jagan">
+                                                    <span class="chair_s">2E</span>
+                                                    <span>LEE J K</span>
+                                                </div>
+                                            </dd>
+                                            
+
+                                            <dd class="price" aria-label="사전 좌석 금액"><span class="digits">99000</span>
+                                            </dd>
+                                            <dd class="status">결제완료</dd>
+                                            
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <!-- 번들을 선택하지 않은 고객일 때 -->
+                                <tr style="display: none;">
                                     <!-- 분기 1 : 국제선일 때 -->
                                     <!--<th scope="rowgroup" class="passenger-name">Bae, Sungjune</th>-->
                                     <!-- 분기 2 : 국내선일 때 -->
@@ -250,7 +292,7 @@
                                     </td>
                                 </tr>
                                 <!-- 번들을 선택한 고객일 때 -->
-                                <tr>
+                                <tr style="display: none;">
                                     <!-- 분기 1 : 국제선일 때 -->
                                     <!--<th scope="rowgroup" class="passenger-name">Son, Seungwan</th>-->
                                     <!-- 분기 2 : 국내선일 때 -->
@@ -275,7 +317,7 @@
                                     </td>
                                 </tr>
                                 <!-- 번들을 선택하지 않은 고객일 때 -->
-                                <tr>
+                                <tr style="display: none;">
                                     <!-- 분기 1 : 국제선일 때 -->
                                     <!--<th scope="rowgroup" class="passenger-name">Kim, Taehyeong</th>-->
                                     <!-- 분기 2 : 국내선일 때 -->
@@ -303,7 +345,7 @@
                     </div>
 
                     <!-- 국제선일 때 -->
-                    <div class="total-wrap">
+                    <div class="total-wrap" style="display: none;">
                         <h4 class="receipt-title">TOTAL</h4>
                         <dl>
                             <dt class="price">가는 편 결제금액</dt>
