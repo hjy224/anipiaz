@@ -484,12 +484,13 @@ html, body{
 #ags-wrap-back{
 	display:none;
 }
-.seat_sheet{
+.seat_sheet {
 	position: relative;
-	transition: 2s ease-in;
-    -webkit-transition: 2s ease-in;
-    -moz-transition: 2s ease-in;
+	transition: all 2s ease;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
 	top: -490px;
+	transform: rotate(.001deg);
 }
 
 #bx_40 .seat_sheet{
@@ -497,9 +498,9 @@ html, body{
 }
 
 #bx_40 .seat_sheet{
-	transition: all 2s linear;
-    -webkit-transition: all 2s linear;
-    -moz-transition: all 2s linear;
+	transition: all 2s ease;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
 }
 
 #bx_40 .seat_sheet.nodelay{
@@ -655,9 +656,6 @@ html, body{
 	position:absolute;
 	width: 294px;
 	height: 675px;
-	transition: 0.3s all;
-	-webkit-transition: 0.3s all;
-	-moz-transition: 0.3s all;
 	top: 10px;
 	z-index: -1;
 }
@@ -1178,9 +1176,6 @@ html, body{
 	line-height: 38px;
 	letter-spacing: -0.6px;
 	display: inline-block;
-	transition: 0.2s all;
-	-webkit-transition: 0.2s all;
-	-moz-transition: 0.2s all;
 	
 }
 .seat_btn.disabled_seat {
