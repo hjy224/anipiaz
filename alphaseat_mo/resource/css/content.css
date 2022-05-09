@@ -102,10 +102,6 @@ html, body{
 	-webkit-transition: 0.3s ease;
 	-moz-transition: 0.3s ease;
 
-	transform: rotate(.001deg); 
-	-webkit-transform: rotate(.001deg); 
-	-moz-transform: rotate(.001deg); 
-
 	opacity: 100;
 	visibility: hidden;
 	overflow: auto;
@@ -490,9 +486,28 @@ html, body{
 }
 .seat_sheet{
 	position: relative;
-
+	transition: all 1.2s ease-in;
+    -webkit-transition: all 1.2s ease-in;
+    -moz-transition: all 1.2s ease-in;
 	top: -490px;
 }
+
+#bx_40 .seat_sheet{
+	top: -620px;
+}
+
+#bx_40 .seat_sheet{
+	transition: all 1.2s ease-in;
+    -webkit-transition: all 1.2s ease-in;
+    -moz-transition: all 1.2s ease-in;
+}
+
+#bx_40 .seat_sheet.nodelay{
+	transition: all 0s ease;
+	-webkit-transition: all 0s ease;
+	-moz-transition: all 0s ease;
+}
+
 
 /*오른쪽박스*/
 .contents .right_box .front_box{
@@ -655,23 +670,6 @@ html, body{
 	background: url(../img/common/airplane_bgx5.png) no-repeat center / 234px 800px;
 	height: 800px;
 }
-
-#bx_40 .seat_sheet{
-	top: -620px;
-}
-
-#bx_40 .seat_sheet{
-	transition: all 2.5s ease;
-    -webkit-transition: all 2.5s ease;
-    -moz-transition: all 2.5s ease;
-}
-
-#bx_40 .seat_sheet.nodelay{
-	transition: all 0s ease;
-	-webkit-transition: all 0s ease;
-	-moz-transition: all 0s ease;
-}
-
 
 /* 첫페이지 왼쪽 구입가격*/
 .seat_sheet_price {
