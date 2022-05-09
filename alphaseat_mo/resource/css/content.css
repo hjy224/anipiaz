@@ -490,9 +490,10 @@ html, body{
 }
 .seat_sheet{
 	position: relative;
-	transition: all 1s ease-out ;
-	-webkit-transition: all 1s ease-out;
-	-moz-transition: all 1s ease-out ;
+	transition: all 2.5s ease;
+	-webkit-transition: all 2.5s ease;
+	-moz-transition: all 2.5s ease ;
+
 	top: -490px;
 }
 
