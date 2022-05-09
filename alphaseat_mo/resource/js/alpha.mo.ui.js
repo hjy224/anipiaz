@@ -310,7 +310,7 @@ $(document).ready(function () {
 
 	/*스케일*/
 	$(document).on("click",".trigger_1", function () {
-		console.log("2222");
+		console.log("trigger_1");
 		$('.scale_type_1').toggleClass('scale');
 		$('.scale_type_1').css('top', '0px');
 		$('.contents').css('overflow-y', 'scroll');
@@ -341,6 +341,7 @@ $(document).ready(function () {
 		return false;
 	});
 	$(document).on("click",".trigger_2", function () {
+		console.log("trigger_2");
 		$('.scale_type_2').toggleClass('scale');
 		$('.scale_type_2').css('top', '0px');
 		$('.contents').css('overflow-y', 'scroll');

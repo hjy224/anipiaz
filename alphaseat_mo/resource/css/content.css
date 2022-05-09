@@ -453,9 +453,6 @@ html, body{
 	transition-duration: 0.3s;
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
-	transform: rotate(.001deg); 
-	-webkit-transform: rotate(.001deg); 
-	-moz-transform: rotate(.001deg); 
 }
 .separate200{
 	display: flex;
@@ -486,21 +483,14 @@ html, body{
 }
 .seat_sheet {
 	position: relative;
-	transition: all 10s ease;
-	-webkit-transition: all 10s ease;
-	-moz-transition: all 10s ease;
+	transition: all 2.5s ease;
+	-webkit-transition: all 2.5s ease;
+	-moz-transition: all 2.5s ease;
 	top: -490px;
-	transform: rotate(.001deg);
 }
 
 #bx_40 .seat_sheet{
 	top: -620px;
-}
-
-#bx_40 .seat_sheet{
-	transition: all 2s ease;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
 }
 
 #bx_40 .seat_sheet.nodelay{
@@ -1247,13 +1237,17 @@ html, body{
 
 /*항공기 이미지 작게 */
 .scale_s{
-	transform: scale(0.3);
-	-webkit-transform: scale(0.3);
+	
+	will-change: transform;
+	transform: scale(0.3) rotate(.001deg);
+	-webkit-transform: scale(0.3) rotate(.001deg);
+
 }
 
 /*항공기 이미지 크게 */
 .scale{
-	transform: none;
+	transform: scale(1) rotate(.001deg);
+	
 }
 
 .page-wrapper .btn {
