@@ -444,6 +444,9 @@
 }
 
 
+#popup1 .wrapper_popup.type3 {
+  border-radius: 5px;
+}
 
 
 #popup1 .smile_boximg ul {
@@ -536,14 +539,16 @@
   margin-left: 2px;
 }
 
-
+#popup10 {
+  position: absolute;
+}
 
 #popup10 .dimmed{
-  width: 860px;
-  height: 360px;
-  min-height: 860px;
-  left: 150px;
-  top: 200px;
+  width: 900px;
+  height: 800px;
+  min-height: 840px;
+  left: 0px;
+  top: 100px;
 }
 
 #popup10 .wrapper_popup {

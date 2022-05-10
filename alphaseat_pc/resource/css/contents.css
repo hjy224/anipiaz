@@ -2128,7 +2128,7 @@ html.hidden {
   
   color: #ffffff;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   display: inline-block;
   margin-left: 0.61538rem;
@@ -2509,7 +2509,7 @@ html.hidden {
   
   color: #111;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
 }
 
@@ -2606,7 +2606,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   height: 62px;
   text-align: center;
@@ -3776,7 +3776,7 @@ body {
   
   color: #aaa;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   display: inline-block;
   padding: 0.57143em;
@@ -3909,7 +3909,7 @@ body {
   
   color: #000;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   text-transform: uppercase;
 }
@@ -4754,7 +4754,7 @@ body {
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -6089,7 +6089,7 @@ body {
 [data-page-id='anc_main'] .anc-service-wrap {
   /* 좌측 승객선택 / 우측 부가서비스 선택 유형 */
   
-padding-top: 7.69231rem;
+padding-top: 0px;
 
 }
 
@@ -6621,7 +6621,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   text-transform: uppercase;
   height: 1.125em;
@@ -6633,7 +6633,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   padding: 0 0 0 0.45455em;
   transition-duration: 0.5s;
@@ -7061,7 +7061,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   padding: 1.42857em 0 0.85714em;
   text-transform: uppercase;
@@ -8138,7 +8138,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   display: table-cell;
   text-align: center;
@@ -8174,7 +8174,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   position: absolute;
   left: 50%;
@@ -8199,7 +8199,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   position: absolute;
   left: 50%;
@@ -8233,7 +8233,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
 }
 
@@ -8242,7 +8242,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: right;
 }
@@ -8273,7 +8273,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   overflow: hidden;
   position: relative;
@@ -8803,7 +8803,7 @@ padding-top: 20px;
 [data-page-id='anc_main'] .anc_baggage .baggage-plan li dl .sale + dd {
   font-size: 0.76923rem;
   
-  color: #f5581a;
+  color: #fee700;
   
   font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;
 }
@@ -10377,7 +10377,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   text-transform: uppercase;
 }
@@ -10587,7 +10587,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: left;
   padding: 0 0.38462rem;
@@ -11272,7 +11272,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: left;
   padding: 0 0.38462rem;
@@ -11384,7 +11384,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -12107,7 +12107,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: left;
   padding: 0 0.38462rem;
@@ -12974,7 +12974,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   padding-right: 1.23077rem;
 }
@@ -13013,7 +13013,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -13669,7 +13669,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -13744,7 +13744,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: right;
   padding: 0 1.23077rem;
@@ -13928,7 +13928,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -14003,7 +14003,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: right;
   padding: 0 1.23077rem;
@@ -14387,7 +14387,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   width: 5.38462rem;
   height: 1.23077rem;
@@ -14479,7 +14479,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   width: 5.38462rem;
   text-align: right;
@@ -14901,7 +14901,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   text-align: right;
 }
@@ -15080,7 +15080,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -15155,7 +15155,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: right;
   padding: 0 1.23077rem;
@@ -17609,7 +17609,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: 'NotoSansR', Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   padding-right: 1.23077rem;
   text-align: right;
@@ -21565,7 +21565,7 @@ margin-right: 11px;
 	background-color: #F5581A;
 	font-size: 12px;
 	color: #fff;
-	line-height: 22px;
+	line-height: 17px;
 	width: 24px;
 	height: 22px;
 	margin-right: 10px;
@@ -21724,7 +21724,6 @@ margin-right: 11px;
   padding: 3px 5px;
 }
 .jagan{
-
   padding: 0 0 10px 0;
 
 }
@@ -21771,6 +21770,49 @@ margin-right: 11px;
 
 .box2_left .seat_sheet li a.seat_active::after{	
 	content: "";
+}
+
+
+
+[data-page-id='anc_main'] .flight-way-selector li:nth-child(1).active .baggage_ico{
+  background: url(../img/common/ico_baggage_bb.png) no-repeat left / 17px 27px;
+  width: 17px;
+  height: 27px;
+  padding: 5px 0 5px 27px;
+  color: #222;
+}
+
+[data-page-id='anc_main'] .flight-way-selector li:nth-child(1) .baggage_ico{
+  background: url(../img/common/ico_baggage_g.png) no-repeat left / 17px 27px;
+  padding: 5px 0 5px 27px;
+}
+
+[data-page-id='anc_main'] .flight-way-selector li:nth-child(2).active .food_ico{
+  background: url(../img/common/ico_food_bb.png) no-repeat left / 16px 20px;
+  width: 16px;
+  height: 20px;
+  padding: 5px 0 5px 27px;
+  color: #222;
+}
+
+[data-page-id='anc_main'] .flight-way-selector li:nth-child(2) .food_ico{
+  background: url(../img/common/ico_food_g.png) no-repeat left / 16px 20px;
+  padding: 5px 0 5px 27px;
+}
+
+
+[data-page-id='anc_main'] .anc-service-wrap .anc-service.new_alpha {
+  border: none;
+}
+
+[data-page-id='anc_main'] .anc-service-wrap .anc-service .tab-panel {
+  border: 1px solid #f0f0f0;
+  margin-bottom: 10px;
+}
+
+[data-page-id='anc_main'] .anc-service + .notification-wrap.new_gankuk{
+  padding-top: 50px;
+
 }
 
 /*-------------------------------------------------*/
