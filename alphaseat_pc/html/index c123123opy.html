@@ -863,8 +863,15 @@
                     </header>
 
                     <div class="anc-service">
+                        <div class="tabs">
+                            <h4 class="sr-only">구간 선택</h4>
+                            <ul role="tablist">
+                                <li role="tab" aria-controls="tab-panel2-1">가는 편</li>
+                                <li role="tab" aria-controls="tab-panel2-2">오는 편</li>
+                            </ul>
+                        </div>
                         <div class="tab-panels">
-                            <div class="tab-panel" >
+                            <div id="tab-panel2-1" class="tab-panel" role="tabpanel">
                                 <h5 class="sr-only">가는 편</h5>
                                 <!-- 분기 1 : 제주항공 / 수하물 서비스를 제공할 수 있을 때 -->
                                 <div class="scroll-wrap" data-scrollbar="true">
@@ -1028,7 +1035,7 @@
                                 </div>
                             </div>
 
-                            <div class="tab-panel">
+                            <div id="tab-panel2-2" class="tab-panel" role="tabpanel">
                                 <h5 class="sr-only">오는 편</h5>
 
                                 <!-- 분기 1 : 티웨이항공 / 수하물 서비스를 제공할 수 있을 때 -->

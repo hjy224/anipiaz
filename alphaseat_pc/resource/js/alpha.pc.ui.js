@@ -563,6 +563,10 @@ $(document).ready(function () {
 
     });
 
+    $(document).on("click", ".recom_num a", function () {
+		$(this).addClass("active");
+	});
+
 });
 
 // 레이어팝업
