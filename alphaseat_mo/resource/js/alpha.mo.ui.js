@@ -295,6 +295,7 @@ $(document).ready(function () {
 		$("body").css("overflow", "");
 	});
 	
+	
 	/*상단 내려오는 슬라이드*/
 	$('.select_group_btn').click(function () {
 		if ($('.passenger').css("height") == "55px") {
@@ -405,6 +406,23 @@ $(document).ready(function () {
 
 		});
 	});
+
+	$(".block_group_btn").click(function () {
+		var _self	= this;
+//alert(		$(_self).attr("agrBtn")	);
+		$("div [agrLt]").each(function(idx, obj) {
+			if( _self == $("div [agrBtn]").get(idx) && $(obj).hasClass("on") == false) {
+				$('.block_group_btn').eq(idx).addClass('on');
+				$(obj).addClass("on").slideDown(300);
+			} else {
+				$('.block_group_btn').eq(idx).removeClass('on');			
+				$(obj).removeClass("on").slideUp(300);				
+
+			}
+
+		});
+	});
+	
 
 
 });

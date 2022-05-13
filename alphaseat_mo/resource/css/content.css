@@ -44,7 +44,10 @@ html, body{
 .page-blue {
 	color: #00aae7;
 }
-
+.ags-wrap .ags-header .page-name.page-black {
+	color: #222;
+	font-family: 'NotoSansR';
+}
 
 /*상단 AI 제목 결과쪽*/
 .ags-wrap .ags-header .page-name-pay {
@@ -389,6 +392,8 @@ html, body{
 .select_group a span{
 	padding-left: 16px;
 }
+
+
 .passenger{
 	overflow: auto;
 	position: fixed;
@@ -401,6 +406,12 @@ html, body{
 	align-items: center;
 	padding-left: 10px;
 }
+.passenger.blockseat{
+	padding-left: 0px;
+	background-color: #fafafa;
+	padding: 100px;
+	z-index: 1;
+}
 .passenger dl{
 	display: flex;
 	font-size: 14px;
@@ -411,6 +422,19 @@ html, body{
 	padding-top: 5px;
 	color: #ff6600;
 }
+.passdiv{
+
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+
+.block_img_dis{
+	background: url(../img/common/block_01_s.png) no-repeat center / 70px 20px;
+	width: 70px;
+	height: 20px;
+}
+
+
 
 /*가는여정과 비행시간*/
 .select_txt{
@@ -428,7 +452,26 @@ html, body{
 .select_txt span:nth-child(2){
 	background: url(../img/common/ico_airplane.png) no-repeat right 3px top 0px / 15px 15px;
 	padding: 0 27px 0px 0px;
+	
 }
+
+.select_txt.blockseat{
+	padding: 5px 11px 0 11px;
+	font-size: 11px;
+	border-radius: 0px;
+	border:0px;
+}
+
+.select_txt.blockseat span:nth-child(1){
+	background: url(../img/common/ico_airplane.png) no-repeat right 3.5px top 0px / 13px 13px;
+	padding: 0 22px 0px 0px;
+}
+
+.select_txt.blockseat span:nth-child(2){
+	background: inherit;
+	padding-right: 8px;
+}
+
 
 /*가는편 오는편 */
 .ags-wrap .btn_come_a {
@@ -460,6 +503,10 @@ html, body{
 	width: 200%;
 }
 
+.contents.switchtop{
+	padding-top: 100px;
+}
+
 /*.ovrFlw	{overflow: auto;} */
 
 .contents.active{
@@ -483,11 +530,18 @@ html, body{
 }
 .seat_sheet {
 	position: relative;
-	transition: all 2.5s ease;
-	-webkit-transition: all 2.5s ease;
-	-moz-transition: all 2.5s ease;
+	transition: all 2.0s ease;
+	-webkit-transition: all 2.0s ease;
+	-moz-transition: all 2.0s ease;
 	top: -490px;
 }
+
+.seat_sheet.block_type1 {
+	position: relative;
+	top: 0px;
+}
+
+
 
 #bx_40 .seat_sheet{
 	top: -620px;
@@ -2451,7 +2505,7 @@ input[id="food_item_btn2"]:checked + label i{
 }
 .ags-summary .btf_a {
 	width: 50%;
-	padding-left: 30px;
+	padding-left: 15px;
 }
 
 .ags-summary .btn_footer_open {
@@ -2564,6 +2618,28 @@ input[id="food_item_btn2"]:checked + label i{
 .ags-summary .btf_b_number:before {
 	content: "￦";
 	font-size: 14px;
+	color: #fe6845;
+}
+
+
+
+.ags-summary .btf_b_time {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 180px;
+	padding: 15px 15px ;
+	border-radius: 5px;
+	color: #222;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+}
+
+.ags-summary .btf_b_time .btf_b_time_r {
+	font-size: 24px;
+	font-family: 'Labdigital';
+	margin-left: 10px;	
 	color: #fe6845;
 }
 
@@ -3541,6 +3617,27 @@ input[id="check2"]:checked + label i{
 }
 @media (max-width: 321px) {
 
+	.btf_a_people{
+		font-size: 12px;
+	}
+	.ags-wrap .ags-header .gnb-wrap{
+		left: 10px;
+	}
+	.ags-wrap .ags-header .gnb-wrap .btn_gnb{
+
+	}
+	.ags-wrap .ags-header .page-name.page-black {
+		font-size: 12px;
+		align-items: center;
+		position: absolute;
+		top: 18px;
+		display: flex;
+		align-items: center;
+	}
+	.ags-wrap .ags-header .page-name.page-black img {
+		width: 16px;
+		height: 15px;
+	}
 	.pay_group{
 		height: 120px;
 	}
