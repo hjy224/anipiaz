@@ -376,13 +376,6 @@ html, body{
 
 }
 
-.select_box.blockseat{
-	-webkit-box-shadow: inherit;
-	-moz-box-shadow: inherit;
-	box-shadow: inherit;
-
-}
-
 .select_group{
 	font-family: inherit;
 	-webkit-appearance: none;
@@ -415,10 +408,6 @@ html, body{
 	height: 22px;
 	
 	
-}
-.block_box_passenger{
-}
-.block_pass_q{
 }
 .block_pass_z{
 	padding: 20px 15px;
@@ -471,19 +460,22 @@ html, body{
 	overflow: auto;
 	position: fixed;
 	width: 100%;
-	left: 0;
-	height: 0;
+	left: 0px;
+	height: 0px;
 	margin-top: 11.8px;
 	background-color: #fafafa;
 	display: flex;
 	align-items: center;
 	padding-left: 10px;
 }
+
 .passenger.blockseat{
 	padding-left: 0px;
 	background-color: #fafafa;
 	padding: 50px;
 	z-index: 1;
+	margin-top: 141.8px;
+	
 }
 .passenger dl{
 	display: flex;
@@ -496,7 +488,7 @@ html, body{
 	color: #ff6600;
 }
 
-
+/*블락싯 이미지*/
 
 
 /*가는여정과 비행시간*/
