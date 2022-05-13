@@ -231,7 +231,15 @@ $(document).ready(function () {
 	});
 
 
+	
+	/*블락싯 슬라이드 go*/
+	$(document).on("click", ".block_btn_go", function () {
+		$(this).addClass("block_active");
+	});
 
+	$(document).on("click", ".block_active", function () {
+		$(this).removeClass("block_active");
+	});
 
 
 	/*좌석선택 오렌지*/

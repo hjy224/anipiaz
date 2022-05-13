@@ -376,6 +376,13 @@ html, body{
 
 }
 
+.select_box{
+	-webkit-box-shadow: inherit;
+	-moz-box-shadow: inherit;
+	box-shadow: inherit;
+
+}
+
 .select_group{
 	font-family: inherit;
 	-webkit-appearance: none;
@@ -446,14 +453,19 @@ html, body{
 }
 
 
-
-
 .block_btn_go{
 	background: url(../img/common/go_btn.png) no-repeat center / 30px 30px;
 	width: 30px;
 	height: 30px;
-	
 }
+
+
+.block_btn_go.block_active{
+	background: url(../img/common/go_check.png) no-repeat center / 30px 30px;
+	width: 30px;
+	height: 30px;
+}
+
 
 
 .passenger{
@@ -559,7 +571,7 @@ html, body{
 }
 
 .contents.switchtop{
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 /*.ovrFlw	{overflow: auto;} */
@@ -594,6 +606,7 @@ html, body{
 .seat_sheet.block_type1 {
 	position: relative;
 	top: 0px;
+	transition: inherit;
 }
 
 
@@ -660,6 +673,53 @@ html, body{
   #bx_40 .finger{
 	  top:340px;
   }
+
+
+
+
+.blockseat_img1{
+	position:absolute;
+	top: 214px;
+	left: 0;
+	width: 121px;
+	height: 35px;
+	background: url(../img/common/block_01_ss.png) no-repeat center / 122px 36px;
+	z-index:20;
+	text-indent: -9999em;
+	color: #fff;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+	display: inline-block;
+} 
+.blockseat_img2{
+	position:absolute;
+	top: 214px;
+	left: 175px;
+	width: 121px;
+	height: 35px;
+	background: url(../img/common/block_01_ss.png) no-repeat center / 122px 36px;
+	z-index:20;
+	text-indent: -9999em;
+	color: #fff;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+	display: inline-block;
+}
+
+.blockseat_img3{
+	position:absolute;
+	top: 264px;
+	left: 175px;
+	width: 121px;
+	height: 35px;
+	background: url(../img/common/block_02_s.png) no-repeat center / 122px 36px;
+	z-index:20;
+	text-indent: -9999em;
+	color: #fff;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+	display: inline-block;
+}
 
 
 /* popup_price */
