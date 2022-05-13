@@ -375,6 +375,14 @@ html, body{
 	box-shadow: 0px 3px 4px 0px #bbb;
 
 }
+
+.select_box.blockseat{
+	-webkit-box-shadow: inherit;
+	-moz-box-shadow: inherit;
+	box-shadow: inherit;
+
+}
+
 .select_group{
 	font-family: inherit;
 	-webkit-appearance: none;
@@ -393,6 +401,49 @@ html, body{
 	padding-left: 16px;
 }
 
+/*블락박스*/
+.block_box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+}
+.block_box a{
+	background: url(../img/common/down_arrow.png) no-repeat center / 22px 22px;
+	width: 22px;
+	height: 22px;
+	
+	
+}
+.block_box_passenger{
+}
+.block_pass_z{
+	padding: 20px 15px;
+	border-bottom: 1px solid #eee;
+	align-items: center;
+	
+	display:inline-block;
+}
+.block_img_dis1{
+	background: url(../img/common/block_01_disa_s.png) no-repeat center / 70px 20px;
+	width: 70px;
+	height: 20px;
+	padding: 2px 38px;
+}
+.block_img_dis2{
+	background: url(../img/common/block_02_disa_s.png) no-repeat center / 70px 20px;
+	width: 70px;
+	height: 20px;
+	padding: 2px 38px;
+}
+.block_btn_go{
+	background: url(../img/common/go_btn.png) no-repeat center / 30px 30px;
+	width: 30px;
+	height: 30px;
+	
+}
+
 
 .passenger{
 	overflow: auto;
@@ -409,7 +460,7 @@ html, body{
 .passenger.blockseat{
 	padding-left: 0px;
 	background-color: #fafafa;
-	padding: 100px;
+	padding: 50px;
 	z-index: 1;
 }
 .passenger dl{
@@ -422,17 +473,7 @@ html, body{
 	padding-top: 5px;
 	color: #ff6600;
 }
-.passdiv{
 
-	width: 100%;
-	border-bottom: 1px solid #eee;
-}
-
-.block_img_dis{
-	background: url(../img/common/block_01_s.png) no-repeat center / 70px 20px;
-	width: 70px;
-	height: 20px;
-}
 
 
 
