@@ -418,25 +418,47 @@ html, body{
 }
 .block_box_passenger{
 }
+.block_pass_q{
+}
 .block_pass_z{
 	padding: 20px 15px;
 	border-bottom: 1px solid #eee;
 	align-items: center;
-	
-	display:inline-block;
+	display: flex;
+	justify-content: space-between;
 }
 .block_img_dis1{
 	background: url(../img/common/block_01_disa_s.png) no-repeat center / 70px 20px;
 	width: 70px;
 	height: 20px;
-	padding: 2px 38px;
+	margin-right: 3px;
+	display: inline-block;
 }
 .block_img_dis2{
 	background: url(../img/common/block_02_disa_s.png) no-repeat center / 70px 20px;
 	width: 70px;
 	height: 20px;
-	padding: 2px 38px;
+	display: inline-block;
+	margin-right: 3px;
 }
+.block_img_app1{
+	background: url(../img/common/block_01_s.png) no-repeat center / 70px 20px;
+	width: 70px;
+	height: 20px;
+	margin-right: 3px;
+	display: inline-block;
+}
+.block_img_app2{
+	background: url(../img/common/block_02_s.png) no-repeat center / 70px 20px;
+	width: 70px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+
+
+
 .block_btn_go{
 	background: url(../img/common/go_btn.png) no-repeat center / 30px 30px;
 	width: 30px;
