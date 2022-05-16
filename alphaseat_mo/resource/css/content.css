@@ -3774,14 +3774,20 @@ input[id="check2"]:checked + label i{
 
 /*---------------------------------------------------------------------------*/
 
-
 .blockseat_abc{
 	
-	position:relative;
-	width: 100%;	
+	max-width: 100%;
 	height: auto;
+}
+
+.blockseat_abc_bg{	
+	position:relative;
+	display: block;
+	width: 390px;
+	
+	height: 1000px;
 	background-size: cover;
-	background: url(../img/common/pop_11.jpg) no-repeat center;
+	background: url(../img/common/pop_11.jpg) no-repeat center / 390px;
 	
 
 }
