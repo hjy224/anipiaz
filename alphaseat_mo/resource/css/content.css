@@ -420,7 +420,6 @@ html, body{
 .block_tab {
 	display: flex;
 	justify-content: space-around;
-	border-bottom: 1px solid #ededed;
 	height: 50px;
 	
 	-webkit-box-shadow: 0px 12px 18px 1px #ccc;
@@ -437,12 +436,15 @@ html, body{
 	font-family: 'NotoSansM';
 	font-size: 14px;
 	border-right: 1px solid #ededed;
-
 }
+.block_tab_num:last-child{
+	border-right: none;
+}
+
 .block_tab_num.block_num_active {
 	color: #fff;
 	background-color: #f5581a;
-
+	border-right: none;
 }
 
 
@@ -811,7 +813,7 @@ html, body{
 .blockseat_img_none{
 	width: 119px;
 	height: 34px;
-	background: url(../img/common/block_00_none) no-repeat center / 119px 34px;
+	background: url(../img/common/block_00_none.png) no-repeat center / 119px 34px;
 	
 }
 
@@ -2024,6 +2026,20 @@ html, body{
 	font-family: 'NotoSansM';
 }
 
+.pay_pay_time{
+	position: absolute;
+	left: 0;
+	font-size: 11px;
+	font-family: 'NotoSansL';
+	padding-left: 20px;
+	line-height: 18px;
+}
+.pay_pay_time div{
+	font-size:16px;
+	font-family: 'Labdigital';
+}
+
+
 .pay_pay .pay_ment_btn1{
 	width: 30%;
     background: #F2F2F2;
@@ -2041,13 +2057,6 @@ html, body{
 }
 
 /*결제내역 블락싯*/
-
-.pay_pay.blockseat{
-
-
-
-}
-
 .block_sumtime{
 	position: absolute;
 	top: 10px;
@@ -2063,21 +2072,28 @@ html, body{
 	padding: 15px;
 	font-family: 'NotoSansM';
 }
-
 .pay_seat_block ul li{
 	display: flex;
 	justify-content: space-around;
-	padding: 10px;
-
 }
+.dummy_img_test{
+	background: url(../img/common/pop_14.jpg) no-repeat center / 281.25px 102px;
+	width: 100%;
+	height: 200px;
+	
+    overflow: hidden;
+    object-fit: cover;
+	display: inline-block;
+}
+
+
 .pay_block_num{
 	display: flex;
 	justify-content: space-around;
 	font-size: 12px;
-	color: #f5581a;
+	color: #666;
 	padding: 5px;
 }
-
 
 .pay_blockseat {
 	border-top: 1px solid #BBBBBB;
@@ -2121,6 +2137,24 @@ html, body{
 .pay_block_ex ul li div {
 	line-height: 20px;
 }
+
+.cp_block_top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 16px;
+	font-size: 17px;
+	color: #222;
+	border-bottom: 1px solid #eee;
+}
+
+.cp_block_top .btn_close_popup {
+    background: url(../img/common/ico_header-close@3x.png) no-repeat center /15px 15px;
+    width: 13px;
+    height: 13px;
+    text-indent: -999em;
+}
+
 
 /*수하물 baggage-----------------------------------------------------------*/
 
@@ -3307,6 +3341,13 @@ input[id="food_item_btn2"]:checked + label i{
 	border-bottom: 1px solid #eee;
 
 }
+
+.credit_agree_box_content .card_box1.dis{
+	border-bottom: none;
+	padding: 15px 16px 15px 16px;
+}
+
+
 .credit_agree_box_content .card_box1 div{
 	font-size: 11px;
 }
@@ -3392,6 +3433,11 @@ input[id="food_item_btn2"]:checked + label i{
 
 .credit_total .credit_total_box2{
 	color: #f5581a;
+}
+.credit_total.bord_bt{
+	border-bottom: 1px solid #eee;
+	padding: 15px 16px 15px 16px;
+
 }
 
 
@@ -3803,7 +3849,6 @@ input[id="check2"]:checked + label i{
 	margin-top: 30px;
 	padding: 20px 16px;
 	background: url(../img/common/bg_pay-complete.png) no-repeat right top  / 167px 91px ;
-	
 }
 .service_com div:nth-child(1){
 	font-size: 18px;
@@ -3820,6 +3865,50 @@ input[id="check2"]:checked + label i{
 	display: flex;
 
 }
+
+
+.cp_block_top2{
+	position: relative;
+	margin-top: 20px;
+	padding: 20px 16px;
+	background: url(../img/common/bg_pay-complete.png) no-repeat right top  / 167px 91px ;
+
+}
+.cp_block_aibg div:nth-child(1){
+	font-size: 15px;
+	line-height: 23px;
+}
+.cp_block_aibg div:nth-child(2){
+	padding-top: 5px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #555;
+	font-family: 'NotoSansR';
+}
+.cp_block_top2 img{
+	position: absolute;
+	width: 20px;
+	height:18px;
+	margin-top:2px;
+
+}
+.cp_block_aibg{
+	padding-left: 25px;
+}
+
+.cp_block_gray{
+	position: relative;
+	padding: 15px;
+	background-color: #eee;
+}
+
+.cp_block_list{
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+
 
 .service_com_btn .com_btn1{
 	padding: 15px 10px;
@@ -3880,6 +3969,8 @@ input[id="check2"]:checked + label i{
 		background: url(../img/common/pop_1.gif) no-repeat center / 200px 41px;
 	}
 }
+
+
 
 /*--index_v3-------------------------------------------------------------------------*/
 
@@ -3942,26 +4033,59 @@ input[id="check2"]:checked + label i{
 }
 
 
-/*---------------------------------------------------------------------------*/
+/*--index_v2-------------------------------------------------------------------------*/
 
-.alphaseat_img .abc2{
+
+.alphaseat_img{
+	position: relative;
+}
+.move_bar_img{
+	position: absolute;
+	background: url(../img/common/hd_move_01.gif) no-repeat center / 170px 22px;
+	width: 170px;
+	height: 22px;
+	top: 35.3%;
+	left: 29%;
+	z-index: 2;
+}
+
+
+
+.alphaseat_img .abc2 {
 	width: 100%;
-  }
-  .alphaseat_img .abc2 img{
+}
+
+.alphaseat_img .abc2 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-  }
-  .abc2{
+}
+
+.abc2 {
 	position: relative;
-  }
-  .abc2 a{
+}
+
+.abc2 a {
 	top: 42%;
 	left: 15%;
 	width: 70%;
 	height: 20%;
 	position: absolute;
-  }
+}
+
+
+@media (max-width: 321px) {
+	.move_bar_img{
+		position: absolute;
+		width: 170px;
+		height: 22px;
+		top: 35%;
+		left: 24%;
+		z-index: 2;
+	}
+	
+}
+
 
 
 /*크기에 따라서 화면구성*/
