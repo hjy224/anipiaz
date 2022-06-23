@@ -1046,11 +1046,11 @@ html, body{
 .seat_sheet_price_box[actype='738A'] .buy_num.jeju-2 {height: 60px;}
 .seat_sheet_price_box[actype='738B'] .buy_num.jeju-1 {height: 64px;}
 .seat_sheet_price_box[actype='738B'] .buy_num.jeju-2 {height: 45px;}
-.seat_sheet_price_box .buy_num.jeju-3 {height: 135px;}
+.seat_sheet_price_box .buy_num.jeju-3 {height: 88px;}
+.seat_sheet_price_box .buy_num.jeju-4 {height: 46px;}
 .seat_sheet_price_box .buy_num.jeju-6 {height: 36px;}
 .seat_sheet_price_box .buy_num.jeju-7 {height: 90px;}
 .seat_sheet_price_box .buy_num.jeju-8 {height: 149px;}
-
 .seat_sheet_recom_box[actype='738A'] .recom_num.jeju-1 a {
 	height: 31px;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 51% 100%, 51% 59%, 0 59%);
@@ -1080,22 +1080,28 @@ html, body{
 	top: 49.5px;
 }
 .seat_sheet_recom_box .recom_num.jeju-3 a {
-	height: 134px;
+	height: 87px;
 	position: absolute;
 	background: #000;
 	top: 109px;
+}
+.seat_sheet_recom_box .recom_num.jeju-4 a {
+	height: 45.5px;
+	position: absolute;
+	background: #000;
+	top: 197px;
 }
 .seat_sheet_recom_box .recom_num.jeju-6 a {
 	height: 34px;
 	position: absolute;
 	background: #000;
-	top: 244px;
+	top: 243.5px;
 }
 .seat_sheet_recom_box .recom_num.jeju-7 a {
     height: 90px;
     position: absolute;
     background: #000;
-    top: 279px;
+    top: 278.5px;
 }
 .seat_sheet_recom_box .recom_num.jeju-8 a {
     height: 148px;
@@ -2029,14 +2035,15 @@ html, body{
 .pay_pay_time{
 	position: absolute;
 	left: 0;
-	font-size: 11px;
+	font-size: 12px;
 	font-family: 'NotoSansL';
 	padding-left: 20px;
 	line-height: 18px;
 }
 .pay_pay_time div{
-	font-size:16px;
+	font-size:18px;
 	font-family: 'Labdigital';
+	letter-spacing: 2px;
 }
 
 
@@ -2079,11 +2086,8 @@ html, body{
 .dummy_img_test{
 	background: url(../img/common/pop_14.jpg) no-repeat center / 281.25px 102px;
 	width: 100%;
-	height: 200px;
-	
-    overflow: hidden;
-    object-fit: cover;
-	display: inline-block;
+	height: 130px;
+	background-size: contain;
 }
 
 
@@ -3970,7 +3974,69 @@ input[id="check2"]:checked + label i{
 	}
 }
 
+.alphaseat_img .abcd1 {
+	width: 100%;
+}
+.alphaseat_img .abcd1 {
+	position: relative;
+}
+.alphaseat_img .abcd1 img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
 
+.alphaseat_img .abcd1 .test_a {
+	position: absolute;
+	background: url(../img/common/test_a2.gif) no-repeat center / 128px 48px;
+	width: 128px;
+	height: 48px;
+	top: 76%;
+	left: 50%;
+	padding: 1px;
+	transform: translate(-50%,-50%)
+}
+
+.alphaseat_img .abcd1 .test_b {
+	position: absolute;
+	background: url(../img/common/test_a3.gif) no-repeat center / 115px 158px;
+	width: 115px;
+	height: 158px;
+	top: 57%;
+	left: 50%;
+	padding: 1px;
+	transform: translate(-50%,-50%)
+}
+
+
+.alphaseat_img .abcd1 .st1 {
+	top: 40%;
+	width: 100%;
+	height: 10%;
+	position: absolute;
+}
+
+.alphaseat_img .abcd1 .st2 {
+	top: 45%;
+	width: 100%;
+	height: 15%;
+	position: absolute;
+}
+
+.alphaseat_img .abcd1 .st3 {
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	position: absolute;
+}
+
+
+.alphaseat_img .abcd1 .st4 {
+	top: 58%;
+	width: 100%;
+	height: 8%;
+	position: absolute;
+}
 
 /*--index_v3-------------------------------------------------------------------------*/
 
@@ -4047,6 +4113,16 @@ input[id="check2"]:checked + label i{
 	top: 35.3%;
 	left: 29%;
 	z-index: 2;
+}
+.move_bar_img2{
+	position: absolute;
+	background: url(../img/common/hd_move_01.gif) no-repeat center / 170px 22px;
+	width: 170px;
+	height: 22px;
+	top: 58.8%;
+	left: 50%;
+	z-index: 2;
+	transform: translate(-50%, -50%);
 }
 
 
