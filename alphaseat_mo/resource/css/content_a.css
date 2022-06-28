@@ -3178,8 +3178,14 @@ input[id="food_item_btn2"]:checked + label i{
 	justify-content: space-around;
 	align-items: center;
 	color: #fff;
-	position: fixed;
 }
+
+.bottom_bd{
+	position: absolute;
+	width: 100%;
+	bottom: 11%;
+}
+
 
 .ags-summary .pay_pay_footer button{
 	width: 100%;
