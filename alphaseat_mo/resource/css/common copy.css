@@ -84,14 +84,10 @@
 
 }
 .grp_title_popup .btn_close_popup{
-  
-  width: 48px;
-  height: 24px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  color: #222;
-  font-size: 12px;
-  font-family:'NotoSansM'
+  background: url(../img/common/ico_header-close@3x.png) no-repeat center /15px 15px;
+  width: 13px;
+  height: 13px;
+  text-indent: -999em;
 }
 
 .layer_popup.full .wrapper_popup .popup_body {

@@ -133,8 +133,13 @@ $(document).ready(function () {
 	/*가는편 오는편*/
 	$(document).on("click", "#ags-wrap", function () {
 		$("#con_slider").addClass("active");
-		$("#ags-wrap").css("display", "none");
-		$("#ags-wrap-back").css("display", "block");
+		$('.select_back').removeClass("active");
+		$('.select_come').addClass("active");
+		$(".travel_a").css("display", "none");
+		$(".travel_b").css("display", "block");
+		
+		//$("#ags-wrap").css("display", "none");
+		//$("#ags-wrap-back").css("display", "block");
 		seatCtl.setScrollEvent();
 
 		var height_click1 = $('.seat_sheet_bg.ac1').css("height");
@@ -174,8 +179,13 @@ $(document).ready(function () {
 
 	$(document).on("click", "#ags-wrap-back", function () {
 		$("#con_slider").removeClass("active");
-		$("#ags-wrap-back").css("display", "none");
-		$("#ags-wrap").css("display", "block");
+		$('.select_come').removeClass("active");
+		$('.select_back').addClass("active");
+		
+		$(".travel_b").css("display", "none");
+		$(".travel_a").css("display", "block");
+		//$("#ags-wrap-back").css("display", "none");
+		//$("#ags-wrap").css("display", "block");
 		seatCtl.setScrollEvent();
 
 		var height_click1 = $('.seat_sheet_bg.ac1').css("height");
@@ -288,6 +298,13 @@ $(document).ready(function () {
 
 	/*푸터 슬라이드 팝업*/
 	$(document).on("click", ".btn_footer_open", function () {
+		$(".ags-summary").addClass("active");				
+		$(".dimmed_bg").css("display", "block");
+		$("body").css("overflow", "hidden");
+		
+	});
+
+	$(document).on("click", ".foot_align", function () {
 		$(".ags-summary").addClass("active");				
 		$(".dimmed_bg").css("display", "block");
 		$("body").css("overflow", "hidden");
