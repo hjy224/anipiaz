@@ -66,7 +66,7 @@ function layerPop(id) {
 	}
 
 	// 닫기버튼 클릭시 레이어 닫힘
-	$el.find('.btn_close_popup, .wrapper_popup .pop_close, .btn_close_tooltip').off('click').on('click', function () {
+	$el.find('.btn_close_popup,.btn_close_popup_x, .wrapper_popup .pop_close, .btn_close_tooltip').off('click').on('click', function () {
 		closeLayerPop();
 	});
 
@@ -137,7 +137,7 @@ $(document).ready(function () {
 		$('.select_come').addClass("active");
 		$(".travel_a").css("display", "none");
 		$(".travel_b").css("display", "block");
-		
+
 		//$("#ags-wrap").css("display", "none");
 		//$("#ags-wrap-back").css("display", "block");
 		seatCtl.setScrollEvent();
@@ -265,6 +265,7 @@ $(document).ready(function () {
 	$(document).on("click", ".seat_btn", function () {
 		$(this).addClass("seat_active");
 		$(".seat_num .seat_active span").css("display", "none");
+		
 	});
 
 	$(document).on("click", ".seat_active", function () {
@@ -301,6 +302,7 @@ $(document).ready(function () {
 		$(".ags-summary").addClass("active");				
 		$(".dimmed_bg").css("display", "block");
 		$("body").css("overflow", "hidden");
+		$("html").css("overflow", "hidden");
 		
 	});
 
@@ -314,6 +316,7 @@ $(document).ready(function () {
 		$(".ags-summary").removeClass("active");
 		$(".dimmed_bg").css("display", "none");
 		$("body").css("overflow", "");
+		$("html").css("overflow", "");
 	});
 
 	/*푸터 슬라이드 팝업 01*/
@@ -332,13 +335,13 @@ $(document).ready(function () {
 	
 	/*상단 내려오는 슬라이드*/
 	$('.select_group_btn').click(function () {
-		if ($('.passenger').css("height") == "55px") {
+		if ($('.passenger').css("height") == "59px") {
 			$('.passenger').animate({
 				height: '0px'
 			});
 		} else {
 			$('.passenger').animate({
-				height: '55px'
+				height: '59px'
 			});
 		}
 	});

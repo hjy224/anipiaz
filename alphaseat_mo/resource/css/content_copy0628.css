@@ -376,6 +376,12 @@ html, body{
 
 }
 
+.select_box{
+	-webkit-box-shadow: inherit;
+	-moz-box-shadow: inherit;
+	box-shadow: inherit;
+
+}
 
 .select_group{
 	font-family: inherit;
@@ -391,11 +397,8 @@ html, body{
 	padding-right:17px;
 	line-height: 18px;
 }
-.select_group a span:nth-child(1){
+.select_group a span{
 	padding-left: 16px;
-}
-.select_group a span:nth-child(2){
-	padding-left: 6px;
 }
 
 /*블락박스*/
@@ -535,20 +538,23 @@ html, body{
 
 /*가는여정과 비행시간*/
 .select_txt{
-	position: relative;
-	border-radius: 4px;
+	padding: 5px 11px 5px 11px;
+	border-radius: 15px;
 	border: 1px solid #ccc;
+	color: #666;
+	font-family: 'NotoSansM';
+	font-size: 12px;
 	display: flex;
-	width: 100px;
-	margin-right: 10px;
+	align-items: center;
+	line-height: 14px;
 }
-/*
+
 .select_txt span:nth-child(2){
 	background: url(../img/common/ico_airplane.png) no-repeat right 3px top 0px / 15px 15px;
 	padding: 0 27px 0px 0px;
 	
 }
-*/
+
 .select_txt.blockseat{
 	padding: 5px 11px 0 11px;
 	font-size: 11px;
@@ -566,79 +572,22 @@ html, body{
 	padding-right: 8px;
 }
 
-.select_txt .select_come{
-	width: 50%;
-    height: 22px;    
-    background: #fff;
-    line-height: 20px;
-	text-align: center;
-	border-radius:0 4px 4px 0;
-}
-.select_txt .select_come.active {
-	background: #666;
-}
-.select_come.active .btn_back_a{
-	color: #fff;
-}
-
-.select_txt .select_back{
-	width: 50%;
-    height: 22px;
-	background: #fff;
-    line-height: 20px;
-	text-align: center;
-	border-radius: 4px 0 0 4px;
-}
-.select_txt .select_back.active{
-	background: #666;
-}
-
 
 /*가는편 오는편 */
-
-.travel_a{
-	position: absolute;
-	top: -20px;
-	font-size: 11px;
-	color: #666;
-}
-
-.travel_a span:nth-child(1){
-	background: url(../img/common/ico_airplane.png) no-repeat right top 4px / 8px 9px;
-	padding: 0 11px 0px 1px;
-}
-.travel_b{
-	position: absolute;
-	top: -20px;
-	font-size: 11px;
-	color: #666;
-
-	display: none;
-}
-.travel_b span:nth-child(1){
-	background: url(../img/common/ico_airplane.png) no-repeat right top 4px / 8px 9px;
-	padding: 0 11px 0px 1px;
-}
-
-
-
-.select_back .btn_back_a{
-	color: #ccc;
+.ags-wrap .btn_come_a {
+	color: #08a7e1;
+	background: url(../img/common/arrow_come.png) no-repeat right 10px top 2px / 15px 15px;
+	padding-right: 30px;
 	font-family: 'NotoSansM';
 	font-size: 12px;
 }
-.select_come .btn_come_a{
-	color: #ccc;
+.ags-wrap .btn_back_a {
+	color: #08a7e1;
+	background: url(../img/common/arrow_back.png) no-repeat right 10px top 2px / 15px 15px;
+	padding-right: 30px;
 	font-family: 'NotoSansM';
 	font-size: 12px;
 }
-.select_back.active .btn_back_a{
-	color: #fff;
-}
-.select_come.active .btn_come_a{
-	color: #fff;
-}
-
 
 .contents{
 	padding-top: 170px;
@@ -676,6 +625,9 @@ html, body{
 	overflow: hidden;
 }
 
+#ags-wrap-back{
+	display:none;
+}
 .seat_sheet {
 	position: relative;
 	transition: all 2.0s ease;
@@ -1791,10 +1743,8 @@ html, body{
 .pay_txt{
 	display: flex;
 	justify-content: space-between;
-	font-size: 15px;
-	padding: 0 16px 10px;
-	border-bottom: 1px solid #bbb;
-	color: #222;
+	font-size: 17px;
+	padding: 0 16px;
 }
 
 .pay_txt1{
@@ -1937,13 +1887,16 @@ html, body{
 }
 
 
+
+
 .pay_gro{
-	border-top: 1px solid #eee;
+	border-top: 1px solid #BBBBBB;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 15px 16px;
 	font-size: 14px;
+	border-bottom: 1px solid #eeeeee;
 }
 .pay_gro span{
 	color: #222222;
@@ -1978,7 +1931,7 @@ html, body{
 
 
 .pay_group {
-	padding: 10px 16px;
+	padding: 5px 16px;
 	scrollbar-width: 300px;
 	height: 130px;
 	overflow-y: scroll;
@@ -1990,9 +1943,6 @@ html, body{
 	overflow-y: scroll;
 }
 
-.pb-10{
-	padding-bottom: 10px;
-}
 
 .pay_group li{
 	display: flex;
@@ -3002,7 +2952,7 @@ input[id="food_item_btn2"]:checked + label i{
 }
 
 .ags-summary.active .footer_contents {
-	top:11%;
+	top:40%;
 }
 
 .ags-summary .btf_a .btf_a_number{
@@ -3072,33 +3022,28 @@ input[id="food_item_btn2"]:checked + label i{
 	display:flex;
 	align-items:flex-end;
 	justify-content: space-between;
-	padding: 8px 16px 10px 16px;
-	border-bottom: 1px solid #eee;
-}
-.pay_way.back{
-	border-top: 1px solid #bbb;
+	padding: 20px 16px 15px 16px;
 }
 
 .pay_way .select_txt2{
-	color: #222;
+	color: #666;
 	font-family: 'NotoSansM';
 }
 
 .pay_way .select_txt2 span{
-	font-size: 11px;
+	font-size: 13px;
 	margin: 0 1px;
 	display:inline-block;
 }
 .pay_way .select_txt2 span:nth-child(1){
 	margin-right: 6px;
-	font-size: 15px;
+	font-size: 16px;
 	font-family: 'NotoSansB';
 	color: #000;
 }
 .pay_way .select_txt2 span:nth-child(2){
-	background: url(../img/common/ico_airplane.png) no-repeat right top/ 12px 12px;
-	padding: 0 20px 0px 0px;
-	height: 15px;
+	background: url(../img/common/ico_airplane.png) no-repeat center right / 15px 15px;
+	padding: 0 22px 0px 0px;
 }
 
 .pay_way .airname {
@@ -3106,17 +3051,17 @@ input[id="food_item_btn2"]:checked + label i{
 }
 
 .pay_way .airname.tway {
-	background: url(../img/common/symbol_flight-way_tw_dom@3x.png) no-repeat right top 4px / 57px 20px;
+	background: url(../img/common/symbol_flight-way_tw_dom@3x.png) no-repeat left / 67px 24px;
 	height: 24px;
 	line-height: 24px;
 	align-items: center;	
 }
 .pay_way .airname.jeju {
-	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat right top 7px / 65px 13px;
+	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
 	height: 24px;
 }
 .pay_way .airname.airbusan{	
-	background: url(../img/common/symbol_flight-way_bx_dom@3x.png) no-repeat right top 3px /70px 22px;
+	background: url(../img/common/symbol_flight-way_bx_dom@3x.png) no-repeat left /80px 25px;
 	padding-left: 80px;
 	height: 25px;
 }
@@ -3178,14 +3123,8 @@ input[id="food_item_btn2"]:checked + label i{
 	justify-content: space-around;
 	align-items: center;
 	color: #fff;
-}
 
-.bottom_bd{
-	position: absolute;
-	width: 100%;
-	bottom: 11%;
 }
-
 
 .ags-summary .pay_pay_footer button{
 	width: 100%;
@@ -3195,14 +3134,14 @@ input[id="food_item_btn2"]:checked + label i{
 }
 
 .ags-summary .pay_pay_footer .pay_pay_footer_btn1 .pay_f_go{
-	font-size: 15px;
-	font-family: 'NotoSansM';
+	font-size: 16px;
+	font-family: 'NotoSansR';
 	color: #999999;	
 }
 .ags-summary .pay_pay_footer .pay_pay_footer_btn2 .pay_f_turn{
 	
-	font-size: 14px;
-	font-family: 'NotoSansM';
+	font-size: 16px;
+	font-family: 'NotoSansR';
 	color: #fff;
 }
 

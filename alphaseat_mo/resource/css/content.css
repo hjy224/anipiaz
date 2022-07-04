@@ -39,6 +39,7 @@ html, body{
 	position: absolute;
 	top:17px;
 	width: 100%;
+	color: #000;
 }
 
 .page-blue {
@@ -51,7 +52,7 @@ html, body{
 
 /*상단 AI 제목 결과쪽*/
 .ags-wrap .ags-header .page-name-pay {
-	font-size: 16px;
+	font-size: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -245,7 +246,7 @@ html, body{
 }
 .smile_boximg span{
 	font-size: 18px;
-	color: #ff6600;
+	color: #ff4700;
 	padding: 0 15px;
 }
 
@@ -376,12 +377,6 @@ html, body{
 
 }
 
-.select_box{
-	-webkit-box-shadow: inherit;
-	-moz-box-shadow: inherit;
-	box-shadow: inherit;
-
-}
 
 .select_group{
 	font-family: inherit;
@@ -397,8 +392,11 @@ html, body{
 	padding-right:17px;
 	line-height: 18px;
 }
-.select_group a span{
+.select_group a span:nth-child(1){
 	padding-left: 16px;
+}
+.select_group a span:nth-child(2){
+	padding-left: 6px;
 }
 
 /*블락박스*/
@@ -507,11 +505,13 @@ html, body{
 	width: 100%;
 	left: 0px;
 	height: 0px;
-	margin-top: 11.8px;
+	margin-top: 13.8px;
 	background-color: #fafafa;
 	display: flex;
 	align-items: center;
-	padding-left: 10px;
+	padding-left: 16px;	
+	border-bottom: 1px solid #eee;
+	z-index: -1;
 }
 
 .passenger.blockseat{
@@ -530,7 +530,8 @@ html, body{
 }
 .passenger dl dd{
 	padding-top: 5px;
-	color: #ff6600;
+	color: #ff4f24;
+	font-family: 'NotoSansR';
 }
 
 /*블락싯 이미지*/
@@ -538,23 +539,20 @@ html, body{
 
 /*가는여정과 비행시간*/
 .select_txt{
-	padding: 5px 11px 5px 11px;
-	border-radius: 15px;
+	position: relative;
+	border-radius: 4px;
 	border: 1px solid #ccc;
-	color: #666;
-	font-family: 'NotoSansM';
-	font-size: 12px;
 	display: flex;
-	align-items: center;
-	line-height: 14px;
+	width: 100px;
+	margin-right: 10px;
 }
-
+/*
 .select_txt span:nth-child(2){
 	background: url(../img/common/ico_airplane.png) no-repeat right 3px top 0px / 15px 15px;
 	padding: 0 27px 0px 0px;
 	
 }
-
+*/
 .select_txt.blockseat{
 	padding: 5px 11px 0 11px;
 	font-size: 11px;
@@ -572,22 +570,81 @@ html, body{
 	padding-right: 8px;
 }
 
+.select_txt .select_come{
+	width: 50%;
+    height: 22px;    
+    background: #fff;
+	text-align: center;
+	border-radius:0 4px 4px 0;
+}
+.select_txt .select_come.active {
+	background: #666;
+}
+.select_come.active .btn_back_a{
+	color: #fff;
+}
+
+.select_txt .select_back{
+	width: 50%;
+    height: 22px;
+	background: #fff;
+	text-align: center;
+	border-radius: 4px 0 0 4px;
+}
+.select_txt .select_back.active{
+	background: #666;
+}
+
 
 /*가는편 오는편 */
-.ags-wrap .btn_come_a {
-	color: #08a7e1;
-	background: url(../img/common/arrow_come.png) no-repeat right 10px top 2px / 15px 15px;
-	padding-right: 30px;
+
+.travel_a{
+	position: absolute;
+	top: -20px;
+	font-size: 11px;
+	color: #666;
+	
+    line-height: 22px;
+}
+
+.travel_a span:nth-child(1){
+	background: url(../img/common/ico_airplane.png) no-repeat right top 4px / 8px 9px;
+	padding: 0 11px 0px 1px;
+}
+.travel_b{
+	position: absolute;
+	top: -20px;
+	font-size: 11px;
+	color: #666;
+	display: none;
+	line-height: 22px;
+}
+.travel_b span:nth-child(1){
+	background: url(../img/common/ico_airplane.png) no-repeat right top 4px / 8px 9px;
+	padding: 0 11px 0px 1px;
+}
+
+
+
+.select_back .btn_back_a{
+	color: #ccc;
+	font-family: 'NotoSansM';
+	font-size: 12px;	
+    line-height: 20px;
+}
+.select_come .btn_come_a{
+	color: #ccc;
 	font-family: 'NotoSansM';
 	font-size: 12px;
+    line-height: 20px;
 }
-.ags-wrap .btn_back_a {
-	color: #08a7e1;
-	background: url(../img/common/arrow_back.png) no-repeat right 10px top 2px / 15px 15px;
-	padding-right: 30px;
-	font-family: 'NotoSansM';
-	font-size: 12px;
+.select_back.active .btn_back_a{
+	color: #fff;
 }
+.select_come.active .btn_come_a{
+	color: #fff;
+}
+
 
 .contents{
 	padding-top: 170px;
@@ -625,9 +682,6 @@ html, body{
 	overflow: hidden;
 }
 
-#ags-wrap-back{
-	display:none;
-}
 .seat_sheet {
 	position: relative;
 	transition: all 2.0s ease;
@@ -1442,7 +1496,9 @@ html, body{
 .seat_btn.disabled_seat {
     text-indent: -999em;
 }
-
+.seat_btn_pop.disabled_seat {
+    text-indent: -999em;
+}
 
 
 /* 주황색으로 표시할때*/
@@ -1598,7 +1654,7 @@ html, body{
 .bd_t_line{position: relative;}
 .bd_t_line::after{
 	position: absolute;
-	border-top: 2px solid #ff6600;
+	border-top: 2px solid #ff4700;
 	top: -8px;
 	left: -4px;
 	content: "";
@@ -1609,7 +1665,7 @@ html, body{
 }
 .bd_b_line{position: relative;}
 .bd_b_line::after{
-	border-bottom: 2px solid #ff6600;
+	border-bottom: 2px solid #ff4700;
 	position: absolute;
 	top: -8px;
 	left: -4px;
@@ -1621,7 +1677,7 @@ html, body{
 }
 .bd_l_line{position: relative;}
 .bd_l_line::after{
-	border-left: 2px solid #ff6600;
+	border-left: 2px solid #ff4700;
 	position: absolute;
 	top: -8px;
 	left: -4px;
@@ -1633,7 +1689,7 @@ html, body{
 }
 .bd_r_line{position: relative;}
 .bd_r_line::after{
-	border-right: 2px solid #ff6600;
+	border-right: 2px solid #ff4700;
 	position: absolute;
 	top: -8px;
 	left: -4px;
@@ -1655,7 +1711,7 @@ html, body{
 	position: absolute;
 	top:-14px;
 	left:-4px;
-	background: #ff6600;
+	background: #ff4700;
 	color: #fff;
 	font-size:10px;
 	width:55px;
@@ -1669,7 +1725,7 @@ html, body{
 	width: 40px;
 	height: 40px;
 	background: transparent;
-	border: 2px solid #ff6600;
+	border: 2px solid #ff4700;
 	z-index: -1;
 }
 
@@ -1681,7 +1737,7 @@ html, body{
 	position: absolute;
 	top:-14px;
 	left:-4px;
-	background: #ff6600;
+	background: #ff4700;
 	color: #fff;
 	font-size:10px;
 	width:55px;
@@ -1695,7 +1751,7 @@ html, body{
 	width: 82px;
 	height: 40px;
 	background: transparent;
-	border: 2px solid #ff6600;
+	border: 2px solid #ff4700;
 	z-index: -1;
 }
 
@@ -1706,7 +1762,7 @@ html, body{
 	position: absolute;
 	top:-14px;
 	left:-4px;
-	background: #ff6600;
+	background: #ff4700;
 	color: #fff;
 	font-size:10px;
 	width:55px;
@@ -1720,7 +1776,7 @@ html, body{
 	width: 82px;
 	height: 88px;
 	background: transparent;
-	border: 2px solid #ff6600;
+	border: 2px solid #ff4700;
 	z-index: -1;
 }
 
@@ -1736,22 +1792,29 @@ html, body{
 .pay_pilyo{
 	width: 92%;	
 	margin: 0 auto;
+	padding: 30px 0;
 }
-
+.pay_txt_oran{
+	font-size: 13px;
+	color: #f5581a;
+	padding-bottom: 10px;
+}
 
 /*메인 슬라이드*/
 .pay_txt{
 	display: flex;
 	justify-content: space-between;
-	font-size: 17px;
-	padding: 0 16px;
+	font-size: 15px;
+	padding: 0 16px 10px;
+	border-bottom: 1px solid #bbb;
+	color: #222;
 }
 
 .pay_txt1{
-	display: flex;
-	justify-content: space-between;
-	font-size: 17px;
-	padding: 0 16px;
+	font-size: 15px;
+	padding: 27px 16px 9px;
+	font-family: 'NotoSansB';
+
 }
 .pay_txt2{
 	display: flex;
@@ -1769,7 +1832,7 @@ html, body{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 15px;
+	padding: 0 10px;
 	font-family: 'NotoSansR';
 }
 .pay_bag_txt1{
@@ -1811,7 +1874,7 @@ html, body{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 15px;	
+	padding: 0 10px;	
 	font-family: 'NotoSansR';
 }
 .pay_meat_txt1{
@@ -1853,7 +1916,7 @@ html, body{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 15px;	
+	padding: 0 10px;	
 	font-family: 'NotoSansR';
 }
 .pay_bagmeat_txt1{
@@ -1883,38 +1946,59 @@ html, body{
 	line-height: 24px;
 	color: #666666;
 	text-align: right;
-	margin-left: 10px;
 }
 
 
-
-
 .pay_gro{
-	border-top: 1px solid #BBBBBB;
+	display: flex;
+	border-top:none;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 16px;
+	font-size: 14px;
+}
+.pay_gro.sun{
+	border-top:1px solid #eee;
+}
+
+.pay_gro.total{	
+	border-top: 1px solid #eee;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 15px 16px;
 	font-size: 14px;
-	border-bottom: 1px solid #eeeeee;
+	position: fixed;
+	bottom: 54px;
+	width: 100%;
+	color: #222;
+	background-color: #fff;
 }
-.pay_gro span{
-	color: #222222;
-}
-.pay_gro span:nth-last-child(1){
+
+.pay_gro.total strong span{
 	color: #F5581A;
 }
 
+.pay_gro.bt2{
+	display: flex;
+	border-top:none;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 16px;
+	font-size: 14px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.pay_gro span{
+	color: #222222;
+}
 .pay_gro.blockseat div span{
 	color: #222222 ;
 }
-
-
-
 .pay_gro strong span:before {
 	content: "￦";
 }
-
 .pay_gro div button{
 	border-radius: 3px;
 	margin-left: 8px;
@@ -1931,16 +2015,22 @@ html, body{
 
 
 .pay_group {
-	padding: 5px 16px;
+	padding: 10px 16px;
 	scrollbar-width: 300px;
-	height: 130px;
-	overflow-y: scroll;
 }
 
 .pay_group.cho {
 	scrollbar-width: none;
 	height: 400px;
 	overflow-y: scroll;
+}
+
+.pb-10{	
+	overflow-y: scroll;
+	position: absolute;
+    width: 100%;
+	top: 8%;
+	bottom: 23%;
 }
 
 
@@ -1979,26 +2069,52 @@ html, body{
 }
 
 .pay_select_i{
-	padding-right: 20px;
-	height: 15px;
-	background: url(../img/common/ico_delete-s@3x.png) no-repeat right / 15px 15px;
-	
+	padding: 10px 30px 10px 0;
+	width: 24px;
+	height: 24px;
+	background: url(../img/common/cancel.png) no-repeat right / 24px 24px;
+	color: #08a7e1;
+	font-size: 13px;
 }
 
+
+
+
 .pay_select_o{
-	color: #08A7E1;
+	
+	padding: 10px 15px;
+	width: 24px;
+	height: 24px;
+	background: url(../img/common/off.png) no-repeat right / 24px 24px;
 }
 
 .pay_choice{
 	border-top: 1px solid #eeeeee;
 	display: flex;
 	justify-content: space-between;
-	font-size: 12px;
+	font-size: 11px;
 	color: #999;
-	padding: 15px 16px;
+	padding: 15px 16px 30px;
+}
+.pay_choice .safe_cho{
+	width: 26px;
+	height: 18px;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 15px;
+	letter-spacing: -0.5px;
+	font-size: 10px;
+	font-family: 'NotoSansM';
+	color: #999;
+	padding: 1px 2.5px;
+	background-color: #fafafa;
+}
+.pay_choice span{
+	line-height: 18px;
 }
 .pay_choice a{
 	color: #222;
+	line-height: 18px;
 }
 
 .pay_choice2{
@@ -2049,15 +2165,15 @@ html, body{
 
 .pay_pay .pay_ment_btn1{
 	width: 30%;
-    background: #F2F2F2;
+    background: #fff;
     line-height: 50px;
-	border-top: 1px solid #ff6600;
-	color: #ff6600;
+	border-top: 1px solid #ff4700;
+	color: #ff4700;
 	font-size: 15px;
 }
 .pay_pay .pay_ment_btn2{
 	width: 70%;
-    background: #ff6600;
+    background: #ff4700;
     line-height: 50px;
 	
 	font-size: 15px;
@@ -2794,7 +2910,7 @@ input[id="food_item_btn2"]:checked + label i{
 /*푸터 FOOTER ------------------------------------------------------------*/
 .ags-summary{
 	position: fixed;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	right: 0;
 	width: 100%;
@@ -2918,7 +3034,7 @@ input[id="food_item_btn2"]:checked + label i{
 /* 하단 슽라이더 내용*/
 
 .footer_contents {	
-	position: relative;
+	position: fixed;
 	background: #fff;
 	width: 100%;
 	height: 100%;
@@ -2927,8 +3043,7 @@ input[id="food_item_btn2"]:checked + label i{
 	transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
 	-webkit-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
 	-moz-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-	top: 101%;
-	position: fixed;
+	top: 101%;	
 	left: 0;
 	text-align: left;
 	border-top-right-radius: 15px;
@@ -2952,7 +3067,7 @@ input[id="food_item_btn2"]:checked + label i{
 }
 
 .ags-summary.active .footer_contents {
-	top:40%;
+	top:11%;
 }
 
 .ags-summary .btf_a .btf_a_number{
@@ -3017,33 +3132,48 @@ input[id="food_item_btn2"]:checked + label i{
 	font-family: 'NotoSansM';
 }
 
+
 .pay_way{
 	font-size: 15px;
 	display:flex;
 	align-items:flex-end;
 	justify-content: space-between;
-	padding: 20px 16px 15px 16px;
+	padding: 8px 16px 10px 16px;
+	border-bottom: 1px solid #eee;
+}
+.pay_way.save{
+	padding: 16px 16px 10px 16px;
+}
+
+.pay_way.pay{
+	border-top: 1px solid #bbb;
+}
+.pay_way.back{
+	border-top: 1px solid #bbb;
 }
 
 .pay_way .select_txt2{
-	color: #666;
+	color: #222;
 	font-family: 'NotoSansM';
 }
 
 .pay_way .select_txt2 span{
-	font-size: 13px;
+	font-size: 11px;
 	margin: 0 1px;
 	display:inline-block;
+	
 }
 .pay_way .select_txt2 span:nth-child(1){
 	margin-right: 6px;
-	font-size: 16px;
+	font-size: 15px;
 	font-family: 'NotoSansB';
-	color: #000;
+	color: #222;
+	
 }
 .pay_way .select_txt2 span:nth-child(2){
-	background: url(../img/common/ico_airplane.png) no-repeat center right / 15px 15px;
-	padding: 0 22px 0px 0px;
+	background: url(../img/common/ico_airplane.png) no-repeat right top/ 12px 12px;
+	padding: 0 19px 0px 0px;
+	height: 16px;
 }
 
 .pay_way .airname {
@@ -3051,17 +3181,17 @@ input[id="food_item_btn2"]:checked + label i{
 }
 
 .pay_way .airname.tway {
-	background: url(../img/common/symbol_flight-way_tw_dom@3x.png) no-repeat left / 67px 24px;
+	background: url(../img/common/symbol_flight-way_tw_dom@3x.png) no-repeat right top 4px / 57px 20px;
 	height: 24px;
 	line-height: 24px;
 	align-items: center;	
 }
 .pay_way .airname.jeju {
-	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat left / 70px 14px;
+	background: url(../img/common/symbol_flight-way_7c_dom@3x.png) no-repeat right top 7px / 65px 13px;
 	height: 24px;
 }
 .pay_way .airname.airbusan{	
-	background: url(../img/common/symbol_flight-way_bx_dom@3x.png) no-repeat left /80px 25px;
+	background: url(../img/common/symbol_flight-way_bx_dom@3x.png) no-repeat right top 3px /70px 22px;
 	padding-left: 80px;
 	height: 25px;
 }
@@ -3123,8 +3253,14 @@ input[id="food_item_btn2"]:checked + label i{
 	justify-content: space-around;
 	align-items: center;
 	color: #fff;
-
 }
+
+.bottom_bd{
+	position: absolute;
+	width: 100%;
+	bottom: 11%;
+}
+
 
 .ags-summary .pay_pay_footer button{
 	width: 100%;
@@ -3134,14 +3270,14 @@ input[id="food_item_btn2"]:checked + label i{
 }
 
 .ags-summary .pay_pay_footer .pay_pay_footer_btn1 .pay_f_go{
-	font-size: 16px;
-	font-family: 'NotoSansR';
+	font-size: 15px;
+	font-family: 'NotoSansM';
 	color: #999999;	
 }
 .ags-summary .pay_pay_footer .pay_pay_footer_btn2 .pay_f_turn{
 	
-	font-size: 16px;
-	font-family: 'NotoSansR';
+	font-size: 14px;
+	font-family: 'NotoSansM';
 	color: #fff;
 }
 
@@ -3249,6 +3385,7 @@ input[id="food_item_btn2"]:checked + label i{
 
 /*슬라이드 버튼 과 내용 css*/
 .credit_box_btn{
+	font-size: 12px;
 	padding-right: 25px;
 	background: url(../img/common/down_arrow.png) no-repeat right / 22px 22px;
 }
@@ -3269,6 +3406,8 @@ input[id="food_item_btn2"]:checked + label i{
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 16px;
+	font-size: 13px;
+	color: #222;
 }
 
 .credit_agree_box_content{
@@ -3857,12 +3996,7 @@ input[id="check2"]:checked + label i{
 .service_com div:nth-child(1){
 	font-size: 18px;
 	line-height: 25px;
-}
-.service_com div:nth-child(2){
-	padding-top: 10px;
-	font-size: 12px;
-	line-height: 20px;
-	color: #555;
+	color: #222;
 }
 .service_com_btn{
 	padding: 30px 16px;
@@ -4167,11 +4301,12 @@ input[id="check2"]:checked + label i{
 /*크기에 따라서 화면구성*/
 
 @media (max-width: 376px) {
+	.pb-10{
+		top: 10%;
+		bottom: 26%;
+	}
 	.pay_choice2{
 		font-size: 12px;
-	}
-	.pay_group{
-		height: 157px;
 	}
 	.seat_sheet_bg.ac1{	
 		height: 100vh;
@@ -4190,6 +4325,13 @@ input[id="check2"]:checked + label i{
 	}
 }
 @media (max-width: 321px) {
+	.pay_choice span{
+		line-height: 18px;
+	}
+	.pb-10{
+		top: 12%;
+		bottom: 28%;
+	}
 	.pay_choice2{
 		font-size: 11px;
 	}
@@ -4214,9 +4356,6 @@ input[id="check2"]:checked + label i{
 	.ags-wrap .ags-header .page-name.page-black img {
 		width: 16px;
 		height: 15px;
-	}
-	.pay_group{
-		height: 120px;
 	}
 	.select_group {
 		font-size: 11px;
@@ -4275,7 +4414,7 @@ input[id="check2"]:checked + label i{
 		font-size: 10px;
 	}
 	.pay_choice a {
-		font-size: 11px;
+		font-size: 10px;
 	}
 
 }
