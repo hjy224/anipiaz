@@ -967,11 +967,9 @@ html, body{
 	height: 16px;
 	padding: 10px;
 	position: absolute;
-	left: 0;
-
+	left: 20px;
+	top: 180px;
 }
-
-
 .seat_sheet_bg.ac1{	
 	height: 80vh;
 }
