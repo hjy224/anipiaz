@@ -8,6 +8,7 @@
 	<title>AlphaSeat</title>
 	<link rel="stylesheet" href="./resource/css/content.css">
 	<link rel="stylesheet" href="./resource/css/reset.css">
+	<link rel="stylesheet" href="./resource/css/common.css">
 	<script src='./resource/js/jquery-2.2.4.min.js'></script>
 	<script src='./resource/js/jquery.min.js'></script>
 	<script src="./resource/js/alpha.mo.ui.js"></script>
@@ -151,7 +152,11 @@
 				부산 bx_40
 			-->
 			<div class="slider1">
-				<div id="bx_40"></div>
+				<!-- 팝업 information -->
+				<div class="popup_infor sadsa>
+					<a href="javascript:;" onclick="layerPop('popup2_1');"></a>
+				</div>
+				<div id="7c_738A"></div>
 			</div>
 
 			<!-- include/7c_738B.html 쪽 파일 -->		
@@ -405,7 +410,39 @@
 		$("#7c_738B").load("include/7c_738B.html");
 		$("#bx_40").load("include/bx_40.html")
 	</script>
-	
+	<article id="popup2_1" class="layer_popup alert"  tabindex="0" >
+        <div class="wrapper_popup">
+            <!-- header -->
+            <div class="popup_header">
+                <!-- title -->
+                <div class="grp_title_popup">
+                </div>
+                <!-- //title -->
+            </div>
+            <!-- //header -->
+            <!-- container -->
+            <div class="popup_body">
+                <!-- content -->
+                <div class="popup_content">
+                        <div class="rader_popup"></div>                
+                        <div class="popup_con_txt">
+                            <span>이정갑</span>님,<br>
+                            AI 레이더가 추천하는 좌석 위치를 확인하세요!
+                        </div>
+                        <div class="popup_con_txt_2">
+                            AI 레이더가 가격대별 만족도가 가장 높은<br>
+                            <span>4</span>인 그룹석을 실시간 추천합니다.
+                            <!-- <span>1</span>인 좌석을 실시간 추천합니다. -->
+                        </div>    
+                </div>
+                <div class="pay_exr">
+                    <div class="pay_exr_btn"><button type="button" class="pay_exr_pay btn_close_popup_x">닫기</button></div>
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //container -->
+        </div>
+    </article>
 </body>
 
 </html>

@@ -26,10 +26,10 @@
   min-height: 100%;
   text-indent: -9999px;
   background: #000;
-  -ms-filter: alpha(opacity=50);
-  -moz-opacity: 0.5;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
+  -ms-filter: alpha(opacity=75);
+  -moz-opacity: 0.75;
+  filter: alpha(opacity=75);
+  opacity: 0.75;
 }
 
 .layer_popup .wrapper_popup {
@@ -83,17 +83,25 @@
   font-size: 15px;
 
 }
-.grp_title_popup .btn_close_popup{
+
+.box_button{
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+
+.box_button .btn_close_popup{
   width: 48px;
   height: 24px;
   border: 1px solid #ccc;
   border-radius: 15px;
-  color: #222;
-  font-size: 12px;
-  font-family:'NotoSansM'
+  color: #fff;
+  font-size: 13px;
+  font-family:'NotoSansM';
+  line-height: 2px;
 }
 
-.grp_title_popup .btn_close_popup_x{
+.box_button .btn_close_popup_x{
   background: url(../img/common/ico_header-close@3x.png) no-repeat center /15px 15px;
   width: 13px;
   height: 13px;
@@ -529,6 +537,30 @@ padding: 10px;
   line-height: 20px;
 }
 
+.rader_popup{
+  width: 25px;
+  height: 25px;
+  padding: 15px 15px 30px;
+  background: url(../img/common/circle_blue.gif) no-repeat center top / 24px 24px;
+  display: inline-block;
+}
+
+#popup2_1 .popup_body .popup_content{
+  padding: 0px 15px 30px;
+}
+#popup2_1 .popup_body .popup_content .popup_con_txt{
+  line-height: 25px;
+  font-size: 15px;
+  color: #444;
+  font-family: 'NotoSansB';
+}
+#popup2_1 .popup_body .popup_content .popup_con_txt_2{
+  padding-top: 15px;
+  line-height: 25px;
+  font-size: 13px;
+  color: #222;
+}
+
 #popup3 .popup_body .popup_con_txt{
   width: 100%;
   font-size: 15px;
@@ -726,7 +758,7 @@ padding: 10px;
 #popup6_2 .popup_con3 .seat_num, #popup6_3 .popup_con3 .seat_num, 
 #popup6_4 .popup_con3 .seat_num, #popup6_5 .popup_con3 .seat_num{
   padding: 10px;
-  width: 246px;
+  width: 240px;
   margin: 0 auto;
 }
 
@@ -846,7 +878,6 @@ padding: 10px;
   font-family: 'NotoSansM';
 }
 
-
 .gotoback {
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -858,51 +889,6 @@ padding: 10px;
   padding: 3px;
   font-family: 'NotoSansM';
 }
-
-/*사각형 선그리기*/
-.nemo_6_4{
-  position: absolute;
-  border: 2px solid #f5581a;
-  width: 63.5px;
-  height: 66px;
-  top: 53.5%;
-  left: 68%;
-}
-
-.nemo_6_5_1{
-  position: absolute;
-  border: 2px solid #f5581a;
-  width: 63.5px;
-  height: 66px;
-  top: 32.5%;
-  left: 68%;
-}
-.nemo_6_5_2{
-  position: absolute;
-  border: 2px solid #f5581a;
-  width: 63.5px;
-  height: 66px;
-  top: 64.5%;
-  left: 10.5%;
-}
-
-.nemo_6_6_1{
-  position: absolute;
-  border: 2px solid #f5581a;
-  width: 63.5px;
-  height: 66px;
-  top: 44%;
-  left: 68%;
-}
-.nemo_6_6_2{
-  position: absolute;
-  border: 2px solid #f5581a;
-  width: 63.5px;
-  height: 66px;
-  top: 70.7%;
-  left: 10.5%;
-}
-
 
 #popup7 .popup_con_txt{
   padding-bottom: 30px;

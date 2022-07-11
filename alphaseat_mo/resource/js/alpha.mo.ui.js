@@ -359,9 +359,8 @@ $(document).ready(function () {
 		$('.slider1 .airplane_bg_front').remove();
 		$('.slider1 .airplane_bg_end').remove();
 		$('.slider1 .airplane_bg').remove();
-
-
-
+		$('.slider1 .popup_infor').remove();
+		
 		$('.slider1 .seat_sheet_price_box').remove();
 		$('.slider1 .seat_sheet_recom_box').remove();
 		$('.slider1 .seat_sheet_loading').remove();
@@ -393,6 +392,7 @@ $(document).ready(function () {
 		$('.slider2 .seat_sheet_price_box').remove();
 		$('.slider2 .seat_sheet_recom_box').remove();
 		$('.slider2 .seat_sheet_loading').remove();
+		$('.slider2 .popup_infor').remove();
 		$('.air_logo').remove();
 		$('.air_time').remove();
 
