@@ -102,7 +102,7 @@
 @font-face {
 	font-family: 'NotoSansDL';
 	src: url('../font/NotoSans-DemiLight.eot');
-	src: url('..//font/NotoSans-DemiLight.woff2') format('woff2'),
+	src: url('../font/NotoSans-DemiLight.woff2') format('woff2'),
          url('../font/NotoSans-DemiLight.woff') format('woff'),
          url('../font/NotoSans-DemiLight.otf') format('opentype');
 }
@@ -285,10 +285,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  font-family: NotoSansM, Geogrotesque, "Apple SD Gothic NEO", sans-serif;
-  color: #444444;
+  font-family: 'PretendardM';
+  color: #222;
   font-size: 14px;
-  letter-spacing: -0.5px;
 }
 
 ol, ul {

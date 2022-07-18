@@ -86,8 +86,7 @@
 
 .box_button{
   position: absolute;
-  top: -30px;
-  right: 0px;
+  right: 17px;
 }
 
 .box_button .btn_close_popup{
@@ -545,7 +544,7 @@ padding: 10px;
   display: inline-block;
 }
 
-#popup2_1 .popup_body .popup_content{
+#popup2_1 .popup_body .popup_content,#popup13_1 .popup_body .popup_content{
   padding: 0px 15px 30px;
 }
 #popup2_1 .popup_body .popup_content .popup_con_txt{
@@ -554,9 +553,17 @@ padding: 10px;
   color: #444;
   font-family: 'NotoSansB';
 }
-#popup2_1 .popup_body .popup_content .popup_con_txt_2{
-  padding-top: 15px;
+#popup13_1 .popup_body .popup_content .popup_con_txt{
   line-height: 25px;
+  font-size: 15px;
+  color: #444;
+  font-family: 'NotoSansB';
+  padding-top: 10px;
+}
+
+#popup2_1 .popup_body .popup_content .popup_con_txt_2,#popup13_1 .popup_body .popup_content .popup_con_txt_2{
+  padding-top: 15px;
+  line-height: 18px;
   font-size: 13px;
   color: #222;
 }
@@ -749,32 +756,47 @@ padding: 10px;
 }
 
 
-#popup6_2 .popup_con3, #popup6_3 .popup_con3, #popup6_4 .popup_con3, 
+#popup6_2 .popup_con3, #popup6_3 .popup_con3, #popup6_3_1 .popup_con3, #popup6_4 .popup_con3, 
 #popup6_5 .popup_con3, #popup6_6 .popup_con3, #popup6_7 .popup_con3 {
   margin: 0 auto;
   width: 100%;
 }
 
-#popup6_2 .popup_con3 .seat_num, #popup6_3 .popup_con3 .seat_num, 
+#popup6_2 .popup_con3 .seat_num, #popup6_3 .popup_con3 .seat_num,  
 #popup6_4 .popup_con3 .seat_num, #popup6_5 .popup_con3 .seat_num{
   padding: 10px;
   width: 240px;
   margin: 0 auto;
 }
 
+#popup6_3_1 .popup_con3 .seat_num{
+  padding: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#popup6_3_1 .popup_con3 .seat_num li:nth-child(2){
+  padding-top: 30px;
+
+}
+#popup6_3_1 .popup_con3 .seat_num li:last-child{
+  padding-bottom: 20px;
+
+}
 #popup6_6 .popup_con3 .seat_num,#popup6_7 .popup_con3 .seat_num {
   padding: 10px 10px 30px 10px;
   width: 246px;
   margin: 0 auto;
 }
 
-#popup6_2 .popup_content, #popup6_3 .popup_content, 
+#popup6_2 .popup_content, #popup6_3 .popup_content, #popup6_3_1 .popup_content,
 #popup6_4 .popup_content, #popup6_5 .popup_content, 
 #popup6_6 .popup_content, #popup6_7 .popup_content{
   padding: 0px;
   text-align: center;
 }
 #popup6_2 .popup_content div:nth-child(3), #popup6_3 .popup_content div:nth-child(3),
+#popup6_3_1 .popup_content div:nth-child(3),
 #popup6_4 .popup_content div:nth-child(3), #popup6_5 .popup_content div:nth-child(3){
   padding: 20px 0;
 }
@@ -783,7 +805,7 @@ padding: 10px;
   padding: 0 0 20px;
 }
 
-#popup6_3 .popup_content .popup_con_txt_a, #popup6_4 .popup_content .popup_con_txt_a, 
+#popup6_3 .popup_content .popup_con_txt_a,#popup6_3_1 .popup_content .popup_con_txt_a, #popup6_4 .popup_content .popup_con_txt_a, 
 #popup6_5 .popup_content .popup_con_txt_a, #popup6_6 .popup_content .popup_con_txt_a,
 #popup6_7 .popup_content .popup_con_txt_a{
   color: #222;
@@ -792,7 +814,7 @@ padding: 10px;
   padding: 15px 0 0;
 }
 
-#popup6_3 .popup_con3 .seat_num li a,#popup6_4 .popup_con3 .seat_num li a,
+#popup6_3 .popup_con3 .seat_num li a, #popup6_3_1 .popup_con3 .seat_num li a, #popup6_4 .popup_con3 .seat_num li a,
 #popup6_5 .popup_con3 .seat_num li a,#popup6_6 .popup_con3 .seat_num li a,
 #popup6_7 .popup_con3 .seat_num li a {
   width: 24px;
@@ -810,7 +832,7 @@ padding: 10px;
   display: inline-block;
 }
 
-#popup6_3 .popup_con3 .seat_num .disabled_seat,#popup6_4 .popup_con3 .seat_num .disabled_seat
+#popup6_3 .popup_con3 .seat_num .disabled_seat, #popup6_3_1 .popup_con3 .seat_num .disabled_seat,#popup6_4 .popup_con3 .seat_num .disabled_seat
 ,#popup6_5 .popup_con3 .seat_num .disabled_seat,#popup6_6 .popup_con3 .seat_num .disabled_seat
 ,#popup6_7 .popup_con3 .seat_num .disabled_seat {
   width: 24px;
@@ -820,7 +842,7 @@ padding: 10px;
   border-bottom: 4px solid #bababa !important;
 }
 
-#popup6_3 .popup_con3 .seat_num .hallway,#popup6_4 .popup_con3 .seat_num .hallway
+#popup6_3 .popup_con3 .seat_num .hallway, #popup6_3_1 .popup_con3 .seat_num .hallway, #popup6_4 .popup_con3 .seat_num .hallway
 ,#popup6_5 .popup_con3 .seat_num .hallway,#popup6_6 .popup_con3 .seat_num .hallway
 ,#popup6_7 .popup_con3 .seat_num .hallway {
   width: 36px;
@@ -1129,6 +1151,12 @@ height: 100%;
   line-height: 25px;
 }
 
+#popup13_1 .popup_content .smile_boximg{
+  color: #444;
+  font-size: 15px;
+  padding: 10px 0 35px 0;
+  line-height: 25px;
+}
 .popup_content .icon_img{
   background: url(../img/common/war_alert.png) no-repeat center / 24px 24px;
 	padding: 12px;

@@ -20,15 +20,17 @@
         <span>[버튼 1개]</span>
         <div><a href="javascript:;" onclick="layerPop('popup2_1');" class="btn_bd_md submit">팝업2_1 (프리뷰 팝업)</a></div>
         <br>
-        <span>[버튼 2개]</span>                
-        <div><a href="javascript:;" onclick="layerPop('popup2');" class="btn_bd_md submit">팝업2 (new AI추천좌석 유지)</a></div>
-        <div><a href="javascript:;" onclick="layerPop('popup6_3');" class="btn_bd_md submit">팝업6_3 (new 가는편 선택완료)</a></div>
-        <div><a href="javascript:;" onclick="layerPop('popup6_4');" class="btn_bd_md submit">팝업6_4 (new 오는편 선택완료)</a></div>
-        <div><a href="javascript:;" onclick="layerPop('popup6_5');" class="btn_bd_md submit">팝업6_5 (new 오는편가는편 선택완료)</a></div>        
-        <div><a href="javascript:;" onclick="layerPop('popup6_6');" class="btn_bd_md submit">팝업6_6 (new 이미 선택한 4인그룹석, 이전으로..)</a></div>
-        <div><a href="javascript:;" onclick="layerPop('popup6_7');" class="btn_bd_md submit">팝업6_7 (new 혹시, 좌석 다시 선택을)</a></div>
+        <span>[버튼 2개]</span>
+        <div><a href="javascript:;" onclick="layerPop('popup13');" class="btn_bd_md submit">팝업6.1 (선택중 이동)</a></div>
+        <div><a href="javascript:;" onclick="layerPop('popup6_3');" class="btn_bd_md submit">팝업6.2 (가는편 선택완료)</a></div>
+        <div><a href="javascript:;" onclick="layerPop('popup6_4');" class="btn_bd_md submit">팝업6.3 (오는편 선택완료)</a></div>
+        <div><a href="javascript:;" onclick="layerPop('popup6_5');" class="btn_bd_md submit">팝업6.4 (왕복 선택완료)</a></div> 
+        <div><a href="javascript:;" onclick="layerPop('popup2');" class="btn_bd_md submit">팝업6.5 (AI모드 변경)</a></div>
+        <div><a href="javascript:;" onclick="layerPop('popup6_6');" class="btn_bd_md submit">팝업6.6 (이전 경고)</a></div>
+        <div><a href="javascript:;" onclick="layerPop('popup6_7');" class="btn_bd_md submit">팝업6.7 (new 혹시, 좌석 다시 선택을)</a></div>
+        <div><a href="javascript:;" onclick="layerPop('popup13_1');" class="btn_bd_md submit">팝업6.8 (초과선택)</a></div>
+        <div><a href="javascript:;" onclick="layerPop('popup6_3_1');" class="btn_bd_md submit">팝업6.9.10 (가는편,오는편 직접완료)</a></div>
         
-
         
         <span>[로딩버튼]</span>
         <div><a href="javascript:;" onclick="layerPop('pop_loading');" class="pop-area active">로딩</a></div>
@@ -55,7 +57,6 @@
         <div><a href="javascript:;" onclick="layerPop('popup8');" class="btn_bd_md submit">팝업8 (가는편 선택중입니다)</a></div>
         <div><a href="javascript:;" onclick="layerPop('popup10');" class="btn_bd_md submit">팝업10 (좌석 상세 정보)</a></div>
         <br>
-        <div><a href="javascript:;" onclick="layerPop('popup13');" class="btn_bd_md submit">팝업13 (가는편 좌석을 선택하지)</a></div>
         
     </div>
 
@@ -482,6 +483,74 @@
         </div>
     </article>
 
+    <article id="popup6_3_1" class="layer_popup alert"  tabindex="0" >
+        <div class="wrapper_popup">
+            <!-- header -->
+            <div class="popup_header">
+                <!-- title -->
+                <div class="grp_title_popup">
+                    <div class="box_button">
+                        <button type="button" class="btn_close_popup" title="닫기">닫기</button>
+                    </div>
+                </div>
+                <!-- //title -->
+            </div>
+            <!-- //header -->
+            <!-- container -->
+            <div class="popup_body">
+                <!-- content -->
+                <div class="popup_content">              
+                    <div class="popup_con_txt">
+                        <i class="ico_check"></i>
+                        <span>가는편 선택완료</span>
+                    </div>                    
+                    <div class="popup_con_txt_a">
+                        <span>4</span>인 좌석지정이 완료되었습니다.
+                    </div>
+                    <div class="popup_con3">
+                        
+                        <ul class="seat_num">
+                            <div class="gotoback">
+                                가는편
+                            </div>
+                            <li>
+                                <span><a href="#none" class="seat_btn_pop ">6A</a></span>
+                                <span><a href="#none" class="seat_btn_pop ">6B</a></span>
+                                <span><a href="#none" class="seat_btn_pop ">6C</a></span>
+                                <span><a href="#none" class="seat_btn_pop ">6D</a></span>
+                                <span><a href="#none" class="seat_btn_pop">6E</a></span>
+                                <span><a href="#none" class="seat_btn_pop">6F</a></span>
+                            </li>
+                            <li>
+                                <!-- alpha_zero 좌석만 안보이게O 터치 X-->
+                                <span><a href="#none" class="seat_btn_pop alpha_zero">7A</a></span>
+                                <span><a href="#none" class="seat_btn_pop ">7B</a></span>
+                                <span><a href="#none" class="seat_btn_pop ">7C</a></span>
+                                <span><a href="#none" class="seat_btn_pop ">7D</a></span>
+                                <span><a href="#none" class="seat_btn_pop">7E</a></span>
+                                <span><a href="#none" class="seat_btn_pop alpha_zero">7F</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#none" class="seat_btn_pop ">11A</a></span>
+                                <span><a href="#none" class="seat_btn_pop ">11B</a></span>
+                                <span><a href="#none" class="seat_btn_pop ">11C</a></span>
+                                <span><a href="#none" class="seat_btn_pop">11D</a></span>
+                                <span><a href="#none" class="seat_btn_pop">11E</a></span>
+                                <span><a href="#none" class="seat_btn_pop">11F</a></span>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="pay_ex">
+                    <div class="pay_ex_btn1"><button type="button" class="pay_ex_go"> 가는편만 바로결제</button></div>
+                    <div class="pay_ex_btn2"><button type="button" class="pay_ex_turn">오는편으로 이동</button></div>
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //container -->
+        </div>
+    </article>
+
     <article id="popup6_4" class="layer_popup alert"  tabindex="0" >
         <div class="wrapper_popup">
             <!-- header -->
@@ -539,7 +608,7 @@
                     </div>  
                 </div>
                 <div class="pay_ex">
-                    <div class="pay_ex_btn1"><button type="button" class="pay_ex_go"> 오는편 바로결제</button></div>
+                    <div class="pay_ex_btn1"><button type="button" class="pay_ex_go"> 오는편만 바로결제</button></div>
                     <div class="pay_ex_btn2"><button type="button" class="pay_ex_turn">가는편으로 이동</button></div>
                 </div>
                 <!-- //content -->
@@ -657,10 +726,9 @@
                         <span>이정갑</span>님,
                     </div>
                     <div class="name_txt2">                        
-                        <span>이전으로 이동하면 선택한 좌석 내역이 사라집니다.<br>
-                        현재 4인 그룹석 선택을 유지할까요?</span><br>
-                        <span>이미 선택한 4인 그룹석이 있습니다.<br>
-                            기회를 놓칠 수 있으니 선택 좌석을 유지할까요?</span>  
+                        이전으로 이동하면 이미 선택한<br>
+                        <span>4</span>인 그룹석을 처음부터 다시 선택해야 해요.<br>
+                        선택 내역을 그대로 유지할까요?
                     </div>
                     <div class="popup_btn_hap">            
                         <button class="hap_btn1">다시 선택할래요</button>
@@ -1037,6 +1105,39 @@
                 <div class="pay_ex">
                     <div class="pay_ex_btn1"><button type="button" class="pay_ex_go">오는편으로 이동</button></div>
                     <div class="pay_ex_btn2"><button type="button" class="pay_ex_turn">가는편 계속진행</button></div>
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //container -->
+        </div>
+    </article>
+
+    <article id="popup13_1" class="layer_popup alert"  tabindex="0" >
+        <div class="wrapper_popup">
+            <!-- header -->
+            <div class="popup_header">
+                <!-- title -->
+                <div class="grp_title_popup">
+                </div>
+                <!-- //title -->
+            </div>
+            <!-- //header -->
+            <!-- container -->
+            <div class="popup_body">
+                <!-- content -->
+                <div class="popup_content">
+                    <div class="icon_img"></div>             
+                        <div class="popup_con_txt">
+                            초과선택!
+                        </div>
+                        <div class="popup_con_txt_2">
+                            만일 다른 좌석을 원하시면,
+                            선택좌석을 한 번 더 눌러 해제 후 다시 선택해 주세요.
+                            <!-- <span>1</span>인 좌석을 실시간 추천합니다. -->
+                        </div>    
+                </div>                
+                <div class="pay_exr">
+                    <div class="pay_exr_btn"><button type="button" class="pay_exr_pay btn_close_popup_x">확인</button></div>
                 </div>
                 <!-- //content -->
             </div>
