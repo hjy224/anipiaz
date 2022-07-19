@@ -364,7 +364,9 @@ $(document).ready(function () {
 		$('.scale_type_1').css('top', '0px');
 		$('.contents').css('overflow-y', 'scroll');
 		$('.seat_sheet_bg.ac1').css('height', '100%');
+		$('.seat_sheet_bg.ac1').css('margin-bottom', '100px');
 		
+
 		$('.slider1 .seat_sheet_number').remove();
 		$('.slider1 .seat_sheet_abcdef').remove();
 		$('.slider1 .airplane_bg_front_jeju').remove();
