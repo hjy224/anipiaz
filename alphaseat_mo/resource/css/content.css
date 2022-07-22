@@ -600,11 +600,12 @@ html, body{
 .travel_a{
 	position: absolute;
 	top: -20px;
-	font-size: 11px;
+	font-size: 10px;
 	color: #666;
     line-height: 25px;
-	margin-left: 4px;
+	margin-left: 2px;
 	font-family: 'PretendardM';
+	letter-spacing: -0.2px;
 }
 
 .travel_a span:nth-child(1){
@@ -614,12 +615,13 @@ html, body{
 .travel_b{
 	position: absolute;
 	top: -20px;
-	font-size: 11px;
+	font-size: 10px;
 	color: #666;
 	display: none;
 	line-height: 25px;
-	margin-left: 4px;
+	margin-left: 2px;
 	font-family: 'PretendardM';
+	letter-spacing: -0.2px;
 }
 .travel_b span:nth-child(1){
 	background: url(../img/common/ico_airplane.png) no-repeat right top 2px / 8px 9px;
@@ -2506,22 +2508,31 @@ html, body{
 }
 
 .head_tap ul li{	
-	color: #222;
+	color: #aaa;
 	width: 100%;
 	text-align: center;
-	padding-top: 43px;
+	padding-top: 42px;
+	
+
 }
 .head_tap ul li a {
-	padding-top: 28px;
+	padding-top: 30px;
+	font-family: 'PretendardB';
+	font-size: 11px;
 }
+
+.head_tap .btn_tap_seat{
+	background: url(../img/common/ico_seat.png) no-repeat top / 23px 24px;
+}
+
 .head_tap .btn_tap_baggage{
-	background: url(../img/common/ico_baggage.png) no-repeat top / 17px 27px;
+	background: url(../img/common/ico_baggage.png) no-repeat top / 15px 24px;
 }
 .head_tap .btn_tap_food{
-	background: url(../img/common/ico_food.png) no-repeat top / 20px 26px;	
+	background: url(../img/common/ico_food.png) no-repeat top / 18px 24px;	
 }
 .head_tap .btn_tap_lounge{
-	background: url(../img/common/ico_coffee.png) no-repeat top / 26px 26px;	
+	background: url(../img/common/ico_coffee.png) no-repeat top / 24px 24px;	
 }
 .head_tap ul li:not(:first-of-type) {
 	border-left: 1px solid #f0f0f0;
@@ -2530,15 +2541,17 @@ html, body{
 	background-color: #f5581a;
 	color: #fff;
 }
-.head_tap ul li:nth-child(1).active .btn_tap_baggage{
+
+.head_tap ul li:nth-child(2).active .btn_tap_baggage{
 	background: url(../img/common/ico_baggage_w.png) no-repeat top / 17px 27px;
 }
-.head_tap ul li:nth-child(2).active .btn_tap_food{
+.head_tap ul li:nth-child(3).active .btn_tap_food{
 	background: url(../img/common/ico_food_w.png) no-repeat top / 20px 26px;
 }
-.head_tap ul li:nth-child(3).active .btn_tap_lounge{
+.head_tap ul li:nth-child(4).active .btn_tap_lounge{
 	background: url(../img/common/ico_coffee_w.png) no-repeat top / 26px 26px;
 }
+
 
 /*가는편 오는편 head_tap_slide ------------------------------------------------------------*/
 .head_tap_slide ul{
@@ -2554,7 +2567,7 @@ html, body{
 }
 .head_tap_slide ul li button{
 	width: 100%;
-	font-family: 'PretendardM';
+	font-family: 'PretendardSB';
 	font-size: 14px;
 	color: #aaa;
 	border-bottom: 1px solid #f0f0f0;
@@ -2620,6 +2633,7 @@ html, body{
 	padding: 2px 3px;
 	border: 1px solid #222;
 	font-size: 9px;
+	font-family: 'PretendardB';
 }
 
 .service_passenger .pass_b{
@@ -2677,8 +2691,8 @@ html, body{
 }
 
 .service_passenger .pass_c div div{
-	font-family: 'RobotoB';
-	font-size: 18px;
+	font-family: 'PretendardB';
+	font-size: 17px;
 	color: #000;
 	width: 40px;
 
@@ -2706,21 +2720,21 @@ html, body{
 	border-bottom: 1px solid #f0f0f0;
 }
 .service_passenger .pass_d div{
-	margin-right: 10px;
+	margin-right: 12px;
 	font-size: 10px;
 	padding: 5px 8px 5px 8px;
 	background-color: #f5581a;
 	color: #fff;
-	font-family: 'PretendardR';
+	font-family: 'PretendardB';
 	border-radius: 3px;
-	width: 140px;
+	width: 155px;
 	text-align: center;
 }
 
 .service_passenger .pass_d div i{
 	position: absolute;
 	top: 29px;
-	right: 68px;
+	right: 76px;
 	width: 0;
 	height: 0;
 	border-bottom: 3px solid transparent;
@@ -3656,7 +3670,7 @@ input[id="food_item_btn2"]:checked + label i{
 	border: 1px solid #f5581a;
 	width: 10px;
 	height: 10px;
-	padding: 0 5px;
+	padding: 3px 5px;
 }
 
 .credit_agree_box_content .card_box1 div span:nth-child(2) {

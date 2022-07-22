@@ -21370,7 +21370,7 @@ padding-top: 20px;
 
 .box1_left{
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   bottom: 0;
   width: 40%;
@@ -21400,7 +21400,7 @@ padding-top: 20px;
   padding: 0 40px;
 }
 .box1_left .seat_sheet_bg{
-  width: 300px;
+
 }
 .box1_left .seat_sheet li a {
   margin-right: 10px;
@@ -21760,16 +21760,17 @@ margin-right: 11px;
 }
 
 .seat_sheet_price_box {
-	width: 143px;
+	width: 100px;
 	text-align: center;
 	font-size: 11px;
 }
 .seat_sheet_price_box .buy_num {
 	display: flex;
-	align-items: center;
+  text-align: right;
 	justify-content: center;
   padding-right: 30px;
 	border-top: 1px solid #ccc;
+  flex-direction: column;
 }
 .seat_sheet_price_box .buy_num:first-child {
 	border-top:none;
@@ -22458,7 +22459,7 @@ margin-right: 11px;
 
 .box2_left{
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   bottom: 0;
   width: 40%;
@@ -22763,6 +22764,32 @@ margin-right: 11px;
 }
 
 
+.tabstabs{
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 350px;
+  height: 50px;
+  border:1px solid #ddd;
+  border-radius: 30px;
+}
+.tabstabs-btn{
+  display: flex;
+}
+.tabstabs-btn li:nth-child(1) {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.tabstabs-btn li:nth-child(2) {
+  width: 50%;  
+  display: flex;
+  justify-content: space-around;
+}
+
+
 @media (max-width: 1200px) {
 
 	.move_bar_img2{
@@ -22777,3 +22804,4 @@ margin-right: 11px;
   }
   
 }
+

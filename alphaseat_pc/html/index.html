@@ -26,11 +26,11 @@
 
         <hr>
 
-        <section id="ags-container" class="ags-container" data-page-id="anc_main">
+        <section id="ags-container" class="ags-container" data-page-id="anc_main" >
             <div class="content-wrap">
                 <h2 class="sr-only">컨텐츠 본문</h2>
 
-                <div id="flight-way-selector" class="flight-way-selector">
+                <div id="flight-way-selector" class="flight-way-selector" style="display: none;">
                     <div class="btn-group">
                         <h4 class="sr-only">구간 선택</h4>
                         <ul class="btn-list">
@@ -62,15 +62,6 @@
                 <article id="anc_seat" name="anc_seat" class="anc-service-wrap anc_seat new_wraps">
                     <header class="anc-header">
                         <!-- 상단 텍스트 및 이미지 -->
-                        <div class="smile_name">좌석 위치 선택하기</div>
-                        <div class="smile_boximg_mov1" style="display: none;">
-                            <span>KIM, FOUR</span>님 좌석이 떨어져 앉을 확률
-                        </div>
-                        <div class="smile_boximg_radar" style="display: none;">
-                            <span>레이다 깜빡깜빡</span></div>                        
-                        <div class="smile_boximg_radar_txt" >
-                            <span>레이더가 가성비 1위 4인 그룹좌석을 찾았어요!</span>
-                        </div>
 
                         <div class="select_group_btn">
                             <a href="#none"><span>KIM, FOUR</span>님 <span>4</span>인 그룹</a>
@@ -80,7 +71,18 @@
                                 <li>KIM, TWO</li>
                                 <li>KIM, THREE</li>
                             </ul>
-                        </div>                        
+                        </div>  
+                        <div>
+                            <div class="smile_name">좌석 위치 선택하기</div>
+                            <div class="smile_boximg_mov1" style="display: none;">
+                                <span>KIM, FOUR</span>님 좌석이 떨어져 앉을 확률
+                            </div>
+                            <div class="smile_boximg_radar" style="display: none;">
+                                <span>레이다 깜빡깜빡</span></div>                        
+                            <div class="smile_boximg_radar_txt" >
+                                <span>레이더가 가성비 1위 4인 그룹좌석을 찾았어요!</span>
+                            </div>
+                        </div>                                              
                     </header>
 
                     <div class="anc-service" data-type="tab-group">
@@ -91,7 +93,28 @@
                         <!-- 딤드처리 흰색투명 오른쪽 -->
                         <div class="dimmed_bg_right" style="display: none;"></div>
 
-                        <!-- 원래 AGS 가는편 오는편 지금은 안씀 -->
+                        <!-- 원래 AGS 가는편 오는편  -->
+
+                        <div class="tabstabs">
+                            <ul class="tabstabs-btn">
+                                <li aria-controls="tab-panel1-1" class="active" tabindex="0" aria-selected="true">
+                                    <div>가는 편</div>
+                                    <div>
+                                        <span>ICN</span>
+                                        <span>SIN</span>
+                                        <div class="ymd_a">2022.6.16 (월)</div>
+                                    </div>
+                                </li>
+                                <li aria-controls="tab-panel1-2" aria-selected="false" class="" tabindex="-1">                                    
+                                    <div>오는 편</div>
+                                    <div>
+                                        <span>ICN</span>
+                                        <span>SIN</span>
+                                        <div class="ymd_a">2022.6.16 (월)</div>
+                                    </div></li>
+                            </ul>
+                        </div>
+
                         <div class="tabs" style="display: none;">
                             <h4 class="sr-only">구간 선택</h4>
                             <ul role="tablist">
@@ -184,12 +207,12 @@
                                         <!-- 왼쪽 좌석 사각형 다각형 박스 표시" -->
                                         <div class="seat_sheet_price" >
                                             <div class="seat_sheet_price_box">
-                                                <div class="buy_num type1">맨앞좌석 <span class="digits">15,000</span></div>
-                                                <div class="buy_num type1s">세미프리미엄 <span>11,000</span></div>
-                                                <div class="buy_num type2">A구역 <span>10,000</span></div>
-                                                <div class="buy_num type3">비상구 <span>15,000</span></div>
-                                                <div class="buy_num type4">B구역 <span>5,000</span></div>
-                                                <div class="buy_num type5">C구역 <span>3,000</span></div>
+                                                <div class="buy_num type1">맨앞좌석<br><span class="digits">15,000</span></div>
+                                                <div class="buy_num type1s">세미프리미엄<br> <span>11,000</span></div>
+                                                <div class="buy_num type2">A구역<br> <span>10,000</span></div>
+                                                <div class="buy_num type3">비상구<br> <span>15,000</span></div>
+                                                <div class="buy_num type4">B구역<br> <span>5,000</span></div>
+                                                <div class="buy_num type5">C구역<br> <span>3,000</span></div>
                                             </div>
                                             <div class="seat_sheet_recom_box">
                                                 <!-- 좌석 막을때 class="disabled" -->
