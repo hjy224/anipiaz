@@ -170,7 +170,7 @@ html.hidden {
   font-size: 0.69231rem;
   
   color: #ffffff;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -186,6 +186,88 @@ html.hidden {
 /* alert common style */
 /* 부가서비스 신청 (공통) */
 
+
+@font-face {
+	font-family: "PretendardBL";
+	font-display: swap;
+	src: local("Pretendard Black"), 
+	url("../font/Pretendard-Black.woff2") format("woff2"), 
+	url("../font/Pretendard-Black.woff") format("woff"),  
+  url("../font/Pretendard-Black.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "PretendardEB";
+	font-display: swap;
+	src: local("Pretendard ExtraBold"), 
+	url("../font/Pretendard-ExtraBold.woff2") format("woff2"), 
+	url("../font/Pretendard-ExtraBold.woff") format("woff"), 
+	url("../font/Pretendard-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "PretendardB";
+	font-display: swap;
+	src: local("Pretendard Bold"), 
+	url("../font/Pretendard-Bold.woff2") format("woff2"), 
+	url("../font/Pretendard-Bold.woff") format("woff"), 
+	url("../font/Pretendard-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "PretendardSB";
+	font-display: swap;
+	src: local("Pretendard SemiBold"), 
+	url("../font/Pretendard-SemiBold.woff2") format("woff2"), 
+	url("../font/Pretendard-SemiBold.woff") format("woff"), 
+	url("../font/Pretendard-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "PretendardM";
+	font-display: swap;
+	src: local("Pretendard Medium"), 
+	url("../font/Pretendard-Medium.woff2") format("woff2"), 
+	url("../font/Pretendard-Medium.woff") format("woff"), 
+	url("../font/Pretendard-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "PretendardR";
+	font-display: swap;
+	src: local("Pretendard Regular"), 
+	url("../font/Pretendard-Regular.woff2") format("woff2"), 
+	url("../font/Pretendard-Regular.woff") format("woff"), 
+	url("../font/Pretendard-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "PretendardL";
+	font-display: swap;
+	src: local("Pretendard Light"), 
+	url("../font/Pretendard-Light.woff2") format("woff2"), 
+	url("../font/Pretendard-Light.woff") format("woff"), 
+	url("../font/Pretendard-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "PretendardEL";
+	font-display: swap;
+	src: local("Pretendard ExtraLight"), 
+	url("../font/Pretendard-ExtraLight.woff2") format("woff2"), 
+	url("../font/Pretendard-ExtraLight.woff") format("woff"), 
+	url("../font/Pretendard-ExtraLight.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "PretendardT";
+	font-display: swap;
+	src: local("Pretendard Thin"), 
+	url("../font/Pretendard-Thin.woff2") format("woff2"), 
+	url("../font/Pretendard-Thin.woff") format("woff"), 
+	url("../font/Pretendard-Thin.otf") format("opentype");
+}
+
 @font-face {
   font-family: "Labdigital";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff") format("woff");
@@ -194,7 +276,7 @@ html.hidden {
 }
 
 @font-face {
-	font-family: "NotoSansL";
+	font-family: "PretendardR";
 	src: url("../font/NotoSans-Light.eot"); /* IE9+ Compat Modes */
 	src: url("../font/NotoSans-Light.woff2") format("woff2"), /* Super Modern Browser */
          url("../font/NotoSans-Light.woff") format("woff"), /* Modern Browser */
@@ -208,21 +290,21 @@ html.hidden {
          url("../font/NotoSans-DemiLight.otf") format("opentype");
 }
 @font-face {
-	font-family: "NotoSansR";
+	font-family: "PretendardM";
 	src: url("../font/NotoSans-Regular.eot");
 	src: url("../font/NotoSans-Regular.woff2") format("woff2"),
          url("../font/NotoSans-Regular.woff") format("woff"),
          url("../font/NotoSans-Regular.otf") format("opentype");
 }
 @font-face {
-	font-family: "NotoSansM";
+	font-family: "PretendardM";
 	src: url("../font/NotoSans-Medium.eot");
 	src: url("../font/NotoSans-Medium.woff2") format("woff2"),
          url("../font/NotoSans-Medium.woff") format("woff"),
          url("../font/NotoSans-Medium.otf") format("opentype");
 }
 @font-face {
-	font-family: "NotoSansB";
+	font-family: "PretendardB";
 	src: url("../font/NotoSans-Bold.eot");
 	src: url("../font/NotoSans-Bold.woff2") format("woff2"),
          url("../font/NotoSans-Bold.woff") format("woff"),
@@ -291,49 +373,49 @@ html.hidden {
 }
 
 @font-face {
-  font-family: "Geogrotesque";
+  font-family: ""NotoSansR"";
   font-weight: 100;
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.eot");
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_9_0.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Geogrotesque";
+  font-family: ""NotoSansR"";
   font-weight: 200;
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.eot");
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_A_0.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Geogrotesque";
+  font-family: ""NotoSansR"";
   font-weight: 300;
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.eot");
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_1_0.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Geogrotesque";
+  font-family: ""NotoSansR"";
   font-weight: 400;
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.eot");
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_5_0.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Geogrotesque";
+  font-family: ""NotoSansR"";
   font-weight: 500;
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.eot");
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_4_0.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Geogrotesque";
+  font-family: ""NotoSansR"";
   font-weight: 600;
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.eot");
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_7_0.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Geogrotesque";
+  font-family: ""NotoSansR"";
   font-weight: 700;
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.eot");
   src: url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.eot?#iefix") format("embedded-opentype"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.woff2") format("woff2"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.woff") format("woff"), url("https://cdn.ags-aws.com/static/fonts/geogrotesque/2F9EC7_6_0.ttf") format("truetype");
@@ -424,8 +506,7 @@ html.hidden {
   font-size: 0.92308rem;
   
   color: #888;
-  
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR","Apple SD Gothic NEO", sans-serif;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
@@ -460,7 +541,7 @@ html.hidden {
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
@@ -488,7 +569,7 @@ html.hidden {
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
@@ -515,7 +596,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 2.76923rem;
   line-height: 2.61538rem;
@@ -542,7 +623,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -569,7 +650,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -596,7 +677,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -623,7 +704,7 @@ html.hidden {
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
@@ -689,7 +770,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
   line-height: 16px;
 }
@@ -1000,7 +1081,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   margin-bottom: 0.30769rem;
   padding-left: 0.61538rem;
@@ -1031,7 +1112,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   margin-bottom: 0.15385rem;
   padding-left: 0.61538rem;
@@ -1067,7 +1148,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -1096,7 +1177,7 @@ html.hidden {
   
   color: #fff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -1169,7 +1250,7 @@ html.hidden {
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
   background-color: transparent;
 }
@@ -1202,7 +1283,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
   display: inline-block;
   white-space: nowrap;
@@ -1277,7 +1358,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 2.46154rem;
   line-height: 1.25em;
   text-align: center;
@@ -1292,7 +1373,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.23077rem 0;
   line-height: 1.38462em;
 }
@@ -1315,7 +1396,7 @@ html.hidden {
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.61538rem 1.23077rem;
   height: 2.46154rem;
   background-color: #000;
@@ -1333,7 +1414,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
   line-height: 1.23077rem;
 }
@@ -1366,7 +1447,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -1380,9 +1461,8 @@ html.hidden {
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: auto;
-  letter-spacing: 0.06231em;
 }
 
 [data-type="alert"] .pop-container .btn-wrap [class*="btn_"][disabled="disabled"] {
@@ -1428,7 +1508,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
   display: inline-block;
   white-space: nowrap;
@@ -1478,7 +1558,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
 }
 
@@ -1553,7 +1633,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-type="message"] .pop-footer input[type="checkbox"] + label .ico, [data-type="submission"] .pop-footer input[type="checkbox"] + label .ico, [data-type="guidance"] .pop-footer input[type="checkbox"] + label .ico {
@@ -1677,7 +1757,7 @@ html.hidden {
   font-size: 10px;
   color: #999;
   padding-left: 20px;
-  font-family: "NotoSansR";
+  font-family: "PretendardM";
 }
 
 
@@ -1726,7 +1806,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 1.23077rem;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -1752,7 +1832,7 @@ html.hidden {
   border-radius: 3px;
   white-space: nowrap;
   font-size: 1.23077rem;  
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -1875,7 +1955,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -1904,7 +1984,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -1965,7 +2045,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   left: 1.23077rem;
   top: 3.84615rem;
@@ -1983,7 +2063,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
 }
 
@@ -2034,7 +2114,7 @@ html.hidden {
   top: 35%;
   left: 50%;
   font-size: 16px;
-  font-family: "NotoSansB";
+  font-family: "PretendardB";
   transform: translate(-50%);
 
 }
@@ -2066,7 +2146,7 @@ html.hidden {
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   line-height: 1.53846rem;
 }
 
@@ -2122,7 +2202,7 @@ html.hidden {
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   line-height: 2.27273em;
 }
 
@@ -2147,8 +2227,8 @@ html.hidden {
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
-  letter-spacing: calc(-0.08 / 2 * 1em);
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
+
   display: inline-block;
   margin-left: 0.61538rem;
   padding: 0 0.53333em;
@@ -2170,7 +2250,7 @@ html.hidden {
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 .ags-header .gnb-wrap .gnb-2dp-wrap .depth2 > li a {
@@ -2193,7 +2273,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
   padding: 1.23077rem 1.23077rem;
   text-decoration: none;
@@ -2218,7 +2298,7 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-top: -1.23077rem;
   padding: 0 1.84615rem 1.84615rem;
 }
@@ -2426,7 +2506,7 @@ html.hidden {
   text-align: center;
   font-size: 13px;
   color: #000;
-  font-family: "NotoSansR";
+  font-family: "PretendardM";
 }
 
 .awa-datepicker.single-month tbody td .day.real-today {
@@ -2528,8 +2608,8 @@ html.hidden {
   
   color: #111;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
-  letter-spacing: calc(-0.08 / 2 * 1em);
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
+
 }
 
 .awa-datepicker.two-months .month-wrapper table thead .dot {
@@ -2625,8 +2705,8 @@ html.hidden {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
-  letter-spacing: calc(-0.08 / 2 * 1em);
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
+
   height: 62px;
   text-align: center;
   cursor: pointer;
@@ -2805,7 +2885,7 @@ html {
 body {
   font-size: 1rem;
   color: #000;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   line-height: 1;
 }
 
@@ -2906,7 +2986,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
   margin: 2.15385rem 0 0 1.23077rem;
   padding: 0 1em;
@@ -2932,33 +3012,42 @@ body {
 
 .ags-header .gnb li {
   float: left;
-  padding: 1.92308rem 1.53846rem 0;
+  padding: 7px 11px;
 }
+
+.sunsero{
+  position: absolute;
+  top: 24px;
+  margin-right: 1px;
+  color: #eee;
+}
+
 
 .ags-header .gnb li:last-of-type {
   float: right;
 }
 
 .ags-header .gnb li a {
-  font-size: 1rem;
-  
-  color: #000;
-  
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-size: 14px;
+  color: #ccc;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
   display: inline-block;
-  padding: 0.61538rem 0.30769rem;
+  padding: 20px 4px;
   vertical-align: middle;
   text-decoration: none;
 }
 
+
 .ags-header .gnb li.active a {
-  color: #FF4F24;
+  color: #222;
+  font-family: "PretendardB";
+  background: url("../img/common/garosun.jpg") no-repeat center top 49px / 75px 3px;
 }
 
 .ags-container {
   position: relative;
-  padding: 20px 0 10.76923rem;
+  padding: 0 0 10.76923rem;
   min-width: inherit;
 }
 
@@ -2972,8 +3061,8 @@ body {
   font-size: 1rem;
   
   color: #000;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   padding: 0.23077rem 0 0.30769rem 1.69231rem;
 }
@@ -3006,8 +3095,8 @@ body {
   font-size: 0.92308rem;
   
   color: #000;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   padding-bottom: 1.53846rem;
 }
@@ -3073,7 +3162,7 @@ body {
   
   color: #f5581a;
   letter-spacing: 0;
-  font-family: "NotoSansB", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardB", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -3103,7 +3192,7 @@ body {
   
   color: #fff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -3133,7 +3222,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -3180,7 +3269,7 @@ body {
   width: 135px;
 	padding-left: 25px;
 	font-size: 14px;
-	letter-spacing: -1px;
+
 	background: url("../img/common/ico_passanger.png") no-repeat left 0 top 18px / 20px 20px;
 
 }
@@ -3188,9 +3277,8 @@ body {
   float: right;
 	font-size: 12px;
 	color: #666666;
-  font-family:"NotoSansR";
+  font-family:"PretendardM";
   padding-right: 25px;
-  letter-spacing: -1px;
   background: url("../img/common/ico_plus.png") no-repeat right / 20px 20px;
 
   
@@ -3232,13 +3320,12 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.07692rem;
 }
 
 [data-page-id^="anc_"] .agreement-wrap .agreement-list,
 [data-page-id^="my_"] .agreement-wrap .agreement-list {
-  border-top: 1px solid #bbb;
 }
 
 [data-page-id^="anc_"] .agreement-wrap .agreement-list > li,
@@ -3247,7 +3334,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
   position: relative;
   height: 3.84615rem;
@@ -3290,14 +3377,13 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
-  padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
+  padding: 7px 0 5px 5px;
   text-decoration: none;
   color: inherit;
   position: absolute;
   right: 0;
-  top: 1.15385rem;
-  margin-right: -0.38462rem;
+  top: 13px;
 }
 
 [data-page-id^="anc_"] .agreement-wrap .agreement-list .btn_more .ico,
@@ -3337,7 +3423,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id^="anc_"] .agreement-wrap .notification-wrap .notification-text:first-child,
@@ -3365,12 +3451,10 @@ body {
   font-size: 0.84615rem;
   
   color: #000;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   padding-left: 0.54545em;
   line-height: 1.45455em;
-  letter-spacing: -0.03em;
 }
 
 [data-page-id^="anc_"] .agreement-wrap .notification-wrap .notification-list > li:before,
@@ -3440,8 +3524,7 @@ body {
   font-size: 0.84615rem;
   
   color: #000;
-  letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
 }
 
@@ -3546,8 +3629,7 @@ body {
   font-size: 1rem;
   
   color: #000;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   left: 0;
   top: 0;
@@ -3609,21 +3691,21 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id^="anc_"] .agreement-wrap input[type="checkbox"] + label .ico,
 [data-page-id^="my_"] .agreement-wrap input[type="checkbox"] + label .ico {
   margin-right: 8px;
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1px;
 }
 
 [data-page-id^="anc_"] .agreement-wrap input[type="checkbox"] + label .ico:before,
 [data-page-id^="my_"] .agreement-wrap input[type="checkbox"] + label .ico:before {
-  left: 3px;
-  top: 4px;
+  left: 5px;
+  top: 6px;
   width: 8px;
   height: 4px;
 }
@@ -3709,7 +3791,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id^="anc_"] .agreement-wrap input[type="radio"] + label .ico,
@@ -3762,7 +3844,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id^="anc_"] .agreement-wrap tbody th,
@@ -3801,8 +3883,8 @@ body {
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
-  letter-spacing: calc(-0.08 / 2 * 1em);
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
+
   display: inline-block;
   padding: 0.57143em;
   min-width: 2.57143em;
@@ -3934,8 +4016,8 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
-  letter-spacing: calc(-0.08 / 2 * 1em);
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
+
   text-transform: uppercase;
 }
 
@@ -3954,8 +4036,7 @@ body {
   font-size: 1rem;
   
   color: #000;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
   height: 100%;
 }
@@ -3987,7 +4068,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 2.76923rem;
   line-height: 2.61538rem;
@@ -4001,8 +4082,7 @@ body {
   font-size: 1rem;
   
   color: #000;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: calc(100% - 10px);
   height: 100%;
   border: 0;
@@ -4035,7 +4115,7 @@ body {
   
   color: #ffffff;
   letter-spacing: 0;
-  font-family: "NotoSansL", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardR", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 2.38462rem;
   height: 13.07692rem;
   background-color: #666;
@@ -4374,7 +4454,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 0.76923rem;
   padding-left: 0.61538rem;
   padding-right: 0.61538rem;
@@ -4386,7 +4466,7 @@ body {
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 3.07692rem;
   padding-left: 0.61538rem;
   padding-right: 0.61538rem;
@@ -4426,7 +4506,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin: 0 0.30769rem;
   padding: 0.53846em 0.92308em;
   text-align: center;
@@ -4505,8 +4585,7 @@ body {
   font-size: 0.84615rem;
   
   color: #ffffff;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
   margin-right: 0.61538rem;
   padding: 0.45455em 0.45455em;
@@ -4522,8 +4601,7 @@ body {
   font-size: 0.84615rem;
   
   color: #ffffff;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: right;
   padding: 0.45455em 0;
   line-height: 1em;
@@ -4708,8 +4786,7 @@ body {
   font-size: 0.92308rem;
   
   color: #aaa;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.23077rem 0;
   background-color: #ffffff;
 }
@@ -4753,7 +4830,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin: 0 -0.61538rem 2.46154rem;
   padding-bottom: 0.92308rem;
   border-bottom: 1px solid #000;
@@ -4778,9 +4855,7 @@ body {
   font-size: 1.07692rem;
   
   color: #FF4F24;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
-  letter-spacing: calc(-0.03 / 2 * 1em);
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
   background-size: 0.92308rem 0.92308rem;
@@ -4805,8 +4880,7 @@ body {
   font-size: 1rem;
   
   color: #FF4F24;
-  letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   right: 0;
   top: 0;
@@ -4821,7 +4895,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
   margin: 0.38462rem 0.30769rem;
   padding-right: 0.92308rem;
@@ -4871,7 +4945,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -4962,7 +5036,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -5060,8 +5134,7 @@ body {
   font-size: 0.76923rem;
   
   color: #000;
-  letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.61538rem;
 }
 
@@ -5083,7 +5156,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -5193,7 +5266,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -5243,7 +5316,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -5339,7 +5412,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
   padding-bottom: 0.8em;
 }
@@ -5370,7 +5443,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.23077rem;
   line-height: 1.35714em;
 }
@@ -5380,7 +5453,7 @@ body {
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.30769rem;
   letter-spacing: 0;
 }
@@ -5394,7 +5467,7 @@ body {
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 2.15385rem;
   width: 10.30769rem;
   line-height: 1.33333em;
@@ -5441,7 +5514,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -5474,7 +5547,7 @@ body {
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 3.07692rem 0 0.76923rem;
 }
 
@@ -5531,7 +5604,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -5647,7 +5720,7 @@ body {
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   right: 0.76923rem;
   top: 0;
@@ -5690,7 +5763,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -5746,7 +5819,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
   padding-bottom: 0.92308em;
   line-height: 1.23077em;
@@ -5761,7 +5834,7 @@ body {
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-pop-id="pop_payment_credit-card"] .input_card-num input {
@@ -5879,7 +5952,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
   width: 100%;
   height: 100%;
@@ -5911,7 +5984,7 @@ body {
 
 [data-page-id="anc_main"] > .content-wrap {
   position: relative;
-  padding-right: 26.76923rem;
+  padding-right: 315px;
 }
 
 [data-page-id="anc_main"] > .content-wrap:before {
@@ -5965,7 +6038,7 @@ body {
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_main"] .ticket-info .airport .arrival + dd {
@@ -6014,7 +6087,7 @@ body {
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -6029,7 +6102,7 @@ body {
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin: -0.27273em 1.09091em 0 0;
   padding: 0 0.36364em;
   min-width: 2.90909em;
@@ -6130,101 +6203,6 @@ padding-top: 20px;
   min-height: 49px;
   padding: 0.30769rem 0 1.84615rem 4.92308rem;
 }
-
-[data-page-id="anc_main"] .new_wraps .anc-header {
-  position: relative;
-  min-height: 49px;
-}
-
-.smile_boximg_mov1{
-  position: absolute;
-  top: -20px;
-  left: 50%;
-	font-size: 12px;
-  transform: translate(-50%);
-	text-align: center;
-	color: #666666;
-	font-family: "NotoSansR";
-  width: 200px;
-  height: 30px;
-  padding: 45px 0;
-	background: url("../img/common/hd_move_01.gif") no-repeat center top 10px / 200px 26px ;
-}
-
-.smile_boximg_radar{
-  position: absolute;
-	text-indent: -9999px;
-  top: 3px;
-  left: 50%;
-  width: 30px;
-  height: 30px;
-  transform: translate(-50%);
-	color: #666666;
-	font-family: "NotoSansR";
-	background: url("../img/common/circle_blue.gif") no-repeat center/ 30px 30px ;
-}
-
-.smile_boximg_radar_txt{
-  position: absolute;
-	font-size: 16px;
-  top: 3px;
-  left: 50%;
-  transform: translate(-50%);
-	color: #00aae7;
-	margin: 0 auto;	
-}
-
-.smile_boximg_radar_txt span{
-  padding-left: 25px;
-	background: url("../img/common/circle_blue.gif") no-repeat left 0px top 2px/ 20px 20px;
-}
-
-
-/*헤더 슬라이드 메뉴*/
-.select_group_btn {
-  position: absolute;
-  top: -12px;
-  right: 0;
-  z-index: 4;
-  display: block;
-  padding: 15px 15px 10px 15px;
-  font-size: 14px;
-  font-family: "NotoSansM";
-  color: #222;
-  letter-spacing: 0.2px;
-}
-.select_group_btn.active{
-  background-color: #fff;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 7px 9px 0px #bbb;
-	-moz-box-shadow: 0px 7px 9px 0px #bbb;
-	box-shadow: 0px 7px 9px 0px #bbb;
-}
-.select_group_btn a {
-  padding: 0 25px 5px 0;
-  color: #222;
-  background: url("../img/common/down_arrow.png") no-repeat right 0 top 0 / 22px 22px;
-}
-.select_group_btn.active a {
-  background: url("../img/common/up_arrow.png") no-repeat right 0 top 0 / 22px 22px;
-  border-bottom: 1px solid #ddd;
-}
-
-
-
-.select_group_pass {
-  position: relative;
-  margin-top: 10px;
-  display: none;
-  background-color: #fff;
-  width: inherit;
-  line-height: 28px;
-  z-index: 2;
-
-}
-
-
-
 
 
 
@@ -6351,7 +6329,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 0.55556em;
 }
 
@@ -6360,7 +6338,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_main"] .anc-service-wrap .anc-service {
@@ -6401,23 +6379,21 @@ padding-top: 20px;
   vertical-align: middle;
   font-size: 1rem;
   
-  color: #000;
+  color: #bbb;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
-  margin: 0 0.30769rem;
-  padding: 0.53846em 0.92308em;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
+
   text-align: center;
   text-decoration: none;
   line-height: 1.07692em;
-  border: 1px solid #ddd;
-  border-radius: 0.15385rem;
   cursor: pointer;
 }
 
 [data-page-id="anc_main"] .anc-service-wrap .anc-service [role="tab"].active {
-  border-color: #000;
-  background-color: #000;
+
+  background-color: #666;
   color: #ffffff;
+  border-radius: 30px;
 }
 
 [data-page-id="anc_main"] .anc-service-wrap .anc-service .tabs {
@@ -6583,7 +6559,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_main"] .anc-service + .notification-wrap .notification-list {
@@ -6591,7 +6567,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_main"] .anc-service + .notification-wrap .notification-list > li:before {
@@ -6604,7 +6580,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.25em 0;
   text-align: center;
 }
@@ -6653,7 +6629,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   text-transform: uppercase;
   height: 1.125em;
@@ -6665,7 +6641,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   padding: 0 0 0 0.45455em;
   transition-duration: 0.5s;
@@ -6692,7 +6668,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 0.61538rem;
   line-height: 0.92308rem;
 }
@@ -6740,7 +6716,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   content: "선택하세요";
 }
 
@@ -6778,7 +6754,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.30769rem;
   width: 3.69231rem;
@@ -6903,7 +6879,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   line-height: 1.23077rem;
 }
 
@@ -6964,7 +6940,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
   line-height: 16px;
 }
@@ -7041,7 +7017,7 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_main"] .anc-summary .departure, [data-page-id="anc_main"] .anc-summary .arrival, [data-page-id="anc_main"] .anc-summary [class^="departure-"] {
-  padding: 1.84615rem 0 1.23077rem;
+  padding: 1.84615rem 0 0;
 }
 
 [data-page-id="anc_main"] .anc-summary 제, [data-page-id="anc_main"] .anc-summary .service-title {
@@ -7049,7 +7025,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -7071,7 +7047,7 @@ padding-top: 20px;
   
   color: #66B1FF;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.84615rem;
   min-height: 9.30769rem;
   line-height: 1.33333em;
@@ -7091,7 +7067,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary .departure .passenger-name + dd, [data-page-id="anc_main"] .anc-summary .arrival .passenger-name + dd {
   font-size: 14px;
   color: #222;
-  font-family: "NotoSansB", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardB", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   padding: 10px 0 0.85714em;
   text-transform: uppercase;
@@ -7114,7 +7090,7 @@ padding-top: 20px;
   
   color: #66b1ff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   white-space: pre-wrap;
   line-height: 1.33333em;
 }
@@ -7129,7 +7105,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   vertical-align: middle;
 }
 
@@ -7200,7 +7176,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -7233,7 +7209,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansB", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardB", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
   background-size: 0.92308rem 0.92308rem;
@@ -7280,7 +7256,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.61538em;
 }
 
@@ -7289,7 +7265,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_main"] .anc-summary .departure-car table {
@@ -7314,7 +7290,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 5.07692rem;
   text-align: right;
 }
@@ -7357,7 +7333,7 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_main"] .anc-summary .total-sum {
-  padding-bottom: 5px;
+  padding: 10px 0;
   
 }
 
@@ -7371,7 +7347,7 @@ padding-top: 20px;
   font-size: 13px;
   color: #000;
   
-  font-family: "NotoSansM", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
   line-height: 2.16667em;
 
@@ -7381,7 +7357,7 @@ padding-top: 20px;
   font-size: 13px;
   color: #FF4F24;
   
-  font-family: "NotoSansM", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: right;
   line-height: 1.85714em;
 }
@@ -7404,7 +7380,7 @@ padding-top: 20px;
   
   color: #fff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.76923rem;
   line-height: 4.61538rem;
@@ -7453,7 +7429,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary.ui-fixed---bottom {
   position: fixed;
   top: 4.69231rem;
-  bottom: 400px;
+  bottom: 290px;
 }
 
 [data-page-id="anc_main"] .anc-summary.ui-fixed---bottom.fixed-left {
@@ -7512,7 +7488,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-right: 0.61538rem;
   padding: 0 0.30769rem;
   min-width: 3.07692rem;
@@ -7528,7 +7504,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 1.23077rem;
   line-height: 1.23077rem;
 }
@@ -7550,7 +7526,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: right;
   padding: 0.15385rem 0 0;
   height: 1.23077rem;
@@ -7665,7 +7641,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 2.46154rem;
   line-height: 1.25em;
   text-align: center;
@@ -7680,7 +7656,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.23077rem 0;
   line-height: 1.38462em;
 }
@@ -7703,7 +7679,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.61538rem 1.23077rem;
   height: 2.46154rem;
   background-color: #000;
@@ -7721,7 +7697,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
   line-height: 1.23077rem;
 }
@@ -7757,7 +7733,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -7771,7 +7747,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: auto;
   letter-spacing: 0.06231em;
 }
@@ -7812,7 +7788,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   right: 0;
   top: 0;
@@ -7861,7 +7837,7 @@ padding-top: 20px;
   font-size: 1.23077rem;
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
   width: 50%;
   height: 50px;
@@ -7908,7 +7884,7 @@ padding-top: 20px;
   text-decoration: none;
   color: inherit;
   line-height: 30px;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
 }
 
 [data-page-id="anc_main"] .flight-way-selector .ymd_a {
@@ -7917,8 +7893,7 @@ padding-top: 20px;
   font-size: 13px;
   top: 0;
   left: 353px;
-  letter-spacing: -0.3px;
-  font-family: "NotoSansR";
+  font-family: "PretendardM";
 }
 [data-page-id="anc_main"] .flight-way-selector .ymd_b {
   position: absolute;  
@@ -7926,19 +7901,10 @@ padding-top: 20px;
   font-size: 13px;
   top: 0;
   right: 366px;
-  letter-spacing: -0.3px;
-  font-family: "NotoSansR";
+  font-family: "PretendardM";
 }
 
-[data-page-id="anc_main"] .flight-way-selector a .waypoin_a {
-  background: url("../img/common/arrow_come_g.png") no-repeat center / 15px 15px;
-  padding: 15px;
-}
 
-[data-page-id="anc_main"] .flight-way-selector a .waypoin_b {
-  background: url("../img/common/arrow_back_g.png") no-repeat center / 15px 15px;
-  padding: 15px;
-}
 [data-page-id="anc_main"] .flight-way-selector a [class^="ico_"] {
   display: inline-block;
   margin-right: 0.92308rem;
@@ -8179,7 +8145,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   display: table-cell;
   text-align: center;
@@ -8215,7 +8181,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   position: absolute;
   left: 50%;
@@ -8240,7 +8206,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   position: absolute;
   left: 50%;
@@ -8274,7 +8240,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
 }
 
@@ -8283,7 +8249,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: right;
 }
@@ -8314,7 +8280,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.08 / 2 * 1em);
   overflow: hidden;
   position: relative;
@@ -8428,7 +8394,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   z-index: 1;
   position: relative;
   float: left;
@@ -8516,7 +8482,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.92308rem 0 3.69231rem;
   text-align: center;
 }
@@ -8544,7 +8510,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 /* all 통합 */
@@ -8687,7 +8653,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.61538rem 2.46154rem 2.15385rem;
   line-height: 1.63636em;
   letter-spacing: -0.03em;
@@ -8766,7 +8732,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   transition: all 0.5s;
   display: inline-block;
   padding: 1.08333em 0.61538rem;
@@ -8837,7 +8803,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-decoration: line-through;
 }
 
@@ -8846,7 +8812,7 @@ padding-top: 20px;
   
   color: #fee700;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_main"] .anc_baggage .baggage-plan li dl:after {
@@ -8903,7 +8869,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   transition: all 0.5s;
   opacity: 0;
   display: table;
@@ -9231,7 +9197,7 @@ padding-top: 20px;
   font-weight: 500;
   color: #ffffff;
   letter-spacing: 0em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: "NotoSansR", MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
   letter-spacing: calc(0 / 2 * 1em);
   position: absolute;
   left: 50%;
@@ -9306,7 +9272,7 @@ padding-top: 20px;
   font-weight: 400;
   color: #aaa;
   letter-spacing: -0.08em;
-  font-family: Geogrotesque, MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
+  font-family: "NotoSansR", MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
   letter-spacing: calc(-0.08 / 2 * 1em);
   display: inline-block;
   padding-top: 0.92308rem;
@@ -9396,7 +9362,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   top: 3.15385rem;
   left: 8.15385rem;
@@ -9418,7 +9384,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.61538rem;
 }
 
@@ -9446,7 +9412,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -9590,7 +9556,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
   line-height: 16px;
 }
@@ -9648,7 +9614,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -9731,7 +9697,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -9775,7 +9741,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -9847,7 +9813,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.09091em;
 }
 
@@ -9877,7 +9843,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.23077rem;
   line-height: 1.35714em;
 }
@@ -9887,7 +9853,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.30769rem;
   letter-spacing: 0;
 }
@@ -9901,7 +9867,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   line-height: 1.33333em;
 }
 
@@ -10033,7 +9999,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_main"] .anc_car .item .company-list table input[type="radio"] + label .ico {
@@ -10089,7 +10055,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
   text-decoration: none;
   color: inherit;
@@ -10097,7 +10063,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   float: right;
   margin-bottom: 0.36364em;
@@ -10160,7 +10126,7 @@ padding-top: 20px;
   
   color: #66b1ff;
   letter-spacing: -0.025em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
   margin: 1.84615rem 0 0;
   text-align: center;
@@ -10213,7 +10179,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -10252,7 +10218,7 @@ padding-top: 20px;
   color: #111;
   
   
-  font-family: "NotoSansB", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardB", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_pay-complete"] .thanks-message .description {
@@ -10260,7 +10226,7 @@ padding-top: 20px;
   
   color: #111;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.23077rem;
   line-height: 1.42857em;
 }
@@ -10270,7 +10236,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 0.72727em;
   line-height: 1.45455em;
 }
@@ -10284,7 +10250,7 @@ padding-top: 20px;
 [data-page-id="anc_pay-complete"] [class*="_pay-title"] {
   font-size: 1.53846rem;
   color: #000;
-  font-family: "NotoSansB", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardB", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_pay-complete"] .receipt-wrap, [data-page-id="anc_pay-complete"] .total-wrap {
@@ -10307,7 +10273,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.57143em 2.14286em;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -10326,7 +10292,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-right: 14rem;
 }
 
@@ -10338,7 +10304,7 @@ padding-top: 20px;
   display: inline-block;
   width: 6.30769rem;
   letter-spacing: 0;
-  font-family: "NotoSansB"
+  font-family: "PretendardB"
 }
 
 [data-page-id="anc_pay-complete"] .receipt-wrap table thead th {
@@ -10346,7 +10312,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.21429em 2.14286em 1.28571em;
   border-bottom: 1px solid #000;
 }
@@ -10478,7 +10444,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.30769rem;
   width: 3.69231rem;
@@ -10506,7 +10472,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-right: -0.15385rem;
   width: 9.61538rem;
   letter-spacing: 0;
@@ -10522,7 +10488,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-right: 4.61538rem;
   width: 11.69231rem;
   text-align: center;
@@ -10555,7 +10521,7 @@ padding-top: 20px;
 [data-page-id="anc_pay-complete"] .receipt-title {
   font-size: 14px;
   color: #000;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.23077rem;
   display: flex;
   align-items: center;
@@ -10620,7 +10586,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -10640,7 +10606,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -10751,7 +10717,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   
   color: #000;
 }
@@ -10787,7 +10753,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   right: 14rem;
   padding-right: 0;
 }
@@ -10802,7 +10768,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="anc_pay-failed"] .error-message .title .ico {
@@ -10835,7 +10801,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.23077rem;
   line-height: 1.42857em;
 }
@@ -10875,7 +10841,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   text-transform: uppercase;
 }
@@ -10896,7 +10862,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
   height: 100%;
 }
@@ -10928,7 +10894,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 2.76923rem;
   line-height: 2.61538rem;
@@ -10943,7 +10909,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: calc(100% - 10px);
   height: 100%;
   border: 0;
@@ -10998,7 +10964,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   padding: 1.23077rem;
   height: 3.69231rem;
@@ -11085,7 +11051,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: left;
   padding: 0 0.38462rem;
@@ -11178,7 +11144,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   overflow: visible;
   padding: 0.61538rem 0 0;
@@ -11196,7 +11162,7 @@ padding-top: 20px;
   
   color: #888;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
   line-height: 25px;
   padding: 0.76923rem 0 0;
@@ -11211,7 +11177,7 @@ padding-top: 20px;
   
   color: #888;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding-top: 0.61538rem;
   vertical-align: top;
@@ -11227,7 +11193,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0.61538rem 0 0 0.23077rem;
   vertical-align: top;
@@ -11304,7 +11270,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
   line-height: 16px;
 }
@@ -11388,7 +11354,7 @@ padding-top: 20px;
   
   color: #888;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 6.46154rem;
 }
 
@@ -11401,7 +11367,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.23077rem;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -11455,7 +11421,7 @@ padding-top: 20px;
   
   color: #666;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.15385rem 0.61538rem;
   min-height: 3.69231rem;
   border-bottom: 1px solid #f0f0f0;
@@ -11501,7 +11467,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -11545,7 +11511,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -11668,7 +11634,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
   line-height: 16px;
 }
@@ -11731,7 +11697,7 @@ padding-top: 20px;
   
   color: #66B1FF;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 .dfs-select-summary .product-info, .dfs-refund .product-info {
@@ -11770,7 +11736,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: left;
   padding: 0 0.38462rem;
@@ -11840,7 +11806,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   float: left;
 }
@@ -11882,7 +11848,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -11910,7 +11876,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -11954,7 +11920,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.84615rem 0;
   height: 3.30769em;
   line-height: 1.07692em;
@@ -11969,7 +11935,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.76923rem 0;
   vertical-align: middle;
   height: 4.30769em;
@@ -11986,7 +11952,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   background-color: #ffffff;
 }
 
@@ -12044,7 +12010,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-align: left;
 }
 
@@ -12058,7 +12024,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-align: left;
 }
 
@@ -12088,7 +12054,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
   display: block;
   margin: 0 auto;
@@ -12199,7 +12165,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
   display: block;
   margin-top: -1px;
@@ -12229,7 +12195,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
 }
 
@@ -12322,7 +12288,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 7.69231rem;
 }
 
@@ -12345,7 +12311,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 2.76923rem;
   line-height: 2.61538rem;
@@ -12387,7 +12353,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
 }
 
@@ -12462,7 +12428,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin: 0 0.30769rem;
   padding: 0.53846em 0.92308em;
   text-align: center;
@@ -12507,7 +12473,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.92308rem;
   line-height: 1.45455em;
 }
@@ -12553,7 +12519,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
 }
 
@@ -12605,7 +12571,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: left;
   padding: 0 0.38462rem;
@@ -12726,7 +12692,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
   line-height: 16px;
 }
@@ -12797,7 +12763,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.27273em;
   height: 3.81818em;
   border: 1px solid #FF4F24;
@@ -12868,7 +12834,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="dfs__resv-apply"] input[type="checkbox"] + label .ico {
@@ -12956,7 +12922,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="dfs__resv-apply"] input[type="radio"] + label .ico {
@@ -13001,7 +12967,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 0.92308rem;
 }
 
@@ -13034,7 +13000,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
 }
 
@@ -13087,7 +13053,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
@@ -13120,7 +13086,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-transform: translate(-50%, -1.30769rem);
   -ms-transform: translate(-50%, -1.30769rem);
   -o-transform: translate(-50%, -1.30769rem);
@@ -13148,7 +13114,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-transform: translate(-50%, 0.61538rem);
   -ms-transform: translate(-50%, 0.61538rem);
   -o-transform: translate(-50%, 0.61538rem);
@@ -13174,7 +13140,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 3.61538rem;
 }
 
@@ -13198,7 +13164,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -13216,7 +13182,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 1.23077rem;
 }
 
@@ -13241,7 +13207,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
   text-decoration: none;
   color: inherit;
@@ -13284,7 +13250,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-transform: uppercase;
   width: 2.69231rem;
   background-color: #FF4F24;
@@ -13329,7 +13295,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -13376,7 +13342,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.84615rem 0;
   height: 3.30769em;
   line-height: 1.07692em;
@@ -13390,7 +13356,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.76923rem 0;
   vertical-align: middle;
   height: 4.30769em;
@@ -13407,7 +13373,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   background-color: #ffffff;
 }
 
@@ -13472,7 +13438,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   padding-right: 1.23077rem;
 }
@@ -13490,7 +13456,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-align: left;
 }
 
@@ -13511,7 +13477,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -13556,7 +13522,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 10.76923rem;
 }
 
@@ -13603,7 +13569,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
   padding: 1.30769rem 0 0;
 }
@@ -13682,7 +13648,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
   line-height: 16px;
 }
@@ -13749,7 +13715,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.07692rem;
 }
 
@@ -13762,7 +13728,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
   position: relative;
   height: 3.84615rem;
@@ -13799,7 +13765,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
   text-decoration: none;
   color: inherit;
@@ -13842,7 +13808,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="dfs__resv-apply"] .agreement-wrap .notification-wrap .notification-text:first-child {
@@ -13866,7 +13832,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   padding-left: 0.54545em;
   line-height: 1.45455em;
@@ -13926,7 +13892,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
 }
 
@@ -14006,7 +13972,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   left: 0;
   top: 0;
@@ -14071,7 +14037,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 3.84615rem;
   line-height: 2.15385rem;
 }
@@ -14081,7 +14047,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.23077rem;
   line-height: 1.38462rem;
   word-break: keep-all;
@@ -14101,7 +14067,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -14129,7 +14095,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -14154,7 +14120,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 3.84615rem 1.23077rem 0;
 }
 
@@ -14167,7 +14133,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -14198,7 +14164,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -14231,7 +14197,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
 }
 
@@ -14242,7 +14208,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: right;
   padding: 0 1.23077rem;
@@ -14330,7 +14296,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 3.84615rem;
   line-height: 2.15385rem;
 }
@@ -14340,7 +14306,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.23077rem;
   line-height: 1.38462rem;
   word-break: keep-all;
@@ -14360,7 +14326,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -14388,7 +14354,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -14413,7 +14379,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 3.84615rem 1.23077rem 0;
 }
 
@@ -14426,7 +14392,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -14457,7 +14423,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -14490,7 +14456,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
 }
 
@@ -14501,7 +14467,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: right;
   padding: 0 1.23077rem;
@@ -14608,7 +14574,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="pay__payment"] input[type="checkbox"] + label .ico {
@@ -14696,7 +14662,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="pay__payment"] input[type="radio"] + label .ico {
@@ -14759,7 +14725,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
@@ -14792,7 +14758,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-transform: translate(-50%, -1.30769rem);
   -ms-transform: translate(-50%, -1.30769rem);
   -o-transform: translate(-50%, -1.30769rem);
@@ -14820,7 +14786,7 @@ padding-top: 20px;
   
   color: #aaa;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-transform: translate(-50%, 0.61538rem);
   -ms-transform: translate(-50%, 0.61538rem);
   -o-transform: translate(-50%, 0.61538rem);
@@ -14846,7 +14812,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 3.61538rem;
 }
 
@@ -14867,7 +14833,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -14885,7 +14851,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   width: 5.38462rem;
   height: 1.23077rem;
@@ -14906,7 +14872,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="pay__payment"] .receipt-wrap .total {
@@ -14922,7 +14888,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
   text-decoration: none;
   color: inherit;
@@ -14965,7 +14931,7 @@ padding-top: 20px;
   
   color: #ffffff;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-transform: uppercase;
   width: 2.69231rem;
   background-color: #FF4F24;
@@ -14977,7 +14943,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   width: 5.38462rem;
   text-align: right;
@@ -15001,7 +14967,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 0.92308rem;
 }
 
@@ -15032,7 +14998,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.30769rem 0 0;
 }
 
@@ -15073,7 +15039,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.07692rem;
 }
 
@@ -15086,7 +15052,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
   position: relative;
   height: 3.84615rem;
@@ -15123,7 +15089,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
   text-decoration: none;
   color: inherit;
@@ -15166,7 +15132,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="pay__payment"] .agreement-wrap .notification-wrap .notification-text:first-child {
@@ -15190,7 +15156,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   padding-left: 0.54545em;
   line-height: 1.45455em;
@@ -15250,7 +15216,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
 }
 
@@ -15330,7 +15296,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   left: 0;
   top: 0;
@@ -15390,7 +15356,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 37.90087%;
 }
 
@@ -15399,7 +15365,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   text-align: right;
 }
@@ -15419,7 +15385,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 2.76923rem;
   line-height: 2.61538rem;
@@ -15482,7 +15448,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 3.84615rem;
   line-height: 2.15385rem;
 }
@@ -15492,7 +15458,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.23077rem;
   line-height: 1.38462rem;
   word-break: keep-all;
@@ -15512,7 +15478,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -15540,7 +15506,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -15565,7 +15531,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 3.84615rem 1.23077rem 0;
 }
 
@@ -15578,7 +15544,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   background-image: url("../img/common/ico_passenger.png");
   background-repeat: no-repeat;
@@ -15609,7 +15575,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -15642,7 +15608,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
 }
 
@@ -15653,7 +15619,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   float: right;
   padding: 0 1.23077rem;
@@ -15711,7 +15677,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 0.61538rem;
 }
 
@@ -15794,7 +15760,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -15837,7 +15803,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1em 1.14286em;
   height: 10.28571em;
   line-height: 1.42857em;
@@ -15857,7 +15823,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -15941,7 +15907,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -16067,7 +16033,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -16104,7 +16070,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -16224,7 +16190,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -16264,7 +16230,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.14286em;
   height: 3.42857em;
   line-height: 3.28571em;
@@ -16386,7 +16352,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
   padding: 0 0 0.25em;
   text-decoration: none;
@@ -16406,7 +16372,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 3.07692rem;
 }
 
@@ -16442,7 +16408,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
 }
 
@@ -16506,7 +16472,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   table-layout: fixed;
   width: 100%;
   border-top: 1px solid #000;
@@ -16713,7 +16679,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="my_pay-history_anc"] .ticket-info .schedule ~ dd,
@@ -16747,7 +16713,7 @@ padding-top: 20px;
   border-radius: 3px;
   white-space: nowrap;
   font-size: 1.23077rem;  
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -16781,7 +16747,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
@@ -16866,7 +16832,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="my_pay-history-detail_anc"] .my-title-wrap .ticket-info .airport .arrival + dd,
@@ -16929,7 +16895,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -16944,7 +16910,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin: -0.27273em 1.09091em 0 0;
   padding: 0 0.36364em;
   min-width: 2.90909em;
@@ -17069,7 +17035,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap,
@@ -17087,7 +17053,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap .receipt-wrap, [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap .total-wrap,
@@ -17128,7 +17094,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.57143em 2.14286em;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -17155,7 +17121,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-right: 14rem;
 }
 
@@ -17180,7 +17146,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.21429em 2.14286em 1.28571em;
   border-bottom: 1px solid #000;
 }
@@ -17374,7 +17340,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.30769rem;
   width: 3.69231rem;
@@ -17406,7 +17372,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-right: -0.15385rem;
   width: 9.61538rem;
   letter-spacing: 0;
@@ -17426,7 +17392,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-right: 4.61538rem;
   width: 11.69231rem;
   text-align: center;
@@ -17473,7 +17439,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.23077rem;
 }
 
@@ -17548,7 +17514,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -17570,7 +17536,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -17743,7 +17709,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   
   color: #000;
 }
@@ -17791,7 +17757,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   right: 14rem;
   padding-right: 0;
 }
@@ -17814,7 +17780,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
@@ -17909,7 +17875,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
   line-height: 16px;
 }
@@ -17985,7 +17951,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
 }
 
@@ -18013,7 +17979,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -18062,7 +18028,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-transform: uppercase;
 }
 
@@ -18094,7 +18060,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 9.23077rem;
 }
 
@@ -18104,7 +18070,7 @@ padding-top: 20px;
   
   color: #FF4F24;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
   padding-right: 1.23077rem;
   text-align: right;
@@ -18145,7 +18111,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.07692rem;
 }
 
@@ -18160,7 +18126,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
   position: relative;
   height: 3.84615rem;
@@ -18201,7 +18167,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
   text-decoration: none;
   color: inherit;
@@ -18248,7 +18214,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="my_pay-history-detail_car"] .agreement-wrap .notification-wrap .notification-text:first-child,
@@ -18277,7 +18243,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   padding-left: 0.54545em;
   line-height: 1.45455em;
@@ -18352,7 +18318,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: 0em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
 }
 
@@ -18458,7 +18424,7 @@ padding-top: 20px;
   
   color: #000;
   letter-spacing: -0.03em;
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   left: 0;
   top: 0;
@@ -18495,7 +18461,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 2.46154rem;
   line-height: 1.69231em;
 }
@@ -18570,7 +18536,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
@@ -18618,7 +18584,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
@@ -18707,7 +18673,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
 [data-page-id="my_pay-history-detail_car"] table input[type="checkbox"] + label .ico,
@@ -18951,7 +18917,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 9.38462rem 1.23077rem;
   text-align: center;
 }
@@ -19048,7 +19014,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
 }
 
@@ -19119,7 +19085,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -19155,7 +19121,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1em 1.14286em;
   height: 10.28571em;
   line-height: 1.42857em;
@@ -19174,7 +19140,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -19251,7 +19217,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -19359,7 +19325,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -19391,7 +19357,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -19483,7 +19449,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
@@ -19520,7 +19486,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.14286em;
   height: 3.42857em;
   line-height: 3.28571em;
@@ -19610,7 +19576,7 @@ padding-top: 20px;
   
   color: #aaa;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
   padding: 0 0 0.25em;
   text-decoration: none;
@@ -19628,7 +19594,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 3.07692rem;
 }
 
@@ -19657,7 +19623,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
 }
 
@@ -19712,7 +19678,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   table-layout: fixed;
   width: 100%;
   border-top: 1px solid #000;
@@ -19894,7 +19860,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.84615rem;
 }
 
@@ -19907,7 +19873,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.84615rem;
 }
 
@@ -19923,7 +19889,7 @@ padding-top: 20px;
   
   color: #ffffff;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
   padding: 0 0.44444em;
   height: 1.77778em;
@@ -19943,7 +19909,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-top: 2.46154rem;
   padding: 1.23077rem 1.53846rem;
   background-color: #efefef;
@@ -19975,7 +19941,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1em 1.14286em;
   height: 10.28571em;
   line-height: 1.42857em;
@@ -20015,7 +19981,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20044,7 +20010,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20073,7 +20039,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20226,7 +20192,7 @@ padding-top: 20px;
   
   color: #888;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   counter-reset: policy-title;
   line-height: 1.61538em;
 }
@@ -20374,7 +20340,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 44.61538rem;
 }
 
@@ -20397,7 +20363,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20433,7 +20399,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1em 1em;
   height: 9.69231em;
   line-height: 1.23077em;
@@ -20452,7 +20418,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20529,7 +20495,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20637,7 +20603,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20669,7 +20635,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20761,7 +20727,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
@@ -20798,7 +20764,7 @@ padding-top: 20px;
   
   color: #000;
   
-  font-family: "NotoSansR", Geogrotesque, "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1em;
   height: 3.23077em;
   line-height: 3.07692em;
@@ -21096,7 +21062,7 @@ padding-top: 20px;
 }
 
 .row-num-left {
-  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-family: "NotoSansR", NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 0.85714rem;
   
   color: #aaa;
@@ -21111,7 +21077,7 @@ padding-top: 20px;
 }
 
 .row-num-right {
-  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-family: "NotoSansR", NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 0.85714rem;
   
   color: #aaa;
@@ -21141,7 +21107,7 @@ padding-top: 20px;
 }
 
 .row-num-left2 {
-  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-family: "NotoSansR", NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 0.85714rem;
   
   color: #aaa;
@@ -21156,7 +21122,7 @@ padding-top: 20px;
 }
 
 .row-num-right2 {
-  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-family: "NotoSansR", NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 0.85714rem;
   
   color: #aaa;
@@ -21211,7 +21177,7 @@ padding-top: 20px;
 }
 
  .seat-code-1 span{
-  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-family: "NotoSansR", NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 10pt;
   
   color: #000;
@@ -21234,7 +21200,7 @@ padding-top: 20px;
 }
 
  .seat-code-2 span{
-  font-family: Geogrotesque, NanumSquare, "Apple SD Gothic NEO", sans-serif;
+  font-family: "NotoSansR", NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 10pt;
   
   color: #000;
@@ -21352,28 +21318,121 @@ padding-top: 20px;
 /*상단 AI 제목*/
 .new_wraps .anc-header .smile_name {
   position: absolute;
-  left: 0;
-  top: 0;
-	font-size: 18px;
-	font-family: "NotoSansB";
+  right: 40px;
+	font-size: 15px;
+	font-family: "PretendardB";
   color: #222;
   padding-left: 30px;
   display: block;
   background: url("../img/common/ico_header-ai@3x.png") no-repeat left / 22px 20px;
   height: 20px;
   line-height: 20px;
-
+  top: -10px;
 }
+
+/*헤더 슬라이드 메뉴*/
+.select_group_btn {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  z-index: 4;
+  display: block;
+  padding: 15px 15px 10px 15px;
+  font-size: 13px;
+  font-family: "PretendardM";
+  color: #222;
+  letter-spacing: 0.2px;
+}
+
+.select_group_btn a {
+  padding: 0 25px 5px 0;
+  color: #222;
+  background: url("../img/common/down_arrow.png") no-repeat right 0 top 0 / 22px 22px;
+}
+.select_group_btn.active a {
+  background: url("../img/common/up_arrow.png") no-repeat right 0 top 0 / 22px 22px;
+}
+
+.select_group_pass {
+  position: relative;
+  z-index: 2;
+  display: none;
+  background-color: #fff;
+  width: inherit;
+  line-height: 28px;
+  
+  border-radius: 15px;
+  border: 1px solid #ddd;
+
+  left: -10px;
+  top: 19px;
+  padding: 15px 30px 15px 20px;
+  
+  -webkit-box-shadow: 0px 7px 9px 0px #bbb;
+	-moz-box-shadow: 0px 7px 9px 0px #bbb;
+	box-shadow: 0px 7px 9px 0px #bbb;
+}
+
+.header_txt{
+  position: absolute;
+  top: 0;
+  right: 150px;
+  width: 500px;
+}
+
+
+.smile_boximg_mov1{
+  position: absolute;
+  top: 9px;
+  right: 29px;
+	font-size: 12px;
+	color: #666666;
+	font-family: "PretendardM";
+  width: 155px;
+  height: 22px;
+  padding: 20px 0;
+	background: url("../img/common/hd_move_01.gif") no-repeat center top 10px / 155px 20px ;
+}
+
+.smile_boximg_radar{
+  position: absolute;
+	text-indent: -9999px;
+  top: 15px;
+  right: 92px;
+  width: 30px;
+  height: 30px;
+	color: #666666;
+	font-family: "PretendardM";
+	background: url("../img/common/circle_blue.gif") no-repeat center/ 30px 30px ;
+}
+
+.smile_boximg_radar_txt{
+  position: absolute;
+	font-size: 16px;
+  top: 15px;
+  right: -11px;
+	color: #00aae7;
+  height: 23px;
+}
+
+.smile_boximg_radar_txt span{
+  padding-left: 25px;
+	background: url("../img/common/circle_blue.gif") no-repeat left 0px top -1px/ 20px 20px;
+  font-size: 12px;
+}
+
+
+
 
 
 /* 박스박스 가운데 비행기 박스 220427 추가 수정 작업*/
 
 .box1_left{
   position: absolute;
-  top: 50px;
+  top: 75px;
   left: 0;
   bottom: 0;
-  width: 40%;
+  width: 35%;
   height: inherit;
 }
 
@@ -21382,7 +21441,7 @@ padding-top: 20px;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 50%;
+  width: 55%;
   height: inherit;
 	margin: 0 auto;
   overflow-y: scroll; 
@@ -21391,7 +21450,7 @@ padding-top: 20px;
 .box1_right .seat_sheet_bg {
 	margin: 0 auto;
 	width: 400px;
-	padding: 30px 0px;
+	padding: 90px 0px;
 	position: relative;
 }
 
@@ -21439,7 +21498,7 @@ padding-top: 20px;
 	text-align: center;
 	line-height: 36px;
 	letter-spacing: 0;
-	color: #111;
+	color: #666;
 }
 
 .seat_code{
@@ -21447,6 +21506,7 @@ padding-top: 20px;
 	font-size: 13px;
 	display: flex;
 	justify-content: space-between;
+  color: #666;
 }
 
 .seat_code span{
@@ -21483,11 +21543,10 @@ padding-top: 20px;
 	-webkit-transition: 0.2s all;
 	-moz-transition: 0.2s all;
 }
-
 .seat_sheet.left_seat_img{
   position: relative;
   top: 108px;
-  left: 222px;
+  left: 140px;
   width: 94px;
 }
 
@@ -21529,18 +21588,36 @@ padding-top: 20px;
 .airplane_bg_front{
 	position: absolute;
 	top: 30px;
-	left: 218px;
+	left: 135px;
 	width: 100px;
 	height: 87px;
 	background: url("../img/common/airplane_bgx_front.png") no-repeat center / 100px 87px;
 }
+
+/*앞좌석 이미지 화장실 및 식음료*/
+.facility_f{
+	position: absolute;
+	background: url(../img/common/facility_f.png) no-repeat center / 460px 221px;
+  width: 460px;
+	height: 221px;
+	top: 30px;
+	left: -30px;
+}
+.facility_b{
+	position: absolute;
+	background: url(../img/common/facility_b.png) no-repeat center / 460px 177px;
+	width: 460px;
+	height: 177px;
+	left: -30px;
+}
+
 
 /*li 지울때 제이쿼리에서 $('.airplane_bg_end').css('top', '값변경');*/
 
 .airplane_bg_end{
 	position: absolute;
 	top: 529px;
-	left: 218px;
+	left: 135px;
 	width: 100px;
 	height: 75px;
 	background: url("../img/common/airplane_bgx_end.png") no-repeat center / 100px 75px;
@@ -21608,7 +21685,7 @@ padding-top: 20px;
 }
 .seat_sheet li a.seat_active_blue::after{
 	content: attr(seatno);
-	font-family: "NotoSansL";
+	font-family: "PretendardR";
 	letter-spacing: 0;
 }
 
@@ -21616,9 +21693,11 @@ padding-top: 20px;
 /*좌석 disabled-------------------------------------------------*/
 .disabled_seat{
 	pointer-events: none;
-	cursor: default;	background: url("../img/common/ico_seat-disabled.png") no-repeat center /20px 20px;
+	cursor: default;	background: url("../img/common/ico_seat-disabled.png") no-repeat center /14px 14px;
 	background-color: #dedede !important;
 	border-bottom: 5px solid #bababa !important;
+  text-indent: -999em;
+
 }
 .seat_btn.disabled_seat{
 	text-indent: -999em;
@@ -21691,11 +21770,40 @@ padding-top: 20px;
 
 /* 첫페이지 왼쪽 구입가격*/
 
+.seat_sheet_touch_v1 {
+  position: absolute;
+  top: 287px;
+  left: 249px;
+  width: 100px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #08a7e1;
+  text-align: left;
+}
+.seat_sheet_touch_v1 .touch_a {
+  font-size: 13px;
+  font-family: 'PretendardM';
+  background: url("../img/common/arrow_02.png") no-repeat left / 11px 10px;
+  width: 22px;
+  height: 20px;
+  padding-left: 14px;
+}
+.seat_sheet_touch_v1 .touch_b {
+  font-size: 15px;
+  font-family: 'PretendardM';
+  padding-left: 14px;
+}
+.seat_sheet_touch_v1 .touch_c {
+  padding-left: 4px;
+  font-family: 'PretendardR';
+  font-size: 12px;
+  color: #444;
+}
 
 .seat_sheet_abcdef{
 	position: absolute;
 	top: 112px;
-	left: 228px;
+	left: 145px;
 	width: 78px;
 	height: 11px;
 	font-size: 8px;
@@ -21706,13 +21814,12 @@ padding-top: 20px;
 	background-color: #f8f8f8;
 }
 .seat_sheet_abcdef .hallway{
-
 margin-right: 11px;
 }
 .seat_sheet_number{
 	position: absolute;
 	top: 126px;
-	left: 200px;
+	left: 115px;
 	width: 100px;
 	font-size: 10px;
 	color: #444;
@@ -21754,9 +21861,10 @@ margin-right: 11px;
 .seat_sheet_price {
 	position: absolute;
 	top: 97px;
-  left: 75px;
+  left: 35px;
 	z-index: 3;
 	display: flex;
+  color: #666;
 }
 
 .seat_sheet_price_box {
@@ -21930,8 +22038,8 @@ margin-right: 11px;
 /*항공사 로고 */
 .air_logo{
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	top: 54px;
+	left: 35px;
 	width: 80px;
 	height: 15px;
 }
@@ -21967,7 +22075,7 @@ margin-right: 11px;
 .raider_left{
   position: absolute;
   top: 200px;
-	left: 130px;
+	left: 135px;
   z-index: 5;
   width: 50px;
   display: flex;
@@ -21976,8 +22084,8 @@ margin-right: 11px;
 
 .raider_left_v2{
   position: absolute;
-  top: 185px;
-	left: 320px;
+  top: 160px;
+	left: 184px;
   z-index: 5;
   width: 50px;
   display: flex;
@@ -22004,7 +22112,7 @@ margin-right: 11px;
 .raider_left_gif{
   position: absolute;
   top: 240px;
-	left: 260px;
+	left: 184px;
   z-index: 5;
   width: 50px;
   display: flex;
@@ -22028,7 +22136,7 @@ margin-right: 11px;
 .raider_down{
   position: absolute;
   top: 430px;
-	left: 230px;
+	left: 180px;
   z-index: 5;
   width: 50px;
   display: flex;
@@ -22052,7 +22160,7 @@ margin-right: 11px;
 .raider_right_gif{
   position: absolute;
   top: 260px;
-	left: 260px;
+	left: 176px;
   z-index: 5;
   width: 50px;
   display: flex;
@@ -22106,7 +22214,7 @@ margin-right: 11px;
   padding-top: 15px;
   color: #08a7e1;
   font-size: 16px;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
 }
 
 
@@ -22130,7 +22238,7 @@ margin-right: 11px;
   padding-top: 20px;
   color: #08a7e1;
   font-size: 16px;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
 }
 .right_loading_gif{
 
@@ -22153,7 +22261,7 @@ margin-right: 11px;
   padding-top: 20px;
   color: #08a7e1;
   font-size: 16px;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
 
   background: url("../img/common/loading-4.gif") no-repeat center / 80px 25px;
   background-color: #fff;
@@ -22174,7 +22282,7 @@ margin-right: 11px;
 	font-size:11px;
 	width: 65px;
 	z-index:6;
-  font-family:"NotoSansL";
+  font-family:"PretendardR";
   letter-spacing: 0.1px;
   padding: 2px 1px;
 }
@@ -22182,37 +22290,20 @@ margin-right: 11px;
 /* 오른쪽 좌석지정내역쪽----------------------------------------------*/
 
 .pay_r_txt{
-  font-family:"NotoSansB";
-  font-size: 16px;
+  font-family:"PretendardB";
+  font-size: 15px;
   padding-bottom: 20px;
 }
-.pay_departure_box{
-  border: 1.5px solid #ff6600;
-  font-family:"NotoSansM";
-  padding: 2px 1px;
-  width: 45px;
-  height: 20px;
-  font-size: 10.5px;
-  color: #ff6600;
-  text-align: center;
-  line-height: 14px;
-  
-}
+
 .pay_line{
   padding-top: 10px;
   border-bottom: 1px solid #bbbbbb;
 }
 
-.pay_departure_explain{
-  padding: 20px 0;
-  color: #999;
-  letter-spacing: -0.6px;
-  line-height: 16px;
-}
 
 .pay_arrive_box{
   border: 1.5px solid #ff6600;
-  font-family:"NotoSansM";
+  font-family:"PretendardM";
   padding: 2px 1px;
   width: 45px;
   height: 20px;
@@ -22265,6 +22356,7 @@ margin-right: 11px;
 .pay_group {
 	padding: 5px 1px;
   height: auto;
+
 }
 
 .pay_group li{
@@ -22284,6 +22376,8 @@ margin-right: 11px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+  color: #222;
+  font-size: 12px;
 }
 
 .pay_group li .pay_group_s .chair_s{
@@ -22292,11 +22386,11 @@ margin-right: 11px;
 	background-color: #F5581A;
 	font-size: 10.5px;
 	color: #fff;
-	line-height: 17px;
-	width: 28px;
-	height: 23px;
-	margin-right: 10px;
-	font-family: "NotoSansL";
+	line-height: 14px;
+	width: 22px;
+	height: 20px;
+	margin-right: 5px;
+	font-family: "PretendardR";
 	letter-spacing: 0.5px;
 }
 
@@ -22308,27 +22402,71 @@ margin-right: 11px;
 	width: 24px;
 	height: 22px;
 	margin-right: 10px;
-	font-family: "NotoSansL";
+	font-family: "PretendardR";
 	letter-spacing: 0.5px;
+}
+
+.pay_group li .pay_group_s .chuga{
+	margin-left: 5px;
+  font-size: 11px;
 }
 
 .pay_group li .chair_comple{
 	padding-left: 10px;
+  font-size: 12px;
+  color: #222;
+  font-family: "PretendardM";
 }
 .pay_choice{
+  border-top: 1px solid #eee;
 	display: flex;
 	justify-content: space-between;
 	color: #999;
-	padding: 15px 1px;
-  
-  letter-spacing: -0.6px;
+	padding: 10px 1px;
+  font-family: 'PretendardR';
+  font-size: 11px;
   line-height: 16px;
 }
+
+.pay_choice2{
+  border-top: 1px solid #eee;
+	display: flex;
+	justify-content: space-between;
+	color: #f5581a;
+	padding: 10px 1px 0 1px;
+  font-family: 'PretendardR';
+  font-size: 11px;
+  line-height: 16px;
+}
+
 .pay_choice a{
 	color: #222;
-  
   text-decoration: none;
+  font-size: 12px;
+  font-family: 'PretendardM';
 }
+
+.pay_choice div{
+  display: flex;
+}
+.pay_choice div span{
+  font-size: 11px;
+  font-family: 'PretendardR';
+}
+.pay_choice .safe_cho {
+  width: 26px;
+  height: 18px;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 12px;
+  font-size: 10px;
+  font-family: 'PretendardM';
+  color: #999;
+  padding: 1px 2.5px;
+  background-color: #fafafa;
+  margin-right: 3px;
+}
+
 
 /*체크박스 오렌지*/
 
@@ -22362,6 +22500,58 @@ margin-right: 11px;
   -webkit-transform: rotate(-45deg);
 }
 
+/*가는편 오는편 220727*/
+
+.payway_a {
+  border-top: 1px solid #bbb;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.payway_a .dambk {
+    color: #222;
+    font-family: 'PretendardSB';
+    display: flex;
+    align-items: center;
+}
+.payway_a .dambk span:nth-child(1) {
+  margin-right: 6px;
+  font-size: 13px;
+  font-family: 'PretendardB';
+  color: #222;
+}
+
+.payway_a .region_txt1 {
+  font-size: 11px;
+  display: inline-block;
+}
+
+.payway_a .region_txt1 span:nth-child(1) {
+  background: url("../img/common/ico_airplane_g.png") no-repeat right top 3px / 12px 12px;
+  padding: 0 17px 0px 0px;
+  font-size: 11px;
+  margin-right: 1px;
+}
+.payway_a .select_txt2 span {
+  margin: 0 1px;
+  display: inline-block;
+}
+
+.payway_a .pay_txt_b {
+  font-size: 12px;
+  font-family: 'PretendardM';
+  
+}
+
+.payway_a .pay_txt_b a {
+  background: url("../img/common/path_x3.png") no-repeat left /10px 9px;
+  padding-left: 15px;
+  color: #222;
+}
+
 /*가는편 오는편 */
 .pay_way{
 	font-size: 15px;
@@ -22373,7 +22563,7 @@ margin-right: 11px;
 
 .pay_way .select_txt2{
 	color: #666;
-	font-family: "NotoSansM";
+	font-family: "PretendardM";
 }
 
 .pay_way .select_txt2 span{
@@ -22384,7 +22574,7 @@ margin-right: 11px;
 .pay_way .select_txt2 span:nth-child(1){
 	margin-right: 6px;
 	font-size: 16px;
-	font-family: "NotoSansB";
+	font-family: "PretendardB";
 	color: #000;
 }
 .pay_way .select_txt2 span:nth-child(2){
@@ -22396,15 +22586,28 @@ margin-right: 11px;
 	padding-left: 70px;
 }
 
-.pay_way .airname.tway {
-	background: url("../img/common/symbol_flight-way_tw@3x.png") no-repeat left / 67px 24px;
-	height: 24px;
-	line-height: 24px;
-	align-items: center;	
+.airname.tway {
+	background: url("../img/common/symbol_flight-way_tw@3x.png") no-repeat center / 45px 16px;
+	padding-left: 80px;
+  height: 24px;
 }
-.pay_way .airname.jeju {
-	background: url("../img/common/symbol_flight-way_7c@3x.png") no-repeat left / 70px 14px;
-	height: 24px;
+.airname.jeju {
+	background: url("../img/common/symbol_flight-way_7c@3x.png") no-repeat center / 45px 9px;
+	padding-left: 80px;
+  height: 24px;
+}
+
+.airname.busan {
+  background: url("../img/common/symbol_flight-way_bx@3x.png") no-repeat center / 55px 17px;
+  padding-left: 80px;
+  height: 20px;
+}
+
+.select_txt3{
+	font-size: 12px;
+	color: #222;
+	font-family: 'PretendardM';
+	padding: 12px 0 5px 0;
 }
 
 .pay_select_i{
@@ -22434,7 +22637,7 @@ margin-right: 11px;
   background-color: #fff;
   color: #f5581a;
   border-radius: 5px;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
   font-size: 14px;
 }
 
@@ -22446,7 +22649,7 @@ margin-right: 11px;
 	color: #fff;
 	line-height: 22px;
 	margin-right: 5px;
-	font-family: "NotoSansL";
+	font-family: "PretendardR";
 	letter-spacing: 0.5px;
   padding: 3px 5px;
 }
@@ -22455,14 +22658,15 @@ margin-right: 11px;
 
 }
 
+
 /* 오는편쪽 탭-------------------------------------------------*/
 
 .box2_left{
   position: absolute;
-  top: 50px;
+  top: 75px;
   left: 0;
   bottom: 0;
-  width: 40%;
+  width: 35%;
   height: inherit;
 }
 
@@ -22471,7 +22675,7 @@ margin-right: 11px;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 50%;
+  width: 55%;
   height: inherit;
 	margin: 0 auto;
   overflow-y: scroll;  
@@ -22488,7 +22692,7 @@ margin-right: 11px;
 .box2_right .seat_sheet_bg {
 	margin: 0 auto;
 	width: 400px;
-	padding: 30px 0;
+	padding: 90px 0;
 	position: relative;
 }
 
@@ -22642,7 +22846,7 @@ margin-right: 11px;
 
 .txt_depature{
   font-size: 16px;
-  font-family: "NotoSansB";
+  font-family: "PretendardB";
   padding: 40px 2.46154rem 10px;
   display: flex;
 }
@@ -22651,14 +22855,14 @@ margin-right: 11px;
 }
 .txt_depature span:nth-child(2){
   font-size: 14px;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
   background: url("../img/common/ico_airplane_g.png") no-repeat right / 15px 15px;
   padding-right: 20px;
 }
 
 .txt_depature span:nth-child(3){
   font-size: 14px;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
   padding-left: 3px;
 }
 
@@ -22763,31 +22967,156 @@ margin-right: 11px;
 	transform: translate(-50%, -50%);
 }
 
-
 .tabstabs{
-  position: absolute;
+  position: relative;
   top: 20px;
-  left: 30px;
+  left: 15px;
   width: 350px;
   height: 50px;
   border:1px solid #ddd;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
 }
 .tabstabs-btn{
   display: flex;
+  width: 100%;
 }
 .tabstabs-btn li:nth-child(1) {
   width: 50%;
+  height: 50px;
   display: flex;
   justify-content: space-around;
+  border-radius: 30px;
+  color: #bbb;
 
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.tabstabs-btn li:nth-child(1).active {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #666;
+  border-radius: 30px;
+  color: #fff;
+
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.tabway_a {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-left: 15px;
+  font-family: "PretendardSB";
+}
+
+.tabway_b { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  margin-right: 8px;
+}
+.kmd_a{
+  line-height: 15px;
+  font-family: "PretendardM";
+  font-size: 12px;
+}
+.kmd_b{
+  line-height: 15px;
+  font-family: "PretendardR";
+  font-size: 10px;
+}
+
+.tabstabs-btn li .tabway_b .kmd_a span:nth-child(1){ 
+  background: url(../img/common/ico_airplane_g.png) no-repeat right top 5px / 8px 8px;
+  padding: 0 12px 0px 0px;
+}
+
+.tabstabs-btn li.active .tabway_b .kmd_a span:nth-child(1){ 
+  background: url(../img/common/ico_airplane_w.png) no-repeat right top 5px / 8px 8px;
+  padding: 0 12px 0px 0px;
 }
 
 .tabstabs-btn li:nth-child(2) {
-  width: 50%;  
+  width: 50%;
+  height: 50px;
   display: flex;
   justify-content: space-around;
+  border-radius: 30px;
+  color: #bbb;
+
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
+.tabstabs-btn li:nth-child(2).active {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #666;
+  border-radius: 30px;
+  color: #fff;
+
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.tabstabs-btn li:nth-child(1) .tab_clock_a {
+  display: none;
+}
+.tabstabs-btn li:nth-child(2) .tab_clock_b {
+  display: none;
+}
+.tabstabs-btn li:nth-child(1).active .tab_clock_a {
+  position: absolute;
+  top: 53px;
+  left: 0;
+  font-size: 11px;
+  color: #222;
+  font-family: "PretendardR";
+  display: block;
+}
+.tabstabs-btn li:nth-child(2).active .tab_clock_b {
+  position: absolute;
+  top: 53px;
+  right: 0;
+  font-size: 11px;
+  color: #222;
+  font-family: "PretendardR";
+  display: block;
+}
+
+
+.popup_infor {
+  position: absolute;
+  top: 105px;
+  left: 15px;
+  z-index: 1;
+}
+.popup_infor a {
+  background: url(../img/common/info_btn.png) no-repeat center / 16px 16px;
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+}
+
 
 
 @media (max-width: 1200px) {
