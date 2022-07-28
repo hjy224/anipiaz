@@ -22554,32 +22554,35 @@ margin-right: 11px;
 
 /*가는편 오는편 */
 .pay_way{
-	font-size: 15px;
+	font-size: 14px;
 	display:flex;
-	align-items:flex-end;
+	align-items: center;
 	justify-content: space-between;
-	padding: 20px 16px 15px 16px;
+	padding: 20px 16px 10px 16px;
+ 
 }
 
 .pay_way .select_txt2{
-	color: #666;
-	font-family: "PretendardM";
+  display: flex;
+  align-items: center
 }
 
 .pay_way .select_txt2 span{
-	font-size: 13px;
+	font-size: 11px;
 	margin: 0 1px;
 	display:inline-block;
+  color: #222;
+  font-family: "PretendardSB";
+
 }
 .pay_way .select_txt2 span:nth-child(1){
-	margin-right: 6px;
-	font-size: 16px;
-	font-family: "PretendardB";
-	color: #000;
+	margin-right: 5px;
+  
+	font-size: 14px;
 }
 .pay_way .select_txt2 span:nth-child(2){
-	background: url("../img/common/ico_airplane_g.png") no-repeat center right / 15px 15px;
-	padding: 0 22px 0px 0px;
+	background: url("../img/common/ico_airplane_g.png") no-repeat center right / 13px 15px;
+	padding: 0 20px 0px 0px;
 }
 
 .pay_way .airname {
@@ -22615,7 +22618,7 @@ margin-right: 11px;
 	height: 15px;
 	background: url("../img/common/ico_delete-s@3x.png") no-repeat right / 15px 15px;
 	text-decoration: none;
-  color: #222;
+  color: #08a7e1;
 }
 
 .pay_select_o{

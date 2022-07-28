@@ -40,11 +40,36 @@
   background-color: #fff;
 }
 
+.layer_popup.type2 .wrapper_popup.type3 {
+
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
 .layer_popup.full .wrapper_popup {
   position: relative;
   top: 0;
   height: 100%;
 }
+
+/*220429 좌석배정팝업*/
+.layer_popup.type2 {
+  z-index: 20;
+  position: absolute;
+  top: 80px;
+  left: -15px;
+  width: 300px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layer_popup.type2 .wrapper_popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
 
 .layer_popup.alert .wrapper_popup {
   top: 50%;
@@ -64,11 +89,13 @@
 .layer_popup .wrapper_popup>div {
   width: 100%;
   background-color: #fff;
+  border-radius: 5px;
 }
 
 .layer_popup .wrapper_popup .popup_header {
   padding: 0 16px;
   height: 32px;
+  border-radius: 5px;
 }
 
 .layer_popup .wrapper_popup .popup_header .grp_title_popup {
@@ -80,7 +107,15 @@
 }
 .grp_title_popup h2{
   font-size: 15px;
+  color: #222;
 
+}
+
+.grp_title_popup .btn_close_popup {
+  background: url("../img/common/ico_header-close@3x.png") no-repeat center /15px 15px;
+  width: 13px;
+  height: 13px;
+  text-indent: -999em;
 }
 
 .box_button{
@@ -168,9 +203,12 @@
 .layer_popup .pay_group {
   padding: 20px 16px;
   font-size: 13px;
+  height: 300px;
+  overflow-y: auto;
 }
+
 .layer_popup .pay_group li {
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .layer_popup .pay_group .pay_group_s {
@@ -180,22 +218,22 @@
 .layer_popup .pay_turn{
   font-size: 12px;
   padding-left: 15px;
-  background: url(../img/common/path_x3.png) no-repeat left / 11px 11px;
+  background: url("../img/common/path_x3.png") no-repeat left / 11px 11px;
   font-family: 'PretendardM';
 }
 
 
 /*좌석 이미지 클릭 코드*/
 .layer_popup .seat_num{
-  padding: 10px;
+  padding: 0 10px 17px 10px;
   width: 294px;
   margin: 0 auto;
 }
 
 .layer_popup .seat_num li{
-  display: flex;
-  justify-content: space-between;
   padding-top: 10px;
+  
+ 
 }
 
 .layer_popup .seat_num li a{  
@@ -203,24 +241,26 @@
   height: 36px;
   text-align: center;
   clip-path: polygon(12% 0, 88% 0, 100% 14%, 100% 100%, 0 100%, 0 14%);
-  background-color: #ff6600;  
-  border-bottom: 5px solid #CE3802;
-  opacity: 40%;
+  background-color: #fbbda4;  
+  border-bottom: 5px solid #ecb09a;
   font-size: 13px;
   color: #fff;
-  line-height: 38px;
   display: inline-block;
+  margin-right: 7px;
+  margin-top: 7px;
+  line-height: 35px;
 }
 
 .layer_popup .seat_num li a.seat_active{ 
   opacity: 100%;
   color: #ff6600;
-  line-height: 48px;
   font-size: 11px;
   background: url(../img/common/people_x3.png) no-repeat center / 25px 25px;
   background-position: 6px 5px;
   background-color: #ff6600;  
+  border-bottom: 5px solid #ce3802;
   transition: 0.2s all;
+  line-height: 45px;
 }
 .layer_popup .seat_num li a.seat_active::after{
   border: 2px solid #ff6600;
@@ -245,8 +285,8 @@
 .layer_popup .seat_num .a1-1{position: relative;}
 .layer_popup .seat_num .a1-1::before {
   position: absolute;
-  top: -4px;
-  left: -4px;
+  top: -11px;
+  left: -3px;
   content: "";
   width: 40px;
   height: 40px;
@@ -424,67 +464,99 @@ padding: 10px;
 }
 
 
+.layer_popup.popup_1 .wrapper_popup.type3 {
+  border-radius: 5px;
+}
 
-#popup1 .smile_boximg ul{
+
+.layer_popup.popup_1 .smile_boximg ul {
   padding: 0 0 10px 0;
 }
 
-#popup1 .smile_boximg ul::before{
+.layer_popup.popup_1 .smile_boximg ul::before {
   height: 15px;
 }
 
-#popup1 .smile_boximg ul::after{
+.layer_popup.popup_11 .smile_boximg ul::after {
   height: 15px;
 }
 
-#popup1 .smile_boximg ul li{
-  background: url(../img/svg/emo_01.svg) no-repeat center / 22px 22px;
+.layer_popup.popup_1 .smile_boximg ul li {
+  background: url("../img/svg/emo_01.svg") no-repeat center / 22px 22px;
   margin-right: 2px;
   width: 22px;
   height: 22px;
   margin: 0 3px;
 }
-#popup1 .popup_con_txt{
+
+.layer_popup.popup_1 .popup_con_txt {
   display: flex;
   flex-direction: column;
   left: 50px;
   margin: 0 auto;
   width: 160px;
-  padding-bottom: 10px;  
+  padding-bottom: 10px;
 }
-#popup1 .popup_con_txt span{
+
+.layer_popup.popup_1 .popup_con_txt span {
   font-size: 16px;
   text-align: left;
   margin-left: 10px;
   padding: 0 0 10px 20px;
 }
 
-#popup1 .popup_con_txt span:first-child{
+.layer_popup.popup_1 .popup_con_txt span:first-child {
   color: #444;
-  background: url(../img/common/pathv_x3.png) no-repeat left / 14px 12px;
+  background: url("../img/common/pathv_x3.png") no-repeat left / 14px 12px;
   background-position: 0 3px;
 }
-#popup1 .popup_con_txt span:last-child{
-  background: url(../img/common/waring_x3.png) no-repeat left / 14px 12px;
+
+.layer_popup.popup_1 .popup_con_txt span:last-child {
+  background: url("../img/common/waring_x3.png") no-repeat left / 14px 12px;
   background-position: 0 3px;
 }
-#popup1 .wrapper_popup .popup_header .grp_title_popup{  
+
+.layer_popup.popup_1 .wrapper_popup .popup_header .grp_title_popup {
   justify-content: space-between
 }
 
-#popup1 .popup_con1 .passenger_number_choice{
+
+.layer_popup.popup_1 .popup_con1 .passenger_number_choice {
   font-size: 13px;
   color: #222;
 }
 
-#popup1 .popup_con1 .pay_del {
-  padding: 15px 16px 15px 16px;
-  align-items: center;
-  font-size: 13px;
-}
-#popup1 .popup_con1 .pay_del span {
+.layer_popup.popup_1 .popup_con1 .pay_del .passenger_number_choice span {
   color: #ff4700;
 }
+
+.layer_popup.popup_1 .popup_con1 .pay_del {
+  border-top: 1px solid #eee;
+  padding: 10px 16px 15px 16px;
+}
+
+
+.smile_boximg ul::before {
+  content: "";
+  border: 2px solid #111;
+  display: inline-block;
+  width: 6px;
+  height: 24px;
+  border-right: none;
+  margin-right: 2px;
+}
+
+.smile_boximg ul::after {
+  content: "";
+  border: 2px solid #111;
+  display: inline-block;
+  width: 6px;
+  height: 24px;
+  border-left: none;
+  margin-left: 2px;
+}
+
+
 
 
 #popup11 .smile_boximg ul{
@@ -812,9 +884,6 @@ padding: 10px;
 #popup6_6 .popup_content, #popup6_7 .popup_content, #popup6_8 .popup_content, #popup6_11 .popup_content{
   padding: 0px;
   text-align: center;
-}
-.popup_content div:nth-child(3){
-  padding: 20px 0;
 }
 
 #popup6_5 .popup_content div:nth-child(4),#popup6_11 .popup_content div:nth-child(4){
