@@ -180,7 +180,7 @@ html.hidden {
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
 }
 
 /* alert common style */
@@ -443,7 +443,7 @@ html.hidden {
 }
 
 .text-emphasis {
-  color: #FF4F24;
+  color: #ff4700;
   font-style: normal;
 }
 
@@ -594,7 +594,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -621,7 +621,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -648,7 +648,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -675,7 +675,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
@@ -708,9 +708,9 @@ html.hidden {
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -768,7 +768,7 @@ html.hidden {
 .ui-checkbox + label {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
@@ -943,7 +943,6 @@ html.hidden {
   border-radius: 5px;
   font-size: 13px;
   line-height: 1.4em;
-  
   text-align: center;
   color: #fff;
   white-space: nowrap;
@@ -1010,7 +1009,7 @@ html.hidden {
   font-size: 1rem;
   margin-bottom: 12px;
   
-  color: #000;
+  color: #222;
   display: block;
 }
 
@@ -1021,7 +1020,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   padding: 0 1rem;
   height: 3.23077rem;
@@ -1069,7 +1068,7 @@ html.hidden {
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   text-align: left;
-  border: 1px solid #000;
+  border: 1px solid #222;
 }
 
 .pop-wrap {
@@ -1079,7 +1078,7 @@ html.hidden {
 .pop-wrap ul.list-dot > li {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -1095,7 +1094,7 @@ html.hidden {
   display: inline-block;
   width: 3px;
   height: 3px;
-  background-color: #000;
+  background-color: #222;
   border-radius: 50%;
 }
 
@@ -1110,7 +1109,7 @@ html.hidden {
 .pop-wrap ul.list-bar > li {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -1146,7 +1145,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -1154,7 +1153,7 @@ html.hidden {
   line-height: 3.53846rem;
   border: 1px solid #eee;
   background-color: #eee;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -1281,7 +1280,7 @@ html.hidden {
 [data-type="alert"] .pop-title {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
@@ -1356,7 +1355,7 @@ html.hidden {
 [data-type="alert"] .pop-container .alert-title {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 2.46154rem;
@@ -1371,7 +1370,7 @@ html.hidden {
 [data-type="alert"] .pop-container .alert-text {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.23077rem 0;
@@ -1399,7 +1398,7 @@ html.hidden {
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.61538rem 1.23077rem;
   height: 2.46154rem;
-  background-color: #000;
+  background-color: #222;
   text-align: center;
 }
 
@@ -1412,7 +1411,7 @@ html.hidden {
 [data-type="alert"] .pop-container dl.alert-text dl dt, [data-type="alert"] .pop-container dl.alert-text dl dd {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
@@ -1445,14 +1444,14 @@ html.hidden {
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #222;
+  background-color: #222;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -1506,7 +1505,7 @@ html.hidden {
   z-index: 0;
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
@@ -1556,7 +1555,7 @@ html.hidden {
   z-index: 0;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
@@ -1631,7 +1630,7 @@ html.hidden {
 [data-type="message"] .pop-footer input[type="checkbox"] + label, [data-type="submission"] .pop-footer input[type="checkbox"] + label, [data-type="guidance"] .pop-footer input[type="checkbox"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -1749,7 +1748,7 @@ html.hidden {
   vertical-align: middle;
   padding-right: 1.23077rem;
   padding-left: 0;
-  color: #000;
+  color: #222;
   text-align: left;
 }
 
@@ -1904,7 +1903,7 @@ html.hidden {
   text-overflow: ellipsis;
   vertical-align: middle;
   padding: 1.23077rem 3.69231rem 1.23077rem 1.23077rem;
-  color: #000;
+  color: #222;
   border-bottom: 1px solid #f0f0f0;
   text-align: left;
 }
@@ -1953,7 +1952,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
@@ -1961,7 +1960,7 @@ html.hidden {
   line-height: 4.15385rem;
   border: 1px solid #eee;
   background-color: #eee;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -1982,7 +1981,7 @@ html.hidden {
   white-space: nowrap;
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
@@ -1990,7 +1989,7 @@ html.hidden {
   line-height: 4.15385rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -2043,7 +2042,7 @@ html.hidden {
 [data-type="drawer"] .summary-title {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
@@ -2061,7 +2060,7 @@ html.hidden {
 [data-type="drawer"] .title {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
@@ -2132,7 +2131,7 @@ html.hidden {
   bottom: 0;
   padding: 3.84615rem 2.46154rem 2.46154rem 2.46154rem;
   width: 100%;
-  background-color: #000;
+  background-color: #222;
 }
 
 .ags-header .gnb-wrap .gnb-2dp-wrap .btn_close {
@@ -2271,7 +2270,7 @@ html.hidden {
 [data-page-id="popup"] .list-style1 a {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
@@ -2286,7 +2285,7 @@ html.hidden {
   margin-top: 1.07692rem;
   padding: 3.07692rem 0;
   background-color: #ffffff;
-  border: 1px solid #000;
+  border: 1px solid #222;
   border-radius: 3px;
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
@@ -2296,7 +2295,7 @@ html.hidden {
 .awa-datepicker .datepicker-title {
   font-size: 1.38462rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-top: -1.23077rem;
@@ -2369,7 +2368,7 @@ html.hidden {
 .awa-datepicker.single-month .month-wrapper table thead select {
   height: 30px;
   font-size: 18px;
-  color: #000;
+  color: #222;
   background: none;
 }
 
@@ -2390,7 +2389,7 @@ html.hidden {
 
 .awa-datepicker.single-month .month-wrapper table thead .month-element {
   font-size: 20px;
-  color: #000;
+  color: #222;
   background: none;
   vertical-align: middle;
   display: inline-block;
@@ -2423,7 +2422,7 @@ html.hidden {
   top: 8px;
   margin: 0 5px;
   display: inline-block;
-  background: #000;
+  background: #222;
   width: 3px;
   height: 3px;
 }
@@ -2505,7 +2504,7 @@ html.hidden {
   line-height: 30px;
   text-align: center;
   font-size: 13px;
-  color: #000;
+  color: #222;
   font-family: "PretendardM";
 }
 
@@ -2544,7 +2543,7 @@ html.hidden {
 
 .awa-datepicker.single-month tbody td .hovering {
   background: #f9ecd3 !important;
-  color: #000 !important;
+  color: #222 !important;
 }
 
 .awa-datepicker.two-months .month-wrapper {
@@ -2651,7 +2650,7 @@ html.hidden {
   display: inline-block;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
 }
 
 .awa-datepicker.two-months .month-wrapper table thead .prev, .awa-datepicker.two-months .month-wrapper table thead .prev:before, .awa-datepicker.two-months .month-wrapper table thead .next, .awa-datepicker.two-months .month-wrapper table thead .next:before {
@@ -2703,7 +2702,7 @@ html.hidden {
 .awa-datepicker.two-months .month-wrapper table tbody td {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
 
@@ -2761,7 +2760,7 @@ html.hidden {
 .awa-datepicker.two-months .month-wrapper table tbody td .first-date-selected {
   position: relative;
   background: #f5581a !important;
-  color: #000;
+  color: #222;
 }
 
 .awa-datepicker.two-months .month-wrapper table tbody td .first-date-selected:after {
@@ -2778,7 +2777,7 @@ html.hidden {
 .awa-datepicker.two-months .month-wrapper table tbody td .last-date-selected {
   position: relative;
   background: #f5581a !important;
-  color: #000;
+  color: #222;
 }
 
 .awa-datepicker.two-months .month-wrapper table tbody td .last-date-selected:after {
@@ -2798,7 +2797,7 @@ html.hidden {
 
 .awa-datepicker.two-months .month-wrapper table tbody td .hovering {
   background: #F8F8F8 !important;
-  color: #000;
+  color: #222;
 }
 
 .awa-datepicker .time-choices {
@@ -2866,7 +2865,7 @@ html.hidden {
   display: inline-block;
   width: 100px;
   height: 30px;
-  color: #000;
+  color: #222;
   text-align: center;
   line-height: 30px;
 }
@@ -2884,7 +2883,7 @@ html {
 
 body {
   font-size: 1rem;
-  color: #000;
+  color: #222;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   line-height: 1;
 }
@@ -2984,7 +2983,7 @@ body {
 .ags-header .symbol-wrap .ico_tag {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
@@ -3015,11 +3014,40 @@ body {
   padding: 7px 11px;
 }
 
+.way_select{
+  position:absolute;
+  top: 0px;
+  right: 100px;
+  z-index: 2;
+}
+
+.way_select li{
+  float: left;
+  padding: 7px 11px;
+}
+
 .sunsero{
   position: absolute;
-  top: 24px;
+  top: 27px;
   margin-right: 1px;
   color: #eee;
+}
+
+.way_select li a {
+  font-size: 14px;
+  color: #ccc;
+  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
+  overflow: hidden;
+  display: inline-block;
+  padding: 20px 4px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.way_select li.active a {
+  color: #222;
+  font-family: "PretendardB";
+  background: url("../img/common/garosun.jpg") no-repeat center top 49px / 75px 3px;
 }
 
 
@@ -3060,7 +3088,7 @@ body {
 .notification-title {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
 
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -3094,7 +3122,7 @@ body {
 .notification-list {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
 
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -3119,7 +3147,7 @@ body {
   top: 0.46154rem;
   width: 0.15385rem;
   height: 0.15385rem;
-  background-color: #000;
+  background-color: #222;
   border-radius: 50%;
 }
 
@@ -3220,7 +3248,7 @@ body {
   white-space: nowrap;
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
@@ -3318,7 +3346,7 @@ body {
 [data-page-id^="my_"] .agreement-wrap .agreement-title {
   font-size: 1.38462rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.07692rem;
@@ -3332,7 +3360,7 @@ body {
 [data-page-id^="my_"] .agreement-wrap .agreement-list > li {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
@@ -3375,7 +3403,7 @@ body {
 [data-page-id^="my_"] .agreement-wrap .agreement-list .btn_more {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 7px 0 5px 5px;
@@ -3421,7 +3449,7 @@ body {
 [data-page-id^="my_"] .agreement-wrap .notification-wrap .notification-text {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -3450,7 +3478,7 @@ body {
 [data-page-id^="my_"] .agreement-wrap .notification-wrap .notification-list > li {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
   padding-left: 0.54545em;
@@ -3515,7 +3543,7 @@ body {
 [data-page-id^="anc_"] .agreement-wrap .notification-wrap td .notification-list.no-blt .notification-text, [data-page-id^="anc_"] .agreement-wrap .notification-wrap td .notification-list.no-blt li,
 [data-page-id^="my_"] .agreement-wrap .notification-wrap td .notification-list.no-blt .notification-text,
 [data-page-id^="my_"] .agreement-wrap .notification-wrap td .notification-list.no-blt li {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id^="anc_"] .agreement-wrap table,
@@ -3523,7 +3551,7 @@ body {
   width: 100%;
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
 }
@@ -3560,7 +3588,7 @@ body {
   
   text-align: center;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id^="anc_"] .agreement-wrap table thead th + th,
@@ -3620,15 +3648,13 @@ body {
   position: relative;
   margin: -1px 0 3.84615rem;
   height: 3.84615rem;
-  border-top: 1px solid #bbb;
-  border-bottom: 1px solid #f0f0f0;
 }
 
 [data-page-id^="anc_"] .agreement-wrap .agreement-all-list label,
 [data-page-id^="my_"] .agreement-wrap .agreement-all-list label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
   left: 0;
@@ -3689,7 +3715,7 @@ body {
 [data-page-id^="my_"] .agreement-wrap input[type="checkbox"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -3789,7 +3815,7 @@ body {
 [data-page-id^="my_"] .agreement-wrap input[type="radio"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -3842,7 +3868,7 @@ body {
 [data-page-id^="my_"] .agreement-wrap input[type="checkbox"] + label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -3983,7 +4009,7 @@ body {
 
 /*여권번호 등록 & 이메일 SMS 주문서 받기*/
 .passport-wrap .passport-list, .passport-wrap .dfs-info-list, .dfs-email-wrap .passport-list, .dfs-email-wrap .dfs-info-list {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 .passport-wrap .passport-list:after, .passport-wrap .dfs-info-list:after, .dfs-email-wrap .passport-list:after, .dfs-email-wrap .dfs-info-list:after {
@@ -4014,7 +4040,7 @@ body {
 .passport-wrap .passport-list .passport-num, .passport-wrap .dfs-info-list .passport-num, .dfs-email-wrap .passport-list .passport-num, .dfs-email-wrap .dfs-info-list .passport-num {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
 
@@ -4035,7 +4061,7 @@ body {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
   height: 100%;
@@ -4066,7 +4092,7 @@ body {
   white-space: nowrap;
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -4081,7 +4107,7 @@ body {
   padding: 0 1.53846rem 0 0;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: calc(100% - 10px);
   height: 100%;
@@ -4294,7 +4320,7 @@ body {
   display: inline-block;
   width: 0.69231rem;
   height: 0.69231rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform-origin: left top;
   transform: rotate(45deg) translate(-50%, -50%);
@@ -4431,10 +4457,10 @@ body {
   margin-top: 6.30769rem;
   padding: 1.23077rem;
   min-width: 21.53846rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: rgba(255, 255, 255, 0.9);
   
-  color: #000;
+  color: #222;
 }
 
 /* 라운지 위치 안내 팝업 */
@@ -4452,7 +4478,7 @@ body {
 [data-pop-id="pop_bundle-summary"] .summary-approach {
   font-size: 1.53846rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 0.76923rem;
@@ -4504,7 +4530,7 @@ body {
   vertical-align: middle;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin: 0 0.30769rem;
@@ -4518,8 +4544,8 @@ body {
 }
 
 [data-pop-id="pop_bundle-summary"] .tabs_route [role="tab"].active {
-  border-color: #000;
-  background-color: #000;
+  border-color: #222;
+  background-color: #222;
   color: #ffffff;
 }
 
@@ -4622,7 +4648,7 @@ body {
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type1 .info-detail dt:nth-of-type(1),
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type1 .info-detail dt:nth-of-type(2),
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type1 .info-detail dt:nth-of-type(3) {
-  color: #000;
+  color: #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type1 .info-detail dt:nth-of-type(1) + dd,
@@ -4643,7 +4669,7 @@ body {
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type2 .info-detail dt:nth-of-type(1),
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type2 .info-detail dt:nth-of-type(2),
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type2 .info-detail dt:nth-of-type(3) {
-  color: #000;
+  color: #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type2 .info-detail dt:nth-of-type(1) + dd,
@@ -4662,7 +4688,7 @@ body {
 }
 
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type3 .info-detail dt {
-  color: #000;
+  color: #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .bundle-inter1 .bundle-type3 .info-detail dd {
@@ -4680,7 +4706,7 @@ body {
 
 [data-pop-id="pop_bundle-summary"] .bundle-inter2 .bundle-type1 .info-detail dt:nth-of-type(1),
 [data-pop-id="pop_bundle-summary"] .bundle-inter2 .bundle-type1 .info-detail dt:nth-of-type(2) {
-  color: #000;
+  color: #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .bundle-inter2 .bundle-type1 .info-detail dt:nth-of-type(1) + dd,
@@ -4701,7 +4727,7 @@ body {
 [data-pop-id="pop_bundle-summary"] .bundle-inter2 .bundle-type2 .info-detail dt:nth-of-type(2),
 [data-pop-id="pop_bundle-summary"] .bundle-inter2 .bundle-type2 .info-detail dt:nth-of-type(3),
 [data-pop-id="pop_bundle-summary"] .bundle-inter2 .bundle-type2 .info-detail dt:nth-of-type(4) {
-  color: #000;
+  color: #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .bundle-inter2 .bundle-type2 .info-detail dt:nth-of-type(1) + dd,
@@ -4722,7 +4748,7 @@ body {
 
 [data-pop-id="pop_bundle-summary"] .bundle-dom1 .bundle-type1 .info-detail dt:nth-of-type(1),
 [data-pop-id="pop_bundle-summary"] .bundle-dom1 .bundle-type1 .info-detail dt:nth-of-type(2) {
-  color: #000;
+  color: #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .bundle-dom1 .bundle-type1 .info-detail dt:nth-of-type(1) + dd,
@@ -4743,7 +4769,7 @@ body {
 [data-pop-id="pop_bundle-summary"] .bundle-dom1 .bundle-type2 .info-detail dt:nth-of-type(2),
 [data-pop-id="pop_bundle-summary"] .bundle-dom1 .bundle-type2 .info-detail dt:nth-of-type(3),
 [data-pop-id="pop_bundle-summary"] .bundle-dom1 .bundle-type2 .info-detail dt:nth-of-type(4) {
-  color: #000;
+  color: #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .bundle-dom1 .bundle-type2 .info-detail dt:nth-of-type(1) + dd,
@@ -4828,12 +4854,12 @@ body {
 [data-pop-id="pop_bundle-summary"] .passenger-wrap .bundle-select-title {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin: 0 -0.61538rem 2.46154rem;
   padding-bottom: 0.92308rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .passenger-wrap dl {
@@ -4893,7 +4919,7 @@ body {
 [data-pop-id="pop_bundle-summary"] .passenger-wrap .bundle-way {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
@@ -4943,15 +4969,15 @@ body {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -4973,9 +4999,9 @@ body {
 
 [data-pop-id="pop_bundle-summary"] .passenger-wrap .selected-bundle + dd input[type="radio"]:checked + .btn_select-bundle.bundle-type0,
 [data-pop-id="pop_bundle-summary"] .passenger-wrap .selected-bundle + dd + dd input[type="radio"]:checked + .btn_select-bundle.bundle-type0 {
-  border-color: #000;
+  border-color: #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
 }
 
 [data-pop-id="pop_bundle-summary"] .passenger-wrap .selected-bundle + dd input[type="radio"]:checked + .btn_select-bundle.bundle-type1,
@@ -5034,7 +5060,7 @@ body {
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -5042,7 +5068,7 @@ body {
   line-height: 3.53846rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -5072,7 +5098,7 @@ body {
   display: block;
   width: 0.92308rem;
   height: 0.92308rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 1px 1px 0 0;
   transform-origin: left top;
   background-color: #ffffff;
@@ -5133,7 +5159,7 @@ body {
 .anc_car-dpicker .inner-wrap .fake-timepicker .date-check {
   font-size: 0.76923rem;
   
-  color: #000;
+  color: #222;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.61538rem;
 }
@@ -5154,7 +5180,7 @@ body {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -5213,7 +5239,7 @@ body {
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-2px, -17px);
   z-index: 0;
@@ -5264,7 +5290,7 @@ body {
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -5272,7 +5298,7 @@ body {
   line-height: 3.53846rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -5314,7 +5340,7 @@ body {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -5373,7 +5399,7 @@ body {
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-2px, -17px);
   z-index: 0;
@@ -5410,7 +5436,7 @@ body {
 [data-pop-id="pop_rentacar-info"] .select_company label {
   font-size: 0.76923rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
@@ -5441,7 +5467,7 @@ body {
 [data-pop-id="pop_rentacar-info"] .car-info .car-name + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.23077rem;
@@ -5512,7 +5538,7 @@ body {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -5520,7 +5546,7 @@ body {
   line-height: 3.07692rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -5552,7 +5578,7 @@ body {
 }
 
 [data-pop-id="pop_rentacar-info"] .table-wrap {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-pop-id="pop_rentacar-info"] table {
@@ -5602,7 +5628,7 @@ body {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -5661,7 +5687,7 @@ body {
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-2px, -17px);
   z-index: 0;
@@ -5761,7 +5787,7 @@ body {
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -5817,7 +5843,7 @@ body {
 [data-pop-id="pop_payment_credit-card"] .form-title {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
@@ -5950,7 +5976,7 @@ body {
 [data-page-id="anc_main"] .anc-lnb-wrap li a {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: block;
@@ -5961,7 +5987,7 @@ body {
 }
 
 [data-page-id="anc_main"] .anc-lnb-wrap li.active a {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .anc-lnb-wrap.ui-fixed, [data-page-id="anc_main"] .anc-lnb-wrap.ui-fixed---bottom {
@@ -5979,12 +6005,17 @@ body {
 }
 
 [data-page-id="anc_main"] .anc-lnb-wrap.ui-fixed li.active a, [data-page-id="anc_main"] .anc-lnb-wrap.ui-fixed---bottom li.active a {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_main"] > .content-wrap {
   position: relative;
   padding-right: 315px;
+}
+
+[data-page-id="anc_main"] > .content-wrap.service {
+  position: relative;
+  padding-right: 26.76923rem;
 }
 
 [data-page-id="anc_main"] > .content-wrap:before {
@@ -6036,7 +6067,7 @@ body {
 [data-page-id="anc_main"] .ticket-info .airport dd {
   font-size: 2.30769rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -6097,7 +6128,7 @@ body {
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   font-size: 0.84615rem;
   
   color: #ffffff;
@@ -6327,7 +6358,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-service-wrap .service-title {
   font-size: 1.38462rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 0.55556em;
@@ -6336,7 +6367,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-service-wrap .service-description {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -6345,11 +6376,12 @@ padding-top: 20px;
   overflow: hidden;
   position: relative;
   padding: 0;
+  /*
   min-height: 49.84615rem;
   height: 60vh;
+  */
+  margin-top: 30px;
   border: 1px solid #f0f0f0;
-  background: url("../img/common/gradi_bar.jpg") no-repeat center top;
-	
 
 }
 
@@ -6456,7 +6488,8 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-service-wrap.anc_lounge .anc-service .sort-wrap .mCSB_container,
 [data-page-id="anc_main"] .anc-service-wrap.anc_car .anc-service .passenger-list .mCSB_container,
 [data-page-id="anc_main"] .anc-service-wrap.anc_car .anc-service .sort-wrap .mCSB_container {
-  padding: 0 2.46154rem 2.46154rem;
+ 
+ /* padding: 0 2.46154rem 2.46154rem;*/
 }
 
 .no-flexbox [data-page-id="anc_main"] .anc-service-wrap.anc_seat .anc-service .seat-plan:after,
@@ -6539,7 +6572,7 @@ padding-top: 20px;
 
 [data-page-id="anc_main"] .anc-service-wrap + .anc-service-wrap {
   margin-top: 7.69231rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="anc_main"] [role="tabpanel"].active {
@@ -6741,12 +6774,12 @@ padding-top: 20px;
 [data-page-id="anc_main"] .passenger-list input[type="radio"]:checked ~ dl dd, [data-page-id="anc_main"] .passenger-list input[type="radio"]:checked ~ dl dd:empty:before,
 [data-page-id="anc_main"] .passenger-list input[type="checkbox"]:checked ~ dl dd,
 [data-page-id="anc_main"] .passenger-list input[type="checkbox"]:checked ~ dl dd:empty:before {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .passenger-list input[type="radio"]:checked ~ dl .ico_baby,
 [data-page-id="anc_main"] .passenger-list input[type="checkbox"]:checked ~ dl .ico_baby {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .passenger-list [class*="bundle-type"] + dd .ico {
@@ -6877,7 +6910,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .function-wrap .notification-text {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   line-height: 1.23077rem;
@@ -6938,7 +6971,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .function-wrap .btn-group input[type="checkbox"] + label {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
@@ -7035,7 +7068,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="anc_main"] .anc-summary .service-title {
@@ -7074,7 +7107,7 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_main"] .anc-summary .departure .passenger-name + dd:not(:first-of-type), [data-page-id="anc_main"] .anc-summary .arrival .passenger-name + dd:not(:first-of-type) {
-  margin-top: 1.53846rem;
+  margin-top: 15px;
   border-top: 1px solid #f0f0f0;
 }
 
@@ -7103,7 +7136,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary .departure table tbody th, [data-page-id="anc_main"] .anc-summary .departure table tbody td, [data-page-id="anc_main"] .anc-summary .arrival table tbody th, [data-page-id="anc_main"] .anc-summary .arrival table tbody td {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   vertical-align: middle;
@@ -7186,10 +7219,10 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   background-color: #ffffff;
-  border-color: #000;
-  color: #000;
+  border-color: #222;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .anc-summary .departure .total dd, [data-page-id="anc_main"] .anc-summary .arrival .total dd {
@@ -7207,7 +7240,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary .departure-car .passenger-name + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardB", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   background-image: url("../img/common/ico_passenger.png");
@@ -7254,7 +7287,7 @@ padding-top: 20px;
   vertical-align: middle;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.61538em;
@@ -7288,7 +7321,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary .departure-car table td:nth-of-type(1) {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 5.07692rem;
@@ -7345,14 +7378,13 @@ padding-top: 20px;
 
 [data-page-id="anc_main"] .anc-summary .total-sum .total {
   font-size: 13px;
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
   line-height: 2.16667em;
 
 }
-
 [data-page-id="anc_main"] .anc-summary .total-sum .total + dd {
   font-size: 13px;
   color: #FF4F24;
@@ -7361,14 +7393,10 @@ padding-top: 20px;
   float: right;
   line-height: 1.85714em;
 }
-
-.testtest{
-
-}
-
 [data-page-id="anc_main"] .anc-summary .total-sum .total + dd .digits:before {
   content: "₩";
 }
+
 
 [data-page-id="anc_main"] .anc-summary .btn_pay {
   display: inline-block;
@@ -7486,7 +7514,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary [class*="bundle-type"] + dd .bundle-name + dd {
   font-size: 0.69231rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-right: 0.61538rem;
@@ -7502,7 +7530,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary [class*="bundle-type"] + dd .bundle-sale + dd {
   font-size: 0.69231rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: 0em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 1.23077rem;
@@ -7524,7 +7552,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary [class*="bundle-type"] + dd .bundle-price + dd {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: right;
@@ -7639,7 +7667,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .no-item .alert-title {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 2.46154rem;
@@ -7654,7 +7682,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .no-item .alert-text {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.23077rem 0;
@@ -7682,7 +7710,7 @@ padding-top: 20px;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.61538rem 1.23077rem;
   height: 2.46154rem;
-  background-color: #000;
+  background-color: #222;
   text-align: center;
 }
 
@@ -7695,7 +7723,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .no-item dl.alert-text dl dt, [data-page-id="anc_main"] .no-item dl.alert-text dl dd {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
@@ -7731,14 +7759,14 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #222;
+  background-color: #222;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -7786,7 +7814,7 @@ padding-top: 20px;
   z-index: 1;
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
@@ -7799,7 +7827,7 @@ padding-top: 20px;
   padding: 1rem 0.61538rem;
   width: 4.90909em;
   height: 4.90909em;
-  background-color: #000;
+  background-color: #222;
   border-radius: 50%;
   line-height: 1.27273em;
   text-decoration: none;
@@ -7824,7 +7852,6 @@ padding-top: 20px;
 
 [data-page-id="anc_main"] .flight-way-selector {
   margin-bottom: -89px;
-  height: 11rem;
 }
 
 [data-page-id="anc_main"] .flight-way-selector ul:after {
@@ -7843,12 +7870,12 @@ padding-top: 20px;
   height: 50px;
   background-color: #F8F8F8;
   border: 1px solid;
-  border-color: #F8F8F8 #F8F8F8 #000 #F8F8F8;
+  border-color: #F8F8F8 #F8F8F8 #222 #F8F8F8;
 }
 
 [data-page-id="anc_main"] .flight-way-selector li.active {
   background-color: #ffffff;
-  border-color: #000 #000 #ffffff #000;
+  border-color: #222 #222 #ffffff #222;
   color: #222;
 }
 
@@ -8143,7 +8170,7 @@ padding-top: 20px;
 .seat-plan .seat-sheet .seat-code span {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
@@ -8392,7 +8419,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc_seat .seat-legend li {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   z-index: 1;
@@ -8638,12 +8665,12 @@ padding-top: 20px;
 }
 
 
-/* 부가서비스 신청 > 사전 수하물 구매 */
+/* 부가서비스 신청 > 사전 수하물 구매 
 [data-page-id="anc_main"] .anc_baggage .anc-service {
   min-height: 49.84615rem;
   height: 60vh;
 }
-
+*/
 [data-page-id="anc_main"] .anc_baggage .tab-panels {
   height: calc(100% - 89px);
 }
@@ -8651,7 +8678,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc_baggage .welcome-msg {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.61538rem 2.46154rem 2.15385rem;
@@ -8691,15 +8718,15 @@ padding-top: 20px;
 
 [data-page-id="anc_main"] .anc_baggage .passenger-name + dd {
   padding-top: 0.30769rem;
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .anc_baggage .selected-baggage + dd {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .anc_baggage .selected-baggage + dd:empty:before {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .anc_baggage .selected-baggage + dd:not(:empty) .digits:before {
@@ -8744,13 +8771,13 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_main"] .anc_baggage .baggage-plan li a:hover {
-  border-color: #000;
-  color: #000;
+  border-color: #222;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .anc_baggage .baggage-plan li.active a {
-  border-color: #000;
-  background-color: #000;
+  border-color: #222;
+  background-color: #222;
   color: #ffffff;
   cursor: default;
 }
@@ -8799,20 +8826,20 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_main"] .anc_baggage .baggage-plan li dl .price + dd {
-  font-size: 0.76923rem;
+  font-size: 10px;
   
   color: #ffffff;
   
-  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardB";
   text-decoration: line-through;
 }
 
 [data-page-id="anc_main"] .anc_baggage .baggage-plan li dl .sale + dd {
-  font-size: 0.76923rem;
+  font-size: 12px;
   
-  color: #fee700;
+  color: #fff;
   
-  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardB";
 }
 
 [data-page-id="anc_main"] .anc_baggage .baggage-plan li dl:after {
@@ -8854,8 +8881,8 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_main"] .anc_baggage .passenger-list dl.inactive + .baggage-plan li:not(.disabled) a:hover {
-  border-color: #000;
-  color: #000;
+  border-color: #222;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .anc_baggage .passenger-list dl.inactive + .baggage-plan li a.disabled {
@@ -8865,16 +8892,16 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_main"] .anc_baggage .approach-comment {
-  font-size: 0.76923rem;
+  font-size: 12px;
   
   color: #FF4F24;
   
-  font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
+  font-family: "PretendardB";
   transition: all 0.5s;
   opacity: 0;
   display: table;
   padding: 1.3em 1.6em;
-  line-height: 1.6em;
+  line-height: 10px;
 }
 
 [data-page-id="anc_main"] .anc_baggage .approach-comment .digits:before {
@@ -8898,7 +8925,7 @@ padding-top: 20px;
 
 [data-page-id='anc_main'] .anc_meal .meal-plan .mCSB_inside > .mCSB_container {
   margin-right: 0;
-  padding: 6.15385rem 0;
+ /* padding: 6.15385rem 0;*/
 }
 
 [data-page-id='anc_main'] .anc_meal .function-wrap {
@@ -8909,7 +8936,7 @@ padding-top: 20px;
 [data-page-id='anc_main'] .anc_meal .meal-list {
   margin: 0 2.46154rem;
   padding: 0 0 3.84615rem 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   /*.meal-name.new + dd:before,
     .meal-name.best + dd:before {
       @include font($family: en, $size: 9, $color: $mono10, $weight: 500, $spacing: 0);
@@ -9071,7 +9098,7 @@ padding-top: 20px;
 [data-page-id='anc_main'] .anc_meal .meal-list input[type='radio'] + label, [data-page-id='anc_main'] .anc_meal .meal-list input[type='checkbox'] + label {
   font-size: 0.84615rem;
   font-weight: 400;
-  color: #000;
+  color: #222;
   letter-spacing: -0.08em;
   font-family: MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
   height: 16px;
@@ -9163,7 +9190,7 @@ padding-top: 20px;
   vertical-align: middle;
   font-size: 1.07692rem;
   font-weight: 600;
-  color: #000;
+  color: #222;
   letter-spacing: -0.08em;
   font-family: MalgunGothic, "Malgun Gothic", "Apple SD Gothic NEO", "Apple Gothic", sans-serif;
   position: relative;
@@ -9264,7 +9291,7 @@ padding-top: 20px;
   padding: 0.61538rem 0 0.46154rem;
   font-size: 0.84615rem;
   font-weight: 800;
-  color: #000;
+  color: #222;
 }
 
 [data-page-id='anc_main'] .anc_meal .meal-list .meal-price + dd {
@@ -9339,6 +9366,7 @@ padding-top: 20px;
   font-weight: 600;
   text-decoration: underline;
   color: #66b1ff;
+  font-family: "PretendardR";
 }
 
 
@@ -9382,7 +9410,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc_car .sort-condition dt {
   font-size: 0.76923rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.61538rem;
@@ -9410,7 +9438,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -9469,7 +9497,7 @@ padding-top: 20px;
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-2px, -17px);
   z-index: 0;
@@ -9554,7 +9582,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc_car .sort-condition .driver-name + dd .input-wrap input[type="checkbox"] + label {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
@@ -9612,7 +9640,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -9658,7 +9686,7 @@ padding-top: 20px;
   display: inline-block;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg) translate(7px, -4px);
   -ms-transform: rotate(45deg) translate(7px, -4px);
@@ -9695,15 +9723,15 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -9722,8 +9750,8 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_main"] .anc_car .sort-condition .sort-by-category + dd input[type="checkbox"]:checked + label {
-  background-color: #000;
-  border-color: #000;
+  background-color: #222;
+  border-color: #222;
   color: #ffffff;
 }
 
@@ -9739,7 +9767,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -9747,7 +9775,7 @@ padding-top: 20px;
   line-height: 3.53846rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -9811,7 +9839,7 @@ padding-top: 20px;
   z-index: 0;
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.09091em;
@@ -9819,7 +9847,7 @@ padding-top: 20px;
 
 [data-page-id="anc_main"] .anc_car .car-list {
   z-index: 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="anc_main"] .anc_car .car-info {
@@ -9841,7 +9869,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc_car .car-info .car-name + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.23077rem;
@@ -9997,7 +10025,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc_car .item .company-list table input[type="radio"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -10046,14 +10074,14 @@ padding-top: 20px;
   text-overflow: ellipsis;
   vertical-align: middle;
   
-  color: #000;
+  color: #222;
   line-height: 1.2em;
 }
 
 [data-page-id="anc_main"] .anc_car .item .btn_more {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
@@ -10068,7 +10096,7 @@ padding-top: 20px;
   float: right;
   margin-bottom: 0.36364em;
   padding: 0.72727em 1.27273em 0.72727em 0.72727em;
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_main"] .anc_car .item .btn_more .ico {
@@ -10093,7 +10121,7 @@ padding-top: 20px;
   position: absolute;
   top: 0.53846rem;
   right: 0;
-  border-color: #000;
+  border-color: #222;
 }
 
 [data-page-id="anc_main"] .anc_car .item:not(.active) .btn_more:after {
@@ -10167,7 +10195,7 @@ padding-top: 20px;
   display: block;
   width: 4px;
   height: 4px;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 1px 1px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -10177,7 +10205,7 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc_car .function-wrap .sort-by-category select {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-appearance: none;
@@ -10249,7 +10277,7 @@ padding-top: 20px;
 
 [data-page-id="anc_pay-complete"] [class*="_pay-title"] {
   font-size: 1.53846rem;
-  color: #000;
+  color: #222;
   font-family: "PretendardB", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
 
@@ -10260,7 +10288,7 @@ padding-top: 20px;
 [data-page-id="anc_pay-complete"] .receipt-wrap table {
   table-layout: fixed;
   width: 100%;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="anc_pay-complete"] .receipt-wrap table th, [data-page-id="anc_pay-complete"] .receipt-wrap table td {
@@ -10271,7 +10299,7 @@ padding-top: 20px;
 [data-page-id="anc_pay-complete"] .receipt-wrap table tfoot th, [data-page-id="anc_pay-complete"] .receipt-wrap table tfoot td, [data-page-id="anc_pay-complete"] .receipt-wrap table tbody th, [data-page-id="anc_pay-complete"] .receipt-wrap table tbody td {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.57143em 2.14286em;
@@ -10310,11 +10338,11 @@ padding-top: 20px;
 [data-page-id="anc_pay-complete"] .receipt-wrap table thead th {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.21429em 2.14286em 1.28571em;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #222;
 }
 
 [data-page-id="anc_pay-complete"] .receipt-wrap table thead th:first-of-type {
@@ -10470,7 +10498,7 @@ padding-top: 20px;
 [data-page-id="anc_pay-complete"] .receipt-wrap table dl[class^="bundle-type"] .bundle-price + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: 0em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-right: -0.15385rem;
@@ -10486,7 +10514,7 @@ padding-top: 20px;
 [data-page-id="anc_pay-complete"] .receipt-wrap table dl[class^="bundle-type"] .bundle-status + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-right: 4.61538rem;
@@ -10520,7 +10548,7 @@ padding-top: 20px;
 
 [data-page-id="anc_pay-complete"] .receipt-title {
   font-size: 14px;
-  color: #000;
+  color: #222;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.23077rem;
   display: flex;
@@ -10558,9 +10586,9 @@ padding-top: 20px;
 
 [data-page-id="anc_pay-complete"] .receipt-title .ico_airplane + .ico_tag {
   margin-left: 0.30769rem;
-  border-color: #000;
+  border-color: #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_pay-complete"] .total-wrap {
@@ -10577,7 +10605,7 @@ padding-top: 20px;
   position: relative;
   padding: 1.30769rem 4.61538rem;
   height: 4rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 1px 0;
 }
 
@@ -10595,9 +10623,9 @@ padding-top: 20px;
   text-align: center;
   white-space: nowrap;
   vertical-align: top;
-  color: #000;
+  color: #222;
   background-color: #ffffff;
-  border: 1px solid #000;
+  border: 1px solid #222;
   width: auto !important;
 }
 
@@ -10616,7 +10644,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   width: auto !important;
   letter-spacing: inherit;
 }
@@ -10643,7 +10671,7 @@ padding-top: 20px;
 }
 
 [data-page-id="anc_pay-complete"] .total-wrap dd + .price:before, [data-page-id="anc_pay-complete"] .total-wrap dd + .fee:before, [data-page-id="anc_pay-complete"] .total-wrap .total-price:before {
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="anc_pay-complete"] .total-wrap dd + .fee:before {
@@ -10715,11 +10743,11 @@ padding-top: 20px;
 [data-page-id="anc_pay-complete"] .total-wrap .price + dd, [data-page-id="anc_pay-complete"] .total-wrap .fee + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="anc_pay-complete"] .total-wrap .digits {
@@ -10766,7 +10794,7 @@ padding-top: 20px;
 [data-page-id="anc_pay-failed"] .error-message .title {
   font-size: 1.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -10808,7 +10836,7 @@ padding-top: 20px;
 
 /*여권번호 등록 & 이메일 SMS 주문서 받기*/
 .passport-wrap .passport-list, .passport-wrap .dfs-info-list, .dfs-email-wrap .passport-list, .dfs-email-wrap .dfs-info-list {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 .passport-wrap .passport-list:after, .passport-wrap .dfs-info-list:after, .dfs-email-wrap .passport-list:after, .dfs-email-wrap .dfs-info-list:after {
@@ -10839,7 +10867,7 @@ padding-top: 20px;
 .passport-wrap .passport-list .passport-num, .passport-wrap .dfs-info-list .passport-num, .dfs-email-wrap .passport-list .passport-num, .dfs-email-wrap .dfs-info-list .passport-num {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
@@ -10860,7 +10888,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
@@ -10892,7 +10920,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -10907,7 +10935,7 @@ padding-top: 20px;
   padding: 0 1.53846rem 0 0;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: calc(100% - 10px);
@@ -10962,7 +10990,7 @@ padding-top: 20px;
 .dfs-product-detail .content-title {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -11065,7 +11093,7 @@ padding-top: 20px;
 }
 
 .dfs-product-detail .product-info .product-tag + dd .new {
-  background-color: #000;
+  background-color: #222;
 }
 
 .dfs-product-detail .product-info .brand + dd {
@@ -11074,7 +11102,7 @@ padding-top: 20px;
   
   line-height: 1.125em;
   vertical-align: top;
-  color: #000;
+  color: #222;
 }
 
 .dfs-product-detail .product-info .product-name + dd {
@@ -11114,12 +11142,12 @@ padding-top: 20px;
 }
 
 .dfs-product-detail .swiper-pagination-bullet {
-  background-color: #000 !important;
+  background-color: #222 !important;
   opacity: 0.1;
 }
 
 .dfs-product-detail .swiper-pagination-bullet-active {
-  background-color: #000 !important;
+  background-color: #222 !important;
   opacity: 1;
 }
 
@@ -11142,7 +11170,7 @@ padding-top: 20px;
 .dfs-product-detail .product-info:first-of-type + .product-info + .product-info .price-compare dt {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -11268,7 +11296,7 @@ padding-top: 20px;
 .dfs-product-detail input[type="checkbox"] + label {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
@@ -11365,7 +11393,7 @@ padding-top: 20px;
 .dfs-product-detail .product-notification {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.23077rem;
@@ -11388,7 +11416,7 @@ padding-top: 20px;
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #222;
 }
 
 .dfs-product-detail .product-notification li + li {
@@ -11465,7 +11493,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -11473,7 +11501,7 @@ padding-top: 20px;
   line-height: 3.53846rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -11509,7 +11537,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -11632,7 +11660,7 @@ padding-top: 20px;
 .dfs-select-summary .product-area > .input-wrap input[type="checkbox"] + label, .dfs-refund .product-area > .input-wrap input[type="checkbox"] + label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
@@ -11683,7 +11711,7 @@ padding-top: 20px;
 .dfs-select-summary .selected-product, .dfs-refund .selected-product {
   position: relative;
   padding-left: 1.23077rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 .dfs-select-summary .selected-product .btn_more, .dfs-refund .selected-product .btn_more {
@@ -11750,7 +11778,7 @@ padding-top: 20px;
 }
 
 .dfs-select-summary .product-info .product-tag + dd .new, .dfs-refund .product-info .product-tag + dd .new {
-  background-color: #000;
+  background-color: #222;
 }
 
 .dfs-select-summary .product-info .brand + dd, .dfs-refund .product-info .brand + dd {
@@ -11824,7 +11852,7 @@ padding-top: 20px;
 .dfs-select-summary .product-info .price-krw + dd, .dfs-refund .product-info .price-krw + dd {
   padding: 1.15385rem 0 0 0.23077rem;
   font-size: 0.92308rem;
-  color: #000;
+  color: #222;
 }
 
 .dfs-select-summary .product-info .price-krw + dd:before, .dfs-refund .product-info .price-krw + dd:before {
@@ -11886,7 +11914,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   position: absolute;
   right: 1.23077rem;
   top: 0;
@@ -11918,7 +11946,7 @@ padding-top: 20px;
 .dfs-select-summary .charge-sheet thead th, .dfs-refund .charge-sheet thead th {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.84615rem 0;
@@ -11933,7 +11961,7 @@ padding-top: 20px;
 .dfs-refund .charge-sheet tfoot th, .dfs-refund .charge-sheet tfoot td {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.76923rem 0;
@@ -11950,7 +11978,7 @@ padding-top: 20px;
 .dfs-select-summary .charge-sheet tfoot th, .dfs-select-summary .charge-sheet tfoot td, .dfs-refund .charge-sheet tfoot th, .dfs-refund .charge-sheet tfoot td {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   background-color: #ffffff;
@@ -12008,7 +12036,7 @@ padding-top: 20px;
 .dfs-select-summary .charge-sheet tfoot th, .dfs-refund .charge-sheet tfoot th {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-align: left;
@@ -12022,7 +12050,7 @@ padding-top: 20px;
 .dfs-select-summary .charge-sheet tbody th[scope="row"], .dfs-refund .charge-sheet tbody th[scope="row"] {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-align: left;
@@ -12052,7 +12080,7 @@ padding-top: 20px;
 .dfs-select-summary .dfs-handler .ea + dd .resv-ea, .dfs-refund .dfs-handler .ea + dd .resv-ea {
   font-size: 1.38462rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
@@ -12076,7 +12104,7 @@ padding-top: 20px;
   display: inline-block;
   width: 3.23077rem;
   height: 3.23077rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   border-radius: 3px;
   background-position: 50% 50%;
   text-indent: -999em;
@@ -12163,7 +12191,7 @@ padding-top: 20px;
 .dfs-select-summary .ind-total, .dfs-refund .ind-total {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
@@ -12173,7 +12201,7 @@ padding-top: 20px;
   height: 3.84615rem;
   text-align: right;
   background-color: #F8F8F8;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -12210,7 +12238,7 @@ padding-top: 20px;
 
 .dfs-select-summary .ind-total .price-krw + dd, .dfs-refund .ind-total .price-krw + dd {
   font-size: 0.92308rem;
-  color: #000;
+  color: #222;
 }
 
 .dfs-select-summary .ind-total .price-krw + dd:before, .dfs-refund .ind-total .price-krw + dd:before {
@@ -12259,7 +12287,7 @@ padding-top: 20px;
 }
 
 .dfs-select-summary .ags-summary.dfs__list .inner-wrap, .dfs-refund .ags-summary.dfs__list .inner-wrap {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   background-color: #ffffff;
 }
 
@@ -12286,7 +12314,7 @@ padding-top: 20px;
 .dfs-select-summary .ags-summary.dfs__list .total > dl > dt, .dfs-refund .ags-summary.dfs__list .total > dl > dt {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 7.69231rem;
@@ -12309,7 +12337,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -12317,7 +12345,7 @@ padding-top: 20px;
   line-height: 2.61538rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -12368,7 +12396,7 @@ padding-top: 20px;
 
 .dfs-select-summary .ags-summary.dfs__list .price-info .price-krw + dd, .dfs-refund .ags-summary.dfs__list .price-info .price-krw + dd {
   font-size: 0.92308rem;
-  color: #000;
+  color: #222;
 }
 
 .dfs-select-summary .ags-summary.dfs__list .price-info .price-krw + dd:before, .dfs-refund .ags-summary.dfs__list .price-info .price-krw + dd:before {
@@ -12426,7 +12454,7 @@ padding-top: 20px;
   vertical-align: middle;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin: 0 0.30769rem;
@@ -12440,8 +12468,8 @@ padding-top: 20px;
 }
 
 [data-page-id="dfs__list"] .tabs_categories [role="tab"].active {
-  border-color: #000;
-  background-color: #000;
+  border-color: #222;
+  background-color: #222;
   color: #ffffff;
 }
 
@@ -12471,7 +12499,7 @@ padding-top: 20px;
 [data-page-id="dfs__list"] .list-description {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 0.92308rem;
@@ -12479,7 +12507,7 @@ padding-top: 20px;
 }
 
 [data-page-id="dfs__list"] .dfs-products-list {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="dfs__list"] .dfs-products-list li {
@@ -12534,7 +12562,7 @@ padding-top: 20px;
 
 [data-page-id="dfs__list"] .dfs-products-list li .product-info .price-krw + dd {
   font-size: 0.92308rem;
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="dfs__list"] .dfs-products-list li .product-info .price-krw + dd:before {
@@ -12585,7 +12613,7 @@ padding-top: 20px;
 }
 
 [data-page-id="dfs__list"] .dfs-products-list li .product-info .product-tag + dd .new {
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="dfs__list"] .dfs-products-list li .product-info .brand + dd {
@@ -12690,7 +12718,7 @@ padding-top: 20px;
 [data-page-id="dfs__list"] .dfs-products-list li input[type="checkbox"] + label {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
@@ -12832,7 +12860,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] input[type="checkbox"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -12920,7 +12948,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] input[type="radio"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -12965,7 +12993,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .title {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 0.92308rem;
@@ -13015,7 +13043,7 @@ padding-top: 20px;
 
 [data-page-id="dfs__resv-apply"] .price-info .price-krw + dd {
   font-size: 0.92308rem;
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="dfs__resv-apply"] .price-info .price-krw + dd:before {
@@ -13051,7 +13079,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .ticket-wrap .arrival + dd {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-transform: translate(0, -50%);
@@ -13097,7 +13125,7 @@ padding-top: 20px;
   display: inline-block;
   width: 1.84615rem;
   height: 1.23077rem;
-  background-color: #000;
+  background-color: #222;
   text-align: center;
 }
 
@@ -13138,7 +13166,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .receipt-wrap h5 {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 3.61538rem;
@@ -13174,13 +13202,13 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="dfs__resv-apply"] .receipt-wrap .by-route > dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 1.23077rem;
@@ -13198,14 +13226,14 @@ padding-top: 20px;
   position: relative;
   padding-right: 1.23077rem;
   height: 3.84615rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   border-bottom: 1px solid #f0f0f0;
 }
 
 [data-page-id="dfs__resv-apply"] .receipt-wrap .total .btn_more {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
@@ -13305,13 +13333,13 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   width: auto;
   padding: 0 0.30769rem;
 }
 
 [data-page-id="dfs__resv-apply"] .resv-wrap .flight-num + .table-wrap {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="dfs__resv-apply"] .resv-wrap .table-wrap {
@@ -13340,7 +13368,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .resv-wrap .charge-sheet thead th {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.84615rem 0;
@@ -13354,7 +13382,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .resv-wrap .charge-sheet tfoot th, [data-page-id="dfs__resv-apply"] .resv-wrap .charge-sheet tfoot td {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.76923rem 0;
@@ -13371,7 +13399,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .resv-wrap .charge-sheet tfoot th, [data-page-id="dfs__resv-apply"] .resv-wrap .charge-sheet tfoot td {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   background-color: #ffffff;
@@ -13436,7 +13464,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .resv-wrap .charge-sheet tbody th:last-child, [data-page-id="dfs__resv-apply"] .resv-wrap .charge-sheet tbody td:last-child {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
@@ -13454,7 +13482,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .resv-wrap .charge-sheet tbody th[scope="row"] {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-align: left;
@@ -13501,7 +13529,7 @@ padding-top: 20px;
 
 [data-page-id="dfs__resv-apply"] .resv-wrap .total-wrap {
   height: 3.38462rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -13520,7 +13548,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .resv-wrap .total-wrap > dl > dt {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 10.76923rem;
@@ -13537,7 +13565,7 @@ padding-top: 20px;
 
 [data-page-id="dfs__resv-apply"] .payment-wrap [class*="-list"]:not(.notification-list),
 [data-page-id="dfs__resv-apply"] .agreement-wrap [class*="-list"]:not(.notification-list) {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="dfs__resv-apply"] .payment-wrap [class*="-list"]:not(.notification-list) > li,
@@ -13567,7 +13595,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .agreement-wrap [class*="-list"]:not(.notification-list) > li label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
@@ -13646,7 +13674,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .passport-wrap .title + .input-wrap input[type="checkbox"] + label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
@@ -13713,20 +13741,20 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .agreement-wrap .agreement-title {
   font-size: 1.38462rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.07692rem;
 }
 
 [data-page-id="dfs__resv-apply"] .agreement-wrap .agreement-list {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="dfs__resv-apply"] .agreement-wrap .agreement-list > li {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
@@ -13763,7 +13791,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .agreement-wrap .agreement-list .btn_more {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
@@ -13806,7 +13834,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .agreement-wrap .notification-wrap .notification-text {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -13830,7 +13858,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-apply"] .agreement-wrap .notification-wrap .notification-list > li {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -13883,14 +13911,14 @@ padding-top: 20px;
 }
 
 [data-page-id="dfs__resv-apply"] .agreement-wrap .notification-wrap td .notification-list.no-blt .notification-text, [data-page-id="dfs__resv-apply"] .agreement-wrap .notification-wrap td .notification-list.no-blt li {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="dfs__resv-apply"] .agreement-wrap table {
   width: 100%;
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: 0em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
@@ -13963,14 +13991,14 @@ padding-top: 20px;
   position: relative;
   margin: -1px 0 3.84615rem;
   height: 3.84615rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   border-bottom: 1px solid #f0f0f0;
 }
 
 [data-page-id="dfs__resv-apply"] .agreement-wrap .agreement-all-list label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
@@ -14035,7 +14063,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-complete"] .welcome-wrap .welcome-msg--lg {
   font-size: 1.53846rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 3.84615rem;
@@ -14045,7 +14073,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-complete"] .welcome-wrap .welcome-msg--sm {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.23077rem;
@@ -14065,7 +14093,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -14093,7 +14121,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -14101,7 +14129,7 @@ padding-top: 20px;
   line-height: 3.53846rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -14118,7 +14146,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-complete"] h4:not(.sr-only) {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 3.84615rem 1.23077rem 0;
@@ -14174,7 +14202,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="dfs__resv-complete"] .receipt-wrap .departure dl:after,
@@ -14195,7 +14223,7 @@ padding-top: 20px;
   vertical-align: middle;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
@@ -14206,7 +14234,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-complete"] .receipt-wrap .total dd {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
@@ -14237,7 +14265,7 @@ padding-top: 20px;
 }
 
 [data-page-id="dfs__resv-complete"] .receipt-wrap .departure {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="dfs__resv-complete"] .receipt-wrap .arrival {
@@ -14245,7 +14273,7 @@ padding-top: 20px;
 }
 
 [data-page-id="dfs__resv-complete"] .receipt-wrap .total {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   padding: 1.15385rem 0;
   height: 3.38462rem;
 }
@@ -14294,7 +14322,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-save"] .welcome-wrap .welcome-msg--lg {
   font-size: 1.53846rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 3.84615rem;
@@ -14304,7 +14332,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-save"] .welcome-wrap .welcome-msg--sm {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.23077rem;
@@ -14324,7 +14352,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -14352,7 +14380,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -14360,7 +14388,7 @@ padding-top: 20px;
   line-height: 3.53846rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -14377,7 +14405,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-save"] h4:not(.sr-only) {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 3.84615rem 1.23077rem 0;
@@ -14433,7 +14461,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="dfs__resv-save"] .receipt-wrap .departure dl:after,
@@ -14454,7 +14482,7 @@ padding-top: 20px;
   vertical-align: middle;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
@@ -14465,7 +14493,7 @@ padding-top: 20px;
 [data-page-id="dfs__resv-save"] .receipt-wrap .total dd {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
@@ -14496,7 +14524,7 @@ padding-top: 20px;
 }
 
 [data-page-id="dfs__resv-save"] .receipt-wrap .departure {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="dfs__resv-save"] .receipt-wrap .arrival {
@@ -14504,7 +14532,7 @@ padding-top: 20px;
 }
 
 [data-page-id="dfs__resv-save"] .receipt-wrap .total {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   padding: 1.15385rem 0;
   height: 3.38462rem;
 }
@@ -14572,7 +14600,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] input[type="checkbox"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -14660,7 +14688,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] input[type="radio"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -14723,7 +14751,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] .ticket-wrap .arrival + dd {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   -webkit-transform: translate(0, -50%);
@@ -14769,7 +14797,7 @@ padding-top: 20px;
   display: inline-block;
   width: 1.84615rem;
   height: 1.23077rem;
-  background-color: #000;
+  background-color: #222;
   text-align: center;
 }
 
@@ -14810,7 +14838,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] .receipt-wrap h5 {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 3.61538rem;
@@ -14843,13 +14871,13 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="pay__payment"] .receipt-wrap .by-route dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
@@ -14870,7 +14898,7 @@ padding-top: 20px;
   content: "￦";
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -14879,14 +14907,14 @@ padding-top: 20px;
   position: relative;
   padding-right: 1.23077rem;
   height: 3.84615rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   border-bottom: 1px solid #f0f0f0;
 }
 
 [data-page-id="pay__payment"] .receipt-wrap .total .btn_more {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
@@ -14965,7 +14993,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] .agreement-wrap h5 {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 0.92308rem;
@@ -14973,7 +15001,7 @@ padding-top: 20px;
 
 [data-page-id="pay__payment"] .payment-wrap [class*="-list"]:not(.notification-list),
 [data-page-id="pay__payment"] .agreement-wrap [class*="-list"]:not(.notification-list) {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="pay__payment"] .payment-wrap [class*="-list"]:not(.notification-list) > li,
@@ -14996,7 +15024,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] .agreement-wrap [class*="-list"]:not(.notification-list) > li label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.30769rem 0 0;
@@ -15037,20 +15065,20 @@ padding-top: 20px;
 [data-page-id="pay__payment"] .agreement-wrap .agreement-title {
   font-size: 1.38462rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.07692rem;
 }
 
 [data-page-id="pay__payment"] .agreement-wrap .agreement-list {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="pay__payment"] .agreement-wrap .agreement-list > li {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
@@ -15087,7 +15115,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] .agreement-wrap .agreement-list .btn_more {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
@@ -15130,7 +15158,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] .agreement-wrap .notification-wrap .notification-text {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -15154,7 +15182,7 @@ padding-top: 20px;
 [data-page-id="pay__payment"] .agreement-wrap .notification-wrap .notification-list > li {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -15207,14 +15235,14 @@ padding-top: 20px;
 }
 
 [data-page-id="pay__payment"] .agreement-wrap .notification-wrap td .notification-list.no-blt .notification-text, [data-page-id="pay__payment"] .agreement-wrap .notification-wrap td .notification-list.no-blt li {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="pay__payment"] .agreement-wrap table {
   width: 100%;
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: 0em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
@@ -15287,14 +15315,14 @@ padding-top: 20px;
   position: relative;
   margin: -1px 0 3.84615rem;
   height: 3.84615rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   border-bottom: 1px solid #f0f0f0;
 }
 
 [data-page-id="pay__payment"] .agreement-wrap .agreement-all-list label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
@@ -15323,7 +15351,7 @@ padding-top: 20px;
 }
 
 .ags-summary.pay__payment .inner-wrap {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   background-color: #ffffff;
 }
 
@@ -15354,7 +15382,7 @@ padding-top: 20px;
 .ags-summary.pay__payment .total dt {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 37.90087%;
@@ -15383,7 +15411,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -15391,7 +15419,7 @@ padding-top: 20px;
   line-height: 2.61538rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -15446,7 +15474,7 @@ padding-top: 20px;
 [data-page-id="pay__complete"] .welcome-wrap .welcome-msg--lg {
   font-size: 1.53846rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 3.84615rem;
@@ -15456,7 +15484,7 @@ padding-top: 20px;
 [data-page-id="pay__complete"] .welcome-wrap .welcome-msg--sm {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 1.23077rem;
@@ -15476,7 +15504,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -15504,7 +15532,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -15512,7 +15540,7 @@ padding-top: 20px;
   line-height: 3.53846rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -15529,7 +15557,7 @@ padding-top: 20px;
 [data-page-id="pay__complete"] h4:not(.sr-only) {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 3.84615rem 1.23077rem 0;
@@ -15585,7 +15613,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="pay__complete"] .receipt-wrap .departure dl:after,
@@ -15606,7 +15634,7 @@ padding-top: 20px;
   vertical-align: middle;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
@@ -15617,7 +15645,7 @@ padding-top: 20px;
 [data-page-id="pay__complete"] .receipt-wrap .total dd {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;;
   letter-spacing: calc(-0.03 / 2 * 1em);
@@ -15648,7 +15676,7 @@ padding-top: 20px;
 }
 
 [data-page-id="pay__complete"] .receipt-wrap .departure {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="pay__complete"] .receipt-wrap .arrival {
@@ -15656,7 +15684,7 @@ padding-top: 20px;
 }
 
 [data-page-id="pay__complete"] .receipt-wrap .total {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   padding: 1.15385rem 0;
   height: 3.38462rem;
 }
@@ -15720,10 +15748,10 @@ padding-top: 20px;
   margin-top: 6.30769rem;
   padding: 1.23077rem;
   min-width: 21.53846rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: rgba(255, 255, 255, 0.9);
   
-  color: #000;
+  color: #222;
 }
 
 /*마이페이지 > 나의 예약/결제 내역*/
@@ -15758,7 +15786,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -15801,7 +15829,7 @@ padding-top: 20px;
   white-space: normal !important;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1em 1.14286em;
@@ -15821,7 +15849,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -15885,7 +15913,7 @@ padding-top: 20px;
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-50%, -50%);
   z-index: 0;
@@ -15905,7 +15933,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -15969,7 +15997,7 @@ padding-top: 20px;
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-2px, -17px);
   z-index: 0;
@@ -16031,15 +16059,15 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -16068,7 +16096,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -16188,14 +16216,14 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #222;
+  background-color: #222;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -16228,7 +16256,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history_car"] .search-area .selectric-select-wrap .selectric-items li {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.14286em;
@@ -16361,16 +16389,16 @@ padding-top: 20px;
 
 [data-page-id="my_pay-history_anc"] .my-lnb-wrap .lnb li.active a,
 [data-page-id="my_pay-history_car"] .my-lnb-wrap .lnb li.active a {
-  color: #000;
+  color: #222;
   
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #222;
 }
 
 [data-page-id="my_pay-history_anc"] .page-name,
 [data-page-id="my_pay-history_car"] .page-name {
   font-size: 2.46154rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 3.07692rem;
@@ -16406,7 +16434,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history_car"] .history-list .search-result + dd {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
@@ -16463,19 +16491,19 @@ padding-top: 20px;
 
 [data-page-id="my_pay-history_anc"] .history-list .sort-condition ~ dd input[type="radio"]:checked + label,
 [data-page-id="my_pay-history_car"] .history-list .sort-condition ~ dd input[type="radio"]:checked + label {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="my_pay-history_anc"] .history-list > table[data-grid-type="board"],
 [data-page-id="my_pay-history_car"] .history-list > table[data-grid-type="board"] {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   table-layout: fixed;
   width: 100%;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="my_pay-history_anc"] .history-list > table[data-grid-type="board"] > thead > tr > th,
@@ -16485,7 +16513,7 @@ padding-top: 20px;
   line-height: 1.61538rem;
   vertical-align: middle;
   
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #222;
 }
 
 [data-page-id="my_pay-history_anc"] .history-list > table[data-grid-type="board"] > tbody > tr > th, [data-page-id="my_pay-history_anc"] .history-list > table[data-grid-type="board"] > tbody > tr > td,
@@ -16677,7 +16705,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history_car"] .ticket-info .schedule + dd {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -16745,15 +16773,15 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.84615rem;
   height: 4.30769rem;
   line-height: 4.15385rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -16830,7 +16858,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-title-wrap .ticket-info .airport dd {
   font-size: 2.30769rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -16905,7 +16933,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   font-size: 0.84615rem;
   
   color: #ffffff;
@@ -17033,7 +17061,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .page-name {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -17051,7 +17079,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap [class*="_pay-title"] {
   font-size: 1.53846rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -17069,7 +17097,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .receipt-wrap table {
   table-layout: fixed;
   width: 100%;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap .receipt-wrap table th, [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap .receipt-wrap table td,
@@ -17092,7 +17120,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .receipt-wrap table tbody td {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.57143em 2.14286em;
@@ -17144,11 +17172,11 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .receipt-wrap table thead th {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1.21429em 2.14286em 1.28571em;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #222;
 }
 
 [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap .receipt-wrap table thead th:first-of-type,
@@ -17370,7 +17398,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .receipt-wrap table dl[class^="bundle-type"] .bundle-price + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: 0em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-right: -0.15385rem;
@@ -17390,7 +17418,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .receipt-wrap table dl[class^="bundle-type"] .bundle-status + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-right: 4.61538rem;
@@ -17437,7 +17465,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .receipt-title {
   font-size: 1.23077rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-bottom: 1.23077rem;
@@ -17478,9 +17506,9 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .my-history-detail-wrap .receipt-title .ico_airplane + .ico_tag,
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .receipt-title .ico_airplane + .ico_tag {
   margin-left: 0.30769rem;
-  border-color: #000;
+  border-color: #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap .total-wrap,
@@ -17503,7 +17531,7 @@ padding-top: 20px;
   position: relative;
   padding: 1.30769rem 4.61538rem;
   height: 4rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 1px 0;
 }
 
@@ -17523,9 +17551,9 @@ padding-top: 20px;
   text-align: center;
   white-space: nowrap;
   vertical-align: top;
-  color: #000;
+  color: #222;
   background-color: #ffffff;
-  border: 1px solid #000;
+  border: 1px solid #222;
   width: auto !important;
 }
 
@@ -17546,7 +17574,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   width: auto !important;
   letter-spacing: inherit;
 }
@@ -17601,7 +17629,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .total-wrap dd + .price:before,
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .total-wrap dd + .fee:before,
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .total-wrap .total-price:before {
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap .total-wrap dd + .fee:before,
@@ -17707,11 +17735,11 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .total-wrap .fee + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="my_pay-history-detail_anc"] .my-history-detail-wrap .total-wrap .digits,
@@ -17784,9 +17812,9 @@ padding-top: 20px;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -17873,7 +17901,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] input[type="checkbox"] + label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   height: 16px;
@@ -17949,7 +17977,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .title {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline-block;
@@ -17989,7 +18017,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   width: auto;
   padding: 0 0.30769rem;
 }
@@ -18014,7 +18042,7 @@ padding-top: 20px;
 
 [data-page-id="my_pay-history-detail_car"] .table-wrap:first-of-type,
 [data-page-id="my_refund_anc"] .table-wrap:first-of-type {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="my_pay-history-detail_car"] .table-wrap + .table-wrap,
@@ -18026,7 +18054,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .passenger-name {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   text-transform: uppercase;
@@ -18035,7 +18063,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .total-wrap,
 [data-page-id="my_refund_anc"] .total-wrap {
   height: 3.38462rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -18058,7 +18086,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .total-wrap > dl > dt {
   font-size: 0.92308rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 9.23077rem;
@@ -18109,7 +18137,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .agreement-wrap .agreement-title {
   font-size: 1.38462rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.07692rem;
@@ -18117,14 +18145,14 @@ padding-top: 20px;
 
 [data-page-id="my_pay-history-detail_car"] .agreement-wrap .agreement-list,
 [data-page-id="my_refund_anc"] .agreement-wrap .agreement-list {
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id="my_pay-history-detail_car"] .agreement-wrap .agreement-list > li,
 [data-page-id="my_refund_anc"] .agreement-wrap .agreement-list > li {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   overflow: hidden;
@@ -18165,7 +18193,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .agreement-wrap .agreement-list .btn_more {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0.38462rem 0.84615rem 0.38462rem 0.38462rem;
@@ -18212,7 +18240,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .agreement-wrap .notification-wrap .notification-text {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -18241,7 +18269,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .agreement-wrap .notification-wrap .notification-list > li {
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: relative;
@@ -18308,7 +18336,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .agreement-wrap .notification-wrap td .notification-list.no-blt .notification-text, [data-page-id="my_pay-history-detail_car"] .agreement-wrap .notification-wrap td .notification-list.no-blt li,
 [data-page-id="my_refund_anc"] .agreement-wrap .notification-wrap td .notification-list.no-blt .notification-text,
 [data-page-id="my_refund_anc"] .agreement-wrap .notification-wrap td .notification-list.no-blt li {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="my_pay-history-detail_car"] .agreement-wrap table,
@@ -18316,7 +18344,7 @@ padding-top: 20px;
   width: 100%;
   font-size: 0.84615rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: 0em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 100%;
@@ -18414,7 +18442,7 @@ padding-top: 20px;
   position: relative;
   margin: -1px 0 3.84615rem;
   height: 3.84615rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -18422,7 +18450,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .agreement-wrap .agreement-all-list label {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   letter-spacing: -0.03em;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   position: absolute;
@@ -18459,7 +18487,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] .notification-text {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding-top: 2.46154rem;
@@ -18540,9 +18568,9 @@ padding-top: 20px;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -18570,7 +18598,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] input[type="checkbox"][data-checked="all"] + .btn_check-all:after {
   content: " 취소";
   display: none;
-  background-color: #000;
+  background-color: #222;
 }
 
 [data-page-id="my_pay-history-detail_car"] input[type="checkbox"][data-checked="all"]:checked + .btn_check-all,
@@ -18588,8 +18616,8 @@ padding-top: 20px;
   padding: 0 0.76923rem;
   height: 2rem;
   line-height: 1.84615rem;
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #222;
+  background-color: #222;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -18671,7 +18699,7 @@ padding-top: 20px;
 [data-page-id="my_refund_anc"] table input[type="checkbox"] + label {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
 }
@@ -18915,7 +18943,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history_car"] .history-list .result-empty td {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 9.38462rem 1.23077rem;
@@ -19012,7 +19040,7 @@ padding-top: 20px;
 [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .ticket-info .schedule, [data-page-id="my_pay-history-detail_car"] .my-history-detail-wrap .ticket-info .schedule + dd {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   display: inline;
@@ -19083,7 +19111,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -19119,7 +19147,7 @@ padding-top: 20px;
   white-space: normal !important;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1em 1.14286em;
@@ -19138,7 +19166,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -19197,7 +19225,7 @@ padding-top: 20px;
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-50%, -50%);
   z-index: 0;
@@ -19215,7 +19243,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -19274,7 +19302,7 @@ padding-top: 20px;
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-2px, -17px);
   z-index: 0;
@@ -19323,15 +19351,15 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -19355,7 +19383,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
@@ -19447,14 +19475,14 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.23077rem;
   height: 3.69231rem;
   line-height: 3.53846rem;
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #222;
+  background-color: #222;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -19484,7 +19512,7 @@ padding-top: 20px;
 [data-page-id^="cs_"] .search-area .selectric-select-wrap .selectric-items li {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1.14286em;
@@ -19584,15 +19612,15 @@ padding-top: 20px;
 }
 
 [data-page-id^="cs_"] .cs-lnb-wrap .lnb li.active a {
-  color: #000;
+  color: #222;
   
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #222;
 }
 
 [data-page-id^="cs_"] .page-name {
   font-size: 2.46154rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 3.07692rem;
@@ -19621,7 +19649,7 @@ padding-top: 20px;
 [data-page-id^="cs_"] .notice-list .search-result, [data-page-id^="cs_"] .notice-list .search-result + dd, [data-page-id^="cs_"] .faq-list .search-result, [data-page-id^="cs_"] .faq-list .search-result + dd, [data-page-id^="cs_"] .qna-list .search-result, [data-page-id^="cs_"] .qna-list .search-result + dd {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   float: left;
@@ -19670,18 +19698,18 @@ padding-top: 20px;
 }
 
 [data-page-id^="cs_"] .notice-list .sort-condition ~ dd input[type="radio"]:checked + label, [data-page-id^="cs_"] .faq-list .sort-condition ~ dd input[type="radio"]:checked + label, [data-page-id^="cs_"] .qna-list .sort-condition ~ dd input[type="radio"]:checked + label {
-  color: #000;
+  color: #222;
 }
 
 [data-page-id^="cs_"] .notice-list > table[data-grid-type="board"], [data-page-id^="cs_"] .faq-list > table[data-grid-type="board"], [data-page-id^="cs_"] .qna-list > table[data-grid-type="board"] {
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   table-layout: fixed;
   width: 100%;
-  border-top: 1px solid #000;
+  border-top: 1px solid #222;
 }
 
 [data-page-id^="cs_"] .notice-list > table[data-grid-type="board"] > thead > tr > th, [data-page-id^="cs_"] .faq-list > table[data-grid-type="board"] > thead > tr > th, [data-page-id^="cs_"] .qna-list > table[data-grid-type="board"] > thead > tr > th {
@@ -19690,7 +19718,7 @@ padding-top: 20px;
   line-height: 1.61538rem;
   vertical-align: middle;
   
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #222;
 }
 
 [data-page-id^="cs_"] .notice-list > table[data-grid-type="board"] > tbody > tr > th, [data-page-id^="cs_"] .notice-list > table[data-grid-type="board"] > tbody > tr > td, [data-page-id^="cs_"] .faq-list > table[data-grid-type="board"] > tbody > tr > th, [data-page-id^="cs_"] .faq-list > table[data-grid-type="board"] > tbody > tr > td, [data-page-id^="cs_"] .qna-list > table[data-grid-type="board"] > tbody > tr > th, [data-page-id^="cs_"] .qna-list > table[data-grid-type="board"] > tbody > tr > td {
@@ -19757,22 +19785,22 @@ padding-top: 20px;
 
 [data-page-id^="cs_"] .search-area input[data-datepicker="daterange"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #000;
+  color: #222;
 }
 
 [data-page-id^="cs_"] .search-area input[data-datepicker="daterange"]::-moz-placeholder {
   /* Firefox 19+ */
-  color: #000;
+  color: #222;
 }
 
 [data-page-id^="cs_"] .search-area input[data-datepicker="daterange"]:-ms-input-placeholder {
   /* IE 10+ */
-  color: #000;
+  color: #222;
 }
 
 [data-page-id^="cs_"] .search-area input[data-datepicker="daterange"]:-moz-placeholder {
   /* Firefox 18- */
-  color: #000;
+  color: #222;
 }
 
 [data-page-id^="cs_"] .search-area .sort-by-status {
@@ -19858,7 +19886,7 @@ padding-top: 20px;
 [data-page-id^="cs_"] table[data-grid-type="board"] > tbody > tr.active + .accordion-content .post-info .writer + dd {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-bottom: 1.84615rem;
@@ -19899,7 +19927,7 @@ padding-top: 20px;
   white-space: nowrap;
   vertical-align: top;
   color: #ffffff;
-  background-color: #000;
+  background-color: #222;
   margin-right: 0.30769rem;
   vertical-align: middle;
 }
@@ -19907,7 +19935,7 @@ padding-top: 20px;
 [data-page-id^="cs_"] table[data-grid-type="board"] > tbody > tr.active + .accordion-content .post-attached {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   margin-top: 2.46154rem;
@@ -19939,7 +19967,7 @@ padding-top: 20px;
   white-space: normal !important;
   font-size: 1.07692rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1em 1.14286em;
@@ -19979,7 +20007,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -19987,7 +20015,7 @@ padding-top: 20px;
   line-height: 3.07692rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -20008,7 +20036,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -20016,7 +20044,7 @@ padding-top: 20px;
   line-height: 3.07692rem;
   border: 1px solid #f5581a;
   background-color: #f5581a;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -20037,15 +20065,15 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -20201,7 +20229,7 @@ padding-top: 20px;
   padding-bottom: 3.07692rem;
   font-size: 2.30769em;
   
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="cs_policy"] .policy-title {
@@ -20209,7 +20237,7 @@ padding-top: 20px;
   margin: 2.46154rem 0 0;
   padding-left: 1.23077rem;
   
-  color: #000;
+  color: #222;
 }
 
 [data-page-id="cs_policy"] .policy-title:before {
@@ -20338,7 +20366,7 @@ padding-top: 20px;
   /*selectric일 때*/
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   width: 44.61538rem;
@@ -20361,7 +20389,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -20397,7 +20425,7 @@ padding-top: 20px;
   white-space: normal !important;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 1em 1em;
@@ -20416,7 +20444,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -20475,7 +20503,7 @@ padding-top: 20px;
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-50%, -50%);
   z-index: 0;
@@ -20493,7 +20521,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -20552,7 +20580,7 @@ padding-top: 20px;
   right: 1.53846rem;
   width: 0.61538rem;
   height: 0.61538rem;
-  border: solid #000;
+  border: solid #222;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translate(-2px, -17px);
   z-index: 0;
@@ -20601,15 +20629,15 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
-  border: 1px solid #000;
+  border: 1px solid #222;
   background-color: #ffffff;
-  color: #000;
+  color: #222;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -20633,7 +20661,7 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
@@ -20725,14 +20753,14 @@ padding-top: 20px;
   white-space: nowrap;
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1rem;
   height: 3.23077rem;
   line-height: 3.07692rem;
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #222;
+  background-color: #222;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -20762,7 +20790,7 @@ padding-top: 20px;
 [data-pop-id="pop_qna"] .selectric-select-wrap .selectric-items li {
   font-size: 1rem;
   
-  color: #000;
+  color: #222;
   
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
   padding: 0 1em;
@@ -21180,7 +21208,7 @@ padding-top: 20px;
   font-family: "NotoSansR", NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 10pt;
   
-  color: #000;
+  color: #222;
   display: table-cell;
   text-align: center;
   padding-right: 29.8px;
@@ -21203,7 +21231,7 @@ padding-top: 20px;
   font-family: "NotoSansR", NanumSquare, "Apple SD Gothic NEO", sans-serif;
   font-size: 10pt;
   
-  color: #000;
+  color: #222;
   display: table-cell;
   text-align: center;
   padding-right: 26px;
@@ -21831,7 +21859,7 @@ margin-right: 11px;
 }
 .seat_sheet_price_box .skybox{
 	width: 120px;
-	background: #000000;
+	background: #222000;
 	opacity: 0.5;
 }
 
@@ -21843,7 +21871,7 @@ margin-right: 11px;
 }
 
 .seat_sheet_recom_box .recom_num a {
-	background: #000;
+	background: #222;
 	opacity: 0.5;
 	display: block;
 	width: 100%;
@@ -21957,7 +21985,7 @@ margin-right: 11px;
 .seat_sheet_recom_box .recom_num.type2 a {
 	height: 116px;
 	position: absolute;
-	background: #000;
+	background: #222;
 	top: 94px;
 }
 .seat_sheet_recom_box .recom_num.type2 a:hover {
@@ -21966,7 +21994,7 @@ margin-right: 11px;
 .seat_sheet_recom_box .recom_num.type3 a {
 	height: 25px;
 	position: absolute;
-	background: #000;
+	background: #222;
 	top: 211px;
 }
 .seat_sheet_recom_box .recom_num.type3 a:hover {
@@ -21975,7 +22003,7 @@ margin-right: 11px;
 .seat_sheet_recom_box .recom_num.type4 a {
     height: 77px;
     position: absolute;
-    background: #000;
+    background: #222;
     top: 237px;
 }
 .seat_sheet_recom_box .recom_num.type4 a:hover {
@@ -21984,7 +22012,7 @@ margin-right: 11px;
 .seat_sheet_recom_box .recom_num.type5 a {
     height: 129px;
     position: absolute;
-    background: #000;
+    background: #222;
     top: 315px;
 }
 .seat_sheet_recom_box .recom_num.type5 a:hover {
@@ -22019,19 +22047,19 @@ margin-right: 11px;
 .seat_sheet_recom_box .recom_num.tway-fnst a {
 	height: 135px;
 	position: absolute;
-	background: #000;
+	background: #222;
 	top: 107px;
 }
 .seat_sheet_recom_box .recom_num.tway-emerg a {
 	height: 35px;
 	position: absolute;
-	background: #000;
+	background: #222;
 	top: 243px;
 }
 .seat_sheet_recom_box .recom_num.tway-nmst a {
     height: 240px;
     position: absolute;
-    background: #000;
+    background: #222;
     top: 279px;
 }
 
@@ -22097,7 +22125,7 @@ margin-right: 11px;
   color: #fff;
   font-size: 12px;
   font-family: "Labdigital";
-  text-shadow: 0px 0px 4px #000;
+  text-shadow: 0px 0px 4px #222;
 }
 .load_left_a::after {
   content: "%";
@@ -22149,7 +22177,7 @@ margin-right: 11px;
   font-family: "Labdigital";
 	background: url("../img/common/circle_blue.gif") no-repeat center -3px / 22px 22px;
   padding: 16px 4px 0 4px;
-  text-shadow: 0px 0px 4px #000;
+  text-shadow: 0px 0px 4px #222;
 }
 
 .load_left_aa::after {
@@ -22292,15 +22320,31 @@ margin-right: 11px;
 .pay_r_txt{
   font-family:"PretendardB";
   font-size: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 }
 
 .pay_line{
   padding-top: 10px;
   border-bottom: 1px solid #bbbbbb;
 }
-
-
+.pay_line2{
+  padding-top: 15px;
+  border-bottom: 1px solid #eee;
+}
+.rihgt_side_padding{
+  margin-top: 25px;
+}
+.pay_departure_box{
+  border: 1.5px solid #ff6600;
+  font-family:"PretendardM";
+  padding: 2px 1px;
+  width: 45px;
+  height: 20px;
+  font-size: 10.5px;
+  color: #ff6600;
+  text-align: center;
+  line-height: 14px;
+}
 .pay_arrive_box{
   border: 1.5px solid #ff6600;
   font-family:"PretendardM";
@@ -22850,22 +22894,25 @@ margin-right: 11px;
 .txt_depature{
   font-size: 16px;
   font-family: "PretendardB";
-  padding: 40px 2.46154rem 10px;
+  padding: 30px 2.46154rem 10px;
   display: flex;
+  align-items: center;
 }
+
 .txt_depature span:nth-child(1){
   padding-right: 5px;
+  color: #222;
 }
 .txt_depature span:nth-child(2){
   font-size: 14px;
-  font-family: "PretendardM";
+  font-family: "PretendardSB";
   background: url("../img/common/ico_airplane_g.png") no-repeat right / 15px 15px;
   padding-right: 20px;
 }
 
 .txt_depature span:nth-child(3){
   font-size: 14px;
-  font-family: "PretendardM";
+  font-family: "PretendardSB";
   padding-left: 3px;
 }
 
@@ -22873,7 +22920,7 @@ margin-right: 11px;
 /* 기내식 소스 수정*/
 
 [data-page-id="anc_main"] .anc-service-wrap.anc_meal .meal-plan .scroll-wrap.new_meal{
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 
 [data-page-id='anc_main'] .anc_meal .function-wrap.new_meal {
@@ -22900,7 +22947,7 @@ margin-right: 11px;
     height: 800%;
     min-height: 100%;
     text-indent: -9999px;
-    background: #000;
+    background: #222;
     -ms-filter: alpha(opacity=20);
     -moz-opacity: 0.2;
     filter: alpha(opacity=20);
@@ -22981,6 +23028,22 @@ margin-right: 11px;
   display: flex;
   align-items: center;
 }
+
+.tabstabs.service{
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 350px;
+  height: 50px;
+  border:1px solid #ddd;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
 .tabstabs-btn{
   display: flex;
   width: 100%;
@@ -23119,6 +23182,8 @@ margin-right: 11px;
   height: 16px;
   padding: 10px;
 }
+
+
 
 
 

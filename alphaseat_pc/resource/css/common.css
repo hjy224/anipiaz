@@ -56,7 +56,7 @@
 .layer_popup.type2 {
   z-index: 20;
   position: absolute;
-  top: 80px;
+  top: 50px;
   left: -15px;
   width: 300px;
   height: 100%;
@@ -232,8 +232,17 @@
 
 .layer_popup .seat_num li{
   padding-top: 10px;
-  
- 
+  display: flex;
+  justify-content: space-between;
+}
+/*직접선택모드*/
+.layer_popup .seat_num .jipjub{
+  padding-top: 10px;
+  display:flex;
+  justify-content:left;
+}
+.layer_popup .seat_num .jipjub a{
+  margin-right: 12px;
 }
 
 .layer_popup .seat_num li a{  
@@ -246,8 +255,6 @@
   font-size: 13px;
   color: #fff;
   display: inline-block;
-  margin-right: 7px;
-  margin-top: 7px;
   line-height: 35px;
 }
 
@@ -260,6 +267,7 @@
   background-color: #ff6600;  
   border-bottom: 5px solid #ce3802;
   transition: 0.2s all;
+  
   line-height: 45px;
 }
 .layer_popup .seat_num li a.seat_active::after{
@@ -285,11 +293,11 @@
 .layer_popup .seat_num .a1-1{position: relative;}
 .layer_popup .seat_num .a1-1::before {
   position: absolute;
-  top: -11px;
-  left: -3px;
+  top: 3px;
+  left: -4px;
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   background: transparent;
   border: 2px solid #ff6600;
 }
