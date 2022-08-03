@@ -108,16 +108,19 @@
 .grp_title_popup h2{
   font-size: 15px;
   color: #222;
-
 }
 
 .grp_title_popup .btn_close_popup {
   background: url("../img/common/ico_header-close@3x.png") no-repeat center /15px 15px;
   width: 13px;
   height: 13px;
+}
+.grp_title_popup .btn_close_popup1 {
+  background: url("../img/common/ico_header-close@3x.png") no-repeat center /15px 15px;
+  width: 13px;
+  height: 13px;
   text-indent: -999em;
 }
-
 .box_button{
   position: absolute;
   right: 0px;
@@ -137,7 +140,7 @@
   border-radius: 15px;
   color: #fff;
   font-size: 13px;
-  font-family:'NotoSansM';
+  font-family:'PretendardM';
   line-height: 2px;
   background: none;
 }
@@ -639,15 +642,15 @@ padding: 10px;
 }
 #popup2_1 .popup_body .popup_content .popup_con_txt{
   line-height: 25px;
-  font-size: 15px;
+  font-size: 16px;
   color: #444;
-  font-family: 'NotoSansB';
+  font-family: 'PretendardB';
 }
 #popup13_1 .popup_body .popup_content .popup_con_txt{
   line-height: 25px;
   font-size: 15px;
   color: #444;
-  font-family: 'NotoSansB';
+  font-family: 'PretendardB';
   padding-top: 10px;
 }
 
@@ -655,7 +658,8 @@ padding: 10px;
   padding-top: 15px;
   line-height: 18px;
   font-size: 13px;
-  color: #222;
+  color: #444;
+  font-family: 'PretendardM';
 }
 
 #popup3 .popup_body .popup_con_txt{
@@ -787,12 +791,6 @@ padding: 10px;
   text-align: left;
   margin-left: 10px;
   padding: 0 0 10px 20px;
-}
-
-.popup_con_txt span{
-  font-family: 'PretendardSB';
-  font-size: 15px;
-  color: #222;
 }
 
 
@@ -1019,6 +1017,10 @@ padding: 10px;
   align-items: center;
   justify-content: space-around
 }
+.popup_ct_box1 a{
+  color: #222;
+}
+
 
 .popup_ct_box2{
   margin-top: 10px;
@@ -1030,12 +1032,13 @@ padding: 10px;
 	padding: 0 10px;
   margin-bottom: 25px;
   font-family: 'PretendardB';
-
   display: flex;
   align-items: center;
   justify-content: space-around
 }
-
+.popup_ct_box2 a{
+  color: #fff;
+}
 .popup_btn_hap{
   padding: 15px 0;  
 }
@@ -1263,7 +1266,7 @@ padding: 10px;
 #popup10 .popup_content {
   padding: 20px 0 10px 0;
   font-size: 13px;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
 }
 
 #popup10 .pay_ex{
@@ -1287,7 +1290,7 @@ padding: 10px;
   line-height: 50px;
   color: #999999;
   text-align: center;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
   font-size: 15px;
   
 }
@@ -1298,7 +1301,7 @@ padding: 10px;
   line-height: 50px;
   color: #fff;
   text-align: center;
-  font-family: "NotoSansM";
+  font-family: "PretendardM";
   font-size: 15px;
   
 }

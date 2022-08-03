@@ -1599,8 +1599,8 @@ body > * {
 }
 
 .section-margin {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1780,7 +1780,7 @@ body > * {
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
-  height: 500px;
+  margin-bottom: 100px;
 }
 
 .title-text {
@@ -9994,7 +9994,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   z-index: 0;
-  font-size: 65px;
+  font-size: 40px;
   line-height: 1.2;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -12203,7 +12203,7 @@ footer p {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   line-height: 1.6;
   font-variant-numeric: proportional-nums;
   font-family: "Montserrat", sans-serif;
@@ -12575,6 +12575,20 @@ footer .copyright-social ul li:last-child {
   color: #64D7AF;
 }
 
+.txt_02{
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  display: flex;
+  text-transform: initial;
+}
+.txt_02 span, .contenet-hero span{
+  color: #64D7AF;
+  margin-right: 5px;
+}
+
 .box-content{
   text-align: center;
 }
@@ -12582,13 +12596,22 @@ footer .copyright-social ul li:last-child {
 .box-content.ac1 h4{
   color: #AF64F0;
   padding: 40px 0 20px;
-  font-size: 20px !important;
+  font-size: 21px !important;
 }
 .box-content.ac2 h4{
   color: #FF0000;
   padding: 40px 0 20px;
-  font-size: 20px !important;
+  font-size: 21px !important;
 }
-.blank_100{
-  padding: 100px 0;
+.nav__list-item a:hover{
+
+color: #64D7AF;
+text-decoration:none;
+}
+
+.jy {
+  margin: 0 auto;
+ background-color: #fff;
+ width: 90%;
+ height: 500px;
 }

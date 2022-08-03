@@ -355,14 +355,18 @@ html, body{
 
 /*상단 텍스트 */
 .hd_txt{
-	width: 100%;
-	font-size: 16px;
-	color: #00aae7;
-	margin: 0 auto;
-	padding: 10px 0 20px 50px;
-	background: url(../img/common/circle_blue.gif) no-repeat left 30px top 9px / 20px 20px;
-	display: inline-block;
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
 }
+.hd_txt span{
+	font-size: 16px;
+    color: #00aae7;
+    background: url(../img/common/circle_blue.gif) no-repeat left 2px top 7px / 20px 20px;
+    padding: 10px 15px 20px 25px;
+    text-align: center;
+}
+
 
 /*상단 셀렉트 박스*/
 .select_box{
@@ -1907,6 +1911,7 @@ html, body{
 	border-bottom: 1px solid #bbb;
 	color: #222;
 	font-family: 'PretendardSB';
+	background: #fff;
 }
 
 .pay_txt1{
@@ -3084,7 +3089,9 @@ input[id="food_item_btn2"]:checked + label i{
 	border-radius: 20px;
 	display: flex;
 	color: #08a7e1;
-	border: 1px solid #08a7e1;
+	-webkit-box-shadow: 0 4px 7px 1px #bbb;
+	-moz-box-shadow: 0 4px 7px 1px #bbb;
+	box-shadow: 0 4px 7px 1px #bbb;
 	line-height: 36px;
 }
 
@@ -3093,9 +3100,9 @@ input[id="food_item_btn2"]:checked + label i{
 	line-height: 5px;
 }
 .ags-summary .scroll_btn span{
-	background: url(../img/common/path_blue.png) no-repeat left / 14px 13px;
+	background: url(../img/common/return_ico.png) no-repeat left / 14px 14px;
 	padding-left: 17px;
-	font-size: 13px;
+	font-size: 14px;
 	font-family: 'PretendardB';
 }
 .ags-summary .foot_align{
@@ -4671,10 +4678,9 @@ input[id="check2"]:checked + label i{
 	.card-select-moon .card-pass-wrap span {
 		margin-right: 6px;
 	}
-	.hd_txt {
+	.hd_txt span {
 		font-size: 14px;
-		padding: 10px 0 20px 39px;
-		background: url(../img/common/circle_blue.gif) no-repeat left 18px top 7px / 20px 20px;
+		padding: 10px 10px 20px 25px;
 	}
 	.pay_choice {
 		font-size: 10px;

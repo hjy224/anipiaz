@@ -3017,8 +3017,8 @@ body {
 .way_select{
   position:absolute;
   top: 0px;
-  right: 100px;
-  z-index: 2;
+  right: 320px;
+  z-index: 5000;
 }
 
 .way_select li{
@@ -3033,7 +3033,7 @@ body {
   color: #eee;
 }
 
-.way_select li a {
+.way_select li ab {
   font-size: 14px;
   color: #ccc;
   font-family: "PretendardM", "NotoSansR", "Apple SD Gothic NEO", sans-serif;
@@ -3044,7 +3044,7 @@ body {
   text-decoration: none;
 }
 
-.way_select li.active a {
+.way_select li.active ab {
   color: #222;
   font-family: "PretendardB";
   background: url("../img/common/garosun.jpg") no-repeat center top 49px / 75px 3px;
@@ -6380,9 +6380,15 @@ padding-top: 20px;
   min-height: 49.84615rem;
   height: 60vh;
   */
+  border: 1px solid #f0f0f0;
+}
+
+[data-page-id="anc_main"] .anc-service-wrap .anc-service.hhup {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
   margin-top: 30px;
   border: 1px solid #f0f0f0;
-
 }
 
 
@@ -7367,7 +7373,6 @@ padding-top: 20px;
 
 [data-page-id="anc_main"] .anc-summary .total-sum {
   padding: 10px 0;
-  
 }
 
 [data-page-id="anc_main"] .anc-summary .total-sum:after {
@@ -7412,7 +7417,7 @@ padding-top: 20px;
   padding: 0 1.84615rem;
   height: 4.76923rem;
   line-height: 4.61538rem;
-  border: 1px solid #ff6600;
+ 
   background-color: #ff6600;
   text-align: center;
   text-decoration: none;
@@ -7424,8 +7429,9 @@ padding-top: 20px;
 [data-page-id="anc_main"] .anc-summary .btn_pay[disabled="disabled"] {
   border: 1px solid #f0f0f0;
   background-color: #f0f0f0;
-  color: #aaa;
+  color: #fff;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+  background-color: #ccc;
 }
 
 [data-page-id="anc_main"] .anc-summary .digits {
@@ -21359,7 +21365,7 @@ padding-top: 20px;
 }
 
 /*헤더 슬라이드 메뉴*/
-.select_group_btn {
+.select_group_btn,.select_group_btn_one  {
   position: absolute;
   top: -6px;
   left: 0;
@@ -21751,7 +21757,7 @@ padding-top: 20px;
 }
 
 .exit_left {
-	font-size: 14px;
+	font-size: 13px;
 	color: #666;
 	letter-spacing: 1px;
 }
@@ -21763,10 +21769,11 @@ padding-top: 20px;
   transform: translate(-50%);
 	color: #666;
 	letter-spacing: 1px;
-  
+  font-size: 13px;
 }
 
 .exit_right {
+  font-size: 13px;
 	color: #666;
 	letter-spacing: 1px;
 	float: right;
@@ -22467,7 +22474,7 @@ margin-right: 11px;
 	justify-content: space-between;
 	color: #999;
 	padding: 10px 1px;
-  font-family: 'PretendardR';
+  font-family: 'PretendardM';
   font-size: 11px;
   line-height: 16px;
 }
@@ -22478,7 +22485,7 @@ margin-right: 11px;
 	justify-content: space-between;
 	color: #f5581a;
 	padding: 10px 1px 0 1px;
-  font-family: 'PretendardR';
+  font-family: 'PretendardM';
   font-size: 11px;
   line-height: 16px;
 }
@@ -22495,7 +22502,7 @@ margin-right: 11px;
 }
 .pay_choice div span{
   font-size: 11px;
-  font-family: 'PretendardR';
+  font-family: 'PretendardM';
 }
 .pay_choice .safe_cho {
   width: 26px;
@@ -22511,10 +22518,38 @@ margin-right: 11px;
   margin-right: 3px;
 }
 
+.scroll_btn{
+	position:absolute;
+	top: 605px;
+	left: 735px;
+	width: 130px;
+	height: 36px;
+	background-color: #fff;
+	border-radius: 20px;
+	display: flex;
+	color: #08a7e1;
+	line-height: 36px;
+  z-index: 5;
+  -webkit-box-shadow: 0 4px 7px 1px #bbb;
+	-moz-box-shadow: 0 4px 7px 1px #bbb;
+	box-shadow: 0 4px 7px 1px #bbb;
+
+}
+
+.scroll_btn a{
+	margin: 0 auto;
+	line-height: 32px;
+  font-size: 14px;
+  font-family: 'PretendardM';
+  color: #08a7e1;
+}
+.scroll_btn span{
+	background: url(../img/common/return_ico.png) no-repeat left / 14px 14px;
+	padding-left: 17px;
+}
+
 
 /*체크박스 오렌지*/
-
-
 .pay_group_s .check_orange{
 	position: relative;
 	display: inline-block;
@@ -22674,16 +22709,19 @@ margin-right: 11px;
 	color: #222;
 }
 .pay_save {
-	padding: 30px 16px 20px 16px;
+	position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 .pay_save button{
   width: 100%;
   padding: 15px 10px;
-  border: 1px solid #f5581a;
-  background-color: #fff;
-  color: #f5581a;
-  border-radius: 5px;
+  
+  background-color: #666;
+  color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   font-family: "PretendardM";
   font-size: 14px;
 }
@@ -22925,7 +22963,7 @@ margin-right: 11px;
 
 [data-page-id='anc_main'] .anc_meal .function-wrap.new_meal {
   margin: 0 2.46154rem;
-  padding: 40px 0 3.07692rem;
+  padding: 30px 0 3.07692rem;
 }
 
 
@@ -23100,7 +23138,7 @@ margin-right: 11px;
 }
 .kmd_b{
   line-height: 15px;
-  font-family: "PretendardR";
+  font-family: "PretendardM";
   font-size: 10px;
 }
 
@@ -23156,7 +23194,7 @@ margin-right: 11px;
   left: 0;
   font-size: 11px;
   color: #222;
-  font-family: "PretendardR";
+  font-family: "PretendardM";
   display: block;
 }
 .tabstabs-btn li:nth-child(2).active .tab_clock_b {
@@ -23177,14 +23215,23 @@ margin-right: 11px;
   z-index: 1;
 }
 .popup_infor a {
-  background: url(../img/common/info_btn.png) no-repeat center / 16px 16px;
+  background: url("../img/common/info_btn.png") no-repeat center / 16px 16px;
   width: 16px;
   height: 16px;
   padding: 10px;
 }
 
 
-
+.seat_del_btn {
+  position: absolute;
+  top: 150px;
+  left:600px;
+  width: 24px;
+  height: 26px;
+  background: url("../img/common/seat_del_btn.png") no-repeat center / 24px 26px;
+  z-index: 20;
+  text-indent: -9999em;
+}
 
 
 @media (max-width: 1200px) {

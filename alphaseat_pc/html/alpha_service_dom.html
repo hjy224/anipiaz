@@ -23,20 +23,33 @@
         <h1 class="site-name">올윈에어 Ancillary Gateway Service</h1>
         <!-- 서비스정보(include/ags-header.dom.html) -->
         <header id="ags-header" class="ags-header"></header>
+
         <hr>
-        <div id="way_select" class="way_select">
-            <ul>
-                <li><a href="index.html" target="_self">사전좌석지정</a></li>
-                <span class="sunsero">|</span>
-                <li class="active"><a href="#none" target="_self" data-target="departure">수하물추가</a></li>
-                <span class="sunsero">|</span>
-                <li><a href="#none" target="_self" data-target="arrival">기내식예약</a></li>
-            </ul>
-        </div>
+
         <section id="ags-container" class="ags-container" data-page-id="anc_main">
-            
-            <div class="content-wrap service">
+            <div class="content-wrap">
                 <h2 class="sr-only">컨텐츠 본문</h2>
+
+                <div id="flight-way-selector" class="flight-way-selector">
+                    <div class="btn-group">
+                        <h4 class="sr-only">구간 선택</h4>
+                        <ul class="btn-list">
+                            <li class="active">
+                                <a href="#none" target="_self" data-target="departure">
+                                    <i class="ico_7c"></i>가는 편
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none" target="_self" data-target="arrival">
+                                    <i class="ico_busan"></i>오는 편
+
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
                 <div class="anc-service" data-type="tab-group">
                     <!-- 원래 AGS 가는편 오는편 지금은 안씀 -->
                     <div class="tabs" style="display: none;">
@@ -49,36 +62,12 @@
                     <!-- 탭 -->
                     <div class="tab-panels">
                         <div id="tab-panel1-1" class="tab-panel" role="tabpanel">
-                            <!-- 위탁 수하물 추가하기 -->                            
-                            <div class="tabstabs service" >
-                                <ul class="tabstabs-btn">
-                                    <li role="tab" aria-controls="tab-panel2-1" class="active">
-                                        <div class="tabway_a">가는 편</div>
-                                        <div class="tabway_b">
-                                            <div class="kmd_a">
-                                                <span>ICN</span>
-                                                <span>SIN</span>
-                                            </div>
-                                            <div class="kmd_b">22.07.01 09:25</div>
-                                            </div>
-                                    </li>
-                                    <li role="tab" aria-controls="tab-panel2-2" class="">                                    
-                                        <div class="tabway_a">오는 편</div>
-                                        <div class="tabway_b">
-                                            <div class="kmd_a">
-                                                <span>SIN</span>
-                                                <span>ICN</span>
-                                            </div>
-                                            <div class="kmd_b">22.07.03 13:55</div>
-                                            </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <!-- 위탁 수하물 추가하기 -->
                             <article id="anc_baggage" name="anc_baggage" class="anc-service-wrap anc_baggage"
                                 data-type="tab-group">
                                 <div class="anc-service">
                                     <div class="tab-panels">
-                                        <div class="tabs" style="display: none;">
+                                        <div class="tabs">
                                             <h4 class="sr-only">구간 선택</h4>
                                             <ul role="tablist">
                                                 <li role="tab" aria-controls="tab-panel2-1">가는 편</li>
@@ -98,7 +87,7 @@
                                                         <span>SIN</span>
                                                     </div>
                                                     <div class="welcome-msg">
-                                                        무료 위탁 수하물 15kg + 유아 10kg이 제공되는 운임입니다.
+                                                        무료 위탁 수하물 15kg + 유아 10kg이 제공되는 운임입니다.<br>
                                                         <i class="text-emphasis">수하물 추가는 5kg당 <span
                                                                 class="digits">30000</span></i>입니다.
                                                     </div>
@@ -579,7 +568,7 @@
                                                         <span>ICN</span>
                                                     </div>
                                                     <div class="welcome-msg">
-                                                        무료 위탁 수하물 15kg + 유아 10kg이 제공되는 운임입니다.
+                                                        무료 위탁 수하물 15kg + 유아 10kg이 제공되는 운임입니다.<br>
                                                         <i class="text-emphasis">수하물 추가는 5kg당 <span
                                                                 class="digits">30000</span></i>입니다.
                                                     </div>
@@ -1111,30 +1100,7 @@
                             </div>
 
                             <div id="tab-panel1-2" class="tab-panel" role="tabpanel">
-                                <div class="tabstabs service" >
-                                    <ul class="tabstabs-btn">
-                                        <li role="tab" aria-controls="tab-panel3-1" class="active">
-                                            <div class="tabway_a">가는 편</div>
-                                            <div class="tabway_b">
-                                                <div class="kmd_a">
-                                                    <span>ICN</span>
-                                                    <span>SIN</span>
-                                                </div>
-                                                <div class="kmd_b">22.07.01 09:25</div>
-                                                </div>
-                                        </li>
-                                        <li role="tab" aria-controls="tab-panel3-2" class="">                                    
-                                            <div class="tabway_a">오는 편</div>
-                                            <div class="tabway_b">
-                                                <div class="kmd_a">
-                                                    <span>SIN</span>
-                                                    <span>ICN</span>
-                                                </div>
-                                                <div class="kmd_b">22.07.03 13:55</div>
-                                                </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                            
                             <!-- 사전 기내식 구매하기 -->
                             <article id="anc_meal" class="anc-service-wrap anc_meal" data-type="tab-group">
                                 <header class="anc-header" style="display: none;">
@@ -1146,7 +1112,7 @@
                                 
                                 <div class="anc-service">
                                     
-                                    <div class="tabs" style="display: none;">
+                                    <div class="tabs">
                                         <h4 class="sr-only">구간 선택</h4>
                                         <ul role="tablist">
                                             <li role="tab" aria-controls="tab-panel3-1">가는 편</li>
@@ -2891,15 +2857,14 @@
             <hr>
 
             <!-- 총 결제금액 -->
-            <div class="anc-summary">      
+            <div class="anc-summary">
                 <h2 class="sr-only">선택한 부가서비스 내역</h2>
                 <div class="scroll-wrap" data-scrollbar="true">
                     <!-- departure 수하물 탭-->
                     <div data-id="departure" class="departure active">
-                        <div class="pay_r_txt">부가 서비스 내역</div>
                         <div class="rihgt_side_padding">
                             <h3 class="flight-way" style="display: none;">가는 편</h3>
-                            
+                            <div class="pay_r_txt">부가 서비스 내역</div>
                             <div class="pay_departure_box">가는 편</div>
                             <div class="pay_line"></div>
                             <dl>
@@ -2960,7 +2925,6 @@
                                 </dd>
                             </dl>
                         </div>
-                        <div class="pay_line2"></div>
                         <div class="rihgt_side_padding">
                             <div class="pay_arrive_box">오는 편</div>
                             <div class="pay_line"></div>
@@ -3024,10 +2988,9 @@
                     </div>
                     <!-- arrival 기내식 탭-->
                     <div data-id="arrival" class="arrival">
-                        <div class="pay_r_txt">부가 서비스 내역</div>
                         <div class="rihgt_side_padding">
                             <h3 class="flight-way" style="display: none;">가는 편</h3>
-                            
+                            <div class="pay_r_txt">부가 서비스 내역</div>
                             <div class="pay_departure_box">가는 편</div>
                             <div class="pay_line"></div>
                             <dl>
@@ -3088,7 +3051,6 @@
                                 </dd>
                             </dl>
                         </div>
-                        <div class="pay_line2"></div>
                         <div class="rihgt_side_padding">
                             <div class="pay_arrive_box">오는 편</div>
                             <div class="pay_line"></div>
@@ -3150,39 +3112,46 @@
                             </dl>
                         </div>                      
                     </div>
-                    <div class="pay_line2"></div>
+                    
                 </div>
-                <div class="right_agreebox">
-                    <!-- 사전 수하물 -->
-                    <div class="agreement-wrap active" data-id="departure">
-                        <ul class="agreement-list">
-                            <!-- 수하물 규정 -->
-                            <li>
-                                <input type="checkbox" id="input-check15" name="check-group3" data-checked="all"><label
-                                for="input-check15"><i class="ico"></i>요금 규정 및 약관동의</label>
-                                <a href="#none" target="_self" class="btn_more">자세히 보기</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 사전 기내식 -->
-                    <div class="agreement-wrap" data-id="arrival">
-                        <ul class="agreement-list">
-                            <!-- 기내식 규정 -->
-                            <li>
-                                <input type="checkbox" id="input-check15" name="check-group3" data-checked="all"><label
-                                for="input-check15"><i class="ico"></i>요금 규정 및 약관동의</label>
-                                <a href="#none" target="_self" class="btn_more">자세히 보기</a>
-                            </li>
-                    </div>
-                </div>
-                
                 <div class="total-sum">
                     <dl>
                         <dt class="total">총 결제금액</dt>
                         <dd><span class="digits">999999</span></dd>
                     </dl>
                 </div>
-                
+                <div class="right_agreebox">
+                    <!-- 사전 수하물 -->
+                    <div class="agreement-wrap active" data-id="departure">
+                        <ul class="agreement-list">
+                            <!-- 제주항공(가는 편) 위탁 수하물 규정 -->
+                            <li>
+                                <input type="checkbox" id="input-check302" name="check-group3"><label
+                                    for="input-check302"><i class="ico"></i>사전 수하물 규정</label>
+                                <a href="#none" target="_self" class="btn_more">자세히 보기</a>
+                            </li>
+                        </ul>
+                        <div class="agreement-all-list">
+                            <input type="checkbox" id="input-check15" name="check-group3" data-checked="all"><label
+                                for="input-check15"><i class="ico"></i>모두 동의하기</label>
+                        </div>
+                    </div>
+                    <!-- 사전 기내식 -->
+                    <div class="agreement-wrap" data-id="arrival">
+                        <ul class="agreement-list">
+                            <!-- 제주항공(가는 편) 위탁 수하물 규정 -->
+                            <li>
+                                <input type="checkbox" id="input-check402" name="check-group3"><label
+                                    for="input-check402"><i class="ico"></i>사전 기내식 규정</label>
+                                <a href="#none" target="_self" class="btn_more">자세히 보기</a>
+                            </li>
+                        </ul>
+                        <div class="agreement-all-list">
+                            <input type="checkbox" id="input-check15" name="check-group3" data-checked="all"><label
+                                for="input-check15"><i class="ico"></i>모두 동의하기</label>
+                        </div>
+                    </div>
+                </div>
                 <button type="button" class="btn_pay">결제하기</button>
 
                 <!--직접배정팝업-->
@@ -3544,13 +3513,13 @@
                 $html.scrollTop(currnetScrollTop);
             }
             (function () {
-                $body.on("click", ".way_select a", function (e) {
+                $body.on("click", ".flight-way-selector a", function (e) {
                     e.preventDefault();
                     flightWayLink($(this));
                 });
                 $body.on("click", ".btn_go-arrival", function (e) {
                     e.preventDefault();
-                    $(".way_select a[data-target='arrival']").click()
+                    $(".flight-way-selector a[data-target='arrival']").click()
                 })
             })();
 
@@ -3856,7 +3825,7 @@
 
             /*가는 편/오는 편 탭(#flight-way-selector) 위치고정*/
             (function () {
-                var $flightWay = $("#way_select .btn-group");
+                var $flightWay = $("#flight-way-selector .btn-group");
                 var flightWayStart = $flightWay.offset().top - $(".anc-lnb-wrap").height();
                 var flightWayEnd = $("#ags-footer").offset().top - $flightWay.outerHeight() - parseInt($flightWay.css("padding-bottom")) - 180;
                 var containerWidth = parseInt($(".ags-wrap").css("min-width"));
