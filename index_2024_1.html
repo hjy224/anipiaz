@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 일정</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th, td {
+                box-sizing: border-box;
+                width: 100%;
+                display: block;
+            }
+            th {
+                background-color: transparent;
+                color: #333;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+            }
+            td {
+                border: none;
+                position: relative;
+                padding-left: 30%;
+                text-align: right;
+                border-bottom: 1px solid #ccc;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>여행 일정 2024.8.22~24</h2>
+    <table>
+        <tr>
+            <td data-label="일정">중랑 -> 강릉</td>
+            <td data-label="세부 사항">2시간 40분</td>
+        </tr>
+        <tr>
+            <td data-label="일정">안양 -> 강릉</td>
+            <td data-label="세부 사항">3시간</td>
+        </tr>
+        <tr>
+            <td data-label="일정" style="background-color: rgb(253, 174, 117);">8.22 (목)</td>
+            <td data-label="세부 사항">가는 길이 다르므로 휴게소에서 만날 수 없음. 알아서 아침밥 챙겨먹기</td>
+        </tr>
+        <tr>
+            <td data-label="일정">강릉 아르떼 뮤지엄</td>
+            <td data-label="세부 사항">10시 30분~11시쯤 도착 목표 <br> <a href="https://blog.naver.com/milky1352/223491682412">블로그 링크</a></td>
+        </tr>
+        <tr>
+            <td data-label="일정">경포대</td>
+            <td data-label="세부 사항">가는 길에 30분 보기</td>
+        </tr>
+        <tr>
+            <td data-label="일정">점심</td>
+            <td data-label="세부 사항">연곡꾹저구탕 (1시 30분쯤) <br> <a href="https://blog.naver.com/boot_dal/223463114444">블로그 링크</a></td>
+        </tr>
+        <tr>
+            <td data-label="일정">속초 중앙시장 구경</td>
+            <td data-label="세부 사항">1시간 소요 (3:00 도착)</td>
+        </tr>
+        <tr>
+            <td data-label="일정">회 포장</td>
+            <td data-label="세부 사항">신유네회포장 - 미리 전화 예약 필요 <br> <a href="https://blog.naver.com/crsol/223439143600">블로그 링크</a></td>
+        </tr>
+        <tr>
+            <td data-label="일정">중앙닭강정, 만석닭강정</td>
+            <td data-label="세부 사항">-</td>
+        </tr>
+        <tr>
+            <td data-label="일정">청초수물회</td>
+            <td data-label="세부 사항">저녁 포장 가능</td>
+        </tr>
+        <tr>
+            <td data-label="일정">숙소</td>
+            <td data-label="세부 사항">켄싱턴리조트 설악밸리 (3시 입실 - 11시 퇴실, 조식 포함) <br> <a href="https://blog.naver.com/na10050/223440918122">블로그 링크</a></td>
+        </tr>
+        <tr>
+            <td data-label="일정" style="background-color: rgb(253, 174, 117);">8.23 (금)</td>
+            <td data-label="세부 사항">조식 후 10시~10:30분쯤 퇴실</td>
+        </tr>
+        <tr>
+            <td data-label="일정">낙산사</td>
+            <td data-label="세부 사항">30분 거리, 걷기 1시간 <br> <a href="https://blog.naver.com/s600105/223484034604">블로그 링크</a></td>
+        </tr>
+        <tr>
+            <td data-label="일정">정동진 부채길</td>
+            <td data-label="세부 사항">1시간 10분 거리, 걷기 1시간~1시간 30분 <br> <a href="https://blog.naver.com/ekkoom/223498968575">블로그 링크</a></td>
+        </tr>
+        <tr>
+            <td data-label="일정">숙소</td>
+            <td data-label="세부 사항">동해 오션시티 레지던스 호텔 (1시간 거리)</td>
+        </tr>
+        <tr>
+            <td data-label="일정">저녁</td>
+            <td data-label="세부 사항">미정</td>
+        </tr>
+        <tr>
+            <td data-label="일정" style="background-color: rgb(253, 174, 117);">8.24 (토)</td>
+            <td data-label="세부 사항">6시부터 온천 사우나</td>
+        </tr>
+        <tr>
+            <td data-label="일정">아침</td>
+            <td data-label="세부 사항">콩나물국밥 (포장 및 식사)</td>
+        </tr>
+        <tr>
+            <td data-label="일정">삼척 추암촛대바위</td>
+            <td data-label="세부 사항">-</td>
+        </tr>
+        <tr>
+            <td data-label="일정">점심</td>
+            <td data-label="세부 사항">삼교리동치미막국수본점</td>
+        </tr>
+        <tr>
+            <td data-label="일정">집으로</td>
+            <td data-label="세부 사항">-</td>
+        </tr>
+    </table>
+</body>
+</html>
